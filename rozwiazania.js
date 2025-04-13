@@ -1,6 +1,6 @@
 
 function sprawdz() {
-	fetch('chemia/zadania/zad1/roz.txt') // <-- tutaj wpisz adres pliku z zadaniem
+	fetch('/strona/chemia/zadania/zad1/roz.txt') // <-- tutaj wpisz adres pliku z zadaniem
     .then(response => {
       if (!response.ok) {
         throw new Error('Błąd sieci!');
