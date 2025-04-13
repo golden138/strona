@@ -46,4 +46,9 @@ function zaladuj(x) {
     });
 }
 
-window.onload = zaladuj('zad1');
+function start() {
+	zaladuj('zad1');
+	zaladuj('zad2');
+}
+
+window.onload = start();
