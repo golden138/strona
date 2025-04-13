@@ -37,7 +37,7 @@ function zaladuj(x) {
     .then(data => {
 		var zdj;
 		var tresc_zad = data;
-		var dane = '<div class="zad"><img src="img/ph-meter.png" />Zadanie ' + nr + '.</div><p>' + data + '</p><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązani</div><div id="roz' + nr + '"></div>';';
+		var dane = '<div class="zad"><img src="img/ph-meter.png" />Zadanie ' + nr + '.</div><p>' + data + '</p><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązani</div><div id="roz' + nr + '"></div>';
 		document.getElementById('zad1').innerHTML = dane;
     })
     .catch(error => {
