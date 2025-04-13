@@ -38,11 +38,11 @@ function zaladuj(x) {
 		var zdj;
 		var tresc_zad = data;
 		var dane = '<div class="zad"><img src="img/ph-meter.png" />Zadanie ' + nr + '.</div><p>' + data + '</p><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązani</div><div id="roz' + nr + '"></div>';';
-		document.getElementById('zad1').innerHTML = dane;
+		document.getElementById(x).innerHTML = dane;
     })
     .catch(error => {
 		console.error('Wystąpił błąd:', error);
-		document.getElementById(gdzie).innerHTML = '<div class="zad">Zadanie ' + nr + '.</div><p>Nie udało się pobrać treści zadania</p>';
+		document.getElementById(x).innerHTML = '<div class="zad">Zadanie ' + nr + '.</div><p>Nie udało się pobrać treści zadania</p>';
     });
 }
 
