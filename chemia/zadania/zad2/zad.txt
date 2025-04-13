@@ -1,0 +1,1 @@
+Oblicz pH roztworu kwasu HR, którego stężenie wynosi 0,01 mol/dm<sup>3</sup>, a stopień dysocjacji &alpha; = 1 %.
