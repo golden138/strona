@@ -1,0 +1,11 @@
+<div class="zad">
+	<img src="img/ph-meter.png" />
+	Zadanie 1.
+</div>
+<p>
+	Zmieszano 250cm<sup>3</sup> roztworu kwasu azotowego(V) o stężeniu 0,1 mol/dm<sup>3</sup> i 150cm<sup>3</sup> kwasu azotowego(V) o stężeniu 0,2 mol/dm<sup>3</sup>. Oblicz pH otrzymanego roztworu.
+</p>
+<div class="roz" onclick="sprawdz();" id="zad1">
+Rozwiązanie
+</div>
+<div id="roz1"></div>
