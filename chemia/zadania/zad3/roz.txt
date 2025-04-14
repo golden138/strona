@@ -12,27 +12,27 @@ CoCl<sub>2</sub> * 6H<sub>2</sub>O  => 129g/mol + 6 * 18g/mol = 237g/mol
 <span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam ile moli dodano bezwodnej soli</p></span>
 <p>
 \[
-\frac{100g(masa soli bezwodnej)}{129g/mol(masa molowa)}=0,775mol
+\frac{100g(masa \; soli \; bezwodnej)}{129g/mol(masa \; molowa)}=0,775mol
 \]
 </p>
 <span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam ile moli hydratu może pozostać w roztworze</p></span>
 Wcześniej wyliczyliśmy, że w roztworze być rozpuszczone 120g hydratu po ochłodzeniu roztworu. Z masy tego hydratu obliczam ile to jest moli.
 <p>
 \[
-\frac{100g(masa hydratu)}{237g/mol(masa molowa)}=0,506mol
+\frac{100g(masa hydratu)}{237g/mol(masa \; molowa)}=0,506mol
 \]
 </p>
 <span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam ile moli hydratu wykrystalizuje</p></span>
 Ilość moli bezwodnej soli jest równa ilości hydratu rozpuszczonego i wykrystalizowanego, zatem:</br>
 <p>
 \[
-n = 0,775mol(bezwodna sól) - 0,506 mol(hydrat rozpuszczony) = 0,269mol
+n = 0,775mol(bezwodna \; sól) - 0,506 mol(hydrat \; rozpuszczony) = 0,269mol
 \]
 </p>
 <span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam masę wykrystalizowanego hydratu</p></span>
 <p>
 \[
-m = 0,269mol \cdot 237g/mol(masa molowa hydratu) = 63,75g
+m = 0,269mol \cdot 237g/mol(masa \; molowa \; hydratu) = 63,75g
 \]
 </p>
 Wynik około 63,8g
