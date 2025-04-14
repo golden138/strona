@@ -19,6 +19,7 @@ function sprawdz(x) {
       console.error('Wystąpił błąd:', error);
       document.getElementById(gdzie).innerText = 'Nie udało się pobrać rozwiązania.';
     });
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 }
 
 function zaladuj(x) {
