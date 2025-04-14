@@ -1,9 +1,9 @@
-<span style="font-size: 20px;"><p>-> Trzeba obliczyć ile maksymalnie może być rozpuszczonego hydratu po ochłodzeniu</p></span>
+<span style="font-size: 20px;font-weight: 700;"><p>-> Trzeba obliczyć ile maksymalnie może być rozpuszczonego hydratu po ochłodzeniu</p></span>
 W temp. 20&deg;C w 100g wody mogę rozpuścić 100g hydratu zatem:
 <p>
 \[
 \frac{100g(hydratu)}{100g(wody)}\cdot 120g(wody)=120g(hydratu)
 \]
 </p>
-<span style="font-size: 20px;"><p>-> Obliczam masę molową: bezwodnej soli i hydratu</p></span>
+<span style="font-size: 20px;font-weight: 700;"><p>-> Obliczam masę molową: bezwodnej soli i hydratu</p></span>
 Wynik około 63,3g
