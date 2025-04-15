@@ -1,0 +1,87 @@
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Analiza zadania i reakcja</p></span>
+Trzeba na początku przeanalizować reakcje zobojętnienia zasady mocnym kwasem. Chcemy otrzymać pH=9, zatem lekko zasadowe. W roztworze końcowym będzie sól kwasu i zasady zgodnie z równaniem
+<p>
+\[
+NaOH+HCl\longrightarrow NaCl+H_{2}O
+\]
+</p>
+Oprócz tego będzie w tym roztworze woda oraz reszta zasady NaOH, która nie przereagowała i daje jony OH<sup>-</sup> nadając roztworowi odczyn zasadowy. Sama sól NaCl jest obojętna, bo powstała z mocnej zasady i mocnego kwasu.
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam ile moli NaOH jest</p></span>
+100ml roztworu o stężeniu 0,1mol/dm<sup>3</sup> otrzymuje wynik 0,01mol
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam jakie powinno być stężenie jonów OH<sup>-</sup></p></span>
+W roztworze mamy jony OH<sup>-</sup>, a w treści zadania mamy, że roztwór ma mieć pH=9. Obliczam pOH z pH według wzoru:
+<p>
+\[
+pOH=14-pH\longrightarrow pOH=5
+\]
+</p>
+Teraz z pOH już w prosty sposób mogę obliczyć stężenie:
+<p>
+\[
+pOH=-log[OH^{-}]\longrightarrow [OH^{-}]=10^{-pOH}=10^{-5}mol/dm^{3}
+\]
+</p>
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Budujemy równanie</p></span>
+x - niech to będą oznaczały ilość ml HCl jaką należy dodać do roztworu</br>
+Objętość końcowa roztworu to jest: 100ml+x lub 0,1dm<sup>3</sup>+0,001x , bo dziele przez 1000</br>
+Po reakcji jonów OH<sup>-</sup> zostaje n<sub>NaOH</sub> - n<sub>HCl</sub></br>
+n<sub>NaOH</sub> znamy i wynosi 0,01mol</br>
+Obliczamy zatem n<sub>HCl</sub> = 0,07mol/dm<sup>3</sup> * 0,001x</br>
+Zatem możemy wyrazić już stężenie jonów OH<sup>-</sup> za pomocą x:
+<p>
+\[
+[OH^{-}]=\frac{0,01-0,07\cdot 0,001x}{0,1+0,001x}
+\]
+</p>
+Stężenie jonów OH<sup>-</sup> wyliczyliśmy wcześniej i musi wynieść 10<sup>-5</sup>, aby pH=9. Wstawiamy w równanie i rozwiązujemy ze względu na x.
+<p>
+\[
+10^{-5}\cdot (0,1+0,001x)=0,01-0,07\cdot 0,001x
+\]
+</p>
+<p>
+\[
+10^{-6}+10^{-8}x=10^{-2}-7\cdot 10^{-5}x
+\]
+</p>
+<p>
+\[
+10^{-4}+10^{-6}x=1-7\cdot 10^{-3}x
+\]
+</p>
+<p>
+\[
+7\cdot 10^{-3}x+10^{-6}x=1-10^{-4}
+\]
+</p>
+<p>
+\[
+7\cdot 10^{-3}x+10^{-6}x=1-10^{-4}
+\]
+</p>
+<p>
+\[
+(7+10^{-3})\cdot 10^{-3}x=0,9999
+\]
+</p>
+<p>
+\[
+7,001\cdot 10^{-3}x=0,9999
+\]
+</p>
+<p>
+\[
+7,001\cdot x=0,9999\cdot 10^{3}
+\]
+</p>
+<p>
+\[
+7,001\cdot x=999,9
+\]
+</p>
+<p>
+\[
+x=\frac{999,9}{7,001}=142,8
+\]
+</p>
+Jak obliczyliśmy należy dodać około 143 ml HCl do roztworu.
