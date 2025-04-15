@@ -1,0 +1,1 @@
+Oblicz ile należy dodać ml HCl o stężeniu 0,07mol/dm<sup>3</sup> do 100ml roztworu NaOH o stężeniu 0,1mol/dm<sup>3</sup>, aby otrzymać roztwór o pH = 9.
