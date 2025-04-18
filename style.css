@@ -1,0 +1,192 @@
+body
+{
+	background-color: #2e4053;
+	color: #ffffff;
+	font-family: "Ubuntu", sans-serif;
+	font-size:16px;
+}
+
+.dwie_linie
+{
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	padding: 10px;
+	text-align: center;
+}
+
+.dwie_linie ol
+{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	font-size:16px;
+	height:35px;
+	line-height: 200%;
+	display:inline-block;
+}
+
+.dwie_linie ol > li 
+{
+	float:left;
+	width:80px;
+	height:40px;
+}
+
+.wieksze
+{
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.zad
+{
+	padding: 10px 0;
+	font-size: 24px; 
+	font-weight: 700;
+}
+
+.roz
+{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.roz:hover
+{
+	color:#cd6155;
+	border: 2px solid #cd6155;
+	border-radius: 10px;
+}
+
+.wrapper
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header
+{
+	width:100%;
+	padding:40px 0;
+}
+
+.logo
+{
+	width:480px;
+	font-size:44px;
+	margin-left:auto;
+	margin-right:auto;
+	letter-spacing:3px;
+	border: 3px solid white;
+}
+
+.nav
+{
+	width:100%;
+	padding: 10px 0;
+	background-color: #00695c;
+	text-align: center;
+	line-height: 200%;
+}
+
+.footer
+{
+	width:100%;
+	padding: 10px 0;
+	background-color: #00695c;
+	text-align: center;
+	position: fixed; 
+	bottom: 0;
+}
+
+.content
+{
+	width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index:100;
+}
+
+.nav ol
+{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	font-size:18px;
+	height:35px;
+	line-height: 200%;
+	display:inline-block;
+}
+
+.nav ol a 
+{
+	color: #ffffff;
+	text-decoration:none;
+	display:block;
+}
+
+.nav ol > li 
+{
+	float:left;
+	width:120px;
+	height:40px;
+}
+
+.nav ol > li:hover
+{
+	background-color:#008776;
+}
+
+.nav ol > li:hover > a
+{
+	color:#cd6155;
+}
+
+.nav ol > li > ul 
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	display:none;
+}
+
+.nav ol > li > ul > li 
+{
+	background-color: #008776;
+	position:relative;
+	z-index:100;
+}
+
+.nav ol > li > ul > li:hover 
+{
+	background-color: #1abc9c;
+}
+
+.nav ol >li:hover > ul
+{
+	display:block;
+}
+
+.tresc_zadan_form > input[type="text"]
+{
+	width: 100px;
+	padding: 6px;
+	margin: 6px 0;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
