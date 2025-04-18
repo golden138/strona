@@ -1,0 +1,26 @@
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam stężenie jonów H<sup>+</sup></p></span>
+Najpierw trzeba się upewnić ile przypada jonów H<sup>+</sup> na jedną cząsteczkę kwasu HR
+<p>
+\[
+HR\leftrightharpoons H^{+}+R^{-}
+\]
+</p>
+Zatem na jedną cząsteczkę HR przypada jeden jon H<sup>+</sup>
+Do obliczenia stężenia użyje wzoru
+<p>
+\[
+[H^{+}]=\alpha\cdot C \;,bo\; \alpha\leqslant 0,05
+\]
+</p>
+<p>
+\[
+[H^{+}]=0,0001mol/dm^{3}
+\]
+</p>
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam pH</p></span>
+<p>
+\[
+pH=-log[H^{+}]\longrightarrow pH=4
+\]
+</p>
+Wynik pH = 4
