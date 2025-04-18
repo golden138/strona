@@ -1,0 +1,5 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"polecenie": "Wpisz wyrazy w odpowiedniej formie.",
+	"slowa": "awful;crash;tomato;cosy;young;read;"
+}

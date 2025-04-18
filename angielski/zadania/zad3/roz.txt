@@ -1,0 +1,4 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"odp": ["in;", "on the left;", "in front of;", "next to;", "behind;", "between;"]
+}

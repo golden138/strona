@@ -1,0 +1,5 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"polecenie": "Look at the painting. Complete the sentences with these prepositions.",
+	"slowa": "on the left;in;between;behind;in front of;next to;"
+}

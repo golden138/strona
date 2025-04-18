@@ -1,0 +1,4 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"odp": ["younger;", "cosies;", "have read;", "tomatos;", "crashing;"]
+}
