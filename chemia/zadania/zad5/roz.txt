@@ -1,0 +1,32 @@
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Ustalamy równanie reakcji</p></span>
+<p>
+\[
+Ca(OH)_{2}+2HNO_{3}\to Ca(NO_{3})_{2}+2H_{2}O
+\]
+</p>
+Z równania wynika, że 1 mol Ca(OH)<sub>2</sub> daje 1 mol soli Ca(NO<sub>3</sub>)<sub>2</sub>
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczamy masę teoretyczną soli jeżeli wydajność wynosiłaby 100%</p></span>
+W zadaniu mamy wydajność 90% i przy tej wydajności ma powstać 20g to przy 100% muszę:
+<p>
+\[
+m_{teoretyczna}=\frac{20g}{90\text{%}}\cdot 100\text{%}=22,22g
+\]
+</p>
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczamy liczbę moli soli jeżeli waga to 22,22g</p></span>
+Na początek muszę obliczyć masę molową Ca(NO<sub>3</sub>)<sub>2</sub>:</br>
+M = 40 + 2 * ( 14 + 3 * 16 ) = 164 g/mol</br>
+Obliczam teraz liczbę moli soli:</br>
+<p>
+\[
+n=\frac{22,22g}{164g/mol}=0,135mol
+\]
+</p>
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam teraz ilość moli wodorotlenku wapnia </p></span>
+Z równania reakcji wiemy, że  1 mol Ca(OH)<sub>2</sub> daje 1 mol soli Ca(NO<sub>3</sub>)<sub>2</sub>. Zatem ilość moli wodorotlenku jest jednakowa.</br>
+n<sub>Ca(OH)2</sub> = 0,135 mol
+<span style="font-size: 20px;font-weight: 700;color:#ec7063;"><p>-> Obliczam masę wodorotlenku wapnia </p></span>
+Na początek trzeba obliczyć masę molową Ca(OH)<sub>2</sub></br>
+M = 40 + 2 * ( 16 + 1 ) = 74 g/mol</br>
+Następnie obliczam już masę wodorotlenku:</br>
+m = 74 g/mol * 0,135 mol = 9,99 g</br>
+Zatem masę wodorotlenku jaką potrzebujemy wynosi około 10g.
