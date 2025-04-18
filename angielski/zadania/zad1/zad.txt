@@ -1,0 +1,5 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"polecenie": "Complite the sentences with the present simple or present continuous form of the verbs in the box.",
+	"slowa": "drink;drive;like;listen;live;rain;sleep;study;wear;work;"
+}
