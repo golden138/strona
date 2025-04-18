@@ -1,0 +1,4 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"odp": ["am listening;'m listening;", "drives;", "are slepping;'re sleeping;", "is raining;'s raining;", "drinks;", "like;", "works;", "wears;", "are studying;'re studying;", "live;"]
+}
