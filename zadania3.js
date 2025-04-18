@@ -1,5 +1,5 @@
 function sprawdz(x) {
-	var rozwiazanie = '/angielski/zadania/'+x+'/roz.txt';
+	var rozwiazanie = '/strona/angielski/zadania/'+x+'/roz.txt';
 	var gdzie = 'roz';
 	var nr = '';
 	for(var i = 3; i < x.length; i++) {
@@ -87,7 +87,7 @@ function porownajBezSpacjiILiter(a, b) {
 }
 
 function zaladuj(x) {
-	var tresc = '/angielski/zadania/'+x+'/zad.txt';
+	var tresc = '/strona/angielski/zadania/'+x+'/zad.txt';
 	var nr = '';
 	for(var i = 3; i < x.length; i++) {
 		nr += x.charAt(i);
@@ -138,7 +138,7 @@ function getSlowa(x) {
 }
 
 function getTresc(x) {
-  const rozwiazanie = '/angielski/zadania/' + x + '/tresc.txt';
+  const rozwiazanie = '/strona/angielski/zadania/' + x + '/tresc.txt';
 
   fetch(rozwiazanie, { cache: "no-store" })
     .then(response => {
@@ -185,7 +185,7 @@ function findTextField(x, y) {
 }
 
 function start() {
-	var gdzie = '/angielski/zadania/nr_zadan.txt';
+	var gdzie = '/strona/angielski/zadania/nr_zadan.txt';
 	var tresc = '';
 	fetch(gdzie) // <-- tutaj wpisz adres pliku z zadaniem
     .then(response => {
