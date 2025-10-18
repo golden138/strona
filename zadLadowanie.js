@@ -479,6 +479,7 @@ function formatTresc2(x) {
 	for(var i = 0; i < x.length; i++) {
 		var tmp = x.charAt(i);
 		if(tmp === '\r') {
+			console.log("Nowe");
 			if(przesuniecie === 1) {
 				wynik2 += '<div style="margin-left: 20px;">' + wynik + '</div>';
 				przesuniecie = 0;
