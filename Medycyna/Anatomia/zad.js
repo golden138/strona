@@ -3,10 +3,14 @@ var path = '/strona/Medycyna/Anatomia';
 function start() {
 	setPath(path);
 	setMaksSize(360);
+	var statusPath = localStorage.getItem("status");
+	if (statusPath !== null && statusPath !== "") {
+		localStorage.setItem("status", 'Post1');
+	}
 	getArtykul();
 	// Wczytaj wartość przy otwarciu
 	//localStorage.setItem("status", 'Post1');
-    const statusPath = localStorage.getItem("status");
+	statusPath = localStorage.getItem("status");
 	var gdzie = path + '/Posty/' + statusPath + '/nr_zadan.txt';
 	var tresc = '';
 	fetch(gdzie) // <-- tutaj wpisz adres pliku z zadaniem
