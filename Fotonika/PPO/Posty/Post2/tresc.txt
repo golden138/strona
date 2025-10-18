@@ -58,7 +58,7 @@ Szybkość tego procesu zależy nie tylko od liczby elektronów N<sub>1</sub>, a
 1.4 Emisja Wymuszona (Stymulowana)
 
 To kluczowy proces dla działania laserów. Padający foton o energii ħω = E<sub>21</sub> oddziałuje z elektronem znajdującym się już w stanie wzbudzonym E<sub>2</sub>. To oddziaływanie "wymusza" na elektronie przejście na niższy poziom E<sub>1</sub>, co skutkuje emisją drugiego fotonu. Co najważniejsze, nowo powstały foton jest idealną kopią fotonu stymulującego – ma tę samą energię, fazę, polaryzację i kierunek propagacji. To właśnie ta właściwość prowadzi do spójnego wzmocnienia światła.
-$emisja_wymuszona.png$
+$emisja_wymuszona.png?650$
 Zmianę obsadzenia  poziomu 2 można wyrazić:
 \[ dN_2 = -B_{21} \cdot N_2 \cdot N_p(E_{21}) \cdot dt \]
 
@@ -75,7 +75,7 @@ Einstein rozważył ten układ w stanie równowagi termodynamicznej, gdzie wypad
 
 * Jak do tych współczynników Einsteina można dojść
 Jeśli zbiór atomów jest wstanie równowagi termodynamicznej, to liczba atomów które są w stanie energetycznym E<sub>2</sub>, jest dana przez rozkład Boltzmana.
-$stan_rownowagi.png$
+$stan_rownowagi.png?650$
 \[ \frac{N_2}{N_1} = exp \left( \frac{-(E_2−E_1)}{k_B T} \right) \]
 \[ \frac{N_1}{N_2} = exp \left( \frac{E_2−E_1}{k_B T} \right) \]
 Bilans obsadzenia poziomów energii E<sub>1</sub> i E<sub>2</sub> w obecności promieniowania o gęstości energii u(ν) :
