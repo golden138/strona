@@ -611,6 +611,7 @@ function formatText(x) {
 	for(var i = 0; i < x.length; i++) {
 		var tmp = x.charAt(i);
 		if(tmp === '\r') {
+			console.log("Tytul");
 			var tmp1 = x.charAt(i+1);
 			var tmp2 = x.charAt(i+2);
 			if(tmp2 === '\r') {
