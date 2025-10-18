@@ -246,7 +246,7 @@ async function renderLatexToBase64OriginalSize(latex) {
             temp.style.left = "-9999px";
             temp.style.color = "black";        // Tekst czarny
             temp.style.background = "white";   // Tło białe
-            temp.style.fontSize = "9px";      // Rozmiar czcionki (można zmieniać)
+            temp.style.fontSize = "12px";      // Rozmiar czcionki (można zmieniać)
             temp.style.padding = "2px";       // Odstęp wokół równania
             //temp.style.borderRadius = "8px";   // Zaokrąglenie (opcjonalnie)
             document.body.appendChild(temp);
