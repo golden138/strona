@@ -75,7 +75,7 @@ Einstein rozważył ten układ w stanie równowagi termodynamicznej, gdzie wypad
 
 * Jak do tych współczynników Einsteina można dojść
 Jeśli zbiór atomów jest wstanie równowagi termodynamicznej, to liczba atomów które są w stanie energetycznym E<sub>2</sub>, jest dana przez rozkład Boltzmana.
-$stan_rownowagi.png?650$
+$stan_rownowagi.png$
 \[ \frac{N_2}{N_1} = exp \left( \frac{-(E_2−E_1)}{k_B T} \right) \]
 \[ \frac{N_1}{N_2} = exp \left( \frac{E_2−E_1}{k_B T} \right) \]
 Bilans obsadzenia poziomów energii E<sub>1</sub> i E<sub>2</sub> w obecności promieniowania o gęstości energii u(ν) :
