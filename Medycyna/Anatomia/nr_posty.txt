@@ -1,0 +1,8 @@
+{
+	"posty": [
+		{
+			"kategoria": "Anatomia",
+			"data" : ["Post1"]
+		}
+	]
+}

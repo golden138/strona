@@ -1,0 +1,517 @@
+Kompendium Anatomii Kończyny Górnej
+
+1.0 Osteologia: Rusztowanie Kostne Kończyny Górnej
+
+Układ kostny stanowi fundamentalne rusztowanie dla kończyny górnej, zapewniając jej strukturalną integralność i kształt. Kości są nie tylko pasywnym elementem aparatu ruchu, ale także kluczowym miejscem przyczepu dla mięśni, których skurcze generują siłę niezbędną do wykonywania precyzyjnych i złożonych czynności. Ponadto, tworzą one ochronne kanały i przestrzenie dla delikatnych struktur naczyniowo-nerwowych, zabezpieczając je przed urazami. Dogłębna znajomość szczegółów anatomicznych każdej kości jest niezbędna do zrozumienia biomechaniki stawów, mechaniki ruchu oraz stanowi podstawę w diagnostyce klinicznej, zwłaszcza w ortopedii i traumatologii.
+
+1.1 Obojczyk (clavicle)
+
+Obojczyk jest kością długą o esowatym kształcie, łączącą obręcz piersiową z klatką piersiową. Jego budowa jest kluczowa dla zapewnienia szerokiego zakresu ruchu w stawie ramiennym.
+
+* Końce: Posiada dwa końce – przyśrodkowy, zwany końcem mostkowym (sternal end), oraz boczny, czyli koniec barkowy (acromial end).
+* Trzon: Centralna część kości, na której dolnej powierzchni znajduje się bruzda mięśnia podobojczykowego (subclavian groove).
+* Struktury charakterystyczne:
+  * Na dolnej powierzchni końca mostkowego zlokalizowana jest guzowatość żebrowa (costal tuberosity), służąca za przyczep więzadła żebrowo-obojczykowego.
+  * Na dolnej powierzchni końca barkowego znajduje się guzek stożkowaty (conoid tubercle), od którego bocznie biegnie kresa czworoboczna (trapezoid line).
+* Orientacja: Stronę lewą od prawej można odróżnić na podstawie wielkości powierzchni stawowej końca mostkowego – jest ona znacznie większa i skierowana przyśrodkowo.
+$obojczyk_kosc.jpg?650$
+$Clavicle_kosc.jpg?650$
+
+1.2 Łopatka (scapula)
+
+Łopatka jest płaską, trójkątną kością stanowiącą tylną część obręczy piersiowej. Jej złożona budowa tworzy liczne punkty przyczepu dla mięśni stabilizujących i poruszających staw ramienny.
+
+* Brzegi i kąty: Wyróżnia się trzy brzegi (przyśrodkowy, boczny, górny) oraz trzy kąty (górny, dolny, boczny).
+* Powierzchnie: Łopatka posiada dwie powierzchnie: przednią, zwaną powierzchnią żebrową, oraz tylną, czyli powierzchnię tylną.
+* Wyrostki:
+  * Grzebień łopatki (spine of scapula): Wyraźna struktura na powierzchni tylnej, na której znajduje się guzek naramienny (deltoid tubercle).
+  * Wyrostek barkowy (acromion): Stanowi boczne przedłużenie grzebienia. Charakteryzuje go kąt wyrostka barkowego oraz powierzchnia stawowa obojczykowa (clavicular facet).
+  * Wyrostek kruczy (coracoid process): Zagięty do przodu wyrostek, będący miejscem przyczepu dla wielu mięśni i więzadeł.
+  * Wyrostek wydrążeniowy/panewkowy (glenoid process): Zakończony jest wydrążeniem stawowym (glenoid fossa), które tworzy panewkę dla stawu ramiennego. Nad i pod wydrążeniem znajdują się odpowiednio guzek nadpanewkowy i guzek podpanewkowy.
+* Doły:
+  * Dół nadgrzebieniowy (supraspinatous fossa) i dół podgrzebieniowy (infraspinatous fossa): Położone odpowiednio powyżej i poniżej grzebienia łopatki.
+  * Dół podłopatkowy (subscapular fossa): Znajduje się na powierzchni żebrowej.
+* Wcięcia:
+  * Wcięcie górne łopatki (superior scapular notch): Kluczowe dla przebiegu nerwu nadłopatkowego.
+  * Wcięcie grzebieniowo-wydrążeniowe (spinoglenoid notch): Położone przy szyjce łopatki, stanowi przejście dla naczyń i nerwu nadłopatkowego do dołu podgrzebieniowego.
+* Orientacja: Stronę łopatki można zidentyfikować, wiedząc, że grzebień znajduje się z tyłu, a wyrostek panewkowy (wydrążenie stawowe) jest skierowany bocznie.
+$łopatka_kosc.jpg?650$
+$scapula_kosc.jpg?650$
+
+1.3 Kość Ramienna (humerus)
+
+Kość ramienna jest najdłuższą i najmocniejszą kością kończyny górnej, tworzącą kostne rusztowanie ramienia.
+
+* Koniec bliższy (proximal end):
+  * Głowa kości ramiennej: Tworzy powierzchnię stawową dla stawu ramiennego.
+  * Szyjka anatomiczna (anatomic neck): Oddziela głowę od reszty końca bliższego.
+  * Guzek mniejszy (lesser tubercle) i guzek większy (greater tubercle): Miejsca przyczepu mięśni stożka rotatorów. Oddziela je bruzda międzyguzkowa (intertubercular sulcus).
+  * Grzebienie guzków: Przedłużenia guzków w dół trzonu.
+  * Szyjka chirurgiczna (surgical neck): Przewężenie poniżej guzków, stanowiące częste miejsce złamań ze względu na zmianę orientacji beleczek kostnych i działające na nie siły.
+* Trzon: Posiada trzy brzegi (przedni, boczny, przyśrodkowy) i trzy powierzchnie (przednio-boczna, przednio-przyśrodkowa, tylna).
+* Koniec dalszy (distal end):
+  * Kłykieć kości ramiennej: Złożony z dwóch części: przyśrodkowej bloczka (trochlea) oraz bocznej główki (capitulum).
+  * Nadkłykcie: Boczny (lateral epicondyle) i przyśrodkowy (medial epicondyle).
+  * Doły: Z przodu znajdują się dół promieniowy (radial fossa) i dół dziobiasty (coronoid fossa). Z tyłu leży znacznie większy dół wyrostka łokciowego (olecranon fossa), który pomaga w orientacji przedniej i tylnej strony kości.
+* Orientacja: Główka kości ramiennej jest skierowana przyśrodkowo, podobnie jak bloczek na końcu dalszym.
+$kosc_ramienna.jpg?400$
+$humerus_kosc.jpg?400$
+
+1.4 Kość Promieniowa (radius)
+
+Kość promieniowa jest boczną kością przedramienia.
+
+* Koniec bliższy:
+  * Głowa kości promieniowej: Ma walcowaty kształt. Na jej górnej powierzchni znajduje się dołek stawowy (articular facet of head of radius), a na obwodzie obwód stawowy głowy (articular circumference).
+  * Szyjka (neck of radius): Wąska część poniżej głowy.
+  * Guzowatość kości promieniowej: Znajduje się poniżej szyjki i stanowi miejsce przyczepu mięśnia dwugłowego ramienia.
+* Trzon: Posiada trzy brzegi (przedni, tylny, międzykostny) oraz trzy powierzchnie (przednia, tylna, boczna). Brzeg przedni kończy się grzebieniem nadrylcowym (suprastyloid crest). Na powierzchni bocznej zlokalizowana jest guzowatość nawrotna (pronator tuberosity).
+* Koniec dalszy:
+  * Powierzchnie stawowe: Dolna powierzchnia łączy się z kośćmi nadgarstka, a przyśrodkowa, zwana wcięciem łokciowym (ulnar notch), łączy się z głową kości łokciowej.
+  * Wyrostek rylcowaty (styloid process): Znajduje się po stronie bocznej.
+* Orientacja: Stronę kości można rozpoznać po tym, że wcięcie łokciowe jest skierowane przyśrodkowo, a wyrostek rylcowaty bocznie.
+$kosc_promieniowa.jpg?650$
+$Radius_bone.jpg?650$
+
+1.5 Kość Łokciowa (ulna)
+
+Kość łokciowa jest przyśrodkową kością przedramienia, stabilizującą staw łokciowy.
+
+* Koniec bliższy:
+  * Wcięcie bloczkowe: Głębokie wcięcie tworzące panewkę dla bloczka kości ramiennej. Składa się z tylnego wyrostka łokciowego (olecranon) i przedniego wyrostka dziobiastego (coronoid process).
+  * Wcięcie promieniowe: Zlokalizowane bocznie, łączy się z głową kości promieniowej.
+  * Guzowatość kości łokciowej (tuberosity of ulna): Miejsce przyczepu mięśnia ramiennego.
+* Trzon: Posiada trzy brzegi (przedni, tylny, międzykostny) i trzy powierzchnie (przednia, tylna, przyśrodkowa).
+* Koniec dalszy:
+  * Głowa: Otoczona jest obwodem stawowym.
+  * Wyrostek rylcowaty: Znajduje się po stronie przyśrodkowej.
+* Orientacja: Stronę kości można określić, wiedząc, że wcięcie bloczkowe jest skierowane do przodu, a wcięcie promieniowe – bocznie.
+$kosc_przedramienia.jpg?500$
+$Ulna_bone.jpg?650$
+
+
+1.6 Kości Ręki
+
+Ręka składa się z 27 małych kości, zorganizowanych w trzy grupy: nadgarstek, śródręcze i paliczki.
+
+* Nadgarstek (carpus): Składa się z ośmiu kości ułożonych w dwa szeregi.
+  * Szereg bliższy:
+    * Łódeczkowata (scaphoid)
+    * Księżycowata (lunate)
+    * Trójgraniasta (triquetrum)
+    * Grochowata (pisiform)
+  * Szereg dalszy:
+    * Czworoboczna większa (trapezium)
+    * Czworoboczna mniejsza (trapezoid)
+    * Główkowata (capitate)
+    * Haczykowata (hamate), która posiada charakterystyczny haczyk (hook of hamate).
+* Śródręcze (metacarpus): Składa się z pięciu kości śródręcza. Trzecia kość śródręcza posiada wyrostek rylcowaty (styloid process).
+* Paliczki (phalanges): Tworzą kostne rusztowanie palców.
+  * Paliczki bliższe: Występują we wszystkich palcach (I-V).
+  * Paliczki środkowe: Występują w palcach od II do V.
+  * Paliczki dalsze: Występują we wszystkich palcach (I-V).
+
+Ta skomplikowana architektura kostna nie jest jednak statyczna; stanowi fundament dla dynamicznego systemu połączeń stawowych, które obdarzają kończynę górną jej niezwykłą swobodą ruchu.
+$kosc_reka.jpg?650$
+$hand_bone.png?650$
+
+2.0 Artrologia: Połączenia Stawowe i Więzadłowe
+
+Artrologia, nauka o połączeniach kości, bada stawy – wysoce wyspecjalizowane struktury, które przekształcają statyczne rusztowanie kostne w dynamiczny aparat ruchu. Każdy staw maziowy składa się z podstawowych elementów stałych: powierzchni stawowych pokrytych chrząstką szklistą lub włóknistą, jamy stawowej wypełnionej mazią oraz torebki stawowej, która otacza i stabilizuje całą strukturę. Zrozumienie budowy i funkcji poszczególnych stawów jest fundamentem dla analizy ruchu kończyny górnej.
+
+2.1 Połączenia Obręczy Piersiowej
+
+Obręcz piersiowa, składająca się z obojczyka i łopatki, jest połączona z tułowiem i między sobą za pomocą więzozrostów i stawów maziowych.
+
+Więzozrosty
+
+* Więzadło kruczo-barkowe: Rozpięte między wyrostkiem kruczym a barkowym łopatki; zabezpiecza staw ramienny od góry, tworząc tzw. sklepienie stawu.
+* Więzadło poprzeczne łopatki (górne i dolne): Przekształcają wcięcia łopatki (górne i grzebieniowo-wydrążeniowe) w otwory, chroniąc przechodzące przez nie nerwy i naczynia.
+* Więzadło obrąbkowo-krucze: Kolejny element stabilizujący.
+
+Stawy
+
+* Staw mostkowo-obojczykowy:
+  * Typ: Staw kulisty (wielosiowy).
+  * Powierzchnie stawowe: Główkę tworzy powierzchnia stawowa mostkowa obojczyka, a panewkę wcięcie obojczykowe mostka i przylegająca chrząstka żebrowa.
+  * Struktury dodatkowe: Obecny jest krążek stawowy, dzielący jamę stawową na dwie części: boczną i przyśrodkową.
+  * Więzadła: Torebkę wzmacniają więzadła mostkowo-obojczykowe przednie i tylne. Dodatkowo staw stabilizują więzadła międzyobojczykowe przednie i tylne oraz więzadło żebrowo-obojczykowe.
+* Staw barkowo-obojczykowy:
+  * Typ: Staw płaski. Jego trzyosiowa ruchomość nadaje mu funkcjonalne cechy stawu kulistego.
+  * Powierzchnie stawowe: Główkę stanowi powierzchnia stawowa barkowa obojczyka, a panewkę powierzchnia stawowa na wyrostku barkowym łopatki.
+  * Struktury dodatkowe: W stawie znajduje się krążek stawowy.
+  * Więzadła: Staw wzmacnia więzadło barkowo-obojczykowe. Niezwiązane bezpośrednio ze stawem, ale kluczowe dla jego stabilności, są więzadła czworoboczne i stożkowate (tworzące więzadło kruczo-obojczykowe).
+* Działanie stawów obręczy: Oba stawy działają wspólnie, umożliwiając ruchy łopatki: unoszenie, obniżanie, protrakcję (wysuwanie do przodu, oddalanie od kręgosłupa) oraz retrakcję (cofanie, przybliżanie do kręgosłupa).
+$Staw_barkowo_obojczykowy.jpg?650$
+
+2.2 Połączenia Części Wolnej Kończyny Górnej
+
+Staw ramienny
+
+Jest to najbardziej mobilny staw w ciele człowieka, co zawdzięcza swojej budowie, ale jednocześnie czyni go podatnym na zwichnięcia.
+
+* Typ: Staw kulisty wolny.
+* Powierzchnie stawowe: Główkę tworzy głowa kości ramiennej, a płytką panewkę wydrążenie stawowe łopatki, które jest pogłębione przez chrzęstny obrąbek stawowy.
+* Torebka stawowa: Przyczepia się na zewnątrz obrąbka stawowego i biegnie do szyjki anatomicznej kości ramiennej.
+* Więzadła:
+  * Więzadło kruczo-ramienne: Biegnie od wyrostka kruczego do obu guzków kości ramiennej, wzmacniając górną powierzchnię torebki.
+  * Więzadła obrąbkowo-ramienne (górne, środkowe, dolne): Rozpoczynają się na obrąbku stawowym i biegną do szyjki anatomicznej, wzmacniając przednią ścianę torebki.
+  * Więzadło poprzeczne kości ramiennej: Rozpięte między guzkiem mniejszym a większym, tworzy kanał dla ścięgna głowy długiej mięśnia dwugłowego ramienia, ale nie wzmacnia stawu.
+$Staw_ramienny.jpg?650$
+
+Staw łokciowy
+
+Jest to staw złożony, w skład którego wchodzą trzy mniejsze stawy zamknięte we wspólnej torebce stawowej.
+
+* Stawy składowe:
+  1. Staw ramienno-łokciowy: Typu zawiasowego. Główkę stanowi bloczek kości ramiennej, a panewkę wcięcie bloczkowe kości łokciowej.
+  2. Staw ramienno-promieniowy: Typu kulistego. Główkę tworzy główka kości ramiennej, a panewkę dołek stawowy głowy kości promieniowej.
+  3. Staw promieniowo-łokciowy bliższy: Typu obrotowego. Główkę stanowi obwód stawowy głowy kości promieniowej, a panewkę wcięcie promieniowe kości łokciowej i więzadło pierścieniowate.
+* Więzadła: Staw jest wzmocniony przez cztery główne więzadła: poboczne łokciowe, poboczne promieniowe, pierścieniowate kości promieniowej oraz więzadło czworokątne.
+* Działanie: Funkcjonalnie jest to połączenie stawu zawiasowego (zginanie i prostowanie) oraz obrotowego (nawracanie i odwracanie przedramienia).
+$staw_lokciowy.jpg?650$
+
+Połączenia przedramienia
+
+* Błona międzykostna: Rozpięta między brzegami międzykostnymi kości promieniowej i łokciowej. Jej włókna mają skośny przebieg, skierowany ku dołowi od kości promieniowej do łokciowej, co pomaga przenosić siły z ręki na ramię.
+* Staw promieniowo-łokciowy dalszy:
+  * Typ: Staw obrotowy.
+  * Powierzchnie stawowe: Główkę stanowi obwód stawowy głowy kości łokciowej, a panewkę wcięcie łokciowe kości promieniowej.
+  * Struktury dodatkowe: Obecny jest krążek stawowy, oddzielający jamę stawu od kości nadgarstka.
+  * Więzadła: Staw wzmacniają więzadła promieniowo-łokciowe dłoniowe i grzbietowe.
+$blonamiedzykostna.jpg?650$
+
+Stawy ręki
+
+Ręka posiada złożony system stawowy umożliwiający precyzyjne ruchy chwytne.
+
+* Staw promieniowo-nadgarstkowy: Powierzchnie stawowe tworzą kości szeregu bliższego nadgarstka (bez kości grochowatej) oraz powierzchnia nadgarstkowa kości promieniowej wraz z krążkiem stawu promieniowo-łokciowego dalszego. Wzmacniają go liczne więzadła, m.in. poboczne i łukowate.
+* Staw śródnadgarstkowy: Płasko-siodełkowaty staw między szeregiem bliższym a dalszym kości nadgarstka.
+* Stawy międzynadgarstkowe: Łączą kości w obrębie jednego szeregu, tworząc mało ruchome całości. Wzmacniają je więzadła międzynadgarstkowe dłoniowe, grzbietowe i międzykostne.
+* Stawy nadgarstkowo-śródręczne: Łączą szereg dalszy nadgarstka z kośćmi śródręcza. Staw dla kciuka ma siodełkowaty kształt, umożliwiając dużą ruchomość. Wzmacniają je więzadła nadgarstkowo-śródręczne.
+* Stawy międzyśródręczne: Płaskie stawy między podstawami kości śródręcza II-V, wzmocnione więzadłami śródręcznymi.
+* Stawy śródręczno-paliczkowe: Stawy kuliste między głowami kości śródręcza a podstawami paliczków bliższych. Wzmacniają je więzadła poboczne, dłoniowe oraz blaszki włóknisto-chrzęstne dłoniowe, połączone więzadłami poprzecznymi głębokimi śródręcza.
+* Stawy międzypaliczkowe: Stawy zawiasowe. Wyróżniamy staw międzypaliczkowy kciuka oraz stawy międzypaliczkowe bliższe i dalsze w palcach II-V. Wzmacniają je więzadła poboczne i blaszki włóknisto-chrzęstne dłoniowe.
+$stawy_dlon.jpg?650$
+
+Niezwykła ruchomość w tych licznych stawach jest realizowana przez dynamiczne działanie mięśni, które zostaną szczegółowo omówione w następnym rozdziale.
+
+3.0 Miologia: System Mięśniowy
+
+Mięśnie są aktywnymi narządami ruchu, których główną funkcją jest generowanie siły poprzez skurcz. Siła ta, przenoszona przez ścięgna na kości, umożliwia poruszanie poszczególnymi segmentami kończyny górnej. Mięśnie są zorganizowane w grupy funkcjonalne, takie jak zginacze, prostowniki, odwodziciele czy przywodziciele, a ich synergistyczne i antagonistyczne działanie pozwala na precyzyjną kontrolę nad szerokim zakresem ruchów, od potężnych wymachów po delikatne manipulacje palcami.
+
+3.1 Mięśnie Łopatkowo-Ramienne
+
+Grupa ta obejmuje mięśnie rozpięte między łopatką a kością ramienną, odgrywające kluczową rolę w ruchach i stabilizacji stawu ramiennego.
+
+* Mięsień naramienny (deltoid):
+  * Budowa: Składa się z trzech części:
+    * Część obojczykowa (przednia): Przyczepia się do końca barkowego obojczyka.
+    * Część barkowa (boczna): Przyczepia się do wyrostka barkowego łopatki.
+    * Część grzebieniowa (tylna): Przyczepia się do grzebienia łopatki.
+  * Przyczep końcowy: Wszystkie części kończą się wspólnie na guzowatości naramiennej kości ramiennej.
+$m_nadramienny.jpg?650$
+* Stożek rotatorów: Jest to grupa czterech mięśni, których ścięgna otaczają staw ramienny, tworząc funkcjonalny mankiet stabilizujący i umożliwiający ruchy rotacyjne.
+  * Mięsień nadgrzebieniowy (supraspinatus): Wypełnia dół nadgrzebieniowy, a jego ścięgno kończy się na guzku większym kości ramiennej.
+  * Mięsień podgrzebieniowy (infraspinatus): Wypełnia dół podgrzebieniowy, kończąc się na guzku większym.
+  * Mięsień obły mniejszy (teres minor): Jego ścięgno biegnie z tyłu stawu i kończy się na guzku większym.
+  * Mięsień podłopatkowy (subscapularis): Wypełnia dół podłopatkowy, a jego ścięgno przyczepia się do guzka mniejszego.
+  * Funkcja: Stożek rotatorów dynamicznie stabilizuje głowę kości ramiennej w panewce i inicjuje oraz kontroluje ruchy ramienia.
+$stozek_rotatorow.jpg?650$
+* Mięsień obły większy (teres major): Nie należy do stożka rotatorów. Biegnie od kąta dolnego łopatki do grzebienia guzka mniejszego kości ramiennej.
+$m_ob_wi.jpg?650$
+* Powięzie obręczy piersiowej: Mięśnie tej grupy pokryte są powięziami: naramienną, nadgrzebieniową, podgrzebieniową i podłopatkową.
+
+3.2 Mięśnie Ramienia
+
+Mięśnie ramienia są podzielone przez przegrody międzymięśniowe na dwie grupy: przednią (zginacze) i tylną (prostowniki).
+
+Zginacze
+
+* Mięsień dwugłowy ramienia (biceps brachii):
+  * Głowa krótka (short head): Rozpoczyna się na wyrostku kruczym łopatki.
+  * Głowa długa (long head): Rozpoczyna się na guzku nadpanewkowym łopatki.
+  * Przyczep końcowy: Obie głowy łączą się i kończą na guzowatości kości promieniowej.
+$mies_dwug_rami.jpg?650$
+* Mięsień ramienny (brachialis): Leży pod mięśniem dwugłowym. Rozpoczyna się na trzonie kości ramiennej i kończy na guzowatości kości łokciowej.
+* Mięsień kruczo-ramienny (coracobrachialis): Biegnie od wyrostka kruczego do środkowej części trzonu kości ramiennej.
+$m_ram.jpg?650$
+
+Prostowniki
+
+* Mięsień trójgłowy ramienia (triceps brachii):
+  * Głowa długa (long head): Rozpoczyna się na guzku podpanewkowym łopatki.
+  * Głowa boczna (lateral head): Przyczepia się powyżej bruzdy nerwu promieniowego.
+  * Głowa przyśrodkowa (medial head): Przyczepia się poniżej bruzdy nerwu promieniowego.
+  * Przyczep końcowy: Wszystkie trzy głowy kończą się wspólnym ścięgnem na wyrostku łokciowym kości łokciowej.
+
+Działanie i powięzie
+
+* Działanie: W stawie ramiennym mięśnie dwugłowy i kruczo-ramienny wykonują zgięcie (fleksję). Głowa długa bicepsa wspomaga odwodzenie (abdukcję), a głowa krótka bicepsa oraz głowa długa tricepsa wspomagają przywodzenie (addukcję). W stawie łokciowym biceps i mięsień ramienny odpowiadają za zgięcie przedramienia, podczas gdy triceps jest jego głównym prostownikiem.
+* Powięzie: Dwie przegrody międzymięśniowe ramienia (boczna i przyśrodkowa) oddzielają grupy mięśniowe. W przegrodzie bocznej biegnie nerw promieniowy, a w przyśrodkowej nerw łokciowy i naczynia poboczne.
+
+3.3 Mięśnie Przedramienia
+
+Mięśnie przedramienia są liczne i zorganizowane w grupy funkcjonalne oraz warstwy, odpowiadając za ruchy w stawie łokciowym, nadgarstku i palcach.
+$mm2.jpg?400$
+
+Zginacze
+
+* Warstwa powierzchowna:
+  * M. nawrotny obły (pronator teres): Między jego dwiema głowami znajduje się kanał nawrotny dla nerwu pośrodkowego.
+  * M. zginacz promieniowy nadgarstka (flexor carpi radialis)
+  * M. dłoniowy długi (palmaris longus)
+  * M. zginacz łokciowy nadgarstka (flexor carpi ulnaris): Łuk ścięgnisty między jego głowami tworzy tunel łokciowy.
+* Warstwa pośrednia:
+  * M. zginacz powierzchowny palców (flexor digitorum superficialis): Nazywany zginaczem przeszytym, jego ścięgna kończą się na paliczkach środkowych palców II-V.
+* Warstwa głęboka:
+  * M. zginacz głęboki palców (flexor digitorum profundus): Nazywany zginaczem przeszywającym, jego ścięgna kończą się na paliczkach dalszych palców II-V.
+  * M. zginacz długi kciuka (flexor pollicis longus)
+  * M. nawrotny czworoboczny (pronator quadratus)
+* Działanie: Głównie zginanie nadgarstka i palców oraz nawracanie przedramienia.
+
+Prostowniki boczne
+
+* M. ramienno-promieniowy (brachioradialis)
+* M. prostownik promieniowy długi i krótki nadgarstka (extensor carpi radialis longus/brevis)
+* M. odwracacz (supinator): Między jego głowami znajduje się kanał mięśnia odwracacza, przez który przechodzi gałąź głęboka nerwu promieniowego.
+* Działanie: Prostowanie i odwodzenie nadgarstka, odwracanie przedramienia oraz zginanie w stawie łokciowym (z wyjątkiem m. odwracacza).
+
+Prostowniki tylne
+
+* Warstwa powierzchowna:
+  * M. prostownik palców (extensor digitorum)
+  * M. prostownik palca małego (extensor digiti minimi)
+  * M. prostownik łokciowy nadgarstka (extensor carpi ulnaris)
+  * M. łokciowy (anconeus)
+* Warstwa głęboka:
+  * M. odwodziciel długi kciuka (abductor pollicis longus)
+  * M. prostownik długi kciuka (extensor pollicis longus)
+  * M. prostownik krótki kciuka (extensor pollicis brevis)
+  * M. prostownik wskaziciela (extensor indicis)
+* Działanie: Głównie prostowanie nadgarstka i palców.
+
+3.4 Mięśnie Wewnętrzne Ręki
+
+Są to krótkie mięśnie zlokalizowane w całości w obrębie ręki, odpowiedzialne za precyzyjne ruchy palców.
+
+* Grupa kłębu kciuka:
+  * M. odwodziciel krótki kciuka (abductor pollicis brevis)
+  * M. zginacz krótki kciuka (flexor pollicis brevis)
+  * M. przeciwstawiacz kciuka (opponens pollicis)
+  * M. przywodziciel kciuka (adductor pollicis)
+* Grupa kłębika (palca małego):
+  * M. dłoniowy krótki (palmaris brevis)
+  * M. odwodziciel palca małego (abductor digiti minimi)
+  * M. zginacz palca małego (flexor digiti minimi)
+  * M. przeciwstawiacz palca małego (opponens digiti minimi)
+* Grupa mięśni środkowych dłoni:
+  * Mięśnie glistowate
+  * Mięśnie międzykostne dłoniowe
+  * Mięśnie międzykostne grzbietowe
+* Działanie: Mięśnie kłębu odpowiadają za ruchy kciuka, mięśnie kłębika za ruchy palca małego, a mięśnie środkowe głównie za prostowanie w stawach międzypaliczkowych oraz przywodzenie (międzykostne dłoniowe) i odwodzenie (międzykostne grzbietowe) palców.
+$dlon.jpg?650$
+
+Precyzyjna koordynacja tych wszystkich mięśni jest możliwa dzięki złożonej sieci nerwowej, która zostanie szczegółowo omówiona w kolejnej części.
+
+4.0 Układ Nerwowy: Sieć Unerwienia
+
+Splot ramienny jest złożoną siecią nerwową, która powstaje z gałęzi brzusznych nerwów rdzeniowych od C5 do Th1 i stanowi źródło całego unerwienia ruchowego i czuciowego kończyny górnej. Jego struktura, obejmująca korzenie, pnie i pęczki, daje początek nerwom krótkim, zaopatrującym mięśnie obręczy barkowej, oraz nerwom długim, biegnącym wzdłuż całej kończyny. Zrozumienie przebiegu poszczególnych nerwów i zakresu ich unerwienia ma fundamentalne znaczenie dla lokalizacji uszkodzeń i interpretacji objawów neurologicznych.
+
+Pęczki splotu ramiennego (boczny, przyśrodkowy, tylny) są nazwane zgodnie z ich położeniem względem tętnicy pachowej i dają początek następującym nerwom długim:
+
+* Pęczek boczny: daje początek nerwowi mięśniowo-skórnemu i współtworzy nerw pośrodkowy (1,5 nerwu).
+* Pęczek przyśrodkowy: daje początek nerwom skórnym przyśrodkowym ramienia i przedramienia, nerwowi łokciowemu oraz współtworzy nerw pośrodkowy (3,5 nerwu).
+* Pęczek tylny: daje początek nerwowi promieniowemu (1 nerw).
+
+4.1 Nerwy Krótkie Splotu Ramiennego
+
+* Nerw grzbietowy łopatki: Pochodzi z korzenia C5. Unerwia mięsień dźwigacz łopatki i mięśnie równoległoboczne.
+* Nerw piersiowy długi: Pochodzi z korzeni C5-C7. Unerwia mięsieć zębaty przedni. Jego porażenie prowadzi do objawu łopatki skrzydlatej, co objawia się odstawaniem przyśrodkowego brzegu łopatki od klatki piersiowej, szczególnie widocznym podczas pchania.
+* Nerw nadłopatkowy: Odchodzi od pnia górnego. Przechodzi przez wcięcie łopatki i wcięcie grzebieniowo-wydrążeniowe, unerwiając mięsień nadgrzebieniowy i podgrzebieniowy.
+* Nerw podobojczykowy: Odchodzi od pnia górnego, zaopatrując mięsień podobojczykowy.
+* Nerwy piersiowe (przyśrodkowy i boczny): Odchodzą odpowiednio z pęczka przyśrodkowego i bocznego. Tworzą pętlę piersiową i unerwiają mięsień piersiowy większy i mniejszy.
+* Nerwy podłopatkowe (górny i dolny): Odchodzą z pęczka tylnego. Unerwiają mięsień podłopatkowy (górny i dolny) oraz mięsień obły większy (dolny).
+* Nerw piersiowo-grzbietowy: Odchodzi z pęczka tylnego. Unerwia mięsieć najszerszy grzbietu.
+* Nerw pachowy: Odchodzi z pęczka tylnego. Przechodzi przez otwór czworoboczny i unerwia mięsień naramienny oraz obły mniejszy. Oddaje nerw skórny boczny górny ramienia. Jego porażenie skrajnie ogranicza odwodzenie w stawie ramiennym.
+$nerwy_gora.png?650$
+
+4.2 Nerwy Długie Splotu Ramiennego
+
+$nerw_lokc.jpg?650$
+
+Nerw pośrodkowy (median nerve)
+
+* Pochodzenie: Powstaje z połączenia korzeni z pęczka bocznego i przyśrodkowego.
+* Przebieg: Na ramieniu biegnie w bruździe przyśrodkowej bicepsa, krzyżując od przodu tętnicę ramienną. W dole łokciowym leży najbardziej przyśrodkowo, a następnie opuszcza go, przechodząc przez kanał nawrotny.
+* Unerwienie:
+  * Na przedramieniu unerwia większość mięśni zginaczy, w tym nawrotny obły, zginacz promieniowy nadgarstka, dłoniowy długi, zginacz powierzchowny palców.
+  * Nerw międzykostny przedni przedramienia: Jego główna gałąź, unerwiająca mięśnie głębokie: zginacz długi kciuka, nawrotny czworoboczny i część promieniową zginacza głębokiego palców.
+  * W ręce, przez gałąź wsteczną, unerwia mięśnie kłębu kciuka (odwodziciel krótki, przeciwstawiacz, głowę powierzchowną zginacza krótkiego).
+  * Przez gałęzie dłoniowe wspólne palców, unerwia dwa pierwsze mięśnie glistowate oraz czuciowo skórę dłoniowej powierzchni palców I-III i połowy palca IV.
+* Porażenie: Może prowadzić do objawu ręki małpiej (zanik kłębu) i ręki błogosławiącej (niemożność zgięcia palców I-III).
+$zespol_ciesni.jpg?650$
+
+Nerw łokciowy (ulnar nerve)
+
+* Pochodzenie: Z pęczka przyśrodkowego.
+* Przebieg: Na ramieniu początkowo biegnie w bruździe przyśrodkowej, a następnie przechodzi do tyłu przez przegrodę międzymięśniową. Omija dół łokciowy, przechodząc przez tunel łokciowy. Na przedramieniu biegnie pod mięśniem zginaczem łokciowym nadgarstka, a do ręki wchodzi przez kanał Guyona.
+* Unerwienie:
+  * Na przedramieniu unerwia mięsień zginacz łokciowy nadgarstka i część łokciową zginacza głębokiego palców.
+  * Gałąź grzbietowa: Unerwia czuciowo skórę grzbietu ręki po stronie łokciowej oraz palców V, IV i połowy III.
+  * Gałąź powierzchowna (w ręce): Unerwia mięsień dłoniowy krótki oraz skórę palca małego i łokciowej strony palca IV.
+  * Gałąź głęboka (w ręce): Unerwia wszystkie mięśnie kłębika (oprócz dłoniowego krótkiego), wszystkie mięśnie międzykostne, III i IV mięsień glistowaty, mięsień przywodziciel kciuka oraz głowę głęboką zginacza krótkiego kciuka.
+* Porażenie: Powoduje charakterystyczny objaw ręki szponiastej.
+
+Nerw promieniowy (radial nerve)
+
+* Pochodzenie: Z pęczka tylnego.
+* Przebieg: Opuszcza jamę pachową i biegnie w bruździe na tylnej powierzchni kości ramiennej, owijając się wokół niej. Przebija przegrodę międzymięśniową boczną i wchodzi do dołu łokciowego, gdzie dzieli się na gałąź powierzchowną i głęboką.
+* Unerwienie:
+  * Na ramieniu unerwia wszystkie trzy głowy mięśnia trójgłowego ramienia oraz mięsień łokciowy.
+  * W dole łokciowym unerwia trzy mięśnie grupy bocznej przedramienia: m. ramienno-promieniowy, m. prostownik promieniowy długi nadgarstka oraz m. prostownik promieniowy krótki nadgarstka.
+  * Gałąź powierzchowna: Jest nerwem czysto czuciowym, zaopatrującym skórę promieniowej części grzbietu ręki i palców.
+  * Gałąź głęboka: Przechodzi przez kanał mięśnia odwracacza i jako nerw międzykostny tylny przedramienia unerwia wszystkie mięśnie prostowniki grupy tylnej przedramienia.
+* Nerwy skórne: Oddaje nerw skórny boczny dolny ramienia oraz nerw skórny tylny przedramienia.
+
+Nerwy skórne z pęczka przyśrodkowego
+
+* Nerw skórny przyśrodkowy ramienia: Unerwia skórę okolicy przednio-przyśrodkowej ramienia.
+* Nerw skórny przyśrodkowy przedramienia: Jego gałąź przednia towarzyszy żyle pośrodkowej przedramienia, a tylna żyle odłokciowej. Unerwia skórę w dolnej części ramienia i na całej przyśrodkowej powierzchni przedramienia.
+
+Wspomniane nerwy biegną w ścisłym sąsiedztwie naczyń krwionośnych, które zapewniają niezbędne zaopatrzenie w tlen i składniki odżywcze dla wszystkich tkanek kończyny. Układ ten zostanie opisany w następnej sekcji.
+
+5.0 Układ Naczyniowy: Tętnice, Żyły i Naczynia Chłonne
+
+Układ naczyniowy stanowi rozbudowany system transportowy kończyny górnej, odpowiedzialny za dostarczanie krwi bogatej w tlen i składniki odżywcze oraz odprowadzanie produktów przemiany materii. Tętnice, rozgałęziając się od głównego pnia, docierają do wszystkich tkanek. Żyły, zbierając krew, prowadzą ją z powrotem w kierunku serca. Równolegle funkcjonuje układ chłonny, który odgrywa kluczową rolę w drenażu płynów tkankowych i odpowiedzi immunologicznej.
+
+5.1 Tętnice
+
+Głównym pniem tętniczym kończyny górnej jest tętnica podobojczykowa, która na kolejnych odcinkach zmienia swoją nazwę.
+
+* Tętnica pachowa (axillary artery): Jest przedłużeniem tętnicy podobojczykowej; rozpoczyna się na brzegu zewnętrznym pierwszego żebra i kończy na dolnym brzegu mięśnia obłego większego, przechodząc w tętnicę ramienną. Dzieli się na trzy części względem mięśnia piersiowego mniejszego.
+  * Część górna (nad m. piersiowym mniejszym):
+    * T. piersiowa górna: Zaopatruje mięśnie piersiowe i międzyżebrowe.
+    * T. piersiowo-barkowa: Oddaje cztery gałęzie: piersiowe, obojczykową, barkową i naramienną.
+  * Część środkowa (za m. piersiowym mniejszym):
+    * T. podłopatkowa: Największa gałąź; dzieli się na tętnicę piersiowo-grzbietową i okalającą łopatkę.
+  * Część dolna (poniżej m. piersiowego mniejszego):
+    * T. piersiowa boczna: Biegnie wzdłuż mięśnia piersiowego mniejszego.
+    * T. okalająca ramię tylna i przednia: Owijają się wokół szyjki chirurgicznej kości ramiennej.
+* Tętnica ramienna (brachial artery): Biegnie powierzchownie w bruździe przyśrodkowej bicepsa, a następnie w dole łokciowym, gdzie na wysokości szyjki kości promieniowej dzieli się na tętnicę promieniową i łokciową.
+  * Główne gałęzie:
+    * T. głęboka ramienia: Największa gałąź; biegnie z nerwem promieniowym. Jej gałęziami końcowymi są t. poboczna promieniowa i poboczna środkowa.
+    * T. poboczna łokciowa górna
+    * T. poboczna łokciowa dolna
+* Tętnica promieniowa (radial artery): Biegnie wzdłuż bocznej strony przedramienia, przechodzi przez tabakierkę anatomiczną i wchodzi na dłoń, gdzie współtworzy łuk dłoniowy głęboki. Główne gałęzie to m.in. t. wsteczna promieniowa, gałąź dłoniowa powierzchowna i t. główna kciuka.
+* Tętnica łokciowa (ulnar artery): Biegnie po przyśrodkowej stronie przedramienia, przechodzi przez kanał Guyona i kończy się, tworząc łuk dłoniowy powierzchowny. Jej główne gałęzie to t. wsteczne łokciowe (przednia i tylna) oraz t. międzykostna wspólna, która dzieli się na przednią i tylną.
+* Tętnice ręki: Ukrwienie ręki zapewniają złożone sieci i łuki tętnicze.
+  * Sieci tętnicze: Sieć grzbietowa nadgarstka i sieć dłoniowa nadgarstka.
+  * Łuki dłoniowe:
+    * Łuk dłoniowy powierzchowny: Tworzony głównie przez zakończenie tętnicy łokciowej.
+    * Łuk dłoniowy głęboki: Tworzony głównie przez zakończenie tętnicy promieniowej.
+$tetnice.jpg?400$
+
+5.2 Żyły
+
+Układ żylny dzieli się na sieć żył powierzchownych, leżących w tkance podskórnej, oraz żył głębokich, towarzyszących tętnicom.
+
+Żyły powierzchowne
+
+* Żyła odpromieniowa (cephalic vein): Powstaje po promieniowej stronie grzbietu ręki, biegnie wzdłuż bocznej strony kończyny i uchodzi do żyły pachowej.
+* Żyła odłokciowa (basilic vein): Powstaje po łokciowej stronie grzbietu ręki, biegnie wzdłuż przyśrodkowej strony i łączy się z żyłami ramiennymi, tworząc żyłę pachową.
+* Żyła pośrodkowa przedramienia (median antebrachial vein): Biegnie pośrodku przedniej powierzchni przedramienia.
+* Zespolenia w okolicy łokcia: Żyły powierzchowne tworzą w dole łokciowym zmienne anastomozy, najczęściej w typie M, Y lub N.
+
+Żyły głębokie
+
+* Żyły głębokie przedramienia i ramienia: Zazwyczaj występują podwójnie i towarzyszą jednoimiennym tętnicom (żyły promieniowe, łokciowe, ramienne).
+* Żyła pachowa (axillary vein): Powstaje z połączenia żył ramiennych i żyły odłokciowej. Ma większą średnicę niż towarzysząca jej tętnica. Jej dopływy odpowiadają gałęziom tętnicy pachowej.
+$zyly.png?650$
+
+5.3 Układ Chłonny
+
+Układ chłonny składa się z naczyń i węzłów chłonnych, które zbierają chłonkę z tkanek.
+
+Powierzchowne naczynia i węzły chłonne
+
+* Węzły chłonne powierzchowne: Są nieliczne; należą do nich węzły nadbloczkowe, podobojczykowe oraz tylne barku.
+* Naczynia chłonne powierzchowne: Towarzyszą żyłom powierzchownym; wyróżnia się naczynia odpromieniowe, odłokciowe i pośrodkowe.
+
+Głębokie naczynia i węzły chłonne
+
+* Węzły chłonne pachowe: Stanowią główną grupę regionalnych węzłów chłonnych dla kończyny górnej, ściany klatki piersiowej i gruczołu sutkowego. Dzielą się na stacje filtracyjne.
+  * Grupa boczna (ramienna): Leży wzdłuż żyły pachowej; zbiera chłonkę z większości części wolnej kończyny.
+  * Grupa przednia (piersiowa): Związana z mięśniem zębatym przednim.
+  * Węzły międzypiersiowe: Leżą między mięśniami piersiowymi.
+  * Grupa tylna (podłopatkowa): Towarzyszy naczyniom podłopatkowym.
+  * Grupa środkowa: Druga stacja filtracyjna, położona centralnie w jamie pachowej.
+  * Grupa szczytowa: Najwyższa grupa, trzecia stacja filtracyjna.
+
+Znajomość poszczególnych struktur anatomicznych pozwala zrozumieć, w jaki sposób ich wzajemne relacje przestrzenne tworzą ważne regiony topograficzne, które zostaną omówione w końcowej części kompendium.
+
+6.0 Topografia: Kluczowe Regiony Anatomiczne
+
+Anatomia topograficzna jest syntezą wiedzy o poszczególnych układach, skupiającą się na wzajemnych relacjach przestrzennych między kośćmi, mięśniami, naczyniami i nerwami w określonych rejonach ciała. Zrozumienie granic i zawartości tych przestrzeni, takich jak dół pachowy, kanał nadgarstka czy dół łokciowy, ma fundamentalne znaczenie w praktyce klinicznej, zwłaszcza w chirurgii, anestezjologii regionalnej i diagnostyce obrazowej.
+
+6.1 Dół Pachowy (fossa axillaris)
+
+Jest to przestrzeń w kształcie piramidy, położona między boczną ścianą klatki piersiowej a przyśrodkową powierzchnią ramienia.
+
+* Ograniczenia:
+  * Fałd pachowy przedni: Tworzony przez dolny brzeg mięśnia piersiowego większego.
+  * Fałd pachowy tylny: Tworzony przez dolny brzeg mięśnia najszerszego grzbietu.
+  * Ściana przyśrodkowa: Mięsień zębaty przedni i ściana klatki piersiowej.
+  * Ściana boczna: Mięsień kruczo-ramienny i szyjka chirurgiczna kości ramiennej.
+  * Ściana przednia: Mięsień piersiowy większy (powierzchownie) oraz mięsień piersiowy mniejszy i powięź obojczykowo-piersiowa (głęboko).
+  * Ściana tylna: Mięsień podłopatkowy, mięsień obły większy, mięsień najszerszy grzbietu i głowa długa mięśnia trójgłowego ramienia.
+* Zawartość:
+  * Tętnica i żyła pachowa wraz z ich gałęziami i dopływami.
+  * Pęczki splotu ramiennego.
+  * Pachowe węzły chłonne.
+  * Tkanka tłuszczowa i łączna.
+
+Otwory ściany tylnej jamy pachowej
+
+* Otwór czworoboczny:
+  * Ograniczenia: M. obły mniejszy (od góry), m. obły większy (od dołu), głowa długa m. trójgłowego (przyśrodkowo), szyjka chirurgiczna k. ramiennej (bocznie).
+  * Zawartość: Nerw pachowy oraz tętnica i żyła okalająca ramię tylna.
+* Otwór trójboczny:
+  * Ograniczenia: M. obły mniejszy (od góry), m. obły większy (od dołu), głowa długa m. trójgłowego (bocznie).
+  * Zawartość: Naczynia okalające łopatkę.
+$dd.jpg?650$
+
+6.2 Bruzdy i Kanały Kończyny Górnej
+
+* Bruzda przyśrodkowa bicepsa:
+  * Zawartość: Tętnica ramienna, żyły ramienne, nerw pośrodkowy. W części górnej dodatkowo nerw łokciowy i nerwy skórne przyśrodkowe ramienia i przedramienia, a w dolnej żyła odłokciowa.
+* Bruzda boczna bicepsa:
+  * Zawartość: Żyła odpromieniowa i nerw skórny boczny przedramienia.
+* Bruzda naramienno-piersiowa:
+  * Zawartość: Żyła odpromieniowa i gałąź naramienna tętnicy piersiowo-barkowej.
+* Tunel łokciowy:
+  * Położenie/Ograniczenia: Na tylnej powierzchni nadkłykcia przyśrodkowego, przykryty łukiem ścięgnistym mięśnia zginacza łokciowego nadgarstka.
+  * Zawartość: Nerw łokciowy i tętnica poboczna łokciowa górna.
+* Dół łokciowy:
+  * Ograniczenia: M. nawrotny obły (przyśrodkowo), m. ramienno-promieniowy (bocznie), m. ramienny i m. odwracacz (dno).
+  * Zawartość: Nerw pośrodkowy, tętnica ramienna (z podziałem na promieniową i łokciową), ścięgno mięśnia dwugłowego ramienia.
+* Kanał nerwu promieniowego:
+  * Położenie: Między głową boczną a przyśrodkową mięśnia trójgłowego ramienia, w bruździe nerwu promieniowego na kości ramiennej.
+  * Zawartość: Nerw promieniowy i tętnica głęboka ramienia.
+* Kanał nerwu pośrodkowego:
+  * Położenie: Między mięśniem zginaczem powierzchownym a głębokim palców.
+  * Zawartość: Nerw pośrodkowy oraz tętnica towarzysząca nerwowi pośrodkowemu (gałąź tętnicy międzykostnej przedniej).
+* Kanał łokciowy Guyona:
+  * Ograniczenia: Kość grochowata (przyśrodkowo), haczyk kości haczykowatej (bocznie), więzadło grochowo-haczykowe i troczek zginaczy (dno), więzadło dłoniowe nadgarstka (sklepienie).
+  * Zawartość: Nerw łokciowy (dzielący się na gałąź powierzchowną i głęboką) oraz tętnica i żyła łokciowa.
+* Kanał nadgarstka:
+  * Ograniczenia: Troczek zginaczy (od przodu/sklepienie) i bruzda nadgarstka utworzona przez kości (od tyłu/dno).
+  * Zawartość:
+    * Nerw pośrodkowy.
+    * Ścięgna mięśnia zginacza powierzchownego i głębokiego palców.
+    * Ścięgno mięśnia zginacza długiego kciuka.
+
+9. null
+
+null
+
