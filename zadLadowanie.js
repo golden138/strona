@@ -179,27 +179,27 @@ function zaladuj(x) {
 		var tekst = json_format.tresc;
 		//dane = '<div class="zad"><img src="img/ph-meter.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązani</div><div id="roz' + nr + '"></div>';
 		if(rodzaj_zad === 'slowo_wpisywanie') {
-			dane = '<div class="zad"><img src="/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p>' + getSlowa(box_slowa) + '<div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązanie</div><div id="roz' + nr + '"></div>';
+			dane = '<div class="zad"><img src="/strona/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p>' + getSlowa(box_slowa) + '<div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązanie</div><div id="roz' + nr + '"></div>';
 			document.getElementById(x).innerHTML = dane;
 			getTresc(x);
 		}
 		
 		if(rodzaj_zad === 'abc') {
-			dane = '<div class="zad"><img src="/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązanie</div><div id="roz' + nr + '"></div>';
+			dane = '<div class="zad"><img src="/strona/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązanie</div><div id="roz' + nr + '"></div>';
 			document.getElementById(x).innerHTML = dane;
 			getTrescRadio(x);
 			console.log("OK");
 		}
 		
 		if(rodzaj_zad === 'podpowiedz') {
-			dane = '<div class="zad"><img src="/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div>';
+			dane = '<div class="zad"><img src="/strona/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div>';
 			document.getElementById(x).innerHTML = dane;
 			getTrescPodpowiedz(x);
 			console.log("OK");
 		}
 		
 		if(rodzaj_zad === 'normalne') {
-			dane = '<div class="zad"><img src="/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązanie</div><div id="roz' + nr + '"></div>';
+			dane = '<div class="zad"><img src="/strona/img/online-learning.png" />Zadanie ' + nr + '.</div><p>' + polecenie + '</p><div id="' + x + '_tresc"></div><div class="roz" onclick="zaladuj(\'zad'+ nr +'\');">Jeszcze raz</div><div class="roz" onclick="sprawdz(\'zad'+ nr +'\');">Rozwiązanie</div><div id="roz' + nr + '"></div>';
 			document.getElementById(x).innerHTML = dane;
 			//getTrescRadio(x);
 		}
