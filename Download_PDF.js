@@ -9,7 +9,8 @@ async function downloadPDF(path) {
     if (!response.ok) throw new Error('Błąd sieci!');
     const data = await response.text();
 	console.log(path);
-    const content = await formatTextPdf(data, path); // ✅ teraz poprawnie
+	var data2 = data.replace(/\r?\n/g, '\r\n');
+    const content = await formatTextPdf(data2, path); // ✅ teraz poprawnie
 
     const docDefinition = {
       content: content,
@@ -46,7 +47,8 @@ async function downloadPDFW(path, wiel) {
     if (!response.ok) throw new Error('Błąd sieci!');
     const data = await response.text();
 	console.log(path);
-    const content = await formatTextPdf(data, path); // ✅ teraz poprawnie
+	var data2 = data.replace(/\r?\n/g, '\r\n');
+    const content = await formatTextPdf(data2, path); // ✅ teraz poprawnie
 
     const docDefinition = {
       content: content,
