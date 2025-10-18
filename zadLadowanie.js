@@ -423,7 +423,8 @@ function getArtykul() {
       return response.text();
     })
     .then(data => {
-      document.getElementById('Artykul').innerHTML = '<div class="wieksze">' + formatText(data) + '</div>';
+		var data2 = data.replace(/\r?\n/g, '\r\n');
+      document.getElementById('Artykul').innerHTML = '<div class="wieksze">' + formatText(data2) + '</div>';
     })
     .catch(error => {
       console.error('Wystąpił błąd:', error);
