@@ -384,7 +384,7 @@ function findPodpowiedz(x, y) {
 			var script_TMP1 = document.createElement('script');
 			let safeDane3 = escapeForJS(dane3);
 
-			let imgSrc = (j + 1) === poprawna ? "/img/accept.png" : "/img/no.png";
+			let imgSrc = (j + 1) === poprawna ? "/strona/img/accept.png" : "/strona/img/no.png";
 			let innerHTMLPart = dane3.charAt(0) !== '@' ? `' <img src="${imgSrc}" />${safeDane3}'` : `' <img src="${imgSrc}" />'`;
 
 			script_TMP1.textContent =
