@@ -66,7 +66,7 @@ Zmianę obsadzenia  poziomu 2 można wyrazić:
 
 1.5 Relacje Einsteina
 
-$bilans.png$
+$bilans.png?650$
 Całkowita zmiana obsadzenia poziomu N2 jest sumą wkładów od wszystkich trzech procesów:
 \[ \frac{dN_2}{dt} = -A_{21} \cdot N_2 + B_{12} \cdot N_1 \cdot N_p(E_{21}) - B_{21} \cdot N_2 \cdot N_p(E_{21}) \]
 Einstein rozważył ten układ w stanie równowagi termodynamicznej, gdzie wypadkowa szybkość zmian musi być równa zeru \( \frac{dN_2}{dt} = 0 \). Podstawiając do tego równania znane już rozkłady Boltzmanna (dla N2/N1) i Plancka (dla N<sub>p</sub>(E<sub>21</sub>)), wyprowadził dwie fundamentalne relacje, które łączą ze sobą współczynniki dla tych trzech procesów:
