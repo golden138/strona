@@ -28,7 +28,11 @@
 		<!-- Nawigacja -->
 		<div id="nav-placeholder"></div>
 
-		
+		<script>
+		  fetch("/strona/nav.html")
+			.then(response => response.text())
+			.then(data => document.getElementById("nav-placeholder").innerHTML = data);
+		</script>
 
 		<div class="content">
 			<p>Witaj na naszej multidyscyplinarnej platformie stworzonej z myślą o pasjonatach nauki i technologii!</p>
