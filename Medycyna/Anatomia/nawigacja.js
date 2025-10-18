@@ -1,4 +1,4 @@
-var path = '/Medycyna/Anatomia';
+var path = '/strona/Medycyna/Anatomia';
 
 async function getNav() {
   const gdzie = path + '/nr_posty.txt';

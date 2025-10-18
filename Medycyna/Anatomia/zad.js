@@ -1,4 +1,4 @@
-var path = '/Medycyna/Anatomia';
+var path = '/strona/Medycyna/Anatomia';
 
 function start() {
 	setPath(path);
