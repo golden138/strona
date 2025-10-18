@@ -1,0 +1,347 @@
+body
+{
+	background-color: #2e4053;
+	color: #ffffff;
+	font-family: "Ubuntu", sans-serif;
+	font-size:16px;
+	margin: 0;
+}
+
+.dwie_linie
+{
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	padding: 10px;
+	text-align: center;
+}
+
+.dwie_linie ol
+{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	font-size:16px;
+	height:35px;
+	line-height: 200%;
+	display:inline-block;
+}
+
+.dwie_linie ol > li 
+{
+	float:left;
+	width:80px;
+	height:40px;
+}
+
+.wieksze
+{
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.zad
+{
+	padding: 10px 0;
+	font-size: 24px; 
+	font-weight: 700;
+}
+
+.roz
+{
+	width: 100px;
+	font-size: 16px;
+	line-height: 100%;
+	height: 20px;
+	text-align: center;
+	padding: 2px;
+	margin: 2px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.punkt
+{
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
+	padding: 4px;
+	margin: 4px;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.roz:hover
+{
+	color:#cd6155;
+	border: 2px solid #cd6155;
+	border-radius: 10px;
+}
+
+.wrapper
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header
+{
+	width:100%;
+	padding:40px 0;
+}
+
+.logo
+{
+	width:480px;
+	font-size:44px;
+	margin-left:auto;
+	margin-right:auto;
+	letter-spacing:3px;
+	border: 3px solid white;
+}
+
+.nav
+{
+	width:100%;
+	padding: 10px 0;
+	background-color: #00695c;
+	text-align: center;
+	line-height: 200%;
+}
+
+.footer
+{
+	width:100%;
+	padding: 10px 0;
+	background-color: #00695c;
+	text-align: center;
+	position: fixed; 
+	bottom: 0;
+}
+
+.content
+{
+	width: 850px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index:100;
+}
+
+.nav ol
+{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	font-size:18px;
+	height:35px;
+	line-height: 200%;
+	display:inline-block;
+}
+
+.nav ol a 
+{
+	color: #ffffff;
+	text-decoration:none;
+	display:block;
+}
+
+.nav ol > li 
+{
+	float:left;
+	width:120px;
+	height:40px;
+}
+
+.nav ol > li:hover
+{
+	background-color:#008776;
+}
+
+.nav ol > li:hover > a
+{
+	color:#cd6155;
+}
+
+.nav ol > li > ul 
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	display:none;
+}
+
+.nav ol > li > ul > li 
+{
+	background-color: #008776;
+	position:relative;
+	z-index:100;
+}
+
+.nav ol > li > ul > li:hover 
+{
+	background-color: #1abc9c;
+}
+
+.nav ol >li:hover > ul
+{
+	display:block;
+}
+
+.tresc_zadan_form > input[type="text"]
+{
+	width: 100px;
+	padding: 6px;
+	margin: 6px 0;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+.newest
+{
+	background-color: #283747;
+}
+
+.entries
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+
+.entries2
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+
+h1
+{
+	font-size: 44px;
+	font-weight: 400;
+	color: #39a5f1;
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+
+.entryimg
+{
+	display: inline-block;
+	margin-left: 30px;
+	width: 110px;
+}
+
+.entryimg img
+{
+	width: 90px;
+	height: 90px;
+}
+
+.entrytxt
+{
+	display: inline-block;
+	width: 680px;
+	font-size: 15px;
+}
+
+.entrytxt2
+{
+	display: inline-block;
+	width: 770px;
+	font-size: 15px;
+}
+
+h2
+{
+	font-size: 20px;
+	font-weight: 400;
+	color: #39a5f1;
+}
+
+h3
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+.entry
+{
+	background-color: #222930;
+	padding: 10px;
+	text-align: justify;
+	margin-top: 40px;
+	border-radius: 5px;
+}
+
+.east
+{
+	float: right;
+	width: 170px;
+	padding: 10px;
+}
+
+.east ul
+{
+	padding-left: 20px;
+}
+
+.east ul > li
+{
+	margin-bottom: 5px;
+}
+
+.bok {
+	display: flex; 
+	justify-content: 
+	center; align-items: 
+	flex-start; 
+	max-width: 100%;
+}
+
+.board {
+	width: 800px;
+	height: 480px;
+	margin: 20px auto;
+}
+
+#game_canvas {
+	background-color: #ffffff;
+	width: 800px;
+	height: 480px;
+	border: 2px solid orange;
+}
+
+.wciecie {
+	padding-left: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 80%;
+}
+th, td {
+  border: 1px solid white;
+  padding: 8px 12px;
+  text-align: center;
+}
+th {
+  background-color: #008776;
+}
