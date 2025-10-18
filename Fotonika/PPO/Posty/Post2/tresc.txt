@@ -180,14 +180,14 @@ Tempo absorpcji fotonów o energii E<sub>21</sub> jest proporcjonalne do:
 3.3 Emisja spontaniczna
 
 Elektron z pasma przewodnictwa samorzutnie rekombinuje z dziurą w paśmie walencyjnym, emitując foton o energii bliskiej Eg.
-$spontaniczna_polprzewodnik.png$
+$spontaniczna_polprzewodnik.png?500$
 Korzystając z funkcji Fermiego-Diracka rozkładu elektronów w pasmach możemy dostać równanie opisujące tempo (lub prawdopodobieństwo) przejść optycznych w procesie emisji spontanicznej fotonu w półprzewodniku:
 \[ r_{21} \left( spon \right) = A_{21} p_1 n_2 = A_{21} \rho_c \left( E_2 - E_c \right) \rho_v \left( E_v - E_1 \right) f_2 \cdot \left[ 1 - f_1 \right] \]
 
 3.4 Emisja stymulowana
 
 Foton o odpowiedniej energii stymuluje rekombinację pary elektron-dziura, co prowadzi do emisji drugiego, identycznego fotonu, skutkując wzmocnieniem światła.
-$stymulowana_polprzewodnik.png$
+$stymulowana_polprzewodnik.png?500$
 Korzystając z funkcji Fermiego-Diracka rozkładu elektronów w pasmach możemy dostać równanie opisujące tempo (lub prawdopodobieństwo) przejść optycznych w procesie emisji wymuszonej fotonu w półprzewodniku:
 \[ r_{21} \left( wymuszona \right) = B_{21} p_1 n_2 n_{ph} \left( E_{21} \right) = B_{21} n_{ph} \left( E_{21} \right) \rho_c \left( E_2 - E_c \right) \rho_v \left( E_v - E_1 \right) f_2 \cdot \left[ 1 - f_1 \right] \]
 
@@ -239,7 +239,7 @@ Zatem nasze B to:
 
 5.2 Wzmocnienie spektralne
 
-$wzm2.png$
+$wzm2.png?650$
 Po uwzględnieniu tych zasad oraz statystyki Fermiego-Diraca można wyprowadzić finalne wyrażenie na współczynnik wzmocnienia spektralnego g(E).
 
 Wartość wzmocnienia przy określonej energii zależy od dwóch czynników: po pierwsze, od tego, ile par elektron-dziura jest dostępnych do wygenerowania światła o tej energii, a po drugie, od tego, czy dla tych konkretnych stanów występuje inwersja obsadzeń. Matematycznym wyrazem tej idei jest następujący wzór: g(E) ≈ ρ(E<sub>21</sub>) ∙ (f<sub>2</sub> - f<sub>1</sub>)
