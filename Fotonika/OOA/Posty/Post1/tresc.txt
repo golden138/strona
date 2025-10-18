@@ -1,0 +1,230 @@
+Podstawy matematyczne dla fali EM
+
+1. Fundamenty Matematyczne w Optyce
+
+Precyzyjny opis fal elektromagnetycznych i ich interakcji z materią wymaga zastosowania zaawansowanych narzędzi matematycznych. Operatory wektorowe, takie jak dywergencja i rotacja, oraz fundamentalne twierdzenia całkowe, pozwalają na zwięzłe sformułowanie praw fizyki rządzących tymi zjawiskami i dogłębną analizę ich konsekwencji.
+
+1.1 Dywergencja wektora
+
+* Wektor pola elektrycznego fali EM można zapisać :
+\[\overrightarrow{E}=[E_x , E_y , E_z]\]
+* Zdefiniujemy sobie także operator \(\overrightarrow{\nabla }\) :
+\[\overrightarrow{\nabla }=\overrightarrow{i}\frac{\partial }{\partial x}+\overrightarrow{j}\frac{\partial }{\partial y}+\overrightarrow{k}\frac{\partial }{\partial z}\]
+* Jeżeli mamy skalar np. f(x,y,z) to działanie operatora \(\nabla\) na f nazywamy gradientem
+\[grad f = \nabla f = \left( \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z} \right) \]
+* Natomiast jeżeli działamy operatorem \(\nabla\) na wektor nazywamy to dywergencją:
+\[\overrightarrow{F } = \left( P , Q , R \right) \]
+\[ \nabla \cdot \overrightarrow{F}=\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z} \]
+* Dywergencja wektora: Jest to miara źródłowości pola wektorowego w danym punkcie ( a quantity of vector field's source at each point ). Wartość dywergencji informuje, czy w danym punkcie przestrzeni znajdują się "źródła" (wartość dodatnia) lub "ujścia" (wartość ujemna) pola.
+
+1.2 Rotacja wektora
+
+Opisuje nieskończenie mały obrót lub "wirowość" pola wektorowego. Rotacja jest wektorem, którego kierunek wskazuje oś obrotu, a wartość określa jego intensywność.
+\[ \overrightarrow{F}=\left( F_x , F_y , F_z \right) \]
+\[ \nabla \times \overrightarrow{F}=\left( \frac{\partial F_z }{\partial y} - \frac{\partial F_y }{\partial z} , \frac{\partial F_x }{\partial z} - \frac{\partial F_z }{\partial x} , \frac{\partial F_y }{\partial x} - \frac{\partial F_x }{\partial y} \right) \]
+* Jeżeli \( \nabla \times \overrightarrow{F}=0 \) to pole nie posiada wirów.
+* Jeżeli \( \nabla \times \overrightarrow{F} \neq 0 \) to w tym punkcie występuje lokalny wir. 
+\[ \nabla\times\vec{F} = \begin{vmatrix} \overrightarrow{i} & \overrightarrow{j} & \overrightarrow{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ F_x & F_y & F_z \end{vmatrix} = \overrightarrow{i} \cdot det \begin{vmatrix} \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ F_y & F_z \end{vmatrix} + \overrightarrow{j} \cdot det \begin{vmatrix} \frac{\partial}{\partial x} & \frac{\partial}{\partial z} \\ F_x & F_z \end{vmatrix} + \overrightarrow{k} \cdot det \begin{vmatrix} \frac{\partial}{\partial x} & \frac{\partial}{\partial y} \\ F_x & F_y \end{vmatrix} \]
+
+1.3 Operator Laplace'a (Laplasjan)
+
+Jest to operator różniczkowy drugiego rzędu, zdefiniowany jako dywergencja gradientu
+\[ \Delta = \nabla ^{2} = \frac{\partial ^{2}}{\partial x ^{2}} + \frac{\partial ^{2}}{\partial y ^{2}} + \frac{\partial ^{2}}{\partial z ^{2}} \]
+Fizycznie jego wartość w danym punkcie jest miarą różnicy między wartością pola w tym punkcie a jego średnią wartością w nieskończenie małym otoczeniu. Jak zobaczymy w kolejnej sekcji, operator ten jest kluczowym elementem fundamentalnego równania falowego.
+
+2. Fundamentalne twierdzenia całkowe
+
+Analizę pól wektorowych w skali makroskopowej umożliwiają dwa fundamentalne twierdzenia całkowe:
+* Twierdzenie o dywergencji (Gaussa-Ostrogradskiego)
+* Twierdzenie Kelvina-Stokesa (twierdzenie o rotacji)
+
+2.1 Twierdzenie o dywergencji (Gaussa-Ostrogradskiego)
+
+Twierdzenie to stanowi pomost między lokalną charakterystyką pola (dywergencją) a jego globalnym zachowaniem. Mówi ono, że całkowity strumień pola wektorowego przechodzący przez zamkniętą powierzchnię jest równy całce objętościowej z dywergencji tego pola w obszarze ograniczonym przez tę powierzchnię. Innymi słowy, suma wszystkich źródeł pomniejszona o sumę wszystkich "ujść" wewnątrz danego obszaru daje wypadkowy strumień wypływający z tego obszaru.
+\[ \int_{V}^{} \left( \nabla \cdot \overrightarrow{A} \right) dV = \oint_{S}^{} \overrightarrow{A} d\overrightarrow{S} \]
+Przykład : Załóżmy, że obszar całkowania to sześcian o boku 1 tak jak na rysunku oraz wektor v zdefiniowany jest następująco : 
+\[ \overrightarrow{v} = y ^{2} \widehat{x} + (2xy + z ^{2}) \widehat{y} + (2yz) \widehat{z} \]
+$przyklad1.jpg$
+Na początek muszę policzyć dywergencje dla wektora v
+\[ \nabla \cdot \overrightarrow{v} = 2x + 2y \]
+\[ \int_{V}^{}2 \left( 2x+2y \right) dV = 2 \int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \left ( x+y \right) dx dy dz \]
+Mogę rozbić sobie tą całkę na kroki:
+\[ \int_{0}^{1} \left( x+y \right) dx = \left[ \frac{1}{2} x^{2} + xy \right]_0^1 = \frac{1}{2} + y \]
+\[ \int_{0}^{1} \left( \frac{1}{2} + y \right) dy = \left[ \frac{1}{2} y + \frac{1}{2} y^{2} \right]_0^1 = 1 \]
+\[ \int_{0}^{1} 1 dz = 1 \]
+Wynika z tego, że :
+\[ \int_{V}^{}2 \left( 2x+2y \right) dV = 1 \cdot 2 \]
+Prawą stronę twierdzenia o dywergencji można policzyć osobno dla 6 ścianek, a następnie sumować. będzie to wynik działania całki powierzchniowej od tych wszystkich ścianek. Wcześniej ponumerowaliśmy każdą z ścianek cyframi rzymskimi.
+* I. (x=1)
+\[ \int_{}^{} \overrightarrow{v} d\overrightarrow{a}= \int_{0}^{1}\int_{0}^{1} y^{2} dydz=\int_{0}^{1} \left[ \frac{1}{3} y^{3} \right]_0^1 dz = \int_{0}^{1} \frac{1}{3} dz = \frac{1}{3} \]
+Wyrażenie w pierwszej całce wynika z tego co stoi przy składowej x w wektorze v. Znak dodatni ze względu, że wektor wychodzący z tej ściany jest zgodny z kierunkiem osi X.
+* II. (x=0)
+\[ \int_{}^{} \overrightarrow{v} d\overrightarrow{a}= - \int_{0}^{1}\int_{0}^{1} y^{2} dydz= - \frac{1}{3} \]
+* III. (y=1)
+\[ \int_{}^{} \overrightarrow{v} d\overrightarrow{a}= \int_{0}^{1}\int_{0}^{1} \left( 2xy + z^{2} \right) dxdz =\int_{0}^{1} \left[ x^{2}y + x z^{2} \right]_0^1 dz = \int_{0}^{1} \left( y + z^{2} \right) dz = \left[ yz + \frac{1}{3} z^{3} \right]_0^1 = \frac{4}{3} \]
+* IV. (y=0)
+\[ \int_{}^{} \overrightarrow{v} d\overrightarrow{a}= -\int_{0}^{1}\int_{0}^{1} \left( 2xy + z^{2} \right) dxdz = -\frac{1}{3}\]
+* V. (z=1)
+\[ \int_{}^{} \overrightarrow{v} d\overrightarrow{a}= \int_{0}^{1}\int_{0}^{1} \left( 2yz \right) dxdy=\int_{0}^{1} \left[ 2xyz \right]_0^1 dy = \left[ z y^{2} \right]_0^1 = 1 \]
+* VI. (z=0)
+\[ \int_{}^{} \overrightarrow{v} d\overrightarrow{a}= - \int_{0}^{1}\int_{0}^{1} \left( 2yz \right) dxdy =-\int_{0}^{1} \left[ 2xyz \right]_0^1 dy = -\left[ z y^{2} \right]_0^1 = 0 \]
+Po sumowaniu wszystkich wyników całek od I do VI wychodzi 2.
+Zatem : \( \int_{V}^{} \left( \nabla \cdot \overrightarrow{v} \right) dV = \oint_{S}^{} \overrightarrow{v} d\overrightarrow{a} \)
+
+2.2 Twierdzenie Kelvina-Stokesa (twierdzenie o rotacji)
+
+To twierdzenie łączy rotację pola wektorowego na pewnej powierzchni z cyrkulacją (całką liniową) tego pola wzdłuż krzywej stanowiącej brzeg tej powierzchni.
+$rotacja.png$
+Fizycznie interpretuje się je w ten sposób, że strumień rotacji przez powierzchnię odpowiada całkowitej wirowości, którą można wyznaczyć, "obiegając" powierzchnię wzdłuż jej brzegu i sprawdzając, na ile przepływ pola jest zgodny z kierunkiem obiegu. Twierdzenie można przedstawić w postaci wzoru:
+\[ \int_{V}^{} \left( \nabla \cdot \overrightarrow{A} \right) dV = \oint_{S}^{} \overrightarrow{A} \cdot d\overrightarrow{S} \]
+
+Te abstrakcyjne narzędzia matematyczne znajdują swoje bezpośrednie i kluczowe zastosowanie w sformułowaniu równań Maxwella, które stanowią fundament opisu wszystkich zjawisk elektromagnetycznych.
+Przykład : Sprawdź słuszność twierdzenia o rotacji ( twierdzenia Stokesa ) dla powierzchni w kształcie kwadratu z rysunku oraz dla zadanego wektora v.
+\[ \overrightarrow{v}= \left( 2xz + 3 y^{2} \right)\widehat{y} + \left( 4y z^{2} \right) \widehat{z} \]
+$przyklad2.jpg$
+Na początek policzę rotacje wektora v:
+\[ \overrightarrow{v} = \widehat{x} \left( 4 z^{2} - 2x \right) + \widehat{z} \left( 2z \right) \]
+Definiuje wektor dla powierzchni którą jest zamknięta przez kontur L (obiegam na płaszczyźnie yz a wektor prostopadły jest zgodnie z osią X):
+\[ \overrightarrow{da} = dydx \widehat{x} \]
+Mamy tutaj x=0 ( to wynika z rysunku ) buduję postać lewą z twierdzenia Stokesa:
+\[ \int_{\nu}^{} \left( \nabla \cdot \overrightarrow{v} \right) d\overrightarrow{a} = \int_{0}^{1} \int_{0}^{1} \left( 4 z^{2} - 2x \right) dydz = \int_{0}^{1} \left[ 4y z^{2} \right]_0^1 dz = \int_{0}^{1} 4 z^{2} dz = \left[ 4 \frac{z^{3}}{3} \right]_0^1 = \frac{4}{3} \]
+Prawą stronę twierdzenia możemy rozbić na 4 odcinki:
+* I. (x=0 z=0)
+\[ \int_{}^{} \overrightarrow{v} \cdot d \overrightarrow{l} = \int_{0}^{1} 3 y^{2} dy = 1 \]
+* II. (x=0 y=1)
+\[ \int_{}^{} \overrightarrow{v} \cdot d \overrightarrow{l} = \int_{0}^{1} 4 z^{2} dz = \frac{4}{3} \]
+* III. (x=0 z=1)
+\[ \int_{}^{} \overrightarrow{v} \cdot d \overrightarrow{l} = \int_{1}^{0} 3 y^{2} dy = -1 \]
+* IV. (x=0 y=0)
+\[ \int_{}^{} \overrightarrow{v} \cdot d \overrightarrow{l} = \int_{0}^{1} 0 dz = 0 \]
+Zatem po sumowaniu wszystkich krawędzi kwadratu mamy:
+\[ \oint_{S}^{} \overrightarrow{v} \cdot d\overrightarrow{S} = \frac{4}{3} \]
+
+3. Równania Maxwella i Fala Elektromagnetyczna w Dielektrykach
+
+Równania Maxwella stanowią kompletny i spójny zbiór praw opisujących pola elektryczne i magnetyczne oraz ich wzajemne oddziaływania. Są one punktem wyjścia do zrozumienia natury światła jako fali elektromagnetycznej i do analizy jej propagacji w różnych ośrodkach, w tym w dielektrykach.
+
+3.1 Równania Maxwella i Równania Materiałowe
+
+Opis pola elektromagnetycznego wymaga zdefiniowania czterech podstawowych wielkości wektorowych:
+##Symbol	Sens Fizyczny
+E	Natężenie pola elektrycznego [V/m]
+D	Wektor indukcji elektrycznej [C/m<sup>2</sup>]
+H	Natężenie pola magnetycznego [A/m]
+B	Wektor indukcji magnetycznej [Tesla]##
+
+* Prawo Gaussa dla pola elektrycznego
+\[ \nabla \cdot \overrightarrow{D} = \rho \Leftrightarrow \oint_{S}^{} \overrightarrow{D} \cdot d \overrightarrow{S} = \rho \]
+Ładunek jest źródłem pola elektrycznego.
+* Prawo Gaussa dla pola magnetycznego
+\[ \nabla \cdot \overrightarrow{B} = 0 \Leftrightarrow \oint_{S}^{} \overrightarrow{B} \cdot d \overrightarrow{S} = 0 \]
+Pole magnetyczne jest bezźródłowe.
+* Prawo Ampere'a
+\[ \nabla \times \overrightarrow{B} = \mu \overrightarrow{j} + \mu \varepsilon \frac{\partial \overrightarrow{E}}{\partial t} \Leftrightarrow \oint_{L}^{} \overrightarrow{B} \cdot d \overrightarrow{l} = \mu I + \mu \varepsilon \frac{d \Phi_E}{dx} \]
+\[ \sigma \text{ - przewodność zdefiniowana jako } \overrightarrow{j}=\sigma \cdot \overrightarrow{E} \]
+\[ \Phi_E \text{ - strumień pola elektrycznego } \]
+Przepływający prąd orz zmienne pole elektryczne wytwarzają pole magnetyczne.
+* Prawo indukcji elektromagnetycznej Faradaya
+\[ \nabla \times \overrightarrow{E} = -\frac{\partial \overrightarrow{B}}{\partial t} \Leftrightarrow \oint_{L}^{} \overrightarrow{E} d\overrightarrow{l} = -\frac{d\Phi_B}{dt} \]
+\[ \Phi_B \text{ - strumień pola magnetycznego } \]
+Zmienne w czasie pole magnetyczne wytwarza pole elektryczne.
+
+3.2 Typy ośrodków dla fali EM
+
+Równania Maxwella uzupełniane są przez równania materiałowe, które opisują, jak dany ośrodek reaguje na zewnętrzne pole elektromagnetyczne. Relacje te wiążą ze sobą wektory D i E oraz B i H. Charakter tych relacji zależy od struktury ośrodka:
+
+* W ośrodkach izotropowych odpowiedź materiału jest niezależna od kierunku przyłożonego pola. Przenikalność dielektryczna jest skalarem, co oznacza, że wektor D jest zawsze równoległy do wektora E. W konsekwencji stan polaryzacji fali przechodzącej przez taki ośrodek nie ulega zmianie (np. światło spolaryzowane liniowo na wejściu pozostaje liniowe na wyjściu).
+* W ośrodkach anizotropowych, takich jak ośrodki liniowo dwójłomne, przenikalność dielektryczna ma charakter tensorowy. Oznacza to, że ośrodek posiada wyróżnione osie optyczne, wzdłuż których współczynnik załamania jest różny. Powoduje to wprowadzenie opóźnienia fazowego między składowymi polaryzacji, co prowadzi do zmiany stanu polaryzacji fali (np. światło spolaryzowane liniowo może na wyjściu stać się eliptycznym).
+* W ośrodkach eliptycznie dwójłomnych zachodzą jeszcze bardziej złożone transformacje stanu polaryzacji np. potrafi skręcać polaryzacje.
+
+* Isotropic media ( izotropowy ośrodek ) interpretacja tensorowa:
+\[ \overrightarrow{D} = \varepsilon \varepsilon_0 \overrightarrow{E} \]
+\[ \overrightarrow{\varepsilon}=\begin{vmatrix} n^2 & 0 & 0 \\ 0 & n^2 & 0 \\ 0 & 0 & n^2 \end{vmatrix} =\begin{vmatrix} \varepsilon & 0 & 0 \\ 0 & \varepsilon & 0 \\ 0 & 0 & \varepsilon \end{vmatrix} \]
+* Linearly briefrigent media ( ośrodek dwójłomny liniowo )
+\[ \overrightarrow{\varepsilon}=\begin{vmatrix} n_x^2 & 0 & 0 \\ 0 & n_y^2 & 0 \\ 0 & 0 & n_z^2 \end{vmatrix} =\begin{vmatrix} \varepsilon_x & 0 & 0 \\ 0 & \varepsilon_y & 0 \\ 0 & 0 & \varepsilon_z \end{vmatrix} \]
+
+3.3 Propagacja Fali EM w Dielektrykach
+
+Rozważmy idealny dielektryk, czyli ośrodek nieprzewodzący (przewodność σ = 0) i pozbawiony swobodnych ładunków (gęstość ładunku ρ = 0). Z równań Maxwella można w takim przypadku wyprowadzić równania falowe dla pola elektrycznego E i magnetycznego H:
+* Skorzystam na początek z równania:
+\[ \nabla \times \overrightarrow{E} = -\frac{\partial \overrightarrow{B}}{\partial t} \]
+* Wprowadzam rotacje:
+\[ \nabla \times \left( \nabla \times \overrightarrow{E} \right) = -\frac{\partial }{\partial t} \left( \nabla \times \overrightarrow{B}\right) \]
+* Korzystam z tożsamości wektorowej:
+\[ \nabla \times \left( \nabla \times \overrightarrow{A} \right) = \nabla \left( \nabla \cdot \overrightarrow{A}\right) - \nabla ^{2} \overrightarrow{A} \]
+\[ \nabla \times \left( \nabla \times \overrightarrow{E} \right) = \nabla \left( \nabla \cdot \overrightarrow{E}\right) - \nabla ^{2} \overrightarrow{E} \]
+Teraz możemy wstawić za \( \nabla \times \overrightarrow{E} = 0 \) wynika to z tego, że ładunek jest zerowy i wstawiając ładunek 0 do prawa Gaussa dla pola elektrycznego otrzymuje tą równość.
+\[ \nabla \times \left( \nabla \times \overrightarrow{E} \right) = - \nabla ^{2} \overrightarrow{E} \]
+* Teraz używam prawa Ampere'a
+\[ \nabla \times \overrightarrow{B} = \mu \overrightarrow{j} + \mu \varepsilon \frac{\partial \overrightarrow{E}}{\partial t} \]
+Tutaj mogę uprościć j=0 , ponieważ przewodność jest 0.
+\[ \nabla \times \overrightarrow{B} = \mu \varepsilon \frac{\partial \overrightarrow{E}}{\partial t} \]
+* Wracam do rotacji gdzie miałem:
+\[ \nabla \times \left( \nabla \times \overrightarrow{E} \right) = -\frac{\partial }{\partial t} \left( \nabla \times \overrightarrow{B}\right) \]
+Po wprowadzeniu uproszenia wyliczonego z rotacji
+\[- \nabla ^{2} \overrightarrow{E} = -\frac{\partial }{\partial t} \left( \nabla \times \overrightarrow{B}\right) \]
+Po wprowadzeniu uproszczenia z Ampere'a
+\[ \nabla ^{2} \overrightarrow{E} = \frac{\partial }{\partial t} \left( \mu \varepsilon \frac{\partial \overrightarrow{E}}{\partial t} \right) \]
+\[ \nabla ^{2} \overrightarrow{E} = \mu \varepsilon \frac{\partial^2 \overrightarrow{E}}{\partial t^2} \]
+W ten sposób wyprowadziliśmy równanie falowe dla pola elektrycznego w podobny sposób można zrobić dla pola magnetycznego. Otrzymamy wtedy:
+\[ \nabla ^{2} \overrightarrow{H} = \mu \varepsilon \frac{\partial^2 \overrightarrow{H}}{\partial t^2} \]
+
+Są to fundamentalne równania opisujące rozchodzenie się fali elektromagnetycznej w dielektryku.
+
+* Ogólne rozwiązanie równania falowego dla fali płaskiej rozchodzącej się w przestrzeni można zapisać w postaci:
+\[ \overrightarrow{E} = E_0 \cdot exp \left[ i \omega \left( t - \frac{\overrightarrow{r} \cdot \overrightarrow{s}}{c_n} \right) \right] \]
+
+Poszczególne składniki tego wzoru mają następujące znaczenie:
+
+* E<sub>0</sub>: Zespolony wektor amplitudy, E<sub>0</sub> = |E<sub>0</sub>|e^(iδ), który zawiera pełną informację o rzeczywistej amplitudzie i fazie początkowej fali.
+* k: Wektor falowy, którego kierunek jest prostopadły do czoła fali.
+* ω: Częstość kołowa fali.
+* c<sub>n</sub>: Prędkość fazowa w ośrodku, zdefiniowana jako:
+\[ c_n = \frac{1}{\sqrt{\varepsilon \varepsilon_0 \mu \mu_0}} \]
+Podobnie dla pola magnetycznego.
+
+3.4 Właściwości Fali Elektromagnetycznej
+
+Dla lepszego zrozumieniu tej sekcji posłużę się rozwiązaniem równania falowego z poprzedniej seksji i rozbije go na składowe dla osi x, y, z:
+\[ \overrightarrow{E_x} = E_{0x} \cdot exp \left[ i \omega \left( t - \frac{y s_y + z s_z}{c_n} \right) \right] \]
+\[ \overrightarrow{E_y} = E_{0y} \cdot exp \left[ i \omega \left( t - \frac{x s_x + z s_z}{c_n} \right) \right] \]
+\[ \overrightarrow{E_z} = E_{0z} \cdot exp \left[ i \omega \left( t - \frac{x s_x + y s_y}{c_n} \right) \right] \]
+* Podstawiając za wektor s = ( 0 , 0 , 1) otrzymuje:
+\[ \overrightarrow{E_x} = E_{0x} \cdot exp \left[ i \omega \left( t - \frac{z}{c_n} \right) \right] \]
+\[ \overrightarrow{E_y} = E_{0y} \cdot exp \left[ i \omega \left( t - \frac{z}{c_n} \right) \right] \]
+\[ \overrightarrow{E_z} = E_{0z} \cdot exp \left[ i \omega t \right] \]
+* Prowadzi nas to do tego, że fala elektromagnetyczna jest falą poprzeczną oraz płaską.
+Teraz zastanowię się jak sprawdzić, że wektory E i H są do siebie prostopadłe. Ucząc się matematyki na pierwszych semestrach studiów poznaliśmy taką metodę, aby sprawdzić czy wektory są do siebie prostopadłe. Wektory są prostopadłe, gdy iloczyn wektorowy (A × B = 0). W tym celu wprowadzę rotacje wektora H:
+\[ \nabla \times \overrightarrow{H} = \begin{vmatrix} i & j & k \\ \frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z} \\ H_x & H_y & H_z \end{vmatrix} = i \cdot \begin{vmatrix} \frac{\partial }{\partial y} & \frac{\partial }{\partial z} \\ H_y & H_z \end{vmatrix} - j \cdot \begin{vmatrix} \frac{\partial }{\partial x} & \frac{\partial }{\partial z} \\ H_x & H_z \end{vmatrix} + k \cdot \begin{vmatrix} \frac{\partial }{\partial x} & \frac{\partial }{\partial y} \\ H_x & H_y \end{vmatrix} \]
+\[ \nabla \times \overrightarrow{H} = i \cdot \left( \frac{\partial H_z}{\partial y} - \frac{\partial H_y}{\partial z} \right) - j \cdot \left( \frac{\partial H_z}{\partial x} - \frac{\partial H_x}{\partial z} \right) + k \cdot \left( \frac{\partial H_y}{\partial x} - \frac{\partial H_x}{\partial x} \right) \]
+Obliczam teraz pochodne:
+\[ \frac{\partial H_z}{\partial y} = -\frac{i \omega s_y}{c_n} \cdot H_z \]
+Widać pewną regularność, więc od razu podstawie:
+\[ \nabla \times \overrightarrow{H} = -\frac{i \omega }{c_n} \cdot \left[ \widehat{i} \left( H_z \cdot s_y - H_y \cdot s_z \right) - \widehat{j} \left( H_z \cdot s_x - H_x \cdot s_z \right) + \widehat{k} \left( H_y \cdot s_x - H_x \cdot s_y \right) \right]  \]
+a to nic innego jak iloczyn wektorowy zdefiniowany jako:
+$iloczyn.png$
+Wynik rotacji dla H i dla E podobnie wynosi:
+\[ \nabla \times \overrightarrow{H} = -\frac{i \omega }{c_n} \cdot \left( \overrightarrow{H} \times \overrightarrow{s} \right) \]
+\[ \nabla \times \overrightarrow{E} = -\frac{i \omega }{c_n} \cdot \left( \overrightarrow{E} \times \overrightarrow{s} \right) \]
+Przypominam postać prawa Faradaya:
+\[ \nabla \times \overrightarrow{E} = -\frac{\partial \overrightarrow{B}}{\partial t} \]
+Wystarczy, że policzę pochodną po t dla B:
+\[ \frac{\partial \overrightarrow{B}}{\partial t} = \frac{\partial }{\partial t}\left( B_0 \cdot exp \left[ i \omega \left( t - \frac{\overrightarrow{r} \cdot \overrightarrow{s}}{c_n} \right) \right] \right) = i \omega \overrightarrow{B} \]
+Na koniec wstawie do prawa Faradaya:
+\[ -\frac{i \omega }{c_n} \cdot \left( \overrightarrow{E} \times \overrightarrow{s} \right) = - i \omega \overrightarrow{B} \Rightarrow \overrightarrow{E} \times \overrightarrow{s} = c_n \overrightarrow{B} \]
+Jak widać wektor E oraz B są prostopadłe.
+
+* Z analizy równań Maxwella i rozwiązania falowego w dielektrykach wynikają następujące kluczowe właściwości fali elektromagnetycznej:
+  * Fala poprzeczna: Wektory pola elektrycznego E i magnetycznego H są prostopadłe do kierunku propagacji fali (wektora falowego k). Oznacza to, że oscylacje pól odbywają się w płaszczyźnie prostopadłej do kierunku rozchodzenia się energii.
+  * Fala płaska: W dużej odległości od źródła czoła fali (powierzchnie o stałej fazie) mogą być aproksymowane jako płaszczyzny.
+  * Wzajemna prostopadłość wektorów E i H: Wektor natężenia pola elektrycznego E jest zawsze prostopadły do wektora natężenia pola magnetycznego H.
+  * Zgodność faz: Wektory E i H oscylują w tej samej fazie, osiągając swoje wartości maksymalne i minimalne w tym samym czasie.
+  * Transport energii (Wektor Poyntinga): Energia fali elektromagnetycznej jest transportowana w kierunku określonym przez wektor Poyntinga S = E × H. W ośrodkach izotropowych wektory E, H i k tworzą wzajemnie prostopadły układ, a kierunek transportu energii (S) jest zgodny z kierunkiem wektora falowego k. Cechą definiującą ośrodki anizotropowe jest natomiast fakt, że kierunek przepływu energii generalnie odbiega od kierunku wektora falowego.
+  * Współczynnik załamania: Jest to bezwymiarowa wielkość charakteryzująca ośrodek optyczny, zdefiniowana jako n = c / v_f, gdzie c to prędkość światła w próżni. Współczynnik załamania, podobnie jak przenikalność dielektryczna ε, jest wielkością dyspersyjną, co oznacza, że jego wartość zależy od częstotliwości fali.
+
+Ogólny opis fali elektromagnetycznej stanowi punkt wyjścia do bardziej szczegółowej analizy jednego z jej najważniejszych atrybutów – polaryzacji. W tym celu konieczne jest wprowadzenie dedykowanych formalizmów matematycznych.
+
+9. null
+
+null
+

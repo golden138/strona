@@ -1,0 +1,51 @@
+{
+	"zad": [
+		{
+			"tresc" : "Zgodnie z materiałem, na sferze Poincare'a stany polaryzacji liniowej są reprezentowane przez punkty leżące na:",
+			"odp" : [
+				{"war1" : "równoleżnikach", "war2" : "Równoleżniki reprezentują stan polaryzacji o tej samej eliptyczności, ale o różnym azymucie."},
+				{"war1" : "biegunach", "war2" : "Bieguny sfery (północny i południowy) odpowiada stanom polaryzacji kołowej, odpowiednio prawo- i lewoskrętnej"},
+				{"war1" : "południkach", "war2" : "Południki reperezentują stany polaryzacji o tym samym azymucie, ale o różnej eliptyczności"},
+				{"war1" : "równiku", "war2" : "Równik sfery Poincare'a odpowiada sytuacji gdzie S3 jest równy zero, co występuje tylko dla polaryzacji liniowej"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o geometrycznym miejscu na sferze, gdzie eliptyczność fali jest zerowa."
+		},
+		{
+			"tresc" : "Która z wymienionych metod opisu stanu polaryzacji jest w stanie opisać światło częściowo spolaryzowane?",
+			"odp" : [
+				{"war1" : "Macierz Jonesa", "war2" : "Macierz Jonesa opisuje transformacje stanu polaryzacji, a nie sam stan i operuje na wektorach Jonesa, więc dotyczy światła całkowicie spolaryzowanego"},
+				{"war1" : "Wektor Jonesa", "war2" : "Wektor Jonesa jest zdefiniowany wyłącznie dla światła całkowicie spolaryzowanego i nie ma możliwości opisania nim światła częściowo spójnego."},
+				{"war1" : "Metoda trygonometryczna", "war2" : "Metoda trygonometryczna opisuje amplitude i fazę składowych pola, co jest odpowiednie dla światła w pełni spolaryzowanego."},
+				{"war1" : "Wektor Stokesa", "war2" : "Wektor Stokesa, poprzez swoje cztery parametry, pozwala zdefiniować stopień polaryzacji, co umożliwia opis zarówno światła całkowicie, jak i częściowo spolaryzowanego."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Zastanów się, która z tych reprezentacji matematycznych zawiera parametr określający stopień polaryzacji."
+		},
+		{
+			"tresc" : "Który wniosek dotyczący fali elektromagnetycznej w dielektryku jest poprawny?",
+			"odp" : [
+				{"war1" : "Wektory E i H są do siebie prostopadłe i oscylują w tej samej fazie", "war2" : "Wektory pola elektrycznego i magnetycznego są wzajemnie prostopadłe, a także oscylują w fazie"},
+				{"war1" : "Wektory E i H są do siebie równoległe", "war2" : "Pola są wzajemnie prostopadłe"},
+				{"war1" : "Jest to fala podłużna, a energia jest transportowana wzdłuż wektora E.", "war2" : "Fala EM jest falą poprzeczną, a energia transportowana jest prostopadle do frontu falowego ( wektor Poyntinga)"},
+				{"war1" : "Wektory E i H oscylują w przeciwfazie (przesunięcie o 180 stopni)", "war2" : "dlaczego nie pasuje2"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Przeanalizuj wnioski wynikające z wyprowadzenia równania falowego dla dielektryków."
+		},
+		{
+			"tresc" : "Treść",
+			"odp" : [
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "podpowiedz"
+		}
+
+
+
+	]
+}

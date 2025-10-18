@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Równanie jako obraz</title>
+<link rel="stylesheet" href="/katex.min.css">
+<script src="/katex.min.js"></script>
+<script src="/html2canvas.min.js"></script>
+</head>
+<body>
+
+<h1>Równanie w formie obrazu</h1>
+<input type="text" id="latexInput" placeholder="Wpisz równanie np. \frac{a}{b}">
+<button onclick="generate()">Generuj obraz</button>
+
+<div id="output" style="margin-top:20px;"></div>
+
+<script>
+// Funkcja renderująca LaTeX na obraz <img>
+function renderLatexToImage(latex) {
+    return new Promise((resolve, reject) => {
+        try {
+            // Tworzymy tymczasowy, niewidoczny div w DOM
+            const temp = document.createElement("div");
+            temp.style.position = "absolute";
+            temp.style.left = "-9999px"; // poza ekranem
+            document.body.appendChild(temp);
+
+            katex.render(latex, temp, { throwOnError: false, displayMode: true });
+
+            html2canvas(temp).then(canvas => {
+                const img = document.createElement("img");
+                img.src = canvas.toDataURL("image/png");
+                img.alt = latex;
+                img.style.display = "block";
+                img.style.margin = "10px 0";
+
+                // Usuń tymczasowy element z DOM
+                document.body.removeChild(temp);
+
+                resolve(img);
+            }).catch(err => {
+                document.body.removeChild(temp);
+                reject(err);
+            });
+
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+
+
+// Funkcja wstawiająca obraz do wskazanego div
+function insertImageInDiv(img, divId) {
+    const container = document.getElementById(divId);
+    if (container) {
+        container.innerHTML = ""; // wyczyść poprzednie
+        container.appendChild(img);
+    } else {
+        console.error("Nie znaleziono div o id:", divId);
+    }
+}
+
+// Przykładowa funkcja łącząca obie
+function generate() {
+    const latex = document.getElementById("latexInput").value;
+    renderLatexToImage(latex)
+        .then(img => insertImageInDiv(img, "output"))
+        .catch(err => alert("Błąd: " + err));
+}
+</script>
+
+</body>
+</html>

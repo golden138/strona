@@ -1,0 +1,13 @@
+{
+	"zad": [
+		{
+			"tresc" : "Treść",
+			"odp" : [
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "podpowiedz"
+		}
+	]
+}
