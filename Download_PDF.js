@@ -150,7 +150,7 @@ function parseSubSupText(input2) {
 
     // sub/sup jako mniejszy znak
     const offset = match[1] === 'sub' ? -3 : 5;
-    parts.push({ text: match[2], fontSize: 8, baseline: offset });
+    parts.push({ text: match[2], fontSize: 8, lineHeight: offset });
 
     lastIndex = regex.lastIndex;
   }
@@ -234,6 +234,25 @@ function parseSubSupText(input2) {
 
 
 
+async function scaleBase64Half(base64) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = function() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = img.width / 2;
+            canvas.height = img.height / 2;
+
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+            const newBase64 = canvas.toDataURL("image/png");
+            resolve(newBase64);
+        };
+        img.onerror = reject;
+        img.src = base64;
+    });
+}
 
 
 
@@ -246,8 +265,8 @@ async function renderLatexToBase64OriginalSize(latex) {
             temp.style.left = "-9999px";
             temp.style.color = "black";        // Tekst czarny
             temp.style.background = "white";   // Tło białe
-            temp.style.fontSize = "12px";      // Rozmiar czcionki (można zmieniać)
-            temp.style.padding = "2px";       // Odstęp wokół równania
+            temp.style.fontSize = "28px";      // Rozmiar czcionki (można zmieniać)
+            temp.style.padding = "0px";       // Odstęp wokół równania
             //temp.style.borderRadius = "8px";   // Zaokrąglenie (opcjonalnie)
             document.body.appendChild(temp);
 
@@ -262,10 +281,10 @@ async function renderLatexToBase64OriginalSize(latex) {
                     allowTaint: false
                 }).then(canvas => {
                     const base64 = canvas.toDataURL("image/png");
-					const width = canvas.width;
-                    const height = canvas.height;
-                    document.body.removeChild(temp);
-                    resolve({ base64, width, height });
+					var width = canvas.width / 2;
+					var height = canvas.height / 2;
+					document.body.removeChild(temp);
+					resolve({ base64, width, height })
                 }).catch(err => {
                     document.body.removeChild(temp);
                     reject(err);

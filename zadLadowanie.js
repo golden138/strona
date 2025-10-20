@@ -410,6 +410,23 @@ function findPodpowiedz(x, y) {
 	return wynik;
 }
 
+function sprawdzFormat(x) {
+	var jest = 0;
+	var ile = 100;
+	if(x.length < ile) {
+		ile = x.length;
+	}
+	for(var i = 0; i < ile-1; i++) {
+		var tmp = x.charAt(i);
+		var tmp1 = x.charAt(i+1);
+		if(tmp === '\r' && tmp1 === '\n') {
+			jest = 1;
+			break;
+		}
+	}
+	return jest;
+}
+
 function getArtykul() {
 	const statusPath = localStorage.getItem("status");
 	var gdzie = path + '/Posty/' + statusPath + '/tresc.txt';
@@ -423,7 +440,13 @@ function getArtykul() {
       return response.text();
     })
     .then(data => {
-		var data2 = data.replace(/\r?\n/g, '\r\n');
+		
+		var data2;
+		if(sprawdzFormat(data) === 0) {
+			data2 = data.replace(/\r?\n/g, '\r\n');
+		}else {
+			data2 = data;
+		}
       document.getElementById('Artykul').innerHTML = '<div class="wieksze">' + formatText(data2) + '</div>';
     })
     .catch(error => {

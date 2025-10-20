@@ -1,0 +1,171 @@
+{
+	"zad": [
+		{
+			"tresc" : "Która struktura anatomiczna przechodzi przez otwór czworoboczny (foramen quadrilaterum) w ścianie tylnej jamy pachowej?",
+			"odp" : [
+				{"war1" : "Głowa długa mięśnia trójgłowego ramienia", "war2" : "Ta struktura stanowi przyśrodkowe ograniczenie otworu czworobocznego, a nie jego zawartość."},
+				{"war1" : "Naczynia okalające łopatke", "war2" : "Te naczynia przechodzą przez otwór trójboczny, a nie czworoboczny."},
+				{"war1" : "Nerw pachowy i tętnica okalająca ramię tylna", "war2" : "Zgodnie z opisem topograficznym, te dwie struktury opuszczają jamę pachową właśnie przez otwór, owijając się wokół szyjki chirurgicznej kości ramiennej."},
+				{"war1" : "Nerw piersiowo-grzbietowy", "war2" : "Ten nerw zstępuje między nerwami podłopatkowymi, ale nie przechodzi przez otwór czworoboczny"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Zastanów się, które struktury nerwowo-naczyniowe są ściśle związane z szyjką chirurgiczną kości ramiennej."
+		},
+		{
+			"tresc" : "Porażenie którego nerwu prowadzi do objawu znanego jako \"łopatka skrzydlata\"?",
+			"odp" : [
+				{"war1" : "Nerwu pachowego", "war2" : "Porażenie tego nerwu skutkuje zanikiem mięśnia naramiennego i ograniczeniem odwodzenia ramienia "},
+				{"war1" : "Nerwu nadłopatkowego", "war2" : "Uszkodzenie tego nerwu wpłynełoby na działanie mięśnia nadgrzbietowego i podgrzbietowego, co zaburzyłoby rotacje i odwodzenie w stawie ramiennym."},
+				{"war1" : "Nerwu piersiowego długiego", "war2" : "Nerw ten unerwia mięsień zębaty przedni, którego osłabienie powoduje odstawienie przyśrodkowego brzegu łopatki od klatki piersiowej"},
+				{"war1" : "Nerwu grzbietowego łopatki", "war2" : "Ten nerw zaopatruje mięsień dźwigacz łopatki i mięśnie równoległoboczne, jego porażenie wpłynełoby na inne ruchy łopatki"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl, który mięsień przyciska łopatkę do ściany klatki piersiowej i jaki nerw go unerwia."
+		},
+		{
+			"tresc" : "Który z wymienionych mięśni NIE należy do stożka rotatorów (mankietu mięśniowo-ścięgnistego)?",
+			"odp" : [
+				{"war1" : "Mięsień nadgrzbieniowy (supraspinatus)", "war2" : "Jego ścięgno przebiega ponad stawem ramiennym i jest jedynym z czterech kluczowych mięśni tworzących mankiet rotatorów"},
+				{"war1" : "Mięsień obły większy (teres major)", "war2" : "Mimo bliskości z mięśniem obłym mniejszym, informacje wyraźnie wskazują, że ten mięsień nie jest częścią stożka rotatorów."},
+				{"war1" : "Mięsień obły mniejszy (teres minor", "war2" : "Jego ścięgno wzmacnia torebkę stawu ramiennego od tyłu i jest integralną częścią mankietu rotatorów"},
+				{"war1" : "Mięsień podłopatkowy (subscapularis)", "war2" : "Wypełnia dół podłopatkowy, a jego ścięgno kończy się na guzku mniejszym, stabilizując staw od przodu jego część stożka rotatorów."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Poszukaj w tekście mięśnia opisanego w tej samej sekcji co stożek rotatorów, ale z wyraźnym zaznaczeniem, że do niego nie należy."
+		},
+		{
+			"tresc" : "Na którym końcu kości promieniowej znajduje się wcięcie łokciowe (ulnar notch)?",
+			"odp" : [
+				{"war1" : "Na końcu dalszym, po stronie przyśrodkowej", "war2" : "Ta lokalizacja jest poprawna, gdyż wcięcie to służy do połączenia stawowego z głową kości łokciowej w stawie promieniowo-łokciowym dalszym."},
+				{"war1" : "Na końcu dalszym, po stronie bocznej, obok wyrostka rylcowatego", "war2" : "Wyrostek rylcowaty znajduje się na końcu dalszym, ale po stronie bocznej, natomiast wcięcie łokciowe jest po stronie przyśrodkowej."},
+				{"war1" : "Na końcu bliższym, obok głowy kości promieniowej", "war2" : "Koniec bliższy kości promieniowej posiada głowe, szyjkę i guzowatość, ale nie wcięcie łokciowe."},
+				{"war1" : "Na trzonie, po stronie bocznej", "war2" : "Na bocznej powierzchni trzonu znajduje się guzowatość nawrotna, a nie wcięcie łokciowe"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Zastanów się, z którą częścią kości łokciowej łączy się kość promieniowa w okolicy nadgarstka."
+		},
+		{
+			"tresc" : "W skład stawu łokciowego wchodzą trzy stawy. Który z nich jest stawem obrotowym?",
+			"odp" : [
+				{"war1" : "Staw ramienno-promieniowy", "war2" : "Opisany jest jako staw kulisty, chociaż jego ruchomość jest ograniczona przez inne elementy stawu łokciowego."},
+				{"war1" : "Staw ramienno-łokciowy", "war2" : "Jest to staw zawiasowy, umożliwiający głównie zginanie i prostowanie."},
+				{"war1" : "Staw promieniowo-łokciowy dalszy", "war2" : "Jesto to również staw obrotowy, ale nie wchodzi w skład wspólnej jamy stawowej stawu łokciowego"},
+				{"war1" : "Staw promieniowo-łokciowy bliższy", "war2" : "Ten staw, utworzony przez obwód stawowy głowy kości promieniowej i wcięcie promieniowe kości łokciowej, umożliwia ruchy rotacyjne przedramienia (nawracanie i odwracanie"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl, który z elementów stawu łokciowego umożliwia nawracanie i odwracanie przedramienia."
+		},
+		{
+			"tresc" : "Gdzie przyczepia się wspólne ścięgno końcowe mięśnia trójgłowego ramienia (triceps brachii)?",
+			"odp" : [
+				{"war1" : "Na guzku podpanewkowym łopatki", "war2" : "Jest to miejsce przyczepu początkowego głowy długiej tego mięśnia, a nie jego przyczepu końcowego."},
+				{"war1" : "Na nadkłykciu bocznym kości ramiennej", "war2" : "Jest to miejsce przyczepu początkowego dla mięśni prostowników przedramienia, a nie dla mięśnia trójgłowego ramienia."},
+				{"war1" : "Na guzowatości kości łokciowej (ulnar tuberosity)", "war2" : "Do tej struktury przyczepia się mięsień ramienny (brachialis)"},
+				{"war1" : "Na wyrostku łokciowym (olecranon)", "war2" : "Wszystkie trzy głowy mięśnia trójgłowego łączą się we wspólne ścięgno, które przyczepia się do tej prominentnej struktury na końcu bliższym kości łokciowej."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Zastanów się, która część kości łokciowej jest najbardziej wysunięta do tyłu w stawie łokciowym."
+		},
+		{
+			"tresc" : "Przez którą strukturę nerw pośrodkowy opuszcza dół łokciowy, wchodząc na przedramię?",
+			"odp" : [
+				{"war1" : "Kanał narotny (między głowami mięśnia obłego)", "war2" : "Nerw pośrodkowy przechodzi między dwiema głowami mięśnia narotnego obłego po opuszczeniu dołu łokciowego."},
+				{"war1" : "Kanał nerwu promieniowego", "war2" : "Ta struktura, znana też jako bruzda nerwu promieniowego, znajduje się na tylnej powierzchni trzonu kości ramiennej i zawiera nerw promieniowy."},
+				{"war1" : "Kanał odwracacza", "war2" : "Przez tę strukture przechodzi gałąź głęboka nerwu promieniowego"},
+				{"war1" : "Tunel łokciowy", "war2" : "Przez tę strukture przechodzi nerw łokciowy, a nie pośrodkowy"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Poszukaj w opisie nerwu pośrodkowego mięśnia, który ma dwie głowy i przez który ten nerw przechodzi."
+		},
+		{
+			"tresc" : "Która tętnica jest głównym naczyniem tworzącym łuk dłoniowy głęboki?",
+			"odp" : [
+				{"war1" : "Gałąź dłoniowa powierzchniowa tętnicy promieniowej", "war2" : "Ta gałąź współtworzy łuk dłoniowy powierzchniowy"},
+				{"war1" : "Zakończenie tętnicy łokciowej", "war2" : "Tętnica łokciowa jest głównym składnikiem łuku dłoniowego powierzchniowego, a nie głębokiego."},
+				{"war1" : "Zakończenie tętnicy promieniowej", "war2" : "Po przejściu przez tabakierkę anatomiczną, tętnica promieniowa wchodzi na dłoń i wraz z gałęzią dłoniową głęboką tętnicy łokciowej tworzy łuk dłoniowy głęboki"},
+				{"war1" : "Tętnica międzykostna przednia", "war2" : "Ta tętnica bierze udział w tworzeniu sieci dłoniowej nadgarstka, ale nie jest głównym składnikiem łuku dłoniowego głębokiego."}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Zastanów się, która tętnica przechodzi przez tabakierkę anatomiczną, zanim dotrze na dłoń."
+		},
+		{
+			"tresc" : "Jaką funkcję, poza prostowaniem w stawach, pełnią mięśnie międzykostne dłoniowe i grzbietowe?",
+			"odp" : [
+				{"war1" : "Obie grupy mięśni przeciwstawiają palce kciukowi", "war2" : "Funkcje przeciwstawiania pełnią dedykowane mięśnie kłebu kciuka i kłebika"},
+				{"war1" : "Międzykostne dłoniowe przechodzą palce do palca III, a grzbietowe je odwodzą", "war2" : "To jest ich kluczowa, dodatkowa funkcja: mięśnie dłoniowe zbliżają palce (addukcja), a grzbietowe je rozstawiają (abdukcja) względem osi ręki"},
+				{"war1" : "Międzykostne dłoniowe odwodzą palce od palca III, a grzbietowe je przywodzą", "war2" : "Ta odpowiedź odwraca funkcje obu grup mięśniowych"},
+				{"war1" : "Obie grupy mięśni odpowidają wyłącznie za zginanie palców w stawach śródręczno-paliczkowych", "war2" : "Główna funkcja tych mięśni jest prostowanie w stawach międzypaliczkowych, a zginanie jest funkcją mięśni glistowatych i zginaczy."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Pomyśl o ruchach rozstawiania i złączania palców względem palca środkowego."
+		},
+		{
+			"tresc" : "W zawartości dołu łokciowego (fossa cubitalis) nie znajdziemy:",
+			"odp" : [
+				{"war1" : "Tętnicy ramiennej", "war2" : "Tętnica ramienna jest kluczowym elementem dołu łokciowego, gdzie dzieli się na tętnice promieniową i łokciową"},
+				{"war1" : "Nerwu łokciowego", "war2" : "Nerw łokciowy nie biegnie przez dół łokciowy, lecz przechodzi przez tunel łokciowy z tyłu nadkłykcia przyśrodkowego"},
+				{"war1" : "Nerwu pośrodkowego", "war2" : "Zgodnie z opisem, nerw pośrodkowy znajduje się najbardziej przyśrodkowo w dole łokciowym."},
+				{"war1" : "Ścięgna mięśnia dwugłowego ramienia", "war2" : "Ścięgno tego mięśnia jest jedną z centralnych struktur przechodzących przez dół łokciowy, przyczepiając się do guzowatości kości promieniowej."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się, który z głównych nerwów kończyny górnej ma inną drogę w okolicy stawu łokciowego niż pozostałe."
+		},
+		{
+			"tresc" : "Na jakiej kości i w której jej części znajduje się guzek stożkowaty (conoid tubercle) i kresa czworoboczna (trapezoid line)?",
+			"odp" : [
+				{"war1" : "Na łopatce, przy wyrostku barkowym", "war2" : "Na wyrostku barkowym znajduje się powierzchnia stawowa obojczyka, ale nie wspomniane struktury"},
+				{"war1" : "Na kości ramiennej, na końcu bliższym", "war2" : "Na końcu bliższym kości ramiennej znajdują się guzek większy i mniejszy"},
+				{"war1" : "Na obojczyku, na końcu mostkowym", "war2" : "Na końcu mostkowym obojczyka znajduje się guzowatość żebrowa"},
+				{"war1" : "Na obojczyku, na końcu barkowym", "war2" : "Te dwie struktury służące za przyczep więzadeł są charakterystyczne dla dolnej powierzchni końca barkowego obojczyka"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Struktury te są miejscem przyczepu więzadeł łączących obojczyk z wyrostkiem kruczym łopatki."
+		},
+		{
+			"tresc" : "Gałąź głęboka nerwu promieniowego po przejściu przez kanał mięśnia odwracacza zmienia nazwę na:",
+			"odp" : [
+				{"war1" : "Nerw międzykostny przedni przedramienia", "war2" : "Jest to gałąź nerwu pośrodkowego, a nie promieniowego"},
+				{"war1" : "Gałąź powierzchniowa nerwu promieniowego", "war2" : "Jest to druga czuciowa gałąź końcowa nerwu promieniowego, która biegnie bardziej powierzchownie."},
+				{"war1" : "Nerw międzykostny tylny przedramienia", "war2" : "Po przejściu przez mięsień odwracacz, gałąź głęgoka nerwu promieniowego kontynuuje swój przebieg między prostownikami jako ten właśnie nerw"},
+				{"war1" : "Nerw skórny tylny przedramienia", "war2" : "Jest to gałąź czuciowa odchodząca od pnia nerwu promieniowego jeszcze na ramieniu."}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl o logicznej kontynuacji drogi nerwu, który unerwia mięśnie prostowniki tylnej grupy przedramienia."
+		},
+		{
+			"tresc" : "Do którego szeregu kości nadgarstka należy kość haczykowata (hamate)?",
+			"odp" : [
+				{"war1" : "Do szeregu bliższego, po stronie promieniowej", "war2" : "W szeregu bliższym po stronie promieniowej znajduje się kość łódeczkowata"},
+				{"war1" : "Do szeregu dalszego, po stronie łokciowej", "war2" : "Kość haczykowata, charakteryzująca się obecnością haczyka, jest najbardziej łokciowo położoną kością szeregu dalszego nadgarstka"},
+				{"war1" : "Do szeregu bliższego, po stronie łokciowej", "war2" : "W szeregu bliższym po stronie łokciowej znajdują się kości trójgraniasta i grochowata"},
+				{"war1" : "Do szeregu dalszego, po stronie promieniowej", "war2" : "W szeregu dalszym po stronie promieniowej znajduje się kość czworoboczna większa i mniejsza"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Przypomnij sobie układ kości nadgarstka, zaczynając od strony kciuka w obu rzędach."
+		},
+		{
+			"tresc" : "Mięsień zginacz powierzchowny palców jest określany jako \"zginacz przeszyty\", ponieważ jego ścięgna:",
+			"odp" : [
+				{"war1" : "przeszywają troczek zginaczy w nadgarstku", "war2" : "Wiele ścięgien przechodzi pod troczkiem zginaczy, ale termin \"przeszyty\" odnosi się do ich wzajemnej relacji na palcach"},
+				{"war1" : "są przeszywane przez ścięgna mięśnia zginacza głębokiego palców w drodze do paliczków środkowych", "war2" : "Ścięgna zginacza powierzchniowego rozdzielają się tworząc szczelinę, przez którą przechodzą ścięgna zginacza głębokiego, a same kończą się na paliczkach środkowych."},
+				{"war1" : "są przeszywane przez mięśnie glistowate", "war2" : "Mięśnie glistowate mają swój początek na ścięgnach mięśnia zginacza głębokiego, a nie przeszywają ścięgien zginacza powierzchownego"},
+				{"war1" : "przeszywająca ścięgna mięśnia zginacza głębokiego palców, aby dotrzeć do paliczków dalszych", "war2" : "Ta odpowiedź odwraca relację między ścięgnami; to ścięgna zginacza głębokiego przechodzą dalej"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się nad wzajemnym ułożeniem ścięgien dwóch głównych zginaczy palców na wysokości paliczków."
+		},
+		{
+			"tresc" : "Które węzły chłonne pachowe stanowią drugą stację filtracyjną dla chłonki z kończyny górnej i gruczołu sutkowego?",
+			"odp" : [
+				{"war1" : "Pachowe szczytowe", "war2" : "Są to węzły trzeciej najważniejszej stacji filtracyjnej, zbierające chłonkę z niższych grup"},
+				{"war1" : "Pachowe przednie", "war2" : "Te węzły należą do pierwszej stacji i drenują głównie przednią ścianę klatki piersiowej i gruczoł sutkowy."},
+				{"war1" : "Pachowe boczne", "war2" : "Te węzły leżące wzdłuż żyły pachowej należą do pierwszej stacji i zbierają chłonkę głównie z części wolnej kończyny górnej"},
+				{"war1" : "Pachowe środkowe", "war2" : "Skupione w centralnej części jamy pachowej zbierają chłonkę z węzłów pierwszej stacji (bocznych, przednich, tylnych) i stanowią drugą stację filtracyjną."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o hierarchii przepływu chłonki w jamie pachowej, od grup obwodowych do centralnych, a następnie szczytowych."
+		}
+
+
+	]
+}
