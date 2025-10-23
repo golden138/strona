@@ -3,10 +3,10 @@
 		{
 			"tresc" : "Jaka jest strategiczna rola rezonatora optycznego w laserze?",
 			"odp" : [
-				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
-				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "Generowanie początkowych fotonów w losowych kierunkach, które inicjują akcję laserową", "war2" : "Inicjujące fotony pochodzą z emisji spontanicznej w medium wzmacniającym, a rola rezonatora polega na selekcji i wzmacnianiu tych, które propagują się wzdłuż jego osi"},
+				{"war1" : "Wzmacnianie światła poprzez proces wymuszonej emisji fotonów", "war2" : "Za wzmocnienie światła bezpośrednio odpowiada medium wzmacniające (ośrodek czynny)"},
 				{"war1" : "Zapewnienie dodatniego sprzężenia zwrotnego poprzez \"uwięzienie\" fotonów i zmuszenie ich do wielokrotnych przejść przez medium wzmacniające ", "war2" : "Rezonator, najczęściej w postaci dwóch zwierciadeł, tworzy pętle sprzężenia zwrotnego, co jest kluczowe dla lawinowego narastania liczby fotonów."},
-				{"war1" : "Dostarczanie energii do medium wzmacniającego w celu osiągnięcia inwersji obsadzeń", "war2" : "To zadanie jest realizowane przez pompe, a nie przez rezonator"}
+				{"war1" : "Dostarczanie energii do medium wzmacniającego w celu osiągnięcia inwersji obsadzeń", "war2" : "To zadanie jest realizowane przez pompę, a nie przez rezonator"}
 			],
 			"wynik" : 3,
 			"podpowiedz" : "Pomyśl o tym, jak fotony muszą być wielokrotnie zawracane, aby wzmocnienie mogło skutecznie narastać."
@@ -15,9 +15,9 @@
 			"tresc" : "W jaki sposób najczęściej tworzy się zwierciadła rezonatora Fabry-Perota w laserach półprzewodnikowych opartych na arsenku galu (GaAs)?",
 			"odp" : [
 				{"war1" : "Poprzez łupanie kryształu wzdłuż jego naturalnych płaszczyzn krystalograficznych", "war2" : "Płaszczyzny krystalograficzne, takie jak {110} w GaAs, po przełamaniu tworzą gładkie, równoległe powierzchnie o wysokiej jakości optycznej, które działają jak zwierciadła"},
-				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "Poprzez napylanie cienkich wielowarstwowych powłok dielektrycznych na czołach kryształu", "war2" : "Chociaż jest to technika stosowana w kiektórych typach laserów, w prostych laserach Fabry-Perota z GaAs wykorzystuje się naturalne właściwości materiału."},
 				{"war1" : "Poprzez wytwarzanie w materiale siatek Bragga, które selektywnie odbijają światło", "war2" : "To opisuje budowę laserów z rozłożonym sprzężeniem zwrotnym (DFB), a nie klasycznego rezonatora Fabry-Perota"},
-				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"}
+				{"war1" : "Poprzez polerowanie czołowych powierzchni kryształu do uzyskania lustrzanej gładkości", "war2" : "Łupanie kryształu jest znacznie prostrzą i bardziej efektywną metodą uzyskania wymaganej jakości optycznej dla tego typu rezonatora"}
 			],
 			"wynik" : 1,
 			"podpowiedz" : "Tekst źródłowy wspomina o \"naturalnym\" sposobie formowania zwierciadeł, który wykorzystuje wewnętrzną strukturę samego materiału."
@@ -26,8 +26,8 @@
 			"tresc" : "Jaka jest fundamentalna konsekwencja warunku fazowego ( \\( 2 k L = 2 m \\pi \\) )dla działania lasera?",
 			"odp" : [
 				{"war1" : "Moc wyjściowa lasera rośnie liniowo wraz z prądem pompy", "war2" : "Charakterystyka mocy wyjściowej jest konsekwencją dynamiki opisanej przez równaia bilansu, a nie bezpośrednio warunku fazowego"},
-				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
-				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "Prąd zasilający laser musi przekroczyć określoną wartość progową", "war2" : "Próg laserowania jest związany z warunkiem amplitudowym - potrzebą osiągnięcia wystarczającego wzmocnienia do pokonania strat"},
+				{"war1" : "Wzmocnienie materiałowe musi dokładie równoważyć sumę wszystkich strat optycznych", "war2" : "Ta zasada wynika z warunku amplitudowego, który dotyczy bilansu energii fali w rezonatorze"},
 				{"war1" : "Rezonator pozwala na wzmacnianie tylko dyskretnego zestawu długości fal, zwanych modami podłużnymi", "war2" : "Warunek fazowy wymaga, aby fala po pełnym obiegu interferowała ze sobą konstruktywnie, co jest możliwe tylko dla określonych, dyskretnych częstotliwości (modów)"}
 			],
 			"wynik" : 4,
