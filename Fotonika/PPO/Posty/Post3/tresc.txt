@@ -1,0 +1,288 @@
+Rezonatory optyczne i Równania Bilansu w Laserach Półprzewodnikowych
+
+1.  Wprowadzenie do Fundamentów Działania Lasera
+
+Omówimy sobie podstawy laserów półprzewodnikowych bez których nie mogłyby działać i przejdziemy przez następujące zagadnienia: rezonator optyczny oraz równania bilansu. Zrozumienie tych koncepcji jest absolutnie kluczowe do pojęcia fizycznych podstaw generacji światła spójnego oraz analizy dynamiki pracy tych zaawansowanych urządzeń. Każdy laser, niezależnie od swojej budowy i zastosowania, opiera się na współdziałaniu trzech fundamentalnych komponentów.
+
+Są to:
+
+* Medium wzmocnienia: Ośrodek materialny, w którym dochodzi do wzmocnienia światła na skutek wymuszonej emisji fotonów.
+* Pompa: Zewnętrzne źródło energii, które dostarcza energię do medium wzmacniającego, prowadząc do tzw. inwersji obsadzeń.
+* Rezonator: Układ optyczny, najczęściej w postaci dwóch zwierciadeł, który zapewnia dodatnie sprzężenie zwrotne, umożliwiając wielokrotne przejście światła przez medium wzmacniające.
+
+Poświęcę szczególną uwagę rezonatorowi optycznemu, który odgrywa decydującą rolę w selekcji modów i zapewnieniu sprzężenia zwrotnego, oraz na dynamicznym opisie populacji nośników i fotonów za pomocą równań bilansu.
+
+2.  Rezonator Optyczny Fabry-Perota
+
+Strategiczna rola rezonatora w laserze polega na "uwięzieniu" fotonów, zmuszając je do wielokrotnych przejść przez medium wzmacniające. Ten mechanizm sprzężenia zwrotnego jest niezbędny do uzyskania lawinowego narastania liczby fotonów, czyli do osiągnięcia akcji laserowej. Najprostszą i historycznie jedną z pierwszych form rezonatora jest rezonator Fabry-Perota, nazwany na cześć jego twórców, Charlesa Fabry'ego i Alfreda Perota.
+
+$fabry_Perot.png?600$
+Jego budowa jest niezwykle prosta: składa się z dwóch równoległych zwierciadeł o współczynnikach odbicia R1 i R2, oddzielonych od siebie o odległość L. 
+$GaAs_lupek.png?400$
+W przypadku laserów półprzewodnikowych, takich jak te oparte na arsenku galu (GaAs), zwierciadła te często nie są elementami dodanymi, lecz tworzy się je w sposób naturalny poprzez łupanie kryształu wzdłuż jego płaszczyzn krystalograficznych (np. płaszczyzn {110}), które charakteryzują się wysoką jakością optyczną.
+
+Ta prosta struktura narzuca fundamentalne warunki amplitudowe i fazowe, które fala świetlna musi spełnić, aby mogła ulec wzmocnieniu i dać początek akcji laserowej, co zostanie omówione w kolejnej sekcji.
+
+3. Warunki Wzbudzenia Akcji Laserowej
+
+Akcja laserowa nie jest procesem automatycznym; aby mogła zaistnieć, musi zostać osiągnięty precyzyjny stan równowagi. W stanie tym wzmocnienie optyczne generowane w medium czynnym musi dokładnie kompensować sumę wszystkich strat optycznych w rezonatorze. Warunkiem koniecznym do zaistnienia stabilnej fali w rezonatorze jest to, aby po pełnym obiegu (2L) jej amplituda i faza powróciły do wartości początkowych.
+
+W ogólnej postaci falę elektromagnetyczną możemy zapisać jako:
+\[ E = E_0 exp \left( ikz - i\omega t \right) \]
+* Natomiast tutaj nie interesuje mnie czas:
+\[ E = E_0 exp \left( ikz \right) \]
+
+Fala taka propaguje się w ośrodku pomiędzy dwoma lustrami. Może ulec wzmocnieniu lub osłabieniu. Ośrodek, w którym występuje wzmocnienie lub absorpcja, posiada współczynnik załamania zespolony.
+\[ n = n' + i n'' \]
+  * n' -> część rzeczywista (określa fazę, prędkość fali)
+  * n'' -> część urojona (określa tłumienie lub wzmocnienie)
+W naszym równianiu opisującym fale występuje wektor falowy k, który zależy od naszego współczynnika załamania
+\[ k = \frac{2 \pi n}{\lambda} = k' + i k'' \]
+\[ E = E_0 exp \left( i k' z - k'' z \right) = E_0 exp \left( i k' z \right) exp \left( -k'' z \right) \]
+Interpretacje tego współczynnika k'' jest następująca:
+* k'' > 0 fala zanika
+* k'' < 0 fala rośnie
+
+Natomiast na poprzednim artykule rozwarzane było tłumienie i wzmocnienie
+  * g - stała wzmocnienia
+  * a<sub>i</sub> - stała strat
+* Amplituda zmienia nam się na jednostkę długości z w rezonatorze:
+\[ \frac{d E}{dz} = \left( g - a_i \right) E \Rightarrow  E = E_0 exp \left[ z \left( g - a_i \right) \right] \]
+
+Składam wszystko razem i otrzymuje równanie:
+\[ E = E_0 exp \left( i k' z \right) exp \left[ z \left( g - a_i \right) \right] \]
+
+Aby uzyskać teraz pełen obieg fali która odbije się od zwierciadła R<sub>2</sub> przepropaguje się przez ośrodek i to samo zrobi od zwierciadła R<sub>1</sub> i wróci w to samo miejsce bez zmiany amplitudy czy fazy. Możemy przyrównać pełen obieg fali do 1.
+\[ exp \left( i k' L \right) exp \left[ L \left( g - a_i \right) \right] \cdot R_2 \cdot exp \left( i k' L \right) exp \left[ L \left( g - a_i \right) \right] \cdot R_1 = 1 \]
+
+Ten fundamentalny warunek można zapisać w postaci pojedynczego równania zespolonego:
+\[ R_2 \cdot R_1 \cdot exp \left( 2 i k' L \right) exp \left[ 2 L \left( g - a_i \right) \right] = 1 \]
+
+
+Aby powyższa równość była spełniona, zarówno moduł (amplituda), jak i faza zespolona wyrażenia po lewej stronie muszą być równe 1. Z tego jednego równania wynikają bezpośrednio dwa kluczowe warunki: warunek amplitudowy i warunek fazowy.
+
+3.1 Warunek Amplitudowy
+
+Warunek ten uzyskujemy, przyrównując moduł wyrażenia do jedności. Odpowiada on bilansowi energii fali w rezonatorze.
+\[ R_1 \cdot R_2 \cdot exp \left[ 2 \left( g - a_i \right) L \right] = 1 \]
+Gdzie poszczególne człony oznaczają:
+* R<sub>1</sub>*R<sub>2</sub> to straty wynikające z częściowego odbicia od zwierciadeł.
+* exp[2(g - a<sub>i</sub>)L] to wypadkowe wzmocnienie po pełnym obiegu, uwzględniające wzmocnienie materiałowe g oraz straty wewnętrzne a<sub>i</sub> (np. absorpcję).
+
+Fizycznie oznacza to, że aby amplituda fali była stała, wzmocnienie w jednym cyklu musi być równe całkowitym stratom. Przekształcając powyższe równanie, otrzymujemy wzór na wzmocnienie progowe, czyli minimalną wartość wzmocnienia, przy której rozpoczyna się akcja laserowa:
+\[ g = a_i + \frac{1}{2L} \cdot ln \left( \frac{1}{R_1 \cdot R_2} \right) \]
+
+Jak widać, wzmocnienie progowe jest sumą dwóch składników: strat wewnętrznych oraz strat na zwierciadłach. Drugi człon po prawej stronie definiuje się jako współczynnik strat na zwierciadłach, αm.
+
+3.2 Warunek Fazowy
+
+Warunek ten uzyskujemy, przyrównując czynnik fazowy do jedności (exp(2ikL) = 1), co jest równoważne z wymaganiem, aby argument fazowy był całkowitą wielokrotnością \( 2 \pi \).
+\[ 2 k L = 2 m \pi \text{ , gdzie m jest liczbą całkowitą (m = 1, 2, 3, ...)} \]
+
+Fizycznie oznacza to, że aby fala po pełnym obiegu interferowała sama ze sobą w sposób konstruktywny, jej faza musi być zgodna z fazą początkową. W rezonatorze o długości L musi zmieścić się całkowita liczba połówek długości fali.
+\[ L = m \cdot \frac{\lambda}{2 n} \text{ , gdzie n to współczynnik załamania światła w ośrodku} \]
+Konsekwencją tego warunku jest fundamentalna właściwość lasera: rezonator "pozwala" na istnienie tylko dyskretnego zestawu długości fal, zwanych modami podłużnymi, które mogą być efektywnie wzmacniane.
+
+Zrozumienie natury strat optycznych jest kluczowe, ponieważ to one bezpośrednio definiują próg zadziałania lasera, co zostanie szczegółowo omówione w następnej części.
+
+4. Analiza Strat Optycznych i Wzmocnienia Progowego
+
+Minimalne wzmocnienie potrzebne do zainicjowania akcji laserowej, czyli wzmocnienie progowe ( g<sub>th</sub> ), jest wprost zdeterminowane przez sumę wszystkich strat w rezonatorze. Wprowadzając współczynnik ograniczenia optycznego Γ, który opisuje, jaka część mocy modu optycznego propaguje wewnątrz medium wzmacniającego, możemy zapisać warunek progowy w postaci:
+\[ \Gamma g_{th} = a_i + a_m \]
+
+Straty Wewnętrzne ( a<sub>i</sub> )
+
+Straty wewnętrzne obejmują wszelkie procesy powodujące absorpcję lub rozpraszanie fotonów wewnątrz ośrodka czynnego i struktur falowodowych lasera. Głównym mechanizmem tych strat w laserach półprzewodnikowych jest absorpcja na swobodnych nośnikach. W procesie tym foton oddaje swoją energię swobodnemu elektronowi lub dziurze, nie generując przy tym nowej pary elektron-dziura. Straty te rosną wraz z koncentracją nośników. Na przykład, dane dla InAs typu n pokazują, że wzrost koncentracji nośników z ~0.3x10<sup>17</sup> cm<sup>-3</sup> do ~4x10<sup>18</sup> cm<sup>-3</sup> może zwiększyć straty absorpcyjne o ponad rząd wielkości.
+
+$straty.png?350$
+Straty te można oszacować za pomocą empirycznego wzoru: a<sub>fc</sub>(λ≈1000nm)[cm<sup>-1</sup>] = 3 * n * 10<sup>-18</sup> cm<sup>2</sup> + 7 * p * 10<sup>-18</sup> cm<sup>2</sup> gdzie n i p to odpowiednio koncentracje elektronów i dziur. Ponadto, straty te silnie zależą od długości fali, co opisuje zależność a<sub>i</sub> ∝ λ<sup>p</sup>, gdzie wykładnik p jest bliski 2. Oznacza to, że problem absorpcji na swobodnych nośnikach jest znacznie bardziej dotkliwy w laserach emitujących światło w zakresie długofalowym.
+
+Straty na Zwierciadłach (a<sub>m</sub>)
+
+Straty na zwierciadłach reprezentują energię optyczną, która opuszcza rezonator przez częściowo przepuszczające zwierciadła. Należy podkreślić, że te "straty" są zjawiskiem pożądanym – stanowią one bowiem użyteczny sygnał wyjściowy lasera, czyli wiązkę laserową. Wielkość tych strat definiuje wzór:
+\[ a_m = \frac{1}{2L} \cdot ln \left( \frac{1}{R_1 \cdot R_2} \right) \]
+
+Z analizy tego równania wynika, że straty na zwierciadłach maleją wraz ze wzrostem współczynników odbicia R<sub>1</sub> i R<sub>2</sub> oraz ze wzrostem długości rezonatora L.
+
+Po zrozumieniu statycznych warunków progowych, kolejnym krokiem jest analiza dynamicznej równowagi między populacją nośników a populacją fotonów, która jest opisana przez równania bilansu.
+
+5.  Równania Bilansu: Dynamika Nośników i Fotonów
+
+Równania bilansu (ang. rate equations) stanowią dynamiczny model matematyczny opisujący ewolucję w czasie populacji nośników ładunku (N) oraz populacji fotonów (Np) wewnątrz obszaru czynnego lasera. Kluczowe jest zrozumienie, że te dwa równania tworzą system sprzężony: liczba fotonów (Np) zależy od wzmocnienia optycznego (g), które z kolei jest funkcją koncentracji nośników (g = g(N)). Jednocześnie koncentracja nośników (N) jest uszczuplana przez proces rekombinacji stymulowanej, którego szybkość jest proporcjonalna do liczby fotonów (Np). To dynamiczne sprzężenie zwrotne rządzi wszystkimi stanami pracy urządzenia – od działania poniżej progu, przez próg laserowania, aż po pracę w stanie nasycenia.
+
+Równanie Bilansu Nośników (Elektronów)
+
+Równanie to opisuje szybkość zmiany koncentracji nośników jako różnicę między szybkością ich generacji (G) a szybkością ich rekombinacji (R):
+\[ \frac{d N}{dt} = G - R \]
+
+* Analiza Generacji (G): Nośniki generowane są w wyniku przepływu prądu pompy (I). Szybkość generacji opisuje wzór:
+\[ G = \eta_i \cdot \frac{I}{q \cdot V} \]
+  * \( \eta_i \) to wewnętrzna wydajność kwantowa (jaka część prądu efektywnie tworzy pary elektron-dziura w obszarze czynnym)}
+  * q to ładunek elementarny, a V to objętość obszaru czynnego.
+
+* Analiza Rekombinacji (R): Nośniki ulegają rekombinacji poprzez cztery główne kanały (spontaniczną, niepromienistą, upływność oraz stymulowaną). 
+\[ R = R_{sp} + R_{nr} + R_L + R_{st} \]
+Procesy inne niż stymulowany często modeluje się za pomocą tzw. modelu ABC:
+\[  R = AN + BN^2 + CN^3 \]
+$model_ABC.png?700$
+
+5.1 BN<sup>2</sup> (Rekombinacja promienista spontaniczna, R<sub>sp</sub>)
+
+Proces, w którym elektron i dziura rekombinują, emitując foton w losowym kierunku. Jest to mechanizm dominujący przy niskich prądach zasilania, poniżej progu laserowania, sprawiając, że urządzenie działa jak dioda LED. Zależy od stałej emisji radiacyjnej B.
+$stala_b.png?700$
+
+5.2 AN (Rekombinacja niepromienista na defektach) i CN<sup>3</sup> (Rekombinacja Auger)
+
+Te dwa procesy składają się na rekombinację niepromienistą ( R<sub>nr</sub> ). 
+
+* Rekombinacja na defektach ( AN ) dominuje przy bardzo niskich koncentracjach nośników.
+$an.png?450$
+
+* Rekombinacja Auger ( CN<sup>3</sup> ) jest to proces, w którym elektron i dziura rekombinują ze sobą (czyli ich energia zostaje uwolniona), ale zamiast wypromieniować foton (jak w rekombinacji promienistej), energia ta przekazywana jest innemu nośnikowi (elektronowi lub dziurze), który zostaje silnie wzbudzony.
+
+Proces ten jest niepromienisty — nie powstaje światło, tylko energia kinetyczna jednego z nośników. Można wyróżnić trzy typy określających pasmową lokalizacje nośników uczestniczących w procesie (CHCC , CHSH , CHLH).
+$rekombinacja_auger.png?600$
+
+##Symbol	Rozwinięcie	Uczestnicy	Opis
+CHCC	Conduction–Heavy hole–Conduction–Conduction	2 elektrony (z pasma przewodnictwa) + 1 dziura ciężka (z pasma walencyjnego)	Najczęstszy typ w półprzewodnikach typu n. Energia rekombinacji elektronu i dziury przekazywana jest drugiemu elektronowi w paśmie przewodnictwa.
+CHSH	Conduction–Heavy hole–Split-off hole–Heavy hole	Elektron (C), dziura ciężka (HH) i dziura z pasma rozszczepionego (SO)	Typowy w materiałach o dużym rozszczepieniu spinowo-orbitalnym (np. GaAs). Energia rekombinacji powoduje przejście dziury z pasma ciężkiego do pasma rozszczepionego.
+CHLH	Conduction–Heavy hole–Light hole–Heavy hole	Elektron (C), dziura ciężka (HH) i dziura lekka (LH)	Energia rekombinacji elektronu i dziury ciężkiej wzbudza dziurę lekką do wyższego stanu energetycznego. Ważny mechanizm w półprzewodnikach typu p.##
+
+Jest to główny mechanizm strat w laserach długofalowych (ze względu na mniejszą przerwę energetyczną) i jego wydajność silnie rośnie z temperaturą (głównie CHCC). 
+\[ C = C_0 \cdot exp \left( - \frac{E_a}{k_B T} \right) \]
+
+Oba te kanały stanowią niepożądaną stratę, zwiększając prąd progowy lasera.
+
+5.3 Rekombinacja promienista a rekombinacja niepromienista
+
+Porównajmy rekombinację promienistą i niepromienistą w kontekście bilansu fotonów w laserze:
+
+* Rekombinacja promienista
+  * Mechanizm: Elektron z pasma przewodnictwa rekombinuje z dziurą w paśmie walencyjnym, emitując foton.
+  * Efekt w bilansie fotonów:
+    * Zwiększa liczbę fotonów w ośrodku aktywnym — każdy akt rekombinacji promienistej to potencjalne źródło nowego fotonu.
+  * Znaczenie dla działania lasera:
+    * Jest pożądana — to właśnie ona dostarcza fotonów, które mogą zainicjować emisję wymuszoną.
+    * Im większa wydajność promienista (tzn. stosunek rekombinacji promienistej do całkowitej), tym mniejszy prąd progowy i większa sprawność lasera.
+
+* Rekombinacja niepromienista
+  * Mechanizm: Energia rekombinacji nie jest emitowana w postaci fotonu, lecz oddawana sieci krystalicznej (np. jako fonony — drgania sieci).
+  * Efekt w bilansie fotonów:
+    * Nie zwiększa liczby fotonów — energia zostaje stracona cieplnie.
+  * Znaczenie dla działania lasera:
+    * Działa jak strata: zmniejsza efektywność konwersji energii elektrycznej na światło.
+    * Zwiększa temperaturę ośrodka, co może dodatkowo pogarszać warunki inwersji obsadzeń.
+
+##Cecha	Rekombinacja promienista	Rekombinacja niepromienista
+Emisja fotonów	Tak	Nie
+Wpływ na bilans fotonów	Zwiększa liczbę fotonów	Zmniejsza efektywną liczbę fotonów
+Wydzielanie ciepła	Małe	Duże
+Znaczenie dla lasera	Pożądana	Niepożądana (strata)##
+
+Ważnym aspektem jeszcze w kontekście jest fotoluminescencja. Czas zaniku fotoluminescencji (ang. photoluminescence decay time lub lifetime) jest bezpośrednio związany z rekombinacją promienistą i niepromienistą, a więc też z bilansowaniem fotonów w laserze. Średni czas życia wzbudzonego elektronu (lub pary elektron–dziura) zanim dojdzie do rekombinacji — czyli zanim elektron wróci do stanu podstawowego (promieniście lub niepromieniście) można przedstawić symbolicznie:
+\[ \tau = \frac{1}{R_{tot}} \text{ gdzie } R_{tot} = R_{rad} + R_{nrad} \]
+Występuje także przybliżenie za pomocą modelu ABC.
+$prom_nieprom.png?650$
+
+Co to oznacza fizycznie?
+* Jeśli dominuje rekombinacja promienista, czyli 
+\[ \tau_{rad} \ll  \tau_{nrad} \text{ to można przybliżyć } \tau \approx \tau_{rad} \]
+  * Układ emituje światło wydajnie, czas zaniku jest dłuższy, bo większość nośników kończy promienistą rekombinacją.
+  * W laserze to korzystne – więcej fotonów dodawanych do rezonatora.
+* Jeśli dominuje rekombinacja niepromienista, czyli 
+\[ \tau_{rad} \gg \tau_{nrad} \text{ to można przybliżyć } \tau \approx \tau_{nrad} \]
+  * Nośniki zanikają szybko, ale bez emisji fotonów.
+  * W laserze to zła wiadomość – skraca czas życia stanów wzbudzonych i utrudnia utrzymanie inwersji obsadzeń.
+
+Podsumowując straty nośników to liczba nośników przez czas ich życia:
+\[ \text{straty} = \frac{N}{\tau} \]
+
+5.4 Rekombinacja Stymulowana (R<sub>st</sub>)
+
+N<sub>p</sub> to gęstość fotonów w rezonatorze. Zmienia się w czasie w wyniku emisji wymuszonej i spontanicznej i stat. W ośrodku aktywnym (np. wzdłuż osi rezonatora)  liczba fotonów rośnie z położeniem z:
+\[ N_p = N_{p(0)} exp \left( g z \right) \]
+$stymulowana.png?400$
+* N<sub>p(0)</sub> - liczba fotonów na początku ośrodka
+* g - to wzmocnienie
+* z - to pozycja w ośrodku
+* v<sub>g</sub> - to prędkość grupowa czyli z jaką prędkością światło porusza się w ośrodku
+Znając to wszystko możemy wyprowadzić jak zmienia się liczba fotonów w czasie, czyli Rekombinacje spontaniczną:
+\[ R_{st} = \frac{d N_p}{dt} = \frac{d }{dt} \left[ N_{p(0)} exp \left( g z \right) \right] = \frac{d }{dt} \left[ N_{p(0)} exp \left( g v_g t \right) \right] = N_p g v_g \]
+To równanie mówi, że tempo przyrostu liczby fotonów jest proporcjonalne do liczby fotonów już obecnych.
+* To dokładnie jest mechanizm emisji wymuszonej (rekombinacji stymulowanej):
+  * Im więcej fotonów w ośrodku, tym więcej aktów rekombinacji stymulowanej.
+  * Każdy foton może „zmusić” wzbudzony atom/półprzewodnik do emisji kolejnego fotonu w tej samej fazie, kierunku i energii.
+  * To prowadzi do wykładniczego wzrostu liczby fotonów, czyli do wzmocnienia (gain).
+
+5.5 Równanie bilansu I
+
+Omówię teraz absolutną podstawę opisu działania lasera, czyli równanie bilansu dla nośników. N to gęstość nośników wzbudzonych (np. elektronów w paśmie przewodnictwa), czyli liczba elektronów na jednostkę objętości, które mogą uczestniczyć w emisji fotonów.
+Zmiana N w czasie (dN/dt) wynika z równowagi między dostarczaniem a utratą nośników. Zbierając wszystko razem mamy:
+\[ \frac{d N}{dt} = \eta_i \frac{I}{gV} - \frac{N}{\tau} - N_p g v_g \]
+
+ Należy pamiętać, że efektywny czas życia nośnika τ nie jest stały, lecz zależy od koncentracji N (1/τ = A + BN + CN²).
+
+W procesie tym istniejący foton (N<sub>p</sub>) stymuluje rekombinację pary elektron-dziura, w wyniku czego powstaje drugi, identyczny foton. Współczynnik Γ jest tu niezbędny, gdyż proces ten może zachodzić tylko w tej części obszaru czynnego, w której istnieje mod optyczny.
+
+6. Równanie Bilansu Fotonów
+
+Analogicznie, szybkość zmiany populacji fotonów w modzie laserowym jest różnicą między szybkością ich generacji (Gp) a szybkością ich strat:
+\[ \frac{d N_p}{dt} = G_p - straty \]
+$generacja.png?600$
+
+* Analiza Generacji Fotonów (G<sub>p</sub>): Fotony w modzie laserowym są generowane głównie przez rekombinację stymulowaną, z niewielkim wkładem od rekombinacji spontanicznej, która stanowi "ziarno" dla akcji laserowej.
+\[ G_p = R_{sp} + R_{st} \]
+
+6.1 Emisja spontaniczna (R<sub>sp</sub>) Bilans Fotonów
+
+$spontaniczna.png?600$
+Emisje spontaniczną można wyrazić wzorem:
+\[ \frac{d N_p}{dt} = \Gamma \beta R_{sp} \]
+Występują tu dwa kluczowe współczynniki:
+  * Γ (współczynnik ograniczenia optycznego) całka pokrycia: Określa, jaka część mocy modu optycznego znajduje się w medium wzmacniającym, gdzie może oddziaływać z nośnikami.
+\[ \Gamma = \frac{V}{V_p} \]
+$calka_pokrycia.png?600$
+Inaczej mówiąc w laserze półprzewodnikowym (np. diodowym) mod optyczny — czyli rozkład pola elektromagnetycznego — rozciąga się nie tylko w obszarze aktywnym (gdzie zachodzi emisja wymuszona), ale także częściowo w warstwach sąsiednich, które światła nie wzmacniają. Mówi, jaka część całkowitej energii pola optycznego faktycznie znajduje się w obszarze aktywnym i może wzmacniać się dzięki rekombinacji stymulowanej.
+\[ \Gamma = \frac{\int_{\text{obszar aktywny}}^{} \left| E(z) \right|^2 dz }{\int_{\text{cały przekrój}}^{} \left| E(z) \right|^2 dz  } \]
+
+  * β (współczynnik sprzężenia emisji spontanicznej): Opisuje, jaka część (β) wszystkich fotonów generowanych spontanicznie (Rsp) jest emitowana do pojedynczego modu lasującego, efektywnie inicjując proces wzmocnienia. Czynnik Γ skaluje ten wkład, ponieważ tylko emisja spontaniczna w objętości modu może przyczynić się do jego wzmocnienia.
+
+6.2 Prędkość rekombinacji stymulowanej (R<sub>st</sub>)
+
+$stymulowana_medium.png?600$
+Podobnie jak wcześniej, ale z drobną poprawką jaką jest całka pokrycia.
+\[  R_{st} = \frac{d N_p}{dt} = \Gamma N_p g v_g \]
+
+6.3 Straty fotonów
+
+Przypomnijmy sobie straty wynikające z tego ile energii ubywa z rezonatora, które zostały opisane na początku notatek:
+\[ \frac{1}{\tau_m} = a_m v_g \]
+
+Jeszcze istnieją straty wynikające z absorpcji lub rozpraszania fotonów wewnątrz ośrodka aktywnego:
+\[ \frac{1}{\tau_i} = a_i v_g \]
+
+* Analiza Strat Fotonów: Straty fotonów wynikają z ich "ucieczki" z rezonatora (przez zwierciadła) oraz absorpcji wewnętrznej. Opisuje się je przez skończony czas życia fotonu w rezonatorze (τp), a szybkość strat wynosi Np/τp. Czas życia fotonu jest bezpośrednio powiązany ze stratami wewnętrznymi i zwierciadlanymi:
+\[ \frac{N}{\tau_p} = N \cdot v_g \cdot \left( a_i + a_m \right) \]
+
+6.4 Kompletne równanie bilansu fotonów
+
+Zbierając całą generacje i straty fotonów, ich bilans możemy przedstawić w postaci równania
+\[ \frac{d N_p}{dt} = \Gamma N_p g v_g + \Gamma \beta R_{sp} - \frac{N_p}{\tau_p} \]
+
+Kluczowym elementem łączącym oba równania bilansu jest wzmocnienie materiałowe g, które samo jest funkcją koncentracji nośników N (g=g(N)). To sprzężenie tworzy kompletny, samouzgodniony model opisujący dynamiczne zachowanie lasera półprzewodnikowego.
+
+7.  Podsumowanie i Rekomendowana Literatura
+
+Niniejsze opracowanie przedstawiło fundamentalne zasady rządzące działaniem laserów półprzewodnikowych. Omówiono, w jaki sposób warunki progowe – amplitudowy i fazowy – wynikające ze struktury rezonatora Fabry-Perota, określają statyczny punkt rozpoczęcia akcji laserowej. Wykazano, że próg ten jest determinowany przez równowagę między wzmocnieniem materiałowym a sumą strat wewnętrznych i zwierciadlanych. Następnie, wprowadzono równania bilansu, które stanowią dynamiczny model opisujący sprzężoną ewolucję populacji nośników i fotonów. Razem, te koncepcje tworzą spójny i kompletny obraz fizyki lasera półprzewodnikowego, od momentu włączenia prądu pompy, aż po stabilną emisję światła spójnego.
+
+Polecana literatura
+
+W celu dalszego pogłębienia wiedzy, zalecane są następujące pozycje:
+
+* Michael A. Parker, Physics of optoelectronics, ch. 2 Introduction to Laser Dynamics
+* Peter Blood, Quantum Confined Laser Devices: Optical gain and recombination in semiconductors
+
+9. null
+
+null
+
