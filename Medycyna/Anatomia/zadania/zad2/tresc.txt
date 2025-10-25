@@ -1304,6 +1304,244 @@
 		"wynik": 4,
 		"podpowiedz": "Zwróć uwagę, które naczynia biegną wokół łopatki – nie każde z wymienionych uczestniczy w tym kole."
 	},
+{
+    "tresc": "Które stwierdzenie dotyczące naczyń jest POPRAWNE:",
+    "odp": [
+      {
+        "war1": "w sieci stawowej łokcia tętnica poboczna środkowa zespala się z tętnicą międzykostną wsteczną",
+        "war2": "Pasuje – tętnica poboczna środkowa tworzy połączenie z tętnicą międzykostną wsteczną."
+      },
+      {
+        "war1": "w sieci grzbietowej nadgarstka najsilniejszym składnikiem jest gałąź przednia tętnicy międzykostnej tylnej",
+        "war2": "Nie pasuje – główne znaczenie mają tętnice grzbietowe śródręcza i promieniowe, nie przednia gałąź międzykostnej tylnej."
+      },
+      {
+        "war1": "łuk dłoniowy głęboki wysyła trzy tętnice dłoniowe wspólne palców",
+        "war2": "Nie pasuje – tętnice dłoniowe wspólne wychodzą z łuku dłoniowego powierzchownego, łuk głęboki daje głównie tętnice dłoniowe właściwe."
+      },
+      {
+        "war1": "żyła piersiowo-barkowa uchodzi do żyły odłokciowej",
+        "war2": "Nie pasuje – żyła piersiowo-barkowa uchodzi do żyły odpromieniowej, nie do odłokciowej."
+      },
+      {
+        "war1": "do podwójnych łuków żylnych powierzchownego i głębokiego ręki uchodzą – odpowiednio – żyły dłoniowe śródręcza i żyły dłoniowe palców",
+        "war2": "Pasuje – to prawidłowy układ żylno-powierzchowny i głęboki ręki."
+      }
+    ],
+    "wynik": 1,
+    "podpowiedz": "Zwróć uwagę na sieć naczyniową stawu łokciowego i układ żylny dłoni."
+  },
+  {
+    "tresc": "Łuk dłoniowy głęboki:",
+    "odp": [
+      {
+        "war1": "pochodzi głównie z tętnicy promieniowej",
+        "war2": "Pasuje – głównym dopływem łuku głębokiego jest tętnica promieniowa."
+      },
+      {
+        "war1": "oddaje tętnice wspólne dłoniowe palców",
+        "war2": "Nie pasuje – łuk głęboki daje głównie tętnice dłoniowe właściwe, wspólne pochodzą z łuku powierzchownego."
+      },
+      {
+        "war1": "leży pod ścięgnami zginacza głębokiego palców",
+        "war2": "Pasuje – łuk głęboki leży głęboko pod ścięgnami zginacza."
+      },
+      {
+        "war1": "odpowiedzi A i C są poprawne",
+        "war2": "Pasuje – obie odpowiedzi A i C są prawidłowe."
+      },
+      {
+        "war1": "wszystkie odpowiedzi są poprawne",
+        "war2": "Nie pasuje – odpowiedź B jest nieprawidłowa."
+      }
+    ],
+    "wynik": 4,
+    "podpowiedz": "Skup się na położeniu łuku głębokiego i jego głównych dopływach."
+  },
+  {
+    "tresc": "Najsilniejszym odwracaczem przedramienia jest:",
+    "odp": [
+      {"war1": "mięsień nawrotny obły", "war2": "Nie pasuje – działa słabiej, nie jest głównym odwracaczem."},
+      {"war1": "mięsień dwugłowy ramienia", "war2": "Pasuje – główny odwracacz przedramienia, szczególnie przy zgiętym łokciu."},
+      {"war1": "mięsień odwracacz", "war2": "Nie pasuje – wspomaga odwracanie, ale jest słabszy od dwugłowego."},
+      {"war1": "mięsień ramienno-promieniowy", "war2": "Nie pasuje – głównie zgina łokieć, nie odwraca przedramienia."},
+      {"war1": "mięsień łokciowy", "war2": "Nie pasuje – prostuje łokieć, nie odwraca przedramienia."}
+    ],
+    "wynik": 2,
+    "podpowiedz": "Pamiętaj, które mięśnie odpowiadają za odwracanie przedramienia."
+  },
+  {
+    "tresc": "Które stwierdzenie dotyczące budowy mięśni kłębu i kłębika jest PRAWDZIWE?",
+    "odp": [
+      {"war1": "w grup mięśni kłębu kciuka i kłębika palca małego jest odpowiednio 4 i 3 mięśnie", "war2": "Pasuje – liczba mięśni jest poprawna."},
+      {"war1": "z wyjątkiem m. przeciwstawiacza kciuka, pozostałe mięśnie kłębu kciuka kończą się na paliczku bliższym i przyległych trzeszczkach", "war2": "Pasuje – poprawny przyczep mięśni kłębu kciuka."},
+      {"war1": "z wyjątkiem m. przeciwstawiacza palca małego i m. dłoniowego krótkiego, pozostałe mięśnie kłębika kończą się na paliczku dalszym", "war2": "Nie pasuje – większość mięśni kłębika kończy się na paliczkach bliższych lub kości śródręcza."},
+      {"war1": "m. zginacz krótki kciuka tak jak mięsień przywodziciel kciuka mają po dwie głowy: powierzchowną i głęboką", "war2": "Nie pasuje – przyczepy i głowy mięśni różnią się, nie zawsze mają dwie głowy."},
+      {"war1": "z obu tych grup mięśniowych, jedynie głowa powierzchowna zginacza krótkiego kciuka i przywodziciel kciuka nie rozpoczynają się m.in. na troczku zginaczy", "war2": "Pasuje – poprawne przyczepy."
+      }
+    ],
+    "wynik": 1,
+    "podpowiedz": "Zwróć uwagę na przyczepy mięśni kłębu kciuka i kłębika palca małego."
+  },
+  {
+    "tresc": "Otwór pachowy boczny:",
+    "odp": [
+      {"war1": "zawiera tylko tętnicę", "war2": "Nie pasuje – zawiera również nerw pachowy."},
+      {"war1": "ma kształt czworokątny", "war2": "Pasuje – ograniczony mięśniami i kością, ma kształt czworokątny."},
+      {"war1": "prowadzi nerw zaopatrujący m. naramienny", "war2": "Pasuje – zawiera nerw pachowy."},
+      {"war1": "jest ograniczony przez dwie głowy mięśnia trójgłowego ramienia", "war2": "Nie pasuje – ograniczenia są inne, m.in. mięśnie obły większy, obły mniejszy, głowa długa trójgłowego."},
+      {"war1": "żadne z powyższych", "war2": "Nie pasuje – odpowiedzi B i C są poprawne."}
+    ],
+    "wynik": 2,
+    "podpowiedz": "Zapamiętaj zawartość i ograniczenia otworu pachowego bocznego."
+  },
+{
+    "tresc": "W stawach:",
+    "odp": [
+      {
+        "war1": "Prostych — ich budowa anatomiczna nie jest skomplikowana",
+        "war2": "Pasuje — staw prosty (simple joint) zawiera jedną parę powierzchni stawowych i zwykle prostą torebkę i więzadła; w porównaniu do stawów złożonych/topograficznie złożonych jego budowa jest stosunkowo prosta."
+      },
+      {
+        "war1": "Siodełkowatych i kłykciowych są dwie osie i dwa stopnie swobody",
+        "war2": "Pasuje — zarówno staw siodełkowaty (np. staw nadgarstkowo-śródręczny kciuka) jak i kłykciowy (elipsoidalny/condyloid) umożliwiają ruch w dwóch osiach (zgięcie/prostowanie oraz odwodzenie/przywodzenie) — czyli dwa stopnie swobody."
+      },
+      {
+        "war1": "Obrotowych zwykle występuje bloczek",
+        "war2": "Nie pasuje — stawy obrotowe (obrotowe/pivot) charakteryzuje powierzchnia okrągła/obrotowa (główka osiowa) otoczona więzadłem pierścieniowatym; 'bloczek' (trochlea) jest elementem stawu zawiasowego, nie obrotowego."
+      },
+      {
+        "war1": "Śrubowych – które są odmianą stawu zawiasowego – występuje tylko jedna oś poprzeczna",
+        "war2": "Nie pasuje — staw śrubowy (screw joint) to rzadka klasyfikacja: jest to rodzaj stawu, w którym ruch obrotowy łączy się z przesunięciem śrubowym; traktowany jest zwykle jako forma stawu wielofunkcyjnego/monoaxialnego z dodatkowym ruchem śrubowym, więc stwierdzenie 'tylko jedna oś' jest uproszczone i mylące."
+      },
+      {
+        "war1": "Wieloosiowych charakterystyczne jest obwodzenie, czego brakuje w stawach dwuosiowych",
+        "war2": "Pasuje — stawy wieloosiowe (np. kuliste/staw ramienny) umożliwiają obwodzenie (circumductio), ruchu którego nie osiągniemy w stawach jedynie dwuosiowych."
+      }
+    ],
+    "wynik": 2,
+    "podpowiedz": "Pomyśl, które typy stawów dają ruch w jednej, dwóch lub więcej osiach"
+  },
+  {
+    "tresc": "Któremu przedziałowi troczka zginaczy przyporządkowano właściwą zawartość:",
+    "odp": [
+      {
+        "war1": "I – zginacz łokciowy nadgarstka",
+        "war2": "Nie pasuje — mięsień zginacz łokciowy nadgarstka (flexor carpi ulnaris) biegnie przyśrodkowo i zwykle ma oddzielną pochewkę przy łokciowej stronie nadgarstka (kanał Guyona), a nie w I przedziale troczka zginaczy."
+      },
+      {
+        "war1": "II – zginacz promieniowy nadgarstka",
+        "war2": "Pasuje częściowo — ścięgno zginacza promieniowego nadgarstka (flexor carpi radialis) ma własny przyczep i przebieg w bruździe kości, często uważane za leżące w osobnym przedziale w przyśrodkowej/bocznej części troczka, ale zależnie od ujęcia anatomicznego ma odrębną pochewkę."
+      },
+      {
+        "war1": "III – mięsień dłoniowy długi",
+        "war2": "Nie pasuje — mięsień dłoniowy długi (palmaris longus) biegnie powierzchownie i jego ścięgno przebiega nad troczkiem zginaczy lub kończy się na rozcięgnie dłoniowym; nie jest typową zawartością głębokich przedziałów troczka."
+      },
+      {
+        "war1": "III – zginacz długi kciuka",
+        "war2": "Pasuje — ścięgno zginacza długiego kciuka (flexor pollicis longus) przebiega w kanale nadgarstka i ma własną pochewkę; w niektórych klasyfikacjach odpowiada jednemu z przedziałów troczka (rzeczywista lokalizacja radialna), więc przyporządkowanie do przedziału numerowanego jako III bywa spotykane."
+      },
+      {
+        "war1": "żadne z powyższych",
+        "war2": "Nie pasuje — ponieważ najbardziej pasujące jest przyporządkowanie zginacza długiego kciuka (opcjonalnie II/III zależnie od numeracji) oraz fakt, że FCR ma odrębną drogę."
+      }
+    ],
+    "wynik": 4,
+    "podpowiedz": "Przypomnij sobie: palmaris longus jest powierzchowny (nad troczkiem), FCU ma kanał Guyona, FPL i ścięgna zginaczy palców biegną w kanale nadgarstka."
+  },
+  {
+    "tresc": "Określenie 'zginacz przeszyty' dotyczy:",
+    "odp": [
+      {
+        "war1": "mięśnia zginacza łokciowego nadgarstka",
+        "war2": "Nie pasuje — to mięsień powierzchowny nadgarstka o innym przebiegu; nie jest określany jako 'przeszyty'."
+      },
+      {
+        "war1": "mięśnia zginacza powierzchownego palców",
+        "war2": "Pasuje — 'zginacz przeszyty' to historyczne określenie mięśnia zginacza powierzchownego palców (flexor digitorum superficialis): jego ścięgna 'przeszywają' (rozszczepiają się), pozwalając przejść ścięgnom zginacza głębokiego."
+      },
+      {
+        "war1": "mięśnia zginacza głębokiego palców",
+        "war2": "Nie pasuje — to ścięgna zginacza głębokiego przechodzą przez rozszczepione ścięgna powierzchownego; sam zaś 'zginacz przeszyty' to FDS."
+      },
+      {
+        "war1": "mięśnia dłoniowego długiego",
+        "war2": "Nie pasuje — to samodzielny mięsień powierzchowny, nie określany jako 'przeszyty'."
+      },
+      {
+        "war1": "żadna odpowiedź nie jest poprawna",
+        "war2": "Nie pasuje — poprawna jest opcja z FDS (zginacz powierzchowny palców)."
+      }
+    ],
+    "wynik": 2,
+    "podpowiedz": "Pomyśl o ścięgnach, które tworzą 'rozszczep', przez który przechodzi inny zginacz (stąd 'przeszyty')."
+  },
+  {
+    "tresc": "Które stwierdzenie dotyczące połączeń kończyny górnej jest PRAWDZIWE?",
+    "odp": [
+      {
+        "war1": "Największym więzozrostem rzekomym łopatki jest więzadło kruczo-obojczykowe",
+        "war2": "Nie pasuje — więzadło kruczo-obojczykowe (lig. coracoclaviculare) jest ważnym więzadłem, ale określenie 'największy więzozrost rzekomy' może być mylące; więzozrost rzekomy (szczególna forma przyczepu łopatki) bywa inaczej definiowany."
+      },
+      {
+        "war1": "Więzadło pierścieniowate kości promieniowej współtworzy panewkę stawu promieniowo-łokciowego bliższego",
+        "war2": "Pasuje — więzadło pierścieniowate (annular ligament) otacza główkę kości promieniowej i wraz z wcięciem promieniowym kości łokciowej współtworzy panewkę stawu promieniowo-łokciowego bliższego."
+      },
+      {
+        "war1": "Zachyłek workowaty odchodzi ku górze od stawu promieniowo-łokciowego bliższego",
+        "war2": "Pasuje — w okolicy tego stawu może występować zachyłek (recessus) jamy stawowej, który może kierować się ku górze; jednak szczegóły anatomiczne zależą od układu więzadłowego i błony maziowej."
+      },
+      {
+        "war1": "W stawie śródnadgarstkowym, w szeregu dalszym nadgarstka kość czworoboczna większa i mniejsza tworzą główkę stawową, a kość główkowata i haczykowata – panewkę stawową",
+        "war2": "Nie pasuje — w stawie śródnadgarstkowym (między rzędami kości nadgarstka) to kości szeregu dalszego zwykle tworzą głowy stawowe (trapezium, trapezoid, capitate, hamate) kontaktujące się z kośćmi szeregu bliższego; podana para jest przedstawiona w odwrotnym układzie i jest myląca."
+      },
+      {
+        "war1": "Poprzeczna szczelina płaskich stawów nadgarstkowo-śródręcznych II–V jest podzielona na trzy jamy stawowe (a więc i trzy stawy) poprzez więzadła nadgarstkowo-śródręczne międzykostne",
+        "war2": "Nie pasuje — podział szczeliny na trzy jamy to szczegółowa interpretacja; więzadła międzykostne nadgarstkowo-śródręczne przyczyniają się do podziału przestrzeni, ale sformułowanie jest zbyt kategoryczne i może być uznane za nieprecyzyjne."
+      }
+    ],
+    "wynik": 2,
+    "podpowiedz": "Annular ligament (więzadło pierścieniowate) otacza główkę promieniową — przypomnij sobie jak tworzy 'panewkę' dla obrotu promienia."
+  },
+  {
+  "tresc": "Skóra na przyśrodkowej części ramienia:",
+  "odp": [
+    {
+      "war1": "jest zaopatrzona czuciowo przez nerw pachowy",
+      "war2": "Nie pasuje – nerw pachowy unerwia głównie skórę okolicy bocznej ramienia (okolica naramienna), a nie przyśrodkową część ramienia."
+    },
+    {
+      "war1": "może być zaopatrzona przez gałęzie neuromerów Th1 i Th2",
+      "war2": "Nie pasuje – tylko TH1 obejmują przyśrodkową stronę ramienia, więc ich włókna czuciowe uczestniczą w unerwieniu tej okolicy."
+    },
+    {
+      "war1": "jest unerwiona przez nerw skórny przyśrodkowy ramienia",
+      "war2": "Pasuje – to główny nerw czuciowy zaopatrujący skórę przyśrodkowej powierzchni ramienia; pochodzi ze splotu ramiennego (pęczek przyśrodkowy, włókna C8–Th1)."
+    },
+    {
+      "war1": "A i B",
+      "war2": "Nie pasuje – ponieważ opcja A (nerw pachowy) jest błędna; poprawne są B i C."
+    },
+    {
+      "war1": "B i C",
+      "war2": "Pasuje – unerwienie przyśrodkowej strony ramienia pochodzi z nerwu skórnego przyśrodkowego ramienia oraz z neuromerów Th1–Th2."
+    }
+  ],
+  "wynik": 3,
+  "podpowiedz": "Pomyśl o dermatomach – przyśrodkowa część ramienia to włókna Th1 i nerw skórny przyśrodkowy ramienia ze splotu ramiennego."
+},
+		{
+			"tresc" : "Treść",
+			"odp" : [
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "podpowiedz"
+		},
 		{
 			"tresc" : "Treść",
 			"odp" : [
@@ -1316,7 +1554,6 @@
 			"wynik" : 1,
 			"podpowiedz" : "podpowiedz"
 		}
-
 
 	]
 }
