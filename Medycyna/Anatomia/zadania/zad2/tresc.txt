@@ -48,7 +48,7 @@
         "war2": "Nieprawidłowe – n. pośrodkowy dzieli się na nerwy dłoniowe wspólne I–III; IV pochodzi od nerwu łokciowego."
       }
     ],
-    "wynik": 2,
+    "wynik": 1,
     "podpowiedz": "Pamiętaj, że n. pośrodkowy powstaje z dwóch korzeni (przyśrodkowego i bocznego) i w przedramieniu oddaje gałąź – n. międzykostny przedni."
   },
 
