@@ -2,7 +2,7 @@
 	"posty": [
 		{
 			"kategoria": "Anatomia",
-			"data" : ["Post1"]
+			"data" : ["Post1" , "Post2"]
 		}
 	]
 }

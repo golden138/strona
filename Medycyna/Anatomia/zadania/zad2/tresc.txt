@@ -1,0 +1,843 @@
+{
+	"zad": [
+		{
+    "tresc": "Które ze struktur nie stanowią zawartości dołu łokciowego?",
+    "odp": [
+      {
+        "war1": "N. promieniowy, t. łokciowa",
+        "war2": "Nieprawidłowe – n. promieniowy leży w dole łokciowym, ale t. łokciowa powstaje dopiero jako jego gałąź końcowa poniżej dołu, więc sama nie jest jego zawartością."
+      },
+      {
+        "war1": "N. promieniowy, t. poboczna łokciowa dolna",
+        "war2": "Prawidłowe – t. poboczna łokciowa dolna nie wchodzi do dołu łokciowego, przebiega bardziej ku tyłowi ramienia i kończy się w okolicy nadkłykcia przyśrodkowego."
+      },
+      {
+        "war1": "N. pośrodkowy, n. promieniowy",
+        "war2": "Nieprawidłowe – oba te nerwy rzeczywiście przebiegają w dole łokciowym (n. pośrodkowy pośrodku, n. promieniowy bocznie)."
+      },
+      {
+        "war1": "N. pośrodkowy, n. pośrodkowy, t. promieniowa",
+        "war2": "Nieprawidłowe – w dole łokciowym znajduje się n. pośrodkowy oraz t. promieniowa jako jedna z końcowych gałęzi t. ramiennej."
+      }
+    ],
+    "wynik": 2,
+    "podpowiedz": "Dół łokciowy zawiera m.in. n. pośrodkowy, n. promieniowy, t. ramienną i jej odgałęzienia – t. łokciową i promieniową. Tętnice poboczne kończą się powyżej jego granic."
+  },
+
+  {
+    "tresc": "Wskaż stwierdzenie prawdziwe dotyczące n. pośrodkowego:",
+    "odp": [
+      {
+        "war1": "jego odgałęzieniem jest n. międzykostny przedni",
+        "war2": "Prawidłowe – nerw pośrodkowy w odcinku przedramienia oddaje gałąź n. międzykostny przedni, który unerwia głębokie zginacze."
+      },
+      {
+        "war1": "jego korzenie pochodzą z pęczka przyśrodkowego i tylnego",
+        "war2": "Nieprawidłowe – nerw pośrodkowy pochodzi z pęczków przyśrodkowego i bocznego, nie tylnego."
+      },
+      {
+        "war1": "włókna go tworzące wywodzą się wyłącznie z korzeni C5–C7",
+        "war2": "Nieprawidłowe – n. pośrodkowy zawiera włókna z korzeni C5–T1, więc nie tylko z C5–C7."
+      },
+      {
+        "war1": "jego korzenie otaczają ż. odłokciową",
+        "war2": "Nieprawidłowe – jego korzenie otaczają t. pachową, a nie żyłę odłokciową."
+      },
+      {
+        "war1": "tworzy n. dłoniowy wspólny IV",
+        "war2": "Nieprawidłowe – n. pośrodkowy dzieli się na nerwy dłoniowe wspólne I–III; IV pochodzi od nerwu łokciowego."
+      }
+    ],
+    "wynik": 2,
+    "podpowiedz": "Pamiętaj, że n. pośrodkowy powstaje z dwóch korzeni (przyśrodkowego i bocznego) i w przedramieniu oddaje gałąź – n. międzykostny przedni."
+  },
+
+  {
+    "tresc": "W ilu połączeniach stawowych bierze udział kość promieniowa?",
+    "odp": [
+      {
+        "war1": "2",
+        "war2": "Nieprawidłowe – bierze udział w większej liczbie połączeń niż dwa (nie tylko w stawie łokciowym i promieniowo-łokciowym bliższym)."
+      },
+      {
+        "war1": "4",
+        "war2": "Nieprawidłowe – pominięto jedno z połączeń, m.in. staw promieniowo-nadgarstkowy."
+      },
+      {
+        "war1": "6",
+        "war2": "Nieprawidłowe – to zbyt dużo, rzeczywistych połączeń anatomicznych jest pięć."
+      },
+      {
+        "war1": "5",
+        "war2": "Prawidłowe – kość promieniowa uczestniczy w pięciu stawach: ramienno-promieniowym, promieniowo-łokciowym bliższym i dalszym, promieniowo-nadgarstkowym oraz połączeniu międzykostnym."
+      },
+      {
+        "war1": "3",
+        "war2": "Nieprawidłowe – pominięto część połączeń dalszych i międzykostnych."
+      }
+    ],
+    "wynik": 4,
+    "podpowiedz": "Kość promieniowa współtworzy stawy z ramieniem, łokciem i nadgarstkiem – razem pięć połączeń."
+  },
+
+  {
+    "tresc": "Wydrążenie stawowe łopatki:",
+    "odp": [
+      {
+        "war1": "pokryte jest chrząstką włóknistą",
+        "war2": "Nieprawidłowe – powierzchnie stawowe pokrywa chrząstka szklista, nie włóknista."
+      },
+      {
+        "war1": "od przodu ograniczone jest guzkiem nadpanewkowym, a od tyłu guzkiem podpanewkowym",
+        "war2": "Nieprawidłowe – guzek nadpanewkowy leży powyżej, a guzek podpanewkowy poniżej panewki, nie z przodu i tyłu."
+      },
+      {
+        "war1": "ma kształt trójkątny, którego podstawa skierowana jest ku górze, a wierzchołek ku dołowi",
+        "war2": "Nieprawidłowe – wydrążenie ma kształt owalny, a nie trójkątny."
+      },
+      {
+        "war1": "tworzy panewkę stawu barkowo-obojczykowego",
+        "war2": "Nieprawidłowe – panewkę stawu barkowo-obojczykowego tworzy wyrostek barkowy łopatki, nie wydrążenie stawowe."
+      },
+      {
+        "war1": "łączy się z trzonem łopatki poprzez szyjkę łopatki",
+        "war2": "Prawidłowe – wydrążenie stawowe przechodzi w trzon łopatki przez jej szyjkę."
+      }
+    ],
+    "wynik": 5,
+    "podpowiedz": "Wydrążenie stawowe to miejsce połączenia z głową kości ramiennej; łączy się z trzonem łopatki przez szyjkę łopatki."
+  },
+
+  {
+    "tresc": "Wskaż zdanie prawidłowe:",
+    "odp": [
+      {
+        "war1": "więzadło barkowo-obojczykowe składa się z więzadła stożkowatego i więzadła czworobocznego",
+        "war2": "Nieprawidłowe – te dwa więzadła wchodzą w skład więzadła kruczo-obojczykowego, nie barkowo-obojczykowego."
+      },
+      {
+        "war1": "więzadło kruczo-barkowe łączy wyrostek kruczy łopatki z końcem barkowym obojczyka",
+        "war2": "Nieprawidłowe – więzadło kruczo-barkowe łączy wyrostek kruczy z wyrostkiem barkowym tej samej łopatki, nie z obojczykiem."
+      },
+      {
+        "war1": "staw mostkowo-obojczykowy nie zawiera krążka stawowego",
+        "war2": "Nieprawidłowe – zawiera pełny krążek stawowy dzielący jamę stawową na dwie części."
+      },
+      {
+        "war1": "strop stawu ramiennego współtworzy m.in. więzadło kruczo-barkowe",
+        "war2": "Prawidłowe – więzadło kruczo-barkowe tworzy tzw. sklepienie stawu ramiennego (łuk kruczo-barkowy)."
+      },
+      {
+        "war1": "staw promieniowo-łokciowy bliższy to staw obrotowy, staw promieniowo-łokciowy dalszy - to staw płaski",
+        "war2": "Nieprawidłowe – oba stawy promieniowo-łokciowe są stawami obrotowymi."
+      }
+    ],
+    "wynik": 4,
+    "podpowiedz": "Sklepienie stawu ramiennego (strop) tworzą wyrostek barkowy, wyrostek kruczy i więzadło kruczo-barkowe."
+  },
+
+  {
+    "tresc": "Mięśnie ramienia:",
+    "odp": [
+      {
+        "war1": "grupa przednia mięśni ramienia to prostowniki",
+        "war2": "Nieprawidłowe – grupa przednia (m. dwugłowy, kruczo-ramienny, ramienny) to zginacze, nie prostowniki."
+      },
+      {
+        "war1": "w skład grupy wchodzi 6 mięśni",
+        "war2": "Nieprawidłowe – mięśnie ramienia dzielą się na dwie grupy: przednią (3 mięśnie) i tylną (1 mięsień – trójgłowy), razem 4 główne mięśnie, nie 6."
+      },
+      {
+        "war1": "grupę przednią ramienia unerwia n. pośrodkowy przebiegający w bruździe przyśrodkowej m. dwugłowego",
+        "war2": "Nieprawidłowe – grupę przednią unerwia nerw mięśniowo-skórny, a nie pośrodkowy."
+      },
+      {
+        "war1": "dzielą się na trzy grupy: przednią, tylną, boczną",
+        "war2": "Nieprawidłowe – mięśnie ramienia dzielą się tylko na dwie grupy: przednią i tylną; boczna występuje dopiero w obrębie przedramienia."
+      },
+      {
+        "war1": "grupa przednia mięśni ramienia to zginacze",
+        "war2": "Prawidłowe – mięśnie przednie (m. dwugłowy, kruczo-ramienny, ramienny) odpowiadają za zginanie w stawie łokciowym i ramiennym."
+      }
+    ],
+    "wynik": 5,
+    "podpowiedz": "Zapamiętaj: grupa przednia ramienia = zginacze, unerwione przez n. mięśniowo-skórny; grupa tylna = prostowniki, unerwione przez n. promieniowy."
+  },
+
+  {
+    "tresc": "Nerwami wywodzącymi się z pęczka tylnego są:",
+    "odp": [
+      {
+        "war1": "n. pachowy i promieniowy",
+        "war2": "Prawidłowe – oba te nerwy odchodzą od pęczka tylnego splotu ramiennego (posterior cord)."
+      },
+      {
+        "war1": "n. pośrodkowy i łokciowy",
+        "war2": "Nieprawidłowe – n. pośrodkowy pochodzi z pęczków bocznego i przyśrodkowego, a n. łokciowy z przyśrodkowego."
+      },
+      {
+        "war1": "n. promieniowy i pośrodkowy",
+        "war2": "Nieprawidłowe – tylko n. promieniowy pochodzi z pęczka tylnego, n. pośrodkowy nie."
+      },
+      {
+        "war1": "n. łokciowy i mięśniowo-skórny",
+        "war2": "Nieprawidłowe – n. łokciowy pochodzi z pęczka przyśrodkowego, a mięśniowo-skórny z bocznego."
+      },
+      {
+        "war1": "n. łokciowy i pachowy",
+        "war2": "Nieprawidłowe – tylko n. pachowy pochodzi z pęczka tylnego; n. łokciowy z przyśrodkowego."
+      }
+    ],
+    "wynik": 1,
+    "podpowiedz": "Z pęczka tylnego odchodzą głównie nerwy do części tylnej kończyny: n. promieniowy i n. pachowy."
+  },
+
+  {
+    "tresc": "Tętnica ramienna nie oddaje:",
+    "odp": [
+      {
+        "war1": "tętnicy łokciowej",
+        "war2": "Nieprawidłowe – t. łokciowa jest jedną z dwóch końcowych gałęzi t. ramiennej (razem z promieniową)."
+      },
+      {
+        "war1": "tętnicy głębokiej ramienia",
+        "war2": "Nieprawidłowe – t. głęboka ramienia odchodzi od t. ramiennej w górnej części ramienia."
+      },
+      {
+        "war1": "tętnicy okalającej ramię przedniej",
+        "war2": "Nieprawidłowe – jest to gałąź t. ramiennej w jej dolnym odcinku, zaopatrująca szyjkę chirurgiczną."
+      },
+      {
+        "war1": "tętnicy pobocznej łokciowej górnej",
+        "war2": "Nieprawidłowe – to także gałąź t. ramiennej biegnąca w kierunku nadkłykcia przyśrodkowego."
+      },
+      {
+        "war1": "tętnicy promieniowej",
+        "war2": "Prawidłowe – t. promieniowa jest końcową gałęzią t. ramiennej, a nie jej odgałęzieniem bocznym."
+      }
+    ],
+    "wynik": 5,
+    "podpowiedz": "Tętnica ramienna kończy się w dole łokciowym, gdzie dzieli się na t. promieniową i łokciową – nie oddaje ich po drodze jako gałęzi."
+  },
+
+  {
+    "tresc": "Tętnica pachowa oddaje następujące gałęzie z wyjątkiem",
+    "odp": [
+      {
+        "war1": "Tętnic piersiowej bocznej",
+        "war2": "Nieprawidłowe – jest jedną z gałęzi t. pachowej (odchodzi z jej drugiego odcinka)."
+      },
+      {
+        "war1": "Tętnic piersiowo-barkowej",
+        "war2": "Nieprawidłowe – to również gałąź t. pachowej, z jej pierwszego odcinka."
+      },
+      {
+        "war1": "Tętnicy podłopatkowej",
+        "war2": "Nieprawidłowe – odchodzi z trzeciego odcinka t. pachowej, dzieląc się na t. piersiowo-grzbietową i okalającą łopatkę."
+      },
+      {
+        "war1": "Tętnicy piersiowej wewnętrznej",
+        "war2": "Prawidłowe – t. piersiowa wewnętrzna nie pochodzi od t. pachowej, lecz od t. podobojczykowej."
+      },
+      {
+        "war1": "Tętnicy okalającej ramię tylnej",
+        "war2": "Nieprawidłowe – to jedna z końcowych gałęzi t. pachowej w jej trzecim odcinku."
+      }
+    ],
+    "wynik": 4,
+    "podpowiedz": "Pamiętaj: t. piersiowa wewnętrzna to gałąź t. podobojczykowej, nie pachowej."
+  },
+
+  {
+    "tresc": "Wskaż stwierdzenie prawdziwe dotyczące nerwu promieniowego",
+    "odp": [
+      {
+        "war1": "Objawem jego porażenia jest ręka błogosławiąca",
+        "war2": "Nieprawidłowe – ręka błogosławiąca występuje przy porażeniu n. pośrodkowego; przy porażeniu n. promieniowego występuje tzw. ręka opadająca."
+      },
+      {
+        "war1": "Zaopatruje tylną głęboką grupę mięśni przedramienia",
+        "war2": "Prawidłowe – nerw promieniowy unerwia wszystkie prostowniki przedramienia, w tym głębokie (poprzez n. międzykostny tylny)."
+      },
+      {
+        "war1": "Wywodzi się wyłącznie z korzeni C8–Th1",
+        "war2": "Nieprawidłowe – nerw promieniowy powstaje z włókien C5–T1, nie tylko C8–T1."
+      },
+      {
+        "war1": "Nie zaopatruje grupy bocznej mięśni ramienia",
+        "war2": "Nieprawidłowe – unerwia m. ramienno-promieniowy i prostownik promieniowy długi nadgarstka, które należą do grupy bocznej."
+      },
+      {
+        "war1": "Oddaje n. skórny boczny ramienia",
+        "war2": "Nieprawidłowe – oddaje n. skórny tylny ramienia oraz n. skórny tylny przedramienia, nie boczny."
+      }
+    ],
+    "wynik": 2,
+    "podpowiedz": "Nerw promieniowy to główny nerw prostowników – unerwia tylną grupę ramienia i przedramienia, odpowiada za prostowanie stawu łokciowego i nadgarstka."
+  },
+		
+  {
+    "tresc": "Który zestaw zawiera wyłącznie elementy niestałe stawu?",
+    "odp": [
+      {
+        "war1": "Więzadła stawowe, torebka stawowa",
+        "war2": "Nieprawidłowe – więzadła i torebka stawowa to elementy stałe stawu, występują we wszystkich stawach."
+      },
+      {
+        "war1": "Wszystkie zestawy zawierają elementy niestałe",
+        "war2": "Nieprawidłowe – tylko niektóre zestawy zawierają elementy niestałe (nie wszystkie stawy mają np. łąkotki)."
+      },
+      {
+        "war1": "Łąkotka, obrąbek stawowy",
+        "war2": "Prawidłowe – łąkotki i obrąbki stawowe to elementy niestałe, występują tylko w wybranych stawach (np. kolanowym, barkowym)."
+      },
+      {
+        "war1": "Krążek stawowy, chrząstka stawowa",
+        "war2": "Nieprawidłowe – krążek stawowy jest niestały, ale chrząstka stawowa jest elementem stałym każdego stawu."
+      },
+      {
+        "war1": "Jama stawowa, łąkotka",
+        "war2": "Nieprawidłowe – jama stawowa to element stały stawu, natomiast łąkotka jest niestała."
+      }
+    ],
+    "wynik": 3,
+    "podpowiedz": "Elementy stałe ma każdy staw (powierzchnie, torebka, jama, więzadła). Elementy niestałe to np. łąkotki, obrąbki i krążki stawowe."
+  },
+
+  {
+    "tresc": "Tętnicy głębokiej ramienia towarzyszy",
+    "odp": [
+      {
+        "war1": "Nerw łokciowy",
+        "war2": "Nieprawidłowe – nerw łokciowy biegnie po przyśrodkowej stronie ramienia, nie w bruździe z t. głęboką ramienia."
+      },
+      {
+        "war1": "Nerw pośrodkowy",
+        "war2": "Nieprawidłowe – n. pośrodkowy przebiega razem z t. ramienną w bruździe przyśrodkowej m. dwugłowego."
+      },
+      {
+        "war1": "Nerw mięśniowo-skórny",
+        "war2": "Nieprawidłowe – n. mięśniowo-skórny przebiega w mięśniu kruczo-ramiennym i między zginaczami ramienia, nie z t. głęboką ramienia."
+      },
+      {
+        "war1": "Nerw pachowy",
+        "war2": "Nieprawidłowe – n. pachowy biegnie w otworze czworobocznym z t. okalającą ramię tylną, nie z głęboką ramienia."
+      },
+      {
+        "war1": "Nerw promieniowy",
+        "war2": "Prawidłowe – n. promieniowy towarzyszy t. głębokiej ramienia w bruździe nerwu promieniowego na tylnej powierzchni kości ramiennej."
+      }
+    ],
+    "wynik": 5,
+    "podpowiedz": "Tętnica głęboka ramienia biegnie razem z nerwem promieniowym w bruździe nerwu promieniowego (na tylnej stronie kości ramiennej)."
+  },
+
+  {
+    "tresc": "Na kości promieniowej odróżniamy:",
+    "odp": [
+      {
+        "war1": "W końcu bliższym: guzek grzbietowy, wyrostek rylcowaty, powierzchnię stawową nadgarstkową",
+        "war2": "Nieprawidłowe – te elementy znajdują się w końcu dalszym kości promieniowej, nie bliższym."
+      },
+      {
+        "war1": "2 powierzchnie: przednią i tylną",
+        "war2": "Nieprawidłowe – trzon kości promieniowej ma trzy powierzchnie: przednią, tylną i boczną."
+      },
+      {
+        "war1": "W odcinku dalszym: szyjkę, głowę i wcięcie kości promieniowej",
+        "war2": "Nieprawidłowe – głowa i szyjka znajdują się w odcinku bliższym, nie dalszym."
+      },
+      {
+        "war1": "3 powierzchnie: przednią, tylną i boczną",
+        "war2": "Prawidłowe – trzon kości promieniowej ma właśnie trzy powierzchnie: przednią, tylną i boczną."
+      },
+      {
+        "war1": "3 brzegi: przedni, tylny, boczny",
+        "war2": "Nieprawidłowe – kość promieniowa ma trzy brzegi: przedni, tylny i międzykostny, nie boczny."
+      }
+    ],
+    "wynik": 4,
+    "podpowiedz": "Zapamiętaj: trzon kości promieniowej ma 3 powierzchnie (przednią, tylną, boczną) i 3 brzegi (przedni, tylny, międzykostny)."
+  },
+
+  {
+    "tresc": "Otwór czworoboczny od góry ograniczony jest przez:",
+    "odp": [
+      {
+        "war1": "M. obły mniejszy",
+        "war2": "Prawidłowe – górne ograniczenie otworu czworobocznego stanowi właśnie mięsień obły mniejszy."
+      },
+      {
+        "war1": "Głowę długą m. trójgłowego ramienia",
+        "war2": "Nieprawidłowe – stanowi ograniczenie przyśrodkowe, nie górne."
+      },
+      {
+        "war1": "Głowę długą m. dwugłowego ramienia",
+        "war2": "Nieprawidłowe – ten mięsień nie przebiega w tej okolicy; biegnie z przodu ramienia."
+      },
+      {
+        "war1": "Szyjkę chirurgiczną k. ramiennej",
+        "war2": "Nieprawidłowe – to ograniczenie boczne otworu czworobocznego, nie górne."
+      },
+      {
+        "war1": "M. obły większy",
+        "war2": "Nieprawidłowe – tworzy dolne ograniczenie otworu, nie górne."
+      }
+    ],
+    "wynik": 1,
+    "podpowiedz": "Otwór czworoboczny: góra – m. obły mniejszy, dół – m. obły większy, przyśrodek – długa głowa trójgłowego, bok – szyjka chirurgiczna kości ramiennej."
+  },
+
+  {
+    "tresc": "Mięsień podgrzebieniowy",
+    "odp": [
+      {
+        "war1": "Leży w dole nadgrzebieniowym",
+        "war2": "Nieprawidłowe – w dole nadgrzebieniowym leży mięsień nadgrzebieniowy, nie podgrzebieniowy."
+      },
+      {
+        "war1": "Należy do grupy mięśni obojczykowo-ramiennych",
+        "war2": "Nieprawidłowe – należy do mięśni obręczy kończyny górnej (rotatorów barku), nie do grupy obojczykowo-ramiennej."
+      },
+      {
+        "war1": "Leży w dole podłopatkowym",
+        "war2": "Nieprawidłowe – tam znajduje się mięsień podłopatkowy."
+      },
+      {
+        "war1": "Część górna mięśnia odpowiada za rotację wewnętrzną w stawie barkowo-obojczykowym",
+        "war2": "Nieprawidłowe – mięsień podgrzebieniowy odpowiada za rotację zewnętrzną w stawie ramiennym, nie wewnętrzną i nie w barkowo-obojczykowym."
+      },
+      {
+        "war1": "Leży w dole podgrzebieniowym",
+        "war2": "Prawidłowe – mięsień podgrzebieniowy wypełnia dół podgrzebieniowy łopatki i obraca ramię na zewnątrz."
+      }
+    ],
+    "wynik": 5,
+    "podpowiedz": "Mięsień podgrzebieniowy = rotator zewnętrzny ramienia, leży w dole podgrzebieniowym i należy do stożka rotatorów barku."
+  },
+  
+  {
+		"tresc": "Łuk dłoniowy głęboki",
+		"odp": [
+			{
+				"war1": "Oddaje tętnice dłoniowe śródręcza",
+				"war2": "Prawidłowe — łuk dłoniowy głęboki oddaje tętnice dłoniowe śródręcza (aa. metacarpales palmares)."
+			},
+			{
+				"war1": "Łączy się z cienką gałęzią dłoniową powierzchowną tętnicy promieniowej",
+				"war2":  "To opis łuku dłoniowego powierzchownego, nie głębokiego."
+			},
+			{
+				"war1": "Oddaje tętnice dłoniowe wspólne palców",
+				"war2": "Te tętnice pochodzą od łuku dłoniowego powierzchownego."
+			},
+			{
+				"war1": "Leży na ścięgnach mięśnia zginacza powierzchownego palców",
+				"war2": "Leży głębiej — pod tymi ścięgnami."
+			},
+			{
+				"war1": "Nie kontaktuje się ze ścięgnem mięśnia przywodziciela kciuka",
+				"war2": "Wręcz przeciwnie — biegnie na jego powierzchni."
+			}
+		],
+		"wynik": 1,
+		"podpowiedz": "Głęboki łuk = głębiej położony i odchodzi od t. promieniowej; oddaje tętnice śródręcza, nie palców."
+	},
+	{
+		"tresc": "Kość czworoboczna większa łączy się łokciowo z kością:",
+		"odp": [
+			{
+				"war1": "Główkowatą i czworoboczną mniejszą",
+				"war2": "Prawidłowe — kość czworoboczna większa łączy się łokciowo właśnie z główkowatą i czworoboczną mniejszą."
+			},
+			{
+				"war1": "Czworoboczną mniejszą i podstawą II kości śródręcza",
+				"war2": "Opis dotyczy raczej kości czworobocznej mniejszej, nie większej."
+			},
+			{
+				"war1": "Czworoboczną mniejszą i podstawą I kości śródręcza",
+				"war2": "To połączenie charakterystyczne dla kości czworobocznej mniejszej, nie większej."
+			},
+			{
+				"war1": "Łódeczkowatą i księżycowatą",
+				"war2": "To połączenia z rzędem bliższym nadgarstka, nie z kością czworoboczną większą."
+			},
+			{
+				"war1": "Łódeczkowatą i czworoboczną mniejszą",
+				"war2": "Kość czworoboczna większa łączy się z łódeczkowatą, ale nie z tą kombinacją łokciową."
+			}
+		],
+		"wynik": 1,
+		"podpowiedz": "Czworoboczna większa sąsiaduje z główkowatą i mniejszą – leżą obok siebie w dystalnym rzędzie nadgarstka."
+	},
+	{
+		"tresc": "W stawie ramiennym:",
+		"odp": [
+			{
+				"war1": "Panewkę stawu stanowi wydrążenie stawowe łopatki",
+				"war2": "Prawidłowe — to właśnie wydrążenie stawowe łopatki tworzy panewkę stawu ramiennego."
+			},
+			{
+				"war1": "Panewkę stawu stanowi wcięcie łopatki",
+				"war2": "Wcięcie łopatki to otwór dla nerwu nadłopatkowego, nie element stawu."
+			},
+			{
+				"war1": "Główkę stawu stanowi główka kości ramiennej",
+				"war2": "Prawda, ale pytanie dotyczyło panewki – główka to drugi element stawu."
+			},
+			{
+				"war1": "Główkę stawu stanowi koniec barkowy obojczyka",
+				"war2": "To element stawu barkowo-obojczykowego, nie ramiennego."
+			},
+			{
+				"war1": "Odbywają się wyłącznie ruchy obracania i zginania ramienia",
+				"war2": "W stawie ramiennym możliwe są także odwodzenie, przywodzenie i obwodzenie."
+			}
+		],
+		"wynik": 1,
+		"podpowiedz": "Panewkę stawu ramiennego tworzy łopatka (wydrążenie stawowe), a główkę – kość ramienna."
+	},
+	{
+		"tresc": "Tętnica piersiowo-barkowa",
+		"odp": [
+			{
+				"war1": "Jest gałęzią tętnicy podłopatkowej",
+				"war2": "To odrębna gałąź t. pachowej, niezwiązana z t. podłopatkową."
+			},
+			{
+				"war1": "Jest gałęzią tętnicy piersiowej-grzbietowej",
+				"war2": "Taka tętnica nie istnieje w anatomii człowieka."
+			},
+			{
+				"war1": "Jest gałęzią tętnicy podobojczykowej",
+				"war2": "Tętnica podobojczykowa leży wyżej, a piersiowo-barkowa odchodzi już od pachowej."
+			},
+			{
+				"war1": "Jest gałęzią tętnicy pachowej",
+				"war2": "Prawidłowe — tętnica piersiowo-barkowa to jedna z pierwszych gałęzi tętnicy pachowej."
+			},
+			{
+				"war1": "Jest gałęzią tętnicy ramiennej",
+				"war2": "Tętnica ramienna powstaje niżej, już poniżej brzegu dolnego m. piersiowego większego."
+			}
+		],
+		"wynik": 4,
+		"podpowiedz": "Zapamiętaj: piersiowo-barkowa = od pachowej, zaraz po wejściu do dołu pachowego."
+	},
+	{
+		"tresc": "Do więzadeł stawu promieniowo-nadgarstkowego NIE należy:",
+		"odp": [
+			{
+				"war1": "Więzadło dłoniowe promieniowo-nadgarstkowe",
+				"war2": "To jedno z głównych więzadeł przedniej powierzchni tego stawu."
+			},
+			{
+				"war1": "Więzadło łukowate grzbietowe-nadgarstka",
+				"war2": "Prawidłowe — to więzadło nie należy do stawu promieniowo-nadgarstkowego, lecz do nadgarstka jako całości."
+			},
+			{
+				"war1": "Więzadło grzbietowe promieniowo-nadgarstkowe",
+				"war2": "Należy do tylnej części torebki stawowej stawu promieniowo-nadgarstkowego."
+			},
+			{
+				"war1": "Więzadło łukowate dłoniowe nadgarstka",
+				"war2": "Choć ma funkcję podporową, wciąż należy do układu więzadeł dłoniowych tego stawu."
+			},
+			{
+				"war1": "Więzadło poboczne promieniowe nadgarstka",
+				"war2": "To typowe więzadło boczne stawu promieniowo-nadgarstkowego."
+			}
+		],
+		"wynik": 2,
+		"podpowiedz": "Więzadła łukowate należą do ogólnego układu nadgarstka, nie do konkretnego stawu promieniowo-nadgarstkowego."
+	},
+
+	{
+		"tresc": "Przez kanał nadgarstka nie przechodzi:",
+		"odp": [
+			{
+				"war1": "Ścięgno m. zginacza powierzchownego palców",
+				"war2": "Przechodzi — w kanale biegną cztery jego ścięgna do palców II–V."
+			},
+			{
+				"war1": "N. łokciowy",
+				"war2": "Prawidłowe — nerw łokciowy przebiega poza kanałem nadgarstka, w tzw. kanale Guyona."
+			},
+			{
+				"war1": "Ścięgno m. zginacza głębokiego palców",
+				"war2": "Przechodzi — cztery ścięgna tego mięśnia również biegną przez kanał nadgarstka."
+			},
+			{
+				"war1": "N. pośrodkowy",
+				"war2": "Przechodzi — to główny nerw biegnący wewnątrz kanału nadgarstka, ulegający uciskowi w zespole cieśni nadgarstka."
+			},
+			{
+				"war1": "Ścięgno m. zginacza długiego kciuka",
+				"war2": "Przechodzi — razem ze ścięgnami zginaczy palców, w tej samej przestrzeni kanału."
+			}
+		],
+		"wynik": 2,
+		"podpowiedz": "Kanał nadgarstka zawiera ścięgna zginaczy i nerw pośrodkowy, ale nie przebiega w nim nerw łokciowy."
+	},
+
+	{
+		"tresc": "Które stwierdzenie dotyczące szkieletu kończyny górnej jest BŁĘDNE?",
+		"odp": [
+			{
+				"war1": "przy badaniu palpacyjnym grzebień łopatki jest wyczuwalny na całej długości: od kąta wyrostka barkowego do trójkąta grzebienia",
+				"war2": "Poprawne — grzebień łopatki można łatwo wyczuć palpacyjnie na całej długości."
+			},
+			{
+				"war1": "brzeg przedni kości promieniowej kończy się jako grzebień nadrylcowy",
+				"war2": "Kość promieniowa kończy się wyrostkiem rylcowatym czasami nazywana grzebieniem ale nie jest to popularne (dziwne trudno to znaleźć)."
+			},
+			{
+				"war1": "pośrodku powierzchni bocznej kości promieniowej umiejscawia się guzowatość nawrotna",
+				"war2": "Poprawne — guzowatość nawrotna znajduje się na bocznej powierzchni kości promieniowej."
+			},
+			{
+				"war1": "przy badaniu palpacyjnym brzeg tylny kości łokciowej jest wyczuwalny na całej długości: od wyrostka łokciowego do wyrostka rylcowatego",
+				"war2": "Poprawne — brzeg tylny kości łokciowej jest łatwo dostępny palpacyjnie."
+			},
+			{
+				"war1": "na łopatce większa powierzchnia stawowa jest na wyrostku barkowym niż na wyrostku panewkowym",
+				"war2": "Większa powierzchnia stawowa nie znajduje się na wyrostku barkowym, tylko na panewce."
+			}
+		],
+		"wynik": 5,
+		"podpowiedz": "Zwróć uwagę, że kość promieniowa kończy się wyrostkiem rylcowatym, nie grzebieniem nadrylcowym."
+	},
+	{
+		"tresc": "W połączeniach kończyny górnej:",
+		"odp": [
+			{
+				"war1": "włóknisty krążek stawu mostkowo-obojczykowego całkowicie przedziela jamę stawową na jej część przednią i tylną",
+				"war2": "Błędne - Krążek stawowy dzieli jamę stawu na dwie części: górną i dolną (nie przednią i tylną)."
+			},
+			{
+				"war1": "staw łopatkowo-klatkowy zwiększa mobilność stawu ramiennego",
+				"war2": "Poprawne - umożliwia ruchy łopatki po ścianie klatki piersiowej, wspomagając ruchy ramienia."
+			},
+			{
+				"war1": "więzadło poprzeczne kości ramiennej znacząco wzmacnia staw ramienny",
+				"war2": " Błędne - to więzadło utrzymuje ścięgno głowy długiej mięśnia dwugłowego w bruździe międzyguzkowej, ale nie wzmacnia stawu."
+			},
+			{
+				"war1": "więzadło dłoniowe promieniowo-nadgarstkowe biegnie między wyrostkiem rylcowatym kości promieniowej a kością trójgraniastą, grochowatą i czworoboczną większą",
+				"war2": " Nieprawidłowe - biegnie od promieniowej do kości łódeczkowatej, główkowatej i księżycowatej, nie do wymienionych w opisie."
+			},
+			{
+				"war1": "jedynym więzadłem międzynadgarstkowym grzbietowym jest więzadło główkowo-haczykowe grzbietowe",
+				"war2": " Błędne - występuje wiele więzadeł grzbietowych między kośćmi nadgarstka, nie tylko to jedno."
+			}
+		],
+		"wynik": 2,
+		"podpowiedz": "Zastanów się, które więzadła mają funkcję stabilizującą staw, a które jedynie utrzymują ścięgna."
+	},
+	{
+		"tresc": "W układzie mięśniowym kończyny górnej:", 
+		"odp": [
+			{
+				"war1": "odszczepiona część m. trójgłowego ramienia nazywa się m. stawowym łokcia i m. łokciowym",
+				"war2": " Błędne — mięsień łokciowy jest osobny, a m. stawowy łokcia to część m. ramiennego. Część przyczepiająca się od tylnej powierzchni kości ramiennej odchodząca od głowy bocznej i przyśrodkowej m. trójgłowego jest nazywana m. stawowym łokcia (musculus articularis cubiti). M. łokciowy (anconeus) to oddzielny mięsień przy łokciu, często uważany za „mały trójgłowy”, ale nie jest odszczepioną częścią trójgłowego"
+			},
+			{
+				"war1": "pochewka ścięgna zginacza długiego kciuka NIE łączy się z pochewką palcową kciuka",
+				"war2": " Ścięgno zginacza długiego kciuka (flexor pollicis longus) ma pochewkę ścięgnistą w kanale nadgarstka (pochewka radialis). Pochewki palców (proksymalne i dalsze) u kciuka są oddzielne od pochewki ścięgna długiego kciuka."
+			},
+			{
+				"war1": "skrzyżowanie ścięgien wytwarza tylko m. zginacz głęboki palców",
+				"war2": "Błędne — w skrzyżowaniu ścięgien uczestniczy także zginacz powierzchowny palców (FDS), nie tylko zginacz głęboki.."
+			},
+			{
+				"war1": "pochewka ścięgna m. prostownika palca małego jest najdłuższą ze wszystkich pochewek ścięgien grzbietowych nadgarstka",
+				"war2": " Błędne — jest w rzeczywistości najkrótsza spośród pochewek prostowników."
+			},
+			{
+				"war1": "NIE wytwarza się zamknięta puszka powięziowa jamy pachowej",
+				"war2": "Jama pachowa nie jest zamkniętą przestrzenią powięziową, lecz otwartą w kierunku szyi i ramienia."
+			}
+		],
+		"wynik": 2,
+		"podpowiedz": "Mięsień łokciowy nie jest częścią trójgłowego, a m. stawowy łokcia pochodzi z ramiennego."
+	},
+	{
+		"tresc": "Odnośnie do nerwów kończyny górnej:",
+		"odp": [
+			{
+				"war1": "spośród pni splotu ramiennego pnie górny i środkowy są usytuowane za tętnicą podobojczykową, a pień dolny przed nią",
+				"war2": "błędne: położenie pni względem t. podobojczykowej jest odwrotne (górny i środkowy przed tętnicą, dolny poniżej)"
+			},
+			{
+				"war1": "pętla piersiowa zawiera tylko włókna nerwowe C5 i C6 i NIE unerwia mm. piersiowych: większego i mniejszego",
+				"war2": "Błędne — pętla piersiowa (ansa pectoralis) zawiera włókna C5–T1 i unerwia oba mięśnie piersiowe (większy i mniejszy)."
+			},
+			{
+				"war1": "gałąź wsteczna n. pośrodkowego zaopatruje obie głowy m. nawrotnego obłego i NIE zespala się z n. łokciowym",
+				"war2": "Niepoprawne — gałąź wsteczna n. pośrodkowego zaopatruje głowy mięśnia nawrotnego obłego, ale nie łączy się z nerwem łokciowym w żadnym miejscu."
+			},
+			{
+				"war1": "porażenie n. nadłopatkowego skutkuje tzw. łopatką skrzydlatą, która odstaje zwłaszcza przy przywodzeniu i prostowaniu w stawie ramiennym.",
+				"war2": "Nieprawidłowe — łopatka skrzydlata występuje przy uszkodzeniu n. piersiowego długiego, nie nadłopatkowego."
+			},
+			{
+				"war1": "nadpowięziowo, na obszarze między trzecim a szóstym zębem m. zębatego przedniego wzdłuż podpowięziowego n. piersiowego długiego układają się naczynia piersiowe boczne i węzły chłonne pachowe przednie, a poniżej - żż. piersiowo-nabrzuszne i węzły chłonne piersiowo-nabrzuszne",
+				"war2": "Poprawne — to zgodne z topografią naczyń i węzłów w tej okolicy."
+			}
+		],
+		"wynik": 5,
+		"podpowiedz": "Zastanów się, który nerw odpowiada za tzw. łopatkę skrzydlatą — to nie nadłopatkowy."
+	},
+	{
+		"tresc": "W układzie naczyniowym kończyny górnej:",
+		"odp": [
+			{
+				"war1": "Tętno na tętnicy łokciowej wyczuwa się w obrębie nadgarstka dystalnie i bocznie względem kości grochowatej.",
+				"war2": "Błędne — tętno tętnicy łokciowej wyczuwa się przyśrodkowo względem kości grochowatej, nie bocznie."
+			},
+			{
+				"war1": "Tętnice dłoniowe śródręcza wysyłają na końcu po jednej gałęzi przeszywającej do równoimiennych tętnic grzbietowych śródręcza.",
+				"war2": "Błędne — zwykle wysyłają po dwie gałęzie przeszywające do tętnic grzbietowych śródręcza."
+			},
+			{
+				"war1": "Żyła odpromieniowa zespala się z żyłą szyjną zewnętrzną",
+				"war2": "Błędne — żyła odpromieniowa zwykle uchodzi do żyły podobojczykowej, nie do szyjnej zewnętrznej. Może posiadać połączenia z żyłą szyjną zewnętrzną przebiegające ponad obojczykiem (Źródło Wikipedia)."
+			},
+			{
+				"war1": "Węzeł chłonny nadbloczkowy czyli łokciowy powierzchowny przylega do ż. odpromieniowej nieco poniżej nadkłykcia bocznego kości ramiennej.",
+				"war2": "Błędne — znajduje się przy żyle odłokciowej, nie odpromieniowej."
+			},
+			{
+				"war1": "Tętnica towarzysząca n. pośrodkowemu jest zwykle gałęzią t. międzykostnej przedniej",
+				"war2": "Poprawne — to najczęstsze źródło jej pochodzenia."
+			}
+		],
+		"wynik": 5,
+		"podpowiedz": "Zastanów się, która tętnica biegnie razem z nerwem pośrodkowym na przedramieniu."
+	},
+		{
+  "tresc": "Do mięśni dwustawowych NIE należy:",
+  "odp": [
+    {
+      "war1": "Mięsień ramienno-promieniowy",
+      "war2": "Mięsień ramienno-promieniowy jest dwustawowy — działa w stawie ramiennym i łokciowym."
+    },
+    {
+      "war1": "Mięsień dwugłowy ramienia",
+      "war2": "Mięsień dwugłowy ramienia działa głównie w stawie łokciowym, ale także w stawie ramiennym."
+    },
+    {
+      "war1": "Nawrotny obły",
+      "war2": "Działa w stawie Łokciowym + stawie promieniowo-łokciowym bliższym"
+    },
+    {
+      "war1": "Zginacz powierzchowny palców",
+      "war2": "Działa w Nadgarsteku + stawie śródręczno-paliczkowym"
+    },
+    {
+      "war1": "Mięsień dłoniowy długi",
+      "war2": "Działa tylko w stawie nadgarstka, jest jednostawowy i NIE jest mięśniem dwustawowym."
+    }
+  ],
+  "wynik": 5,
+  "podpowiedz": "Dwustawowy mięsień działa w dwóch stawach. Zastanów się, który z wymienionych mięśni działa tylko w jednym stawie. Mięśnie zginające i prostujące palce - działają zarówno na nadgarstek, jak i palce, więc są funkcjonalnie dwustawowe."
+},
+
+{
+	"tresc": "Która ze struktur nie przebiega przez kanał nadgarstka", 
+	"odp": [
+		{
+			"war1": "Nerw łokciowy",
+			"war2": "Nerw łokciowy (n. ulnaris) przechodzi przez kanał Guyona (kanał łokciowy nadgarstka, canalis ulnaris) — to zupełnie inna przestrzeń niż kanał nadgarstka (canalis carpi)."
+		},
+		{
+			"war1": "Nerw pośrodkowy",
+			"war2": "Przebiega przez kanał nadgarstka razem ze ścięgnami zginaczy palców i zginacza długiego kciuka — jest strukturą wewnątrz kanału."
+		},
+		{
+			"war1": "Ścięgno zginacza długiego kciuka",
+			"war2": "Przebiega w kanale nadgarstka w swojej pochewce ścięgnistej — należy do jego zawartości."
+		},
+		{
+			"war1": "Nerw promieniowy",
+			"war2": "Nie przebiega przez kanał nadgarstka — jego gałąź powierzchowna biegnie grzbietowo i kończy się na grzbiecie ręki."
+		},
+		{
+			"war1": "Ścięgno mięśnia zginacza powierzchniowego kciuka",
+			"war2": "Taki mięsień nie istnieje — kciuk ma tylko zginacz długi (flexor pollicis longus) i krótki (flexor pollicis brevis)."
+		}
+	],
+	"wynik": 4,
+	"podpowiedz": "Pomyśl, który z wymienionych elementów biegnie poza właściwym kanałem nadgarstka, w oddzielnym przedziale troczka zginaczy."
+},
+
+{
+	"tresc": "Mięsień prostownik promieniowy długi nadgarstka przyczepia się do:",
+	"odp": [
+		{
+			"war1": "Podstawy II kości śródręcza",
+			"war2": "Poprawne — mięsień prostownik promieniowy długi nadgarstka przyczepia się właśnie do podstawy II kości śródręcza."
+		},
+		{
+			"war1": "Wyrostka rylcowatego III kości śródręcza",
+			"war2": "Nieprawidłowe — do podstawy III kości śródręcza przyczepia się mięsień prostownik promieniowy krótki nadgarstka, nie długi."
+		},
+		{
+			"war1": "Kości haczykowatej",
+			"war2": "Nieprawidłowe — to kość nadgarstka, a nie miejsce przyczepu prostowników nadgarstka."
+		},
+		{
+			"war1": "Wyrostka rylcowatego II kości śródręcza",
+			"war2": "Nieprawidłowe — mięsień nie przyczepia się do wyrostka, tylko do podstawy kości śródręcza."
+		},
+		{
+			"war1": "Troczka prostowników",
+			"war2": "Nieprawidłowe — przez troczek mięsień przebiega, ale nie ma tam przyczepu."
+		}
+	],
+	"wynik": 1,
+	"podpowiedz": "Zastanów się, który prostownik nadgarstka (długi czy krótki) kończy się na której kości śródręcza — długi na II, krótki na III."
+},
+
+{
+	"tresc": "Wybierz prawidłowe połączenie nerw i objaw jego porażenia",
+	"odp": [
+		{
+			"war1": "Nerw pośrodkowy -> ręka błogosławiąca",
+			"war2": "Poprawne — uszkodzenie nerwu pośrodkowego uniemożliwia zgięcie palców I–III, co daje charakterystyczny układ 'ręki błogosławiącej'."
+		},
+		{
+			"war1": "Nerw grzbietowy łopatki -> łopatka skrzydlata",
+			"war2": "Nieprawidłowe — łopatka skrzydlata powstaje przy porażeniu nerwu piersiowego długiego, a nie grzbietowego łopatki."
+		},
+		{
+			"war1": "Nerw mięśniowo-skórny -> zaburzenia czucia skóry wzdłuż przyśrodkowej strony przedramienia",
+			"war2": "Nieprawidłowe — nerw mięśniowo-skórny unerwia boczną stronę przedramienia, nie przyśrodkową."
+		},
+		{
+			"war1": "Nerw łokciowy -> ręka błogosławiąca",
+			"war2": "Nieprawidłowe — porażenie nerwu łokciowego powoduje rękę szponiastą, nie błogosławiącą."
+		},
+		{
+			"war1": "Nerw pośrodkowy -> ręka szponiasta",
+			"war2": "Nieprawidłowe — ręka szponiasta to objaw porażenia nerwu łokciowego."
+		}
+	],
+	"wynik": 1,
+	"podpowiedz": "Pamiętaj, że 'ręka błogosławiąca' wiąże się z uszkodzeniem nerwu pośrodkowego, a 'ręka szponiasta' – z porażeniem nerwu łokciowego."
+},
+		{
+			"tresc" : "Treść",
+			"odp" : [
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
+				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "podpowiedz"
+		}
+
+	]
+}

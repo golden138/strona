@@ -4,13 +4,15 @@ function start() {
 	setPath(path);
 	setMaksSize(360);
 	var statusPath = localStorage.getItem("status");
-	if (statusPath !== null && statusPath !== "") {
+	if (statusPath === null || statusPath === "") {
+		console.log("Path : " + statusPath);
 		localStorage.setItem("status", 'Post1');
 	}
 	getArtykul();
 	// Wczytaj wartość przy otwarciu
 	//localStorage.setItem("status", 'Post1');
 	statusPath = localStorage.getItem("status");
+	console.log(statusPath);
 	var gdzie = path + '/Posty/' + statusPath + '/nr_zadan.txt';
 	var tresc = '';
 	fetch(gdzie) // <-- tutaj wpisz adres pliku z zadaniem

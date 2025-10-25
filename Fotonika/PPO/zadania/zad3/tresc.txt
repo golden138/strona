@@ -34,6 +34,39 @@
 			"podpowiedz" : "Zastanów się, co się dzieje, gdy fala świetlna interferuje sama ze sobą po przebyciu drogi w tę i z powrotem. Warunek ten narzuca ograniczenia na długość fali."
 		},
 		{
+			"tresc" : "Zgodnie z równaniem na wzmocnienie progowe \\[ g = a_i \\cdot \\frac{1}{2 L} \\cdot ln \\left( \\frac{1}{R_1 R_2} \\right) \\], co należy zrobić, aby obniżyć próg akcji laserowej?",
+			"odp" : [
+				{"war1" : "Zmniejszyć długość rezonatora L i współczynniki odbicia zwierciadeł R<sub>1</sub>, R<sub>2</sub>", "war2" : "Zmniejszenie tych parametrów prowadzi do zwiększenia członu strat na zwierciadłach, co w efekcie podnosi wymagane wzmocnienie progowe"},
+				{"war1" : "Zwiększać straty wewnętrzne a<sub>i</sub>", "war2" : "Straty wewnętrzne są składnikiem wzmocnienia progowego; ich zwiększenie bezpośrednio podnosi próg działania lasera"},
+				{"war1" : "Zwiększyć zarówno straty wewnętrzne a<sub>i</sub>, jak i długość rezonatora L", "war2" : "Zwiększenie strat wewnętrznych a<sub>i</sub> zawsze podnosi próg, nawet jeśli zwiększenie L częściowo to kompensuje"},
+				{"war1" : "Zwiększyć długość rezonatora L lub współczynniki odbicia zwierciadeł R<sub>1</sub>, R<sub>2</sub>", "war2" : "Zwiększenie długości L lub współczynników odbicia R<sub>1</sub>, R<sub>2</sub> zmniejsza drugi człon równania (straty na zwierciadłach), co obniża całkowite wymagane wzmocnienie do rozpoczęcia akcji laserowej."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Analizując równanie, zastanów się, które zmiany parametrów spowodują zmniejszenie wartości po prawej stronie."
+		},
+		{
+			"tresc" : "Jaki jest główny mechanizm strat wewnętrznych (a<sub>i</sub>) w laserach półprzewodnikowych, który staje się szczególnie dotkliwy w urządzeniach emitujących światło w zakresie długofalowym?",
+			"odp" : [
+				{"war1" : "Absorbcja na swobodnych nośnikach", "war2" : "W procesie tym foton oddaje energie elektronowi lub dziurze. Straty te rosną z koncentracją nośników i silnie zależą od długości fali."},
+				{"war1" : "Rozpraszanie światła na nierównościach i defektach struktury falowodowej", "war2" : "Chociaż jest to jeden z mechanizmów strat wewnętrznych w artykule można znaleźć, że absorpcje na swobodnych nośnikach jest głównym czynnikiem zwłaszcza dla dłuższych fal"},
+				{"war1" : "Ucieczka fotonów przez częściowo przepuszczjące zwierciadła", "war2" : "Jest to mechanizm strat na zwierciadłach (a<sub>m</sub>), a ne strat wewnętrznych (a<sub>i</sub>)"},
+				{"war1" : "Rekombinacja Auger", "war2" : "Rekombinacja Auger jest procesem strat nośników, a nie strat fotonów w rezonatorze, chociaż oba zjawiska są niekorzystne"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Pomyśl o procesie, w którym fotony są pochłaniane wewnątrz materiału lasera, a którego efektywność zależy od długości fali."
+		},
+		{
+			"tresc" : "W kontekście równań bilansu, czym jest rekombinacja Auger i dlaczego jest ona niekorzystna dla działania lasera?",
+			"odp" : [
+				{"war1" : "Jest to proces rekombinacji na defektach sieci krystalicznej, dominują przy niskich koncentracjach nośników", "war2" : "To opisuje rekombinacje typu Shockleya-Reada-Halla ( człon AN w modelu ABC), a nie rekombinacje Auger ( człon CN<sup>3</sup>"},
+				{"war1" : "Jest to proces niepromienisty, w którym energia rekombinacji elektronu i dziury jest przekazywana innemu nośnikowi, co prowadzi do strat nośników i generacji ciepła.", "war2" : "Jest to precyzyjny opis procesu Augera, który zużywa nośniki bez generowania światła, zwiększając prąd progowy i temperaturę urządzenia"},
+				{"war1" : "Jest to pożądany proces, który dominuje powyżej progu laserowania, prowadząc do emisji wymuszonej", "war2" : "Procesem dominującym powyżej progu, odpowiedzialnym za generację światła spójnego, jest rekombinacja stymulowana, a nie Auger"},
+				{"war1" : "Jest to proces promienisty, w którym energia jest przekazywana innemu fotonowi, co zwiększa moc wyjściową", "war2" : "Rekombinacja Auger jest procesem niepromienistym i nie generuje fotonów; stanowi stratę energii"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się nad procesem z udziałem trzech cząstek (dwóch elektronów i dziury lub odwrotnie), gdzie energia nie zamienia się w światło."
+		},
+		{
 			"tresc" : "Treść",
 			"odp" : [
 				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
