@@ -497,6 +497,35 @@
 		"wynik": 1,
 		"podpowiedz": "Panewkę stawu ramiennego tworzy łopatka (wydrążenie stawowe), a główkę – kość ramienna."
 	},
+
+{
+	"tresc": "Krążek stawowy występuje w stawie:",
+	"odp": [
+		{
+			"war1": "Ramienno-łokciowym",
+			"war2": "Niepoprawne — to staw zawiasowy, nie posiada krążka stawowego, a jedynie torebkę i więzadła."
+		},
+		{
+			"war1": "Promieniowo-nadgarstkowym",
+			"war2": "Poprawne — panewkę stawu tworzy powierzchnia nadgarstkowa kości promieniowej oraz krążek stawowy, który oddziela od nadgarstka kość łokciową. Główkę tworzą kości łódeczkowata, księżycowata i trójgraniasta."
+		},
+		{
+			"war1": "Mostkowo-obojczykowym",
+			"war2": "Niepoprawne — choć występuje tu krążek stawowy, pytanie dotyczy stawu kończyny górnej, a ten staw łączy kończynę z osią ciała."
+		},
+		{
+			"war1": "Ramienno-promieniowym",
+			"war2": "Niepoprawne — jest to staw kulisty wolny bez krążka stawowego."
+		},
+		{
+			"war1": "Ramiennym",
+			"war2": "Niepoprawne — w stawie ramiennym występuje obrąbek stawowy, a nie krążek stawowy."
+		}
+	],
+	"wynik": 2,
+	"podpowiedz": "Pomyśl o stawie, w którym krążek włóknisty oddziela kość łokciową od kości nadgarstka."
+},
+
 	{
 		"tresc": "Tętnica piersiowo-barkowa",
 		"odp": [
@@ -826,6 +855,455 @@
 	"wynik": 1,
 	"podpowiedz": "Pamiętaj, że 'ręka błogosławiąca' wiąże się z uszkodzeniem nerwu pośrodkowego, a 'ręka szponiasta' – z porażeniem nerwu łokciowego."
 },
+
+{
+	"tresc": "W układzie naczyniowym kończyny górnej:",
+	"odp": [
+		{ 
+			"war1": "Tętno na tętnicy łokciowej wyczuwa się w obrębie nadgarstka dystalnie i przyśrodkowo względem kości grochowatej", 
+			"war2": "Niepoprawne - tętno na nadgarstku bada się po stronie bocznej przedramienia, tuż przy nadgarstku. Jest tam tętnica promieniowa (a. radialis) - to właśnie tutaj najczęściej bada się tętno. Leży powierzchownie, bocznie od ścięgna mięśnia zginacza promieniowego nadgarstka (m. flexor carpi radialis) i przyśrodkowo od wyrostka rylcowatego kości promieniowej (po stronie kciuka sam sprawdziłem przynajmniej u mnie tam czuć tętno)." 
+		},
+		{
+			"war1": "Tętnice dłoniowe śródręcza wysyłają na swym końcu po jednej gałęzi przeszywającej do równoimiennych tętnic grzbietowych",
+			"war2": "Niepoprawne — jest odwrotnie: to tętnice grzbietowe śródręcza wysyłają gałęzie przeszywające do tętnic dłoniowych śródręcza."
+		},
+		{
+			"war1": "Tętnica towarzysząca nerwowi pośrodkowemu jest zwykle gałęzią tętnicy międzykostnej przedniej",
+			"war2": "Poprawne — tzw. arteria comitans nervi mediani rzeczywiście pochodzi od tętnicy międzykostnej przedniej."
+		},
+		{
+			"war1": "Węzeł chłonny nadbloczkowy czyli łokciowy powierzchniowy przylega do żyły odpromieniowej nieco poniżej nadkłykcia bocznego kości ramiennej",
+			"war2": "Niepoprawne — węzeł nadbloczkowy przylega do żyły odłokciowej, a nie odpromieniowej, i znajduje się przy nadkłykciu przyśrodkowym."
+		},
+		{
+			"war1": "Żyła odpromieniowa NIE zespala się z żyłą szyjną zewnętrzną",
+			"war2": "Niepoprawne — żyła odpromieniowa może łączyć się z żyłą szyjną zewnętrzną poprzez żyłę pośrodkową szyi, więc twierdzenie jest błędne."
+		}
+	],
+	"wynik": 3,
+	"podpowiedz": "Pamiętaj, że tętnica towarzysząca nerwowi pośrodkowemu pochodzi od jednej z tętnic międzykostnych."
+},
+
+{
+	"tresc": "Krążek stawowy występuje w stawie:",
+	"odp": [
+		{
+			"war1": "Ramiennym",
+			"war2": "Niepoprawne — w stawie ramiennym występuje obrąbek stawowy, a nie krążek stawowy."
+		},
+		{
+			"war1": "W stawie nadgarstkowo-śródręcznym kciuka",
+			"war2": "Niepoprawne — to staw siodełkowaty bez krążka stawowego."
+		},
+		{
+			"war1": "Promieniowo-nadgarstkowym",
+			"war2": "Panewkę stawu tworzy powierzchnia nadgarstkowa kości promieniowej, a także krążek stawowy (oddzielający od nadgarstka dystalną część kości łokciowej). Z kolei główkę stanowią trzy z czterech kości szeregu bliższego nadgarstka: łódeczkowata, księżycowata i trójgraniasta"
+		},
+		{
+			"war1": "Barkowo-obojczykowym",
+			"war2": "U człowieka występuje m.in. w stawie skroniowo-żuchwowym, stawie mostkowo-obojczykowym, a także w stawie barkowo-obojczykowym, w którym jednak często niecałkowicie przedziela jamę stawową a nieraz brak go zupełnie (Źródło Wikipedia)"
+		},
+		{
+			"war1": "W stawie śródnadgarstkowym",
+			"war2": "Niepoprawne — stawy między kośćmi nadgarstka nie mają krążka stawowego."
+		}
+	],
+	"wynik": 4,
+	"podpowiedz": "Pomyśl o stawie, który jest oddzielony krążkiem od sąsiedniego"
+},
+
+{
+	"tresc": "Do gałęzi tętnicy piersiowo-barkowej nie należy:",
+	"odp": [
+		{
+			"war1": "gałąź obojczykowa",
+			"war2": "Należy -  niestała, biegnie ku górze i przyśrodkowo do stawu mostkowo-obojczykowego i mięśnia podobojczykowego. Zaopatruje obie te struktury. "
+		},
+		{
+			"war1": "gałąź nadramienna",
+			"war2": "Należy - często odchodzi wspólnym pniem z gałęzią piersiową. Biegnie w bruździe między mięśniem piersiowym większym i naramiennym towarzysząc żyle odpromieniowej. Zaopatruje oba te mięśnie."
+		},
+		{
+			"war1": "gałąź piersiowa",
+			"war2": "Należy - przeważnie więcej niż jedna, zstępują pomiędzy mięśniami piersiowymi zaopatrując je jak i mięsień zębaty przedni. Zespalają się z tętnicami międzyżebrowymi oraz z tętnicą piersiową boczną"
+		},
+		{
+			"war1": "gałąź barkowa",
+			"war2": "Należy - kieruje się bocznie pod mięśniem piersiowym większym i mięśniem naramiennym (zaopatrując te mięśnie) do przodu od wyrostka kruczego łopatki. Następnie przebija mięsień naramienny biorąc udział w wytworzeniu sieci barkowej"
+		},
+		{
+			"war1": "gałąź łopatkowa",
+			"war2": "Nie należy - choć występuje w okolicy barku, pochodzi od tętnicy podłopatkowej, nie od piersiowo-barkowej."
+		}
+	],
+	"wynik": 5,
+	"podpowiedz": "Gałęzie tętnicy piersiowo-barkowej: <p> gałąź piersiowa – przeważnie więcej niż jedna, zstępują pomiędzy mięśniami piersiowymi zaopatrując je jak i mięsień zębaty przedni. Zespalają się z tętnicami międzyżebrowymi oraz z tętnicą piersiową boczną.</p> <p> gałąź barkowa – kieruje się bocznie pod mięśniem piersiowym większym i mięśniem naramiennym (zaopatrując te mięśnie) do przodu od wyrostka kruczego łopatki. Następnie przebija mięsień naramienny biorąc udział w wytworzeniu sieci barkowej.</p> <p> gałąź obojczykowa – niestała, biegnie ku górze i przyśrodkowo do stawu mostkowo-obojczykowego i mięśnia podobojczykowego. Zaopatruje obie te struktury. </p> <p> gałąź naramienna – często odchodzi wspólnym pniem z gałęzią piersiową. Biegnie w bruździe między mięśniem piersiowym większym i naramiennym towarzysząc żyle odpromieniowej. Zaopatruje oba te mięśnie. </p>"
+},
+
+{
+	"tresc": "Węzły pachowe środkowe:",
+	"odp": [
+		{
+			"war1": "otrzymują chłonkę ze wszystkich pozostałych węzłów pachowych",
+			"war2": "Niepoprawne — chłonka spływa do nich głównie z węzłów obwodowych, a nie ze wszystkich naraz."
+		},
+		{
+			"war1": "przylegają do mięśnia piersiowego mniejszego",
+			"war2": "Niepoprawne — to węzły pachowe przyśrodkowe i boczne leżą w pobliżu mięśni piersiowych, środkowe znajdują się głębiej, przy żyle pachowej."
+		},
+		{
+			"war1": "leżą bocznie do żyły pachowej",
+			"war2": "Niepoprawne — węzły środkowe leżą przyśrodkowo do żyły pachowej."
+		},
+		{
+			"war1": "ich naczynia odprowadzające uchodzą do węzłów pachowych szczytowych",
+			"war2": "Poprawne — właśnie w ten sposób chłonka przechodzi z grupy środkowej do szczytowej."
+		},
+		{
+			"war1": "są pierwszą stacją filtracyjną chłonki z sutka",
+			"war2": "Niepoprawne — pierwszymi są węzły pachowe przednie (piersiowe), nie środkowe."
+		}
+	],
+	"wynik": 4,
+	"podpowiedz": "Węzły środkowe przekazują chłonkę dalej — pomyśl, do których dociera ona w ostatniej kolejności przed ujściem do żyły podobojczykowej."
+},
+
+{
+	"tresc": "Żyła odpromieniowa powstaje z połączenia:",
+	"odp": [
+		{
+			"war1": "łuku żylnego grzbietowego śródręcza z żyłą odpromieniową kciuka",
+			"war2": "Poprawne — to typowe źródło powstania żyły odpromieniowej (v. cephalica)."
+		},
+		{
+			"war1": "łuku żylnego dłoniowego głębokiego i łuku żylnego dłoniowego powierzchniowego",
+			"war2": "Niepoprawne — te układy tworzą sieć żylną dłoni, nie bezpośrednio żyłę odpromieniową."
+		},
+		{
+			"war1": "łuku żylnego grzbietowego śródręcza z żyłą odłokciową palca małego",
+			"war2": "Niepoprawne — z tego połączenia powstaje żyła odłokciowa (v. basilica)."
+		},
+		{
+			"war1": "żyły odpromieniowej kciuka z żyłą odłokciową palca małego",
+			"war2": "Niepoprawne — te dwie żyły nie łączą się bezpośrednio w typowej anatomii."
+		},
+		{
+			"war1": "łuku żylnego dłoniowego powierzchniowego z żyłą odpromieniową kciuka",
+			"war2": "Niepoprawne — żyła odpromieniowa powstaje na grzbiecie ręki, nie na powierzchni dłoniowej."
+		}
+	],
+	"wynik": 1,
+	"podpowiedz": "Pomyśl o stronie grzbietowej ręki — żyła odpromieniowa zaczyna się na kciuku."
+},
+{
+	"tresc": "Odnośnie do przedziałów podtroczkowych ręki:",
+	"odp": [
+		{
+			"war1": "przez I przedział mięśni zginaczy przechodzi mięsień zginacz długi kciuka",
+			"war2": "Niepoprawne — mięsień zginacz długi kciuka przebiega w kanale nadgarstka wśród zginaczy, a nie w przedziałach prostowników. Przedziały podtroczkowe dotyczą prostowników, nie zginaczy."
+		},
+		{
+			"war1": "przez I przedział prostowniczy przechodzi mięsień odwodziciel długi kciuka i mięsień prostownik krótki kciuka",
+			"war2": "Poprawne — przez I przedział prostowników rzeczywiście przechodzą te dwa ścięgna (APL i EPB)."
+		},
+		{
+			"war1": "przez IV przedział prostowniczy przechodzi mięsień prostownik palców i mięsień prostownik palca małego",
+			"war2": "Niepoprawne — w IV przedziale przebiegają ścięgna prostownika palców i prostownika wskaziciela, a prostownik palca małego biegnie w przedziale V."
+		},
+		{
+			"war1": "na grzbiecie ręki trzy przedziały podtroczkowe po stronie promieniowej przeprowadzają łącznie siedem ścięgien, a trzy przedziały podtroczkowe po stronie łokciowej zawierają łącznie pięć ścięgien",
+			"war2": "Niepoprawne — liczby się nie zgadzają: przez sześć przedziałów podtroczkowych przechodzi łącznie 9 ścięgien (6 prostowników palców i 3 mięśni kciuka)."
+		},
+		{
+			"war1": "najwięcej ścięgien schodzących na rękę przechodzi przez przedział 2 zginaczy w obrębie kanału nadgarstka",
+			"war2": "Niepoprawne — przedziały zginaczy nie są numerowane jak prostowniki, a przez kanał nadgarstka przechodzi 9 ścięgien (8 zginaczy palców i 1 zginacza długiego kciuka)."
+		}
+	],
+	"wynik": 2,
+	"podpowiedz": "Pamiętaj, że numeracja przedziałów dotyczy prostowników, a nie zginaczy."
+},
+{
+	"tresc": "Wskaż fałsz o kościach:",
+	"odp": [
+		{
+			"war1": "Łopatka posiada wyrostek kruczy i barkowy",
+			"war2": "Jest to zdani prawdziwe - łopatka rzeczywiście posiada oba te wyrostki: coracoideus (kruczy) i acromion (barkowy)."
+		},
+		{
+			"war1": "Kość ramienna ma zarówno szyjkę chirurgiczną jak i anatomiczną",
+			"war2": "Jest to zdani prawdziwe - obie szyjki są obecne: anatomiczna oddziela głowę, a chirurgiczna jest miejscem częstych złamań."
+		},
+		{
+			"war1": "Kość łokciowa ma wyrostek kruczy jak i łokciowy",
+			"war2": "Jest to zdani fałszywe - wyrostek kruczy (coracoideus) występuje w łopatce, nie w kości łokciowej. Kość łokciowa ma wyrostek dziobasty (coronoideus) i łokciowy (olecranon)."
+		},
+		{
+			"war1": "Kość promieniowa kończy się wyrostkiem rylcowatym",
+			"war2": "Jest to zdani prawdziwe - na końcu dalszym kości promieniowej rzeczywiście występuje processus styloideus radii."
+		},
+		{
+			"war1": "Kość główkowata jest największą kością nadgarstka",
+			"war2": "Jest to zdani prawdziwe - największą kością nadgarstka jest capitatum (kość główkowata)."
+		}
+	],
+	"wynik": 3,
+	"podpowiedz": "Zwróć uwagę, że wyrostek kruczy nie należy do kości łokciowej."
+},
+{
+	"tresc": "Który zestaw zawiera wyłącznie elementy niestałe stawu:", 
+	"odp": [
+		{
+			"war1": "Jama stawowa, łąkotka",
+			"war2": "Niepoprawne - jama stawowa jest elementem stałym każdego stawu."
+		},
+		{
+			"war1": "Krążek stawowy, chrząstka stawowa",
+			"war2": "Niepoprawne - chrząstka stawowa jest elementem stałym."
+		},
+		{
+			"war1": "Więzadła stawowe, torebka stawowa",
+			"war2": "Niepoprawne - oba te elementy są stałe."
+		},
+		{
+			"war1": "Łąkotka, obrębek stawowy",
+			"war2": "Poprawne - zarówno łąkotka, jak i obrąbek stawowy występują tylko w niektórych stawach (np. kolanowym, barkowym)."
+		},
+		{
+			"war1": "Wszystkie zestawy zawierają elementy niestałe",
+			"war2": "Niepoprawne - tylko zestaw z łąkotką i obrąbkiem zawiera wyłącznie niestałe elementy."
+		}
+	],
+	"wynik": 4,
+	"podpowiedz": "Pomyśl o strukturach, które występują tylko w wybranych stawach, a nie we wszystkich. <p>Elementy stałe stawu:</p> <p>* powierzchnie stawowe (pokryte chrząstką stawową)</p> <p>* jama stawowa</p> <p>* torebka stawowa</p> <p>* więzadła stawowe (intra- i ekstraartykularne)</p> <p>Czyli: bez tych struktur nie ma w ogóle stawu - są obowiązkowe.</p> <p>Elementy niestałe:</p> <p>* obrąbki stawowe</p> <p>* łąkotki</p> <p>* krążki stawowe (disci articulares)</p> <p>* fałdy błony maziowej, kosmki, ciała tłuszczowe itp.</p> <p>Czyli: pojawiają się tylko w niektórych stawach, poprawiają dopasowanie lub amortyzują ruch.</p>"
+},
+{
+	"tresc": "Który z mięśni nie tworzy tylnej ściany jamy pachowej:",
+	"odp": [
+		{
+			"war1": "M. najszerszy grzbietu",
+			"war2": "Niepoprawne — tworzy dolną część ściany tylnej jamy pachowej."
+		},
+		{
+			"war1": "M. obły większy",
+			"war2": "Niepoprawne — stanowi element tylnej ściany jamy pachowej."
+		},
+		{
+			"war1": "M. podłopatkowy",
+			"war2": "Niepoprawne — tworzy górną część ściany tylnej jamy pachowej."
+		},
+		{
+			"war1": "M. obły mniejszy",
+			"war2": "Poprawne — nie wchodzi w skład ściany tylnej jamy pachowej; leży wyżej, między łopatką a kością ramienną, poza jej granicami."
+		},
+		{
+			"war1": "Wszystkie wymienione tworzą tylną ścianę jamy pachowej",
+			"war2": "Niepoprawne — m. obły mniejszy nie uczestniczy w tworzeniu ściany tylnej."
+		}
+	],
+	"wynik": 4,
+	"podpowiedz": "Przypomnij sobie, że tylna ściana jamy pachowej to głównie m. podłopatkowy, obły większy i najszerszy grzbietu."
+},
+
+{
+	"tresc": "Odnośnie do kości i ich połączeń:",
+	"odp": [
+		{
+			"war1": "kryterium kości długiej jest jej długość bezwzględna, toteż paliczek środkowy ręki jest kością krótką", 
+			"war2": "Stwierdzenie, że paliczek środkowy jest kością krótką, jest nieprawidłowe. Chociaż paliczki są relatywnie niewielkie, ich klasyfikacja jako kości długich wynika z proporcji między ich długością a szerokością, a nie z bezwzględnej długości. Każdy paliczek, w tym środkowy, składa się z trzonu i dwóch końców, co jest charakterystyczną cechą kości długich."
+		},
+		{
+			"war1": "w kości krótkiej jeden z wymiarów znacznie ustępuje dwóm pozostałym",
+			"war2": "Niepoprawne — w kościach krótkich wszystkie wymiary są mniej więcej równe (np. kości nadgarstka)."
+		},
+		{
+			"war1": "w więzozroście włóknistym włókna kolagenowe są koloru żółtego",
+			"war2": "Niepoprawne — włókna kolagenowe są białe; włókna żółte pojawiają się w więzozrostach sprężystych."
+		},
+		{
+			"war1": "wklinowanie jest przykładem więzozrostu sprężystego",
+			"war2": "Niepoprawne — wklinowanie to połączenie kości bezpośrednio w szczelinie kostnej (synartroza), nie więzozrost sprężysty."
+		},
+		{
+			"war1": "w każdym stawie wyróżnia się co najmniej dwie powierzchnie stawowe, zbudowane z chrząstki szklistej, albo chrząstki włóknistej, torebkę stawową oraz jamę stawową",
+			"war2": "Poprawne — to definicja stawu ruchomego: dwie powierzchnie stawowe + jama + torebka."
+		}
+	],
+	"wynik": 5,
+	"podpowiedz": "Pomyśl o tym, jak klasyfikuje się kości długie, krótkie i inne — długość względna paliczków ręki."
+},
+
+{
+	"tresc": "Prawdą o bruździe naramienno-piersiowej jest:",
+	"odp": [
+		{
+	"war1": "Znajduje się między mięśniem piersiowym mniejszym a mięśniem nadramiennym",
+	"war2": "Nieprawda — bardzo podchwytliwe, chwilę mi to zajęło znalezienie:\r\n<strong>Mięsień naramienny (m. deltoideus)</strong>\r\nTo ten duży, widoczny mięsień barku – tworzy charakterystyczne zaokrąglenie ramienia.\r\n* Położenie:\r\n * Leży najbardziej powierzchownie w okolicy barku.\r\n * Pokrywa staw ramienny.\r\n* Przyczepy:\r\n * Początek: koniec barkowy obojczyka, wyrostek barkowy łopatki, grzebień łopatki.\r\n * Koniec: guzowatość naramienna kości ramiennej.\r\n* Funkcja:\r\n * Odpowiada za odwodzenie ramienia, a także uczestniczy w zginaniu, prostowaniu i obracaniu go w zależności od części mięśnia.\r\n* Unerwienie: nerw pachowy (n. axillaris).\r\n<strong>Mięsień nadgrzebieniowy (m. supraspinatus)</strong>\r\nNależy do grupy mięśni obręczy kończyny górnej, dokładniej do tzw. mankietu rotatorów.\r\n* Położenie:\r\n * Leży pod mięśniem naramiennym, w dole nadgrzebieniowym łopatki.\r\n* Przyczepy:\r\n * Początek: dół nadgrzebieniowy łopatki.\r\n * Koniec: guzek większy kości ramiennej.\r\n* Funkcja:\r\n * Zapoczątkowuje odwodzenie ramienia (pierwsze 15 st.), zanim przejmie je mięsień naramienny.\r\n * Stabilizuje staw ramienny.\r\n* Unerwienie: nerw nadłopatkowy (n. suprascapularis)."
+},
+		{
+			"war1": "Przedłuża się ona w kierunku dalszym w bruzdę mięśnia trójgłowego",
+			"war2": "Niepoprawne — bruzda nie przechodzi w bruzdę mięśnia trójgłowego; inne struktury mięśniowe są bardziej bocznie/dystalnie."
+		},
+		{
+			"war1": "Biegnie w niej żyła odpromieniowa",
+			"war2": "Poprawne — przez bruźdę naramienno-piersiową faktycznie przebiega żyła odpromieniowa."
+		},
+		{
+			"war1": "Na wysokości trójkąta naramienno-piersiowego powstaje dół nadobojczykowy",
+			"war2": "Niepoprawne — dół nadobojczykowy powstaje nad obojczykiem, a nie w bruździe naramienno-piersiowej."
+		},
+		{
+			"war1": "Przebiega w niej gałąź piersiowa tętnicy piersiowo-barkowej",
+			"war2": "Niepoprawne — gałąź piersiowa tętnicy piersiowo-barkowej przebiega bardziej głęboko, nie w bruździe powierzchniowej."
+		}
+	],
+	"wynik": 3,
+	"podpowiedz": "Wskaż powierzchniową strukturę żylną biegnącą między mięśniem piersiowym większym a mięśniem naramiennym — to żyła odpromieniowa (v. cephalica). Zalecam sprawdzić co będzie jak zaznaczę odpowiedź pierwszą."
+},
+
+{
+	"tresc": "Mankietu mięśniowo-ścięgnistego NIE tworzą",
+	"odp": [
+		{
+			"war1": "mięsień nadgrzebieniowy i mięsień podłopatkowy",
+			"war2": "Niepoprawne — oba te mięśnie tworzą mankiet rotatorów."
+		},
+		{
+			"war1": "mięsień obły większy i głowa długa mięśnia dwugłowego ramienia",
+			"war2": "Poprawne — ani obły większy, ani głowa długa bicepsa nie wchodzą w skład mankietu mięśniowo-ścięgnistego."
+		},
+		{
+			"war1": "mięsień podgrzebieniowy i mięsień obły mniejszy",
+			"war2": "Niepoprawne — oba są częścią tylnej grupy mankietu rotatorów."
+		},
+		{
+			"war1": "mięsień nadgrzebieniowy i mięsień podgrzebieniowy",
+			"war2": "Niepoprawne — tworzą mankiet tylnej strony stawu ramiennego."
+		},
+		{
+			"war1": "mięsień podłopatkowy i mięsień podgrzebieniowy",
+			"war2": "Niepoprawne — oba mięśnie są integralną częścią mankietu rotatorów."
+		}
+	],
+	"wynik": 2,
+	"podpowiedz": "Zastanów się, które mięśnie stabilizują staw ramienny, a które leżą poza mankietem."
+},
+
+{
+	"tresc": "Zginacz przeszyty to inaczej:",
+	"odp": [
+		{
+			"war1": "Zginacz powierzchniowy palców",
+			"war2": "Poprawne — zginacz przeszyty to stary termin dla mięśnia zginacza powierzchownego palców (FDS)."
+		},
+		{
+			"war1": "Zginacz promieniowy nadgarstka",
+			"war2": "Niepoprawne — to inny mięsień, nie wchodzi w skład zginacza przeszytego."
+		},
+		{
+			"war1": "Zginacz łokciowy nadgarstka",
+			"war2": "Niepoprawne — nie jest zginaczem przeszytym."
+		},
+		{
+			"war1": "Zginacz głęboki palców",
+			"war2": "Niepoprawne — to mięsień przebiega głębiej i jest przebijany przez ścięgna FDS, stąd nazwa 'przeszyty'."
+		},
+		{
+			"war1": "Zginacz długi kciuka",
+			"war2": "Niepoprawne — to osobny mięsień, nie określany jako zginacz przeszyty."
+		}
+	],
+	"wynik": 1,
+	"podpowiedz": "Pomyśl, który mięsień jest przebijany przez ścięgna innych zginaczy w przedramieniu."
+},
+
+{
+	"tresc": "Nerw pośrodkowy - wybierz odpowiedź nieprawidłową:",
+	"odp": [
+		{
+			"war1": "rozpoczyna się dwoma korzeniami przyśrodkowym i bocznym",
+			"war2": "Niepoprawne — nerw pośrodkowy rozpoczyna się z korzeni bocznego i przyśrodkowego splotu ramiennego."
+		},
+		{
+			"war1": "na ramieniu biegnie wpierw bocznie od tętnicy ramiennej a następnie krzyżuje ją od tyłu i przechodzi na jej stronę przyśrodkową",
+			"war2": "Poprawne — to opis przebiegu nerwu pośrodkowego w ramieniu, uwzględniający jego skrzyżowanie z tętnicą ramienną."
+		},
+		{
+			"war1": "w powrózku naczyniowo-nerwowym jamy pachowej leży najbardziej z przodu",
+			"war2": "Niepoprawne — w powrózku naczyniowo-nerwowym nerw pośrodkowy leży między tętnicą ramienną a nerwem łokciowym, nie najbardziej z przodu."
+		},
+		{
+			"war1": "oddaje trzy gałęzie końcowe nerwy dłoniowe wspólne palców",
+			"war2": "Niepoprawne — to jest prawidłowa funkcja nerwu pośrodkowego."
+		},
+		{
+			"war1": "z trzech nerwów dłoniowych wspólnych palców nerw pośrodkowy odchodzi łącznie siedem nerwów dłoniowych właściwych palców",
+			"war2": "Niepoprawne — to prawidłowe zakończenie nerwu pośrodkowego."
+		}
+	],
+	"wynik": 2,
+	"podpowiedz": "Szukaj informacji o tym, jak nerw pośrodkowy układa się względem tętnicy ramiennej w ramieniu."
+},
+
+	{
+		"tresc": "Zawartości dołu łokciowego nie stanowi:",
+		"odp": [
+			{"war1": "Nerw pośrodkowy", "war2": "Pasuje – przebiega przez dół łokciowy, leży przyśrodkowo od tętnicy ramiennej.\r\n$dol_lokciowy.png?600$"},
+			{"war1": "Nerw promieniowy", "war2": "Pasuje – znajduje się w bocznej części dołu łokciowego, dzieli się na gałąź głęboką i powierzchowną.\r\n$dol_lokciowy.png?600$"},
+			{"war1": "Nerw łokciowy", "war2": "Nie pasuje – NIE przebiega przez dół łokciowy, biegnie za nadkłykciem przyśrodkowym kości ramiennej.\r\n$dol_lokciowy.png?600$"},
+			{"war1": "Tętnica promieniowa", "war2": "Pasuje – jest gałęzią końcową tętnicy ramiennej, odchodzi w dole łokciowym.\r\n$dol_lokciowy.png?600$"},
+			{"war1": "Tętnica łokciowa", "war2": "Pasuje – również gałąź końcowa tętnicy ramiennej, odchodzi w dole łokciowym.\r\n$dol_lokciowy.png?600$"}
+		],
+		"wynik": 3,
+		"podpowiedz": "Zastanów się, który z wymienionych nerwów nie przebiega przez dół łokciowy, lecz za przyśrodkowym nadkłykciem kości ramiennej (tam, gdzie często „kopie prąd” po uderzeniu w łokieć)."
+	},
+	{
+		"tresc": "Mięsień zginacz promieniowy nadgarstka – zaznacz fałszywe:",
+		"odp": [
+			{"war1": "Najczęściej kończy się na drugiej kości śródręcza", "war2": "Pasuje – rzeczywiście przyczep końcowy to podstawa II kości śródręcza (czasem również III)."},
+			{"war1": "Jest silnym nawracaczem przedramienia, zwłaszcza przy wyprostowanym przedramieniu", "war2": "<strong>Do głównych funkcji mięśnia należą:</strong>\r\n* zginanie w stawie łokciowym (pojedynczo jest to działanie bardzo słabe, ma znaczenie jedynie przy współdziałaniu innych mięśni z tej grupy);\r\n* zginanie w stawie promieniowo-nadgarstkowym;\r\n* nawracanie przedramienia (najmocniej przy wyprostowanych stawach łokciowym i nadgarstkowym), ponieważ posiada on skośny przebieg w stosunku do długiej osi przedramienia;\r\n* pociąganie ręki w stronę promieniową."},
+			{"war1": "Unerwiony jest przez nerw pośrodkowy", "war2": "Pasuje – unerwia go nerw pośrodkowy."},
+			{"war1": "Przebiega przez bruzdę kości czworobocznej mniejszej", "war2": "Nie pasuje – nie przechodzi przez tę bruzdę, tylko po promieniowej stronie nadgarstka."},
+			{"war1": "Przebieg przez przedział kanału nadgarstka", "war2": "Prawda - W połowie przedramienia mięsień zginacz promieniowy nadgarstka, a dokładniej mówiąc brzusiec przechodzi w ścięgno, które z kolei przebiega przez kanał nadgarstka (canalis carpi). W kanale ścięgno biegnie w rowku kości czworobocznej większej, przytrzymane przez poprzeczne włókna ścięgniste oddzielające je od innych ścięgien."}
+		],
+		"wynik": 4,
+		"podpowiedz": "Zastanów się, czy mięsień zginacz promieniowy nadgarstka ma związek z pronacją – jego nazwa już sugeruje główną funkcję." 
+	},
+	{
+		"tresc": "Uszkodzenie tego nerwu powoduje porażenie mięśni równoległobocznych oraz niedowład mięśnia dźwigacza łopatki. Powyższy opis dotyczy nerwu:",
+		"odp": [
+			{"war1": "piersiowego długiego", "war2": "Nie pasuje – unerwia mięsień zębaty przedni, a jego uszkodzenie powoduje tzw. 'skrzydlatą łopatkę'."},
+			{"war1": "podobojczykowego", "war2": "Nie pasuje – unerwia tylko mięsień podobojczykowy."},
+			{"war1": "nadłopatkowego", "war2": "Nie pasuje – unerwia mięśnie nadgrzebieniowy i podgrzebieniowy."},
+			{"war1": "nerwów podłopatkowych", "war2": "Nie pasuje – unerwiają mięsień podłopatkowy i obły większy."},
+			{"war1": "grzbietowego łopatki", "war2": "Pasuje – unerwia mięśnie równoległoboczne i dźwigacz łopatki."}
+		],
+		"wynik": 5,
+		"podpowiedz": "Pomyśl o nerwie odchodzącym od splotu ramiennego, który unerwia mięśnie przyśrodkowej części łopatki. (na dysku są błędy i to dużo tutaj jest prawidłowa odpowiedź) "
+	},
+	{
+		"tresc": "Więzadła poboczne są typowe dla stawu:", 
+		"odp": [
+			{"war1": "Promieniowo-łokciowego bliższego", "war2": "Nie pasuje – stabilizowany przez więzadło pierścieniowate, nie typowe poboczne.\r\n$staw.jpg?600$"},
+			{"war1": "Międzypaliczkowego kciuka", "war2": "Pasuje – stawy zawiasowe, jak międzypaliczkowe, mają więzadła poboczne."},
+			{"war1": "Stawu ramiennego", "war2": "Nie pasuje – ten staw ma torebkę luźną, brak klasycznych więzadeł pobocznych."},
+			{"war1": "Promieniowo-łokciowego dalszego", "war2": "Staw łokciowy: Zawiera więzadło poboczne boczne i przyśrodkowe, które stabilizują staw, zapobiegając nadmiernemu ruchowi na boki.\r\n$staw.jpg?600$ "},
+			{"war1": "Barkowo-obojczykowego", "war2": "Nie pasuje – stabilizowany przez więzadła kruczo-obojczykowe, nie poboczne."}
+		],
+		"wynik": 2,
+		"podpowiedz": "Nie, więzadła poboczne nie są typowe dla stawów kończyn górnych, lecz dla stawu kolanowego. Są to więzadła stabilizujące kolano od strony bocznej (więzadło poboczne strzałkowe) i przyśrodkowej (więzadło poboczne piszczelowe). Jednak w jednym miejscy znajdują się podobne struktury, które jednak nazywa się więzadłami pobocznymi bocznym i przyśrodkowym."
+	},
+	{
+		"tresc": "Koła tętniczego okołołopatkowego nie współtworzy:", 
+		"odp": [
+			{"war1": "gałąź głęboka tętnicy poprzecznej szyi", "war2": "Pasuje – uczestniczy w tworzeniu sieci wokół łopatki."},
+			{"war1": "tętnica podłopatkowa", "war2": "Pasuje – główny składnik koła tętniczego."},
+			{"war1": "tętnica nadłopatkowa", "war2": "Pasuje – uczestniczy w anastomozach wokół łopatki."},
+			{"war1": "tętnica okalająca ramię tylna", "war2": "Nie pasuje – bierze udział w unaczynieniu stawu ramiennego, nie w kole okołołopatkowym."},
+			{"war1": "wszystkie wymienione naczynia tworzą koło tętnicze okołołopatkowe", "war2": "Nie pasuje – bo nie wszystkie wymienione naczynia biorą udział (np. tętnica okalająca ramię tylna)."}
+		],
+		"wynik": 4,
+		"podpowiedz": "Zwróć uwagę, które naczynia biegną wokół łopatki – nie każde z wymienionych uczestniczy w tym kole."
+	},
 		{
 			"tresc" : "Treść",
 			"odp" : [
@@ -838,6 +1316,7 @@
 			"wynik" : 1,
 			"podpowiedz" : "podpowiedz"
 		}
+
 
 	]
 }

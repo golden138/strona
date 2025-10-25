@@ -382,7 +382,9 @@ function findPodpowiedz(x, y) {
 			var dane3 = dane2.war2;
 			wynik += '<div id="pole'+ i + '_' + j + '_' + y + '" class="punkt" data-clicked="false" onclick="poleSprawdz'+ i + '_' + j + '_' + y + '();">'+odpowiedz+'</div><div id="odp'+ i + '_' + j + '_' + y +'"></div>';
 			var script_TMP1 = document.createElement('script');
-			let safeDane3 = escapeForJS(dane3);
+			//console.log("Dane3 = " + dane3);
+			//console.log(formatTresc3((dane3+'\r\n') , y));
+			let safeDane3 = escapeForJS(formatTresc3((dane3+'\r\n') , y));
 
 			let imgSrc = (j + 1) === poprawna ? "/strona/img/accept.png" : "/strona/img/no.png";
 			let innerHTMLPart = dane3.charAt(0) !== '@' ? `' <img src="${imgSrc}" />${safeDane3}'` : `' <img src="${imgSrc}" />'`;
@@ -400,9 +402,9 @@ function findPodpowiedz(x, y) {
 		}
 		if(dane.podpowiedz.charAt(0) !== '@') {
 			
-			
+			//console.log("Pod = " + dane.podpowiedz);
 			var script_TMP = document.createElement('script');
-			script_TMP.textContent = 'window.Sprawdz_p'+ i +'_'+ y + ' = function() { document.getElementById(\'podpowiedz'+ i +'_'+ y + '\').innerHTML = \'' + dane.podpowiedz +'\';}'
+			script_TMP.textContent = 'window.Sprawdz_p'+ i +'_'+ y + ' = function() { document.getElementById(\'podpowiedz'+ i +'_'+ y + '\').innerHTML = \'' + formatTresc3((dane.podpowiedz+'\r\n') , y) +'\';}'
 			document.body.appendChild(script_TMP);
 			wynik += '</br><div class="roz" onclick="Sprawdz_p'+ i +'_'+ y + '();">Podpowiedz</div><div id="podpowiedz' + i +'_'+ y + '"></div></br>';
 		}
@@ -494,6 +496,118 @@ function sprawdzPunktText(input2) {
     };
 }
 
+function formatTresc3(x , zad_nr) {
+	var wynik2 = '';
+	var przesuniecie = 0;
+	var wynik = '';
+	var first = 0;
+	var lista = 0;
+	for(var i = 0; i < x.length; i++) {
+		var tmp = x.charAt(i);
+		if(tmp === '\r') {
+			if(przesuniecie === 1) {
+				wynik2 += '<div style="margin-left: 20px;">' + wynik + '</div>';
+				przesuniecie = 0;
+			}else{
+				var out = sprawdzPunktText(wynik);
+				
+				if(out.jest === 1) {
+					wynik2 += '<div style="margin-left: ' + (20*out.ile_jednostek+10) + 'px;">' + out.input + '</div>';
+				} else {
+					wynik2 += '<p>' + wynik + '</p>';
+				}
+				przesuniecie = 0;
+			}
+			wynik = '';
+			i++;
+		} else {
+			if(tmp === '*' || czyLiczba(tmp)) {
+				if(i > 1) {
+					var tmp_1 = x.charAt(i-1);
+					if(tmp_1 === '\n') {
+						if(czyLiczba(tmp)) {
+							tmp1 = x.charAt(i+1);
+							if(tmp1 === '.') {
+								i++;
+							}
+						}
+						lista = 1;
+						wynik += '• ';
+						przesuniecie = 1;
+					}else{
+						wynik += tmp;
+					}
+				} else {
+					wynik += '• ';
+					przesuniecie = 1;
+					if(czyLiczba(tmp)) {
+						tmp1 = x.charAt(i+1);
+						if(tmp1 === '.') {
+							i++;
+						}
+					}
+					lista = 1;
+				}
+			} else {
+				if(tmp === '$') {
+					i++;
+					var k = 0;
+					var nazwa = '';
+					for(var j = i; j < x.length; j++) {
+						var tmp_tmp = x.charAt(j);
+						k++;
+						if(tmp_tmp === '$') {
+							break;
+						}else{
+							nazwa += tmp_tmp;
+						}
+					}
+					i += k;
+					//sprawdzam czy w nazwa jest ?rozmiar
+					var nazwa2 = nazwa.split('?')[0];
+					var sizeMaks = 0;
+					if (nazwa.indexOf('?') !== -1) {
+						sizeMaks = Number(nazwa.split('?')[1]);
+					}
+					
+					const statusPath = localStorage.getItem("status");
+					var gdzie = path + '/zadania/' + zad_nr + '/'+ nazwa2;
+					//console.log("IMG = " + gdzie);
+					if(sizeMaks > 0) {
+						wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
+					}else{
+						wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
+					}
+				}else{
+					var tmp1 = x.charAt(i+1);
+					if(tmp === '#' && tmp1 === '#') {
+						i+=2;
+						var k = 0;
+						var nazwa = '';
+						for(var j = i; j < x.length; j++) {
+							var tmp_tmp = x.charAt(j);
+							var tmp_tmp1 = x.charAt(j+1);
+							k++;
+							if(tmp_tmp === '#' && tmp_tmp1 === '#') {
+								break;
+							}else{
+								nazwa += tmp_tmp;
+							}
+						}
+						i += (k+1);
+						wynik += generateTable(nazwa);
+					}else{
+						wynik += tmp;
+					}
+					
+				}
+				
+			}
+		}
+	}
+	return wynik2;
+}
+
 function formatTresc2(x) {
 	var wynik2 = '';
 	var przesuniecie = 0;
@@ -571,9 +685,9 @@ function formatTresc2(x) {
 					const statusPath = localStorage.getItem("status");
 					var gdzie = path + '/Posty/' + statusPath + '/img/' + nazwa2;
 					if(sizeMaks > 0) {
-						wynik += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
+						wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
 					}else{
-						wynik += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
+						wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
 					}
 				}else{
 					var tmp1 = x.charAt(i+1);
