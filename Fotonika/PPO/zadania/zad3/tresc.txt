@@ -67,15 +67,48 @@
 			"podpowiedz" : "Zastanów się nad procesem z udziałem trzech cząstek (dwóch elektronów i dziury lub odwrotnie), gdzie energia nie zamienia się w światło."
 		},
 		{
-			"tresc" : "Treść",
+			"tresc" : "Co opisuje współczynnik ograniczenia optycznego \\( \\Gamma \\) w równaniach bilansu lasera?",
 			"odp" : [
-				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
-				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"},
-				{"war1" : "odpowiedz1", "war2" : "dlaczego nie pasuje1"},
-				{"war1" : "odpowiedz2", "war2" : "dlaczego nie pasuje2"}
+				{"war1" : "Część fotonów z emisji spontanicznej, która jest emitowana do pojedyńczego modu laserującego>", "war2" : "Ten ułamenk jest reprezentowany przez współczynnik sprzężenia emisji spontanicznej \\( \\beta \\) ."},
+				{"war1" : "Średni czas życia fotonu w rezonatorze, zanim opuści go przez zwierciadło lub zostanie zaabsorbowany.", "war2" : "Czas życia fotonu \\( \\tau_p \\) jest związany ze stratami, a nie ze stopniem pokrycia modu z obszarem aktywnym."},
+				{"war1" : "Wydajność kwantową konwersji prądu na pary elektron-dziura w obszarze czynnym.", "war2" : "Parametr ten jest opisany przez wewnętrzną wydajność kwantową \\( \\eta_i \\)"},
+				{"war1" : "Ułamek mocy modu optycznego, który znajduje się wewnątrz medium wzmacniającego.", "war2" : "\\( \\Gamma \\) określa, jak dobrze mod optyczny pokrywa się z obszarek aktywnym, co decyduje o efektywności oddziaływania światła z nośnikami"}
 			],
-			"wynik" : 1,
-			"podpowiedz" : "podpowiedz"
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o tym, że światło w falowodzie lasera nie jest idealnie \"zamknięte\" tylko w warstwie, w której zachodzi wzmocnienie."
+		},
+		{
+			"tresc" : "W równaniu bilansu fotonów \\[ \\frac{d N_p}{dt} = \\Gamma N_p g v_g + \\Gamma \\beta R_{sp} - \\frac{N_p}{\\tau_p} \\] , który człon jest odpowiedzialny za lawinowe narastanie liczby fotonów i stanowi istotę akcji laserowej?",
+			"odp" : [
+				{"war1" : "\\( \\Gamma \\beta R_{sp} \\)", "war2" : "Ten człon opisuje wkład emisji spontanicznej do modu laserującego, który jest \"ziarnem\", ale nie mechanizm lawinowego wzmocnienia"},
+				{"war1" : "\\( \\Gamma N_p g v_g \\)", "war2" : "Ten człon, opisuje rekombinacje stymulowaną, pokazuje, że szybkość generacji nowych fotonów jest proporcjonalna do liczby fotonów już obecnych (N<sub>p</sub>), co prowadzi do wykładniczego wzrostu."},
+				{"war1" : "\\( R_{sp} \\)", "war2" : "To całkowita szybkość rekombinacji spontanicznej; tylko jej niewielka część (skalowana przez \\( \\Gamma \\) i \\( \\beta \\) ) przyczynia się do akcji laserowej, a sam proces nie ma charakteru lawinowego"},
+				{"war1" : "\\( - \\frac{N_p}{\\tau_p}  \\)", "war2" : "Ten człon reprezentuje straty fotonów z rezonatora (zarówno wewnętrzne, jak i na zwierciadłach), a więc działa przeciwnie do wzmocnienia"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Szukaj składnika równania, który pokazuje, że obecność fotonów stymuluje powstawanie kolejnych, identycznych fotonów."
+		},
+		{
+			"tresc" : "Porównując rekombinację promienistą i niepromienistą, która z nich jest pożądana w laserze i dlaczego?",
+			"odp" : [
+				{"war1" : "Obie są jednakowo ważne; promienista generuje światło, niepromienista dostarcza ciepła potrzebnego do utrzymania temperatury pracy", "war2" : "Generacja ciepła w laserze jest zjawiskiem wysoce niepożądanym, które pogarsza jego parametry, a nie jest potrzebne do jego działania"},
+				{"war1" : "Rekombinacja niepromienista, ponieważ efektywnie usuwa nadmiar nośników, stabilizując pracę lasera", "war2" : "Rekombinacja niepromienista jest procesem strat, który zmienjsza wydajność i zwiększa prąd progowy, a nie stabilizuje pracy w pożądany sposób"},
+				{"war1" : "Rekombinacja promienista, ponieważ każdy jej akt zwiększa liczbę fotonów w ośrodku, które mogą następnie zainicjalizować emisję wymuszoną", "war2" : "To właśnie ten proces dostarcza fotonów, które są następnie wzmacniane. Wysoka wydajność promienista przekłada się na niższy prąd progowy i większą sprawność lasera"},
+				{"war1" : "Żadna z nich nie jest kluczowa; najważniejszą jest rekombinacja stymulowana", "war2" : "Chociaż rekombinacja stymulowana jest sercem akcji laserowej, to rekombinacja (spontaniczna) jest niezbędna do jej zainicjalizowania i stanowi podstawę wydajności urządzenia"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Zastanów się, który proces bezpośrednio przyczynia się do zwiększenia liczby fotonów, a który marnuje energię w postaci ciepła."
+		},
+		{
+			"tresc" : "W równaniu bilansu dla nośników \\[ \\frac{d N}{dt} = \\eta_i \\frac{I}{q V} - \\frac{N}{\\tau} - N_p g v_g \\] , co fizycznie reprezentuje pierwszy człon, \\( \\eta_i \\frac{I}{q V} \\)?",
+			"odp" : [
+				{"war1" : "Całkowitą szybkość rekombinacji niepromienistej i spontanicznej", "war2" : "Te procesy strat są zawarte w członie \\( \\frac{N}{\\tau} \\), gdzie \\( \\tau \\) jest efektywnym czasem życia nośnika"},
+				{"war1" : "Gęstość prądu progowego wymaga do rozpoczęcia akcji laserowej", "war2" : "To jest szybkość generacji, a nie wartość progowa prądu. Próg jest osiągany gdy generacja jest w stanie zrównoważyć straty przy odpowiedniej gęstości nośników"},
+				{"war1" : "Szybkość z jaką nośniki są tracone w wyniku rekombinacji stymulowanej", "war2" : "Straty nośników w wyniku rekombinacji stymulowanej są opisane przez ostatni człon równania \\( N_p g v_g \\)"},
+				{"war1" : "Szybkość, z jaką nośniki są generowane w obszarze czynnym dzięki prądowi pompy", "war2" : "Ten człon opisuje tempo \"wstrzykiwania\" par elektron-dziura do objętości czynnej V prądem I, z uwzględnieniem wewnętrznej wydajności kwantowej \\(\\eta_i \\)"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o źródle, które dostarcza nośniki ładunku (elektrony i dziury) do obszaru, gdzie ma zajść emisja światła."
 		}
 	]
 }

@@ -1,5 +1,6 @@
 var path = '/Fotonika/OOA';
 var maksSize = 0;
+var scriptsToLoad = [];
 
 function setPath(p) {
 	path = p;
@@ -429,6 +430,16 @@ function sprawdzFormat(x) {
 	return jest;
 }
 
+function changeFormat(data) {
+	var data2;
+	if(sprawdzFormat(data) === 0) {
+		data2 = data.replace(/\r?\n/g, '\r\n');
+	}else {
+		data2 = data;
+	}
+	return data2;
+}
+
 function getArtykul() {
 	const statusPath = localStorage.getItem("status");
 	var gdzie = path + '/Posty/' + statusPath + '/tresc.txt';
@@ -450,6 +461,7 @@ function getArtykul() {
 			data2 = data;
 		}
       document.getElementById('Artykul').innerHTML = '<div class="wieksze">' + formatText(data2) + '</div>';
+	  addApp();
     })
     .catch(error => {
       console.error('Wystąpił błąd:', error);
@@ -614,11 +626,17 @@ function formatTresc2(x) {
 	var wynik = '';
 	var first = 0;
 	var lista = 0;
+	var mocne = 0;
 	for(var i = 0; i < x.length; i++) {
 		var tmp = x.charAt(i);
 		if(tmp === '\r') {
 			if(przesuniecie === 1) {
-				wynik2 += '<div style="margin-left: 20px;">' + wynik + '</div>';
+				if(mocne === 1) {
+					wynik2 += '<div style="margin-left: 20px;"><div class="w1">' + wynik + '</div></div>';
+				}else {
+					wynik2 += '<div style="margin-left: 20px;">' + wynik + '</div>';
+				}
+				mocne = 0;
 				przesuniecie = 0;
 			}else{
 				var out = sprawdzPunktText(wynik);
@@ -661,58 +679,138 @@ function formatTresc2(x) {
 					lista = 1;
 				}
 			} else {
-				if(tmp === '$') {
-					i++;
-					var k = 0;
-					var nazwa = '';
-					for(var j = i; j < x.length; j++) {
-						var tmp_tmp = x.charAt(j);
-						k++;
-						if(tmp_tmp === '$') {
-							break;
+				
+				if(tmp === '!') {
+					if(i > 1) {
+						var tmp_1 = x.charAt(i-1);
+						if(tmp_1 === '\n') {
+							lista = 1;
+							wynik += '• ';
+							przesuniecie = 1;
+							mocne = 1;
 						}else{
-							nazwa += tmp_tmp;
+							wynik += tmp;
 						}
+					} else {
+						wynik += '• ';
+						przesuniecie = 1;
+						lista = 1;
+						mocne = 1;
 					}
-					i += k;
-					//sprawdzam czy w nazwa jest ?rozmiar
-					var nazwa2 = nazwa.split('?')[0];
-					var sizeMaks = 0;
-					if (nazwa.indexOf('?') !== -1) {
-						sizeMaks = Number(nazwa.split('?')[1]);
-					}
-					
-					const statusPath = localStorage.getItem("status");
-					var gdzie = path + '/Posty/' + statusPath + '/img/' + nazwa2;
-					if(sizeMaks > 0) {
-						wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
-					}else{
-						wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
-					}
-				}else{
-					var tmp1 = x.charAt(i+1);
-					if(tmp === '#' && tmp1 === '#') {
-						i+=2;
+				}else {
+					if(tmp === '$') {
+						i++;
 						var k = 0;
 						var nazwa = '';
 						for(var j = i; j < x.length; j++) {
 							var tmp_tmp = x.charAt(j);
-							var tmp_tmp1 = x.charAt(j+1);
 							k++;
-							if(tmp_tmp === '#' && tmp_tmp1 === '#') {
+							if(tmp_tmp === '$') {
 								break;
 							}else{
 								nazwa += tmp_tmp;
 							}
 						}
-						i += (k+1);
-						wynik += generateTable(nazwa);
+						i += k;
+						//sprawdzam czy w nazwa jest ?rozmiar
+						var nazwa2 = nazwa.split('?')[0];
+						var sizeMaks = 0;
+						if (nazwa.indexOf('?') !== -1) {
+							sizeMaks = Number(nazwa.split('?')[1]);
+						}
+						
+						const statusPath = localStorage.getItem("status");
+						var gdzie = path + '/Posty/' + statusPath + '/img/' + nazwa2;
+						if(sizeMaks > 0) {
+							wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
+						}else{
+							wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
+						}
 					}else{
-						wynik += tmp;
+						var tmp1 = x.charAt(i+1);
+						if(tmp === '#' && tmp1 === '#') {
+							i+=2;
+							var k = 0;
+							var nazwa = '';
+							for(var j = i; j < x.length; j++) {
+								var tmp_tmp = x.charAt(j);
+								var tmp_tmp1 = x.charAt(j+1);
+								k++;
+								if(tmp_tmp === '#' && tmp_tmp1 === '#') {
+									break;
+								}else{
+									nazwa += tmp_tmp;
+								}
+							}
+							i += (k+1);
+							wynik += generateTable(nazwa);
+						}else{
+							var tmp1 = x.charAt(i+1);
+							if(tmp === '@' && tmp1 === '@') {
+								i+=2;
+								var k = 0;
+								var nazwa = '';
+								for(var j = i; j < x.length; j++) {
+									var tmp_tmp = x.charAt(j);
+									var tmp_tmp1 = x.charAt(j+1);
+									k++;
+									if(tmp_tmp === '@' && tmp_tmp1 === '@') {
+										break;
+									}else{
+										nazwa += tmp_tmp;
+									}
+								}
+								i += (k+1);
+								const statusPath = localStorage.getItem("status");
+								var gdzie = path + '/Posty/' + statusPath + '/' + nazwa;
+								scriptsToLoad.push(gdzie);
+								console.log("add script = " + gdzie);
+							}else{
+								var tmp1 = x.charAt(i+1);
+								if(tmp === '%' && tmp1 === '%') {
+									i+=2;
+									var k = 0;
+									var nazwa = '';
+									for(var j = i; j < x.length; j++) {
+										var tmp_tmp = x.charAt(j);
+										var tmp_tmp1 = x.charAt(j+1);
+										k++;
+										if(tmp_tmp === '%' && tmp_tmp1 === '%') {
+											break;
+										}else{
+											nazwa += tmp_tmp;
+										}
+									}
+									i += (k+1);
+									wynik2 += generateHTML(nazwa);
+								}else{
+									var tmp1 = x.charAt(i+1);
+									if(tmp === '%' && tmp1 === '@') {
+										i+=2;
+										var k = 0;
+										var nazwa = '';
+										for(var j = i; j < x.length; j++) {
+											var tmp_tmp = x.charAt(j);
+											var tmp_tmp1 = x.charAt(j+1);
+											k++;
+											if(tmp_tmp === '@' && tmp_tmp1 === '%') {
+												break;
+											}else{
+												nazwa += tmp_tmp;
+											}
+										}
+										i += (k+1);
+										wynik2 += generateCODE(nazwa);
+									}else{
+										wynik += tmp;
+									}
+								}
+							}
+							
+						}
+						
 					}
-					
 				}
-				
 			}
 		}
 	}
@@ -736,6 +834,34 @@ function generateTable(text) {
 
   html += '</table>';
   return html;
+}
+
+// Wstawia HTML w postaci stringu
+function generateHTML(htmlString) {
+    // Można tutaj ewentualnie uciec niektóre znaki, jeśli potrzebne
+    return htmlString;
+}
+
+
+// Wstawia HTML w postaci stringu
+function generateCODE(htmlString) {
+    // Można tutaj ewentualnie uciec niektóre znaki, jeśli potrzebne
+    return '<div class="code-box"><pre><code class="language-python">' + htmlString + '</pre></code></div>';
+}
+
+function addApp() {
+	console.log("addApp = "+  scriptsToLoad.length);
+    scriptsToLoad.forEach(url => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.type = 'text/javascript';
+
+        // Opcjonalnie: logujemy czy się załadował
+        script.onload = () => console.log(`Wykonano skrypt: ${url}`);
+        script.onerror = () => console.error(`Błąd przy ładowaniu skryptu: ${url}`);
+
+        document.body.appendChild(script);
+    });
 }
 
 

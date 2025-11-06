@@ -276,6 +276,12 @@ h2
 	color: #39a5f1;
 }
 
+.w1
+{
+	font-weight: 600;
+	color: #FF692A;
+}
+
 h3
 {
 	font-size: 20px;
@@ -352,4 +358,58 @@ th, td {
 }
 th {
   background-color: #008776;
+}
+
+.pole_edycja {
+  clear: both;
+  display: flex;             /* label i input w jednej linii */
+  align-items: center;       /* wyrównanie pionowe w środku */
+  justify-content: flex-start; /* cała linia przy lewej krawędzi */
+  gap: 10px;                 /* odstęp między label a input */
+  margin-bottom: 10px;       /* odstęp między wierszami formularza */
+}
+
+input.tt {
+  width: 400px; /* szerokość tylko dla inputów z klasą tt */
+}
+
+hr {
+  border: none;               /* usuwa domyślną ramkę */
+  border-top: 3px solid #fff; /* biała linia o grubości 2px */
+  margin: 10px 0;             /* odstęp od tekstu */
+}
+
+.box {
+	display: block;
+}
+
+.tt2 {
+    display: block;       /* żeby textarea zaczynała się w nowej linii */
+    width: 100%;          /* pełna szerokość rodzica */
+    min-height: 100px;    /* minimalna wysokość */
+    resize: vertical;     /* pozwala użytkownikowi zwiększyć wysokość w pionie */
+    box-sizing: border-box; /* żeby padding nie zwiększał szerokości */
+    padding: 8px;
+    font-size: 14px;
+}
+
+.ll {
+    display: block;        /* label nad textarea */
+    margin-bottom: 5px;    /* mały odstęp */
+    font-weight: bold;
+}
+
+.code-box {
+    background-color: #f5f5f5;   /* jasne tło */
+    color: #000;                 /* czarne litery */
+    border: 1px solid #ccc;      /* cienka ramka */
+    border-radius: 6px;          /* zaokrąglenie narożników */
+    padding: 10px;               /* odstęp wewnętrzny */
+    font-family: "Fira Code", monospace;
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-x: auto;            /* poziomy scroll jeśli kod jest długi */
+    width: fit-content;          /* dopasowuje się do szerokości kodu */
+    max-width: 90%;              /* ograniczenie szerokości */
+	margin: 20px auto;
 }

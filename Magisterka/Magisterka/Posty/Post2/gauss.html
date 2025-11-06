@@ -1,0 +1,88 @@
+<h2>Pole Gaussowskie |E(r, z)|</h2>
+<p>Przesuń suwak, aby zmienić położenie z (względem promienia Rayleigha).</p>
+
+<div style="margin-bottom: 15px;">
+    <label>λ [nm]: <input type="number" id="lambdaInput" value="632.8" step="0.1" style="width:80px;"></label>
+    &nbsp;
+    <label>w<sub>0</sub> [mm]: <input type="number" id="w0Input" value="1.0" step="0.1" style="width:80px;"></label>
+    &nbsp;
+    <label>E<sub>0</sub>: <input type="number" id="E0Input" value="1.0" step="0.1" style="width:60px;"></label>
+    &nbsp;
+    <button id="updateBtn">Zaktualizuj</button>
+</div>
+
+<div id="plot" style="width:700px;height:400px;margin:auto;"></div>
+
+<input type="range" id="zSlider" min="0" max="5" step="0.1" value="0" style="width:60%;">
+<p>z = <span id="zValue">0.0</span> · z<sub>R</sub></p>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // --- Pobieranie pól wejściowych ---
+    const lambdaInput = document.getElementById("lambdaInput");
+    const w0Input = document.getElementById("w0Input");
+    const E0Input = document.getElementById("E0Input");
+    const updateBtn = document.getElementById("updateBtn");
+
+    // --- Suwak ---
+    const slider = document.getElementById("zSlider");
+    const zValue = document.getElementById("zValue");
+
+    // --- Główna funkcja rysująca ---
+    function plot(zFactor) {
+        // Pobieranie aktualnych wartości z inputów
+        const lam = parseFloat(lambdaInput.value) * 1e-9;  // nm → m
+        const w0 = parseFloat(w0Input.value) * 1e-3;       // mm → m
+        const E0 = parseFloat(E0Input.value);
+
+        const zR = Math.PI * w0 * w0 / lam;
+
+        function w(z) {
+            return w0 * Math.sqrt(1 + (z / zR) ** 2);
+        }
+
+        function computeGaussian(r, z) {
+            const wz = w(z);
+            return r.map(ri => E0 * (w0 / wz) * Math.exp(- (ri * ri) / (wz * wz)));
+        }
+
+        const z = zFactor * zR;
+        const r = Array.from({ length: 400 }, (_, i) => -3 * w0 + (6 * w0 * i) / 399);
+        const E = computeGaussian(r, z);
+        const r_mm = r.map(x => x * 1e3);
+
+        const trace = {
+            x: r_mm,
+            y: E,
+            type: "scatter",
+            mode: "lines",
+            line: { color: "blue" },
+            name: "|E(r,z)|"
+        };
+
+        const layout = {
+            title: `|E(r,z)| dla z = ${zFactor.toFixed(1)} · zR (zR = ${(zR*1e3).toFixed(3)} mm)`,
+            xaxis: { title: "r [mm]" },
+            yaxis: { title: "Amplituda" },
+            margin: { t: 60 }
+        };
+
+        Plotly.newPlot("plot", [trace], layout, {responsive: true});
+    }
+
+    // --- Reakcja na zmiany ---
+    slider.addEventListener("input", () => {
+        const zFactor = parseFloat(slider.value);
+        zValue.textContent = zFactor.toFixed(1);
+        plot(zFactor);
+    });
+
+    updateBtn.addEventListener("click", () => {
+        plot(parseFloat(slider.value));
+    });
+
+    // --- Inicjalizacja ---
+    plot(0);
+});
+</script>

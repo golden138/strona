@@ -1,0 +1,535 @@
+Technika Z-Scan: Teoria, Interpretacja i Obliczenia
+
+1. Wprowadzenie do Techniki Z-Scan
+
+Technika Z-scan jest prostą, ale niezwykle czułą metodą pomiarową, która zrewolucjonizowała charakteryzację nieliniowości optycznych w materiałach. Jej strategiczne znaczenie wynika z faktu, że w przeciwieństwie do bardziej złożonych technik, takich jak interferometria nieliniowa czy mieszanie czterofalowe, Z-scan oferuje porównywalną czułość przy znacznie prostszej aparaturze eksperymentalnej opartej na pojedynczej wiązce laserowej. Ta prostota, połączona z precyzją pozwalającą na detekcję nieliniowych zniekształceń frontu falowego na poziomie lepszym niż λ/300, czyni ją nieocenionym narzędziem w badaniach fotonicznych.
+
+Kluczową zaletą metody Z-scan jest jej zdolność do jednoczesnego i jednoznacznego wyznaczenia zarówno znaku, jak i wartości nieliniowego współczynnika załamania światła (n<sub>2</sub>) oraz nieliniowego współczynnika absorpcji (β). Dzięki temu badacze mogą uzyskać kompleksowy obraz nieliniowej odpowiedzi optycznej materiału w ramach jednego, spójnego eksperymentu. Zdolność do rozdzielenia tych dwóch efektów jest kluczowa dla pełnego zrozumienia i zastosowania materiałów w urządzeniach optoelektronicznych.
+
+Niniejsze kompendium szczegółowo omawia podstawy fizyczne, konfigurację eksperymentalną oraz analizę teoretyczną leżącą u podstaw tej potężnej techniki, przygotowując grunt pod jej praktyczne zastosowanie.
+
+2. Zasady Działania i Konfiguracja Eksperymentalna
+
+Zrozumienie fizycznych podstaw techniki Z-scan jest kluczowe dla prawidłowej interpretacji wyników pomiarowych. Jej elegancja polega na bezpośrednim powiązaniu obserwowalnych zmian w propagacji wiązki z nieliniowymi właściwościami badanego materiału. Ta sekcja szczegółowo omawia zarówno standardowy schemat aparatury, jak i jakościowy mechanizm powstawania charakterystycznej sygnatury pomiarowej, która jest sercem tej metody.
+
+2.1 Układ Pomiarowy
+
+Standardowy układ eksperymentalny Z-scan jest niezwykle prosty. 
+$aparatura2.png?600$
+Składa się z następujących kluczowych komponentów:
+* Źródło światła: Laser emitujący stabilną wiązkę Gaussa.
+* Układ skupiający: Soczewka, która skupia wiązkę, tworząc przewężenie (ognisko).
+* Próbka: Badany materiał umieszczony na precyzyjnym stoliku translacyjnym, który umożliwia jej przesuwanie wzdłuż osi propagacji wiązki (z).
+* Apertura: Przesłona o stałym promieniu, umieszczona w dalekim polu za próbką.
+* Detektor 2 : Fotodetektor mierzący moc wiązki przechodzącej przez aperturę.
+* Detektor 3 : Fotodektor mierzący całkowitą moc przechodzącą przez próbkę jest potrzebny do określenia absorpcji światła przez próbkę.
+* Detektor 1 : Fotodektor mierzący moc jaka wchodzi do układu jest potrzebny do normalizacji natężenia światła.
+
+Na początek wyznaczamy współczynniki b<sub>2</sub> oraz b<sub>3</sub>, który możemy określić poprzez sprawdzenie układu bez wstawionej próbki:
+\[ b_2 = \frac{I_1}{I_2} \]
+\[ b_3 = \frac{I_1}{I_3} \]
+gdzie b to współczynnik normalizacji natężenia dla detektorów 2 oraz 3, a I to natężenie mierzone na detektorach 1, 2, 3.
+
+W trakcie pomiaru próbka jest przesuwana przez ognisko wiązki laserowej, a detektor rejestruje znormalizowaną transmitancję jako funkcję pozycji z. To właśnie zmiana tej transmitancji, wywołana nieliniowym zniekształceniem czoła fali, pozwala na scharakteryzowanie materiału.
+
+2.2 Interpretacja sygnału Z-Scan za aperturą
+
+Ruch próbki wzdłuż osi z powoduje zmianę natężenia wiązki w materiale, co indukuje nieliniowe efekty refrakcyjne. Próbka, pod wpływem wysokiego natężenia w pobliżu ogniska, działa jak cienka soczewka o mocy zależnej od natężenia. Efekt ten modyfikuje rozbieżność wiązki za próbką, co prowadzi do zmiany jej średnicy na płaszczyźnie apertury i, w konsekwencji, do zmiany mierzonej transmitancji. Związek między znakiem nieliniowości a kształtem krzywej Z-scan jest bezpośredni i intuicyjny:
+
+! Nieliniowość ujemna (n<sub>2</sub> < 0): Występuje zjawisko samorozogniskowania (ang. self-defocusing).
+  * Gdy próbka znajduje się przed ogniskiem (ujemne z), indukowana soczewka rozpraszająca kolimuje wiązkę, co powoduje jej zwężenie na płaszczyźnie apertury i wzrost transmitancji.
+  * Gdy próbka znajduje się za ogniskiem (dodatnie z), ta sama soczewka rozpraszająca zwiększa dywergencję wiązki, co prowadzi do jej poszerzenia na płaszczyźnie apertury i spadku transmitancji.
+  * Charakterystyczną sygnaturą jest konfiguracja szczyt-dolina (ang. peak-valley).
+$szczyt_dolina.png?300$
+! Nieliniowość dodatnia (n<sub>2</sub> > 0): Występuje zjawisko samoogniskowania (ang. self-focusing).
+  * Gdy próbka znajduje się przed ogniskiem, indukowana soczewka skupiająca zwiększa dywergencję wiązki, co prowadzi do spadku transmitancji.
+  * Gdy próbka znajduje się za ogniskiem, ta sama soczewka skupiająca kolimuje wiązkę, co prowadzi do wzrostu transmitancji.
+  * Charakterystyczną sygnaturą jest konfiguracja dolina-szczyt (ang. valley-peak).
+$dolina_szczyt.png?300$
+
+Ta prosta, wizualna interpretacja, pozwalająca na natychmiastowe określenie znaku nieliniowości na podstawie kształtu zarejestrowanej krzywej, jest jedną z największych zalet metody Z-scan.
+
+Chociaż jakościowa interpretacja stanowi solidną podstawę, do precyzyjnego wyznaczenia wartości liczbowych nieliniowych współczynników niezbędna jest szczegółowa analiza teoretyczna, która zostanie przedstawiona w kolejnej sekcji.
+
+3. Analiza Teoretyczna dla Czysto Refrakcyjnej Nieliniowości
+
+Tutaj zajmę się na narzędziach opisu modelu teoretycznego do przekształcenia surowych danych pomiarowych w precyzyjne wartości fizycznych współczynników nieliniowych. Przedstawione poniżej równania i założenia, a w szczególności kluczowe przybliżenie "cienkiego ośrodka", stanowią fundament do analizy Z-scan, pozwalając na dokładne scharakteryzowanie badanych materiałów pod względem ich współczynników nieliniowych.
+
+3.1 Podstawowe Równania Nieliniowej Refrakcji
+
+Dla nieliniowości trzeciego rzędu (efekt Kerra), całkowity współczynnik załamania światła n można opisać jako sumę wkładu liniowego n<sub>0</sub> i wkładu zależnego od natężenia światła I:
+\[n = n_0 + n_2 \frac{\left| E \right|^2}{2} = n_0 + \gamma I \]
+Równanie (1)
+gdzie poszczególne symbole oznaczają:
+##Symbol	Opis
+n	Całkowity współczynnik załamania światła
+n<sub>0</sub>	Liniowy współczynnik załamania światła
+n<sub>2</sub>	Nieliniowy współczynnik załamania światła
+γ	Nieliniowy współczynnik załamania światła w jednostkach m<sup>2</sup>/W
+E	Amplituda pola elektrycznego fali świetlnej
+I	Natężenie wiązki laserowej##
+
+Współczynniki n<sub>2</sub> i γ są ze sobą powiązane poprzez następujący wzór konwersyjny:
+\[ n_2(esu) = \frac{c n_0}{40 \pi} γ(m^2/W) \]
+gdzie c to prędkość światła w próżni.
+
+Należy jednak pamiętać, że natężenie światła jakie pada na dany fragment próbki się zmienia. W technice Z-scan używa się wiązki Gaussa TEM<sub>00</sub> o promieniu w talii ω<sub>0</sub> , propagującej się w kierunku +z. Kwadrat promienia wiązki ω<sup>2</sup>(z) i promień krzywizny czoła fali R(z) zależą od położenia z próbki względem ogniska (z=0). Największe natężenie uzyskujemy w położeniu z<sub>0</sub>. 
+$Gaussianbeam.png?450$
+Taką wiązkę możemy opisać jako:
+\[ E(r, z, t) = E_0(t) \frac{\omega_0}{\omega (z)} \exp \left( -\frac{r^2}{\omega^2 (z)} -\frac{i k r^2}{2 R(z)} \right) \exp \left( -i \phi\left( z , t \right) \right) \]
+* ω(z) - promień wiązki w pozycji z
+\[ \omega (z) = \omega_0 \sqrt{1+\frac{z^2}{z_0^2}} = \omega_0 \frac{z}{z_R} \text{ gdzie } z_R = \frac{\pi \omega_0^2}{\lambda} \]
+* R(z) - promień krzywizny frontu falowego
+\[ R (z) = z \left( 1 + \frac{z_0^2}{z^2} \right) \]
+
+! Interpretacja członów:
+  * Zależność amplitudy od czasu to jest:
+\[ E_0(t) \frac{\omega_0}{\omega (z)} \]
+  * Poprzeczny rozkład natężenia (wzdłuż promienia r)
+\[ \exp \left( -\frac{r^2}{\omega^2(z)} \right) \text{ gdzie r to jest odległość promieniowa od osi wiązki} \]
+  *  Propagacja i Krzywizna Czoła Fali (Zależność Fazy Liniowej): Ten człon opisuje liniową, radialną zmianę fazy, która jest wynikiem dyfrakcji i skupienia. Jest to kluczowy element wiązki Gaussa po przejściu przez soczewkę.
+\[ \exp \left( -\frac{i k r^2}{2 R(z)} \right)  \]
+  * Zmiany Fazy Osiowej: Reprezentuje zmiany fazy, które są stałe w poprzek wiązki (niezależne od r) i zależą od położenia próbki z i czasu t. Ponieważ technika Z-scan zajmuje się obliczaniem radialnych zmian fazy (ΔΦ(r)), ten człon osiowej fazy ϕ(z,t) jest zazwyczaj ignorowany.
+\[ \exp \left( - i \phi (z , t) \right) \]
+
+! Natężenie wiązki padające na próbkę
+\[ I (r , z , t) = I_0(t) \left( \frac{\omega_0}{\omega (z)} \right)^2 \exp \left( -\frac{2 r^2}{\omega^2(z)} \right) \]
+lub
+\[ I (z , t) = I_0(t) \left( \frac{\omega_0}{\omega (z)} \right)^2 \]
+
+<hr>
+%% 
+<div style="text-align: center; max-width: 750px; margin: auto;">
+
+    <h2>Pole Gaussowskie |E(r, z)|</h2>
+    <p>Przesuń suwak, aby zmienić położenie z (względem promienia Rayleigha).</p>
+
+    <div style="margin-bottom: 15px; display: inline-block; text-align: left;">
+        <label>λ [nm]: <input type="number" id="lambdaInput" value="632.8" step="0.1" style="width:80px;"></label>
+        &nbsp;
+        <label>w<sub>0</sub> [mm]: <input type="number" id="w0Input" value="1.0" step="0.1" style="width:80px;"></label>
+        &nbsp;
+        <label>E<sub>0</sub>: <input type="number" id="E0Input" value="1.0" step="0.1" style="width:60px;"></label>
+        &nbsp;
+        <button id="updateBtn">Zaktualizuj</button>
+    </div>
+
+    <div id="plot" style="width:700px; height:400px; margin: 20px auto;"></div>
+
+    <input type="range" id="zSlider" min="0" max="5" step="0.1" value="0" style="width:60%; margin: 10px auto; display: block;">
+    <p>z = <span id="zValue">0.0</span> · z<sub>R</sub></p>
+
+</div>
+%%
+@@gauss.js@@
+
+
+3.2 Przybliżenie "Cienkiego Ośrodka" i Obliczanie Przesunięcia Fazowego
+
+Analiza Z-scan jest znacznie uproszczona, jeśli przyjmie się, że badany materiał jest "cienki". Chociaż formalny warunek teoretyczny dla zaniedbania dyfrakcji liniowej wewnątrz próbki to L << z<sub>R</sub> (gdzie L to grubość próbki, a z<sub>R</sub> to długość Rayleigha), empirycznie stwierdzono, że wystarczające jest spełnienie mniej restrykcyjnego kryterium L < z<sub>R</sub>. W takim przypadku można zaniedbać zmiany średnicy wiązki wewnątrz materiału, a nieliniowy efekt traktować jako jednorazowe zniekształcenie fazy na wyjściu z próbki.
+
+Osiowe przesunięcie fazowe w ognisku, ΔΦ₀, które jest kluczowym parametrem charakteryzującym siłę nieliniowości, opisane jest równaniem:
+\[ \Delta \Phi_0 (t) = k \Delta n_0 (t) L_{eff} \]
+gdzie:
+* k  to wektor falowy
+\[ k = \frac{2 \pi}{\lambda} \]
+* Δn<sub>0</sub> to maksymalna zmiana współczynnika załamania na osi w ognisku, przy natężeniu I<sub>0</sub>
+\[ \Delta n_0 = \gamma I_0 \]
+* L<sub>eff</sub> to efektywna długość próbki. Parametr ten reprezentuje rzeczywistą długość oddziaływania, która jest zredukowana w stosunku do fizycznej grubości L na skutek strat wynikających z absorpcji liniowej (współczynnik α). 
+\[ L_{eff} = \frac{1 - e^{-\alpha L}}{\alpha} \]
+Dla próbek o niskiej absorpcji (αL << 1):
+\[ L_{eff} \approx L \]
+! Przesunięcie fazowe próbki zależne od jej położenia:
+\[ \Delta \phi_0 (z , t) = \frac{\Delta \Phi_0 (t)}{1 + \frac{z^2}{z_R^2}} \]
+
+%%
+<hr>
+<h2 style="text-align:center;">Przesunięcie fazowe próbki</h2>
+
+    <label>Długość fali (lambda, nm): 
+        <input type="number" id="wavelength_mp2" value="632" step="1">
+    </label><br>
+
+    <label>Współczynnik absorpcji (alfa, 1/m): 
+        <input type="number" id="alpha_mp2" value="0.1" step="0.01">
+    </label><br>
+
+    <label>Współczynnik nieliniowy (gamma ×10⁻⁹ m²/W): 
+        <input type="number" id="gamma_mp2" value="0.001" step="0.001">
+    </label><br>
+
+    <label>Natężenie światła (I<sub>0</sub>, kW/m²): 
+        <input type="number" id="I0_mp2" value="50" step="5">
+    </label><br>
+
+    <label>Grubość próbki (L, mm): 
+        <input type="number" id="L_mp2" value="1" step="0.01">
+    </label><br><br>
+
+    <button onclick="plotPhase()" style="padding: 6px 12px; font-size: 15px;">Rysuj wykres</button>
+
+    <div id="plot_mp2" style="width:100%;height:400px;margin-top:20px;"></div>
+%%
+@@przesuniecie_fazowe.js@@
+
+3.3 Relacja między Pomiarem a Nieliniowością
+
+Najważniejszym mierzalnym parametrem na krzywej Z-scan jest różnica między znormalizowaną transmitancją w szczycie (T<sub>p</sub>) a w dolinie (T<sub>v</sub>), oznaczana jako ΔT<sub>pv</sub>. Dla niewielkich nieliniowych przesunięć fazowych (|ΔΦ₀| ≤ π), parametr ten jest wprost proporcjonalny do modułu ΔΦ₀:
+\[ \Delta T_{pv} \approx  0.406 (1-S)^{0.25} \left| \Delta \Phi_0 \right| \]
+W powyższym wzorze, S oznacza liniową transmitancję apertury i jest zdefiniowane jako:
+\[ S = 1 - \exp \left( -\frac{2 r_a^2}{w_a^2} \right) \]
+, gdzie r<sub>a</sub> to promień apertury, a w<sub>a</sub> to promień wiązki na płaszczyźnie apertury.
+
+To opisuje nieliniowość 3 rzędu.
+
+Ta prosta, liniowa zależność stanowi podstawę niezwykłej czułości metody Z-scan. Przykładowo, jeśli aparatura pomiarowa jest w stanie rozróżnić zmiany transmitancji na poziomie 1%, możliwe jest zmierzenie przesunięć fazowych odpowiadających zniekształceniom frontu falowego rzędu λ/250.
+
+3.4 Charakterystyka Geometryczna Krzywej Z-Scan
+
+Kształt krzywej Z-scan dostarcza również informacji o rzędzie nieliniowości.
+
+* Dla nieliniowości trzeciego rzędu (np. efekt Kerra), odległość między szczytem a doliną jest stała i wynosi w przybliżeniu:
+\[  \Delta z_{pv} \approx  1.7 \cdot z_R \]
+* Dla nieliniowości piątego rzędu, odległość ta jest mniejsza i wynosi:
+\[ \Delta z_{pv} \approx  1.2 \cdot z_R \]
+
+Ten parametr geometryczny (Δz<sub>pv</sub>) służy zatem jako bezpośrednia, obserwowalna eksperymentalnie sygnatura pozwalająca na rozróżnienie rzędu dominującego procesu nieliniowego, bez konieczności stosowania złożonych procedur dopasowania.
+
+3.5 Symulacja pomiaru Z-scan z aperturą
+
+W tej sekcji spróbuje odwzorować pomiar metodą Z-scan, pozwalającego na wyznaczenie nieliniowego współczynnika załamania ( n<sub>2</sub> ) materiału optycznego. Metoda opiera się na pomiarze transmitancji wiązki laserowej w zależności od położenia próbki nieliniowej wzdłuż osi optycznej układu skupiającego.
+
+! Symulacja nieliniowego elementu optycznego
+W ośrodku o nieliniowym współczynniku załamania zależnym od natężenia:
+\[ n = n_0 + \gamma I(x,y) \]
+dochodzi do "nieliniowej modulacji fazy" propagującej się fali elektromagnetycznej.
+Zmiana fazy pola elektrycznego po przejściu przez materiał ma postać:
+\[ \Delta \phi(x,y) = k  \gamma I(x,y) , L_{eff} \]
+gdzie \( k = \frac{2\pi}{\lambda} \) to liczba falowa, a L<sub>eff</sub> – efektywna długość ośrodka.
+
+W konsekwencji, w zależności od znaku ( γ ), wiązka może się samozogniskowywać ( γ > 0 ) lub samorozogniskowywać ( γ < 0 ).
+Do symulacji takiego elementu użyje Python, zatem mogę taki element zdefiniować jako:
+%@#definicja nieliniowego elementu gdzie zmienia współczynnik załamania zgodnie z I 
+def nonlinearElement(E, gamma, L_eff, wavelength):
+    k = 2 * np.pi / wavelength
+    intensity = np.abs(E)**2
+    E_out = E * np.exp(1j * k * gamma * intensity * L_eff)
+    return E_out
+@%
+
+! Struktura układu optycznego
+Symulowany układ odpowiada klasycznej konfiguracji Z-scan z zamkniętą aperturą, składającej się z następujących elementów:
+* Źródło wiązki Gaussa
+Na wejściu układu generowana jest wiązka o profilu Gaussa:
+\[ E(x,y) = E_0 \exp\left[-\frac{x^2 + y^2}{\omega_0^2}\right] e^{i\phi(x,y)} \]
+gdzie ω<sub>0</sub> jest promieniem wiązki, a ϕ(x,y) to jej faza początkowa (w symulacji przyjęta jako stała).
+Poniżej przedstawiam rozkład amplitudy pola wiązki Gaussa, charakteryzujący się symetrycznym, cylindrycznym profilem o maksymalnym natężeniu w osi układu.
+$Pole_gauss.png?450$
+Pole gaussa mogę wygenerować w następujący sposób:
+%@#generuje pole gaussa
+def getGaussianBeam(N, dx, w0, phase_type='zero', phi_value=0):
+    """
+    Generuje pole Gaussa NxN.
+    
+    Parametry:
+    N         : int - rozmiar pola NxN
+    dx        : float - rozdzielczość pikseli w metrach
+    w0        : float - promień wiązki Gaussa w metrach
+    phase_type: str   - 'zero', 'constant', 'random'
+    phi_value : float - faza stała (tylko dla 'constant')
+    
+    Zwraca:
+    E : np.ndarray - pole zespolone NxN
+    """
+    x = np.arange(-N//2, N//2) * dx
+    y = np.arange(-N//2, N//2) * dx
+    X, Y = np.meshgrid(x, y)
+    
+    amplitude = 100*np.exp(-(X**2 + Y**2) / w0**2)
+    
+    # Dodanie fazy
+    if phase_type == 'zero':
+        phase = 0
+    elif phase_type == 'constant':
+        phase = phi_value
+    elif phase_type == 'random':
+        phase = np.random.uniform(-np.pi, np.pi, size=(N, N))
+    else:
+        raise ValueError("phase_type musi być 'zero', 'constant' lub 'random'")
+    
+    E = amplitude * np.exp(1j * phase)
+    return E
+@%
+
+! Pierwsza soczewka cienka
+Wiązka przechodzi przez soczewkę o ogniskowej ( f = 10 cm ). Soczewka wprowadza paraboliczną zmianę fazy, co skutkuje skupieniem fali.
+\[ \phi_\text{lens}(x,y) = -\frac{\pi}{\lambda f}(x^2 + y^2) \]
+Na ilustracji poniżej widać rozkładu faz. Widać charakterystyczne koncentryczne pierścienie – efekt kwadratowej zależności fazy od odległości od osi optycznej.
+$soczewka_cienka.png?450$
+Taką soczewkę mogę wygenerować (rozkład fazy) za pomocą:
+%@def generateLens(N, dx, wavelength, f):
+    """
+    Generuje soczewkę cienką jako element fazowy NxN.
+    
+    Parametry:
+    N         : int - rozmiar pola NxN
+    dx        : float - rozdzielczość pikseli w metrach
+    wavelength: float - długość fali w metrach
+    f         : float - ogniskowa soczewki w metrach
+    
+    Zwraca:
+    lens : np.ndarray - macierz zespolona NxN reprezentująca soczewkę
+    """
+    x = np.arange(-N//2, N//2) * dx
+    y = np.arange(-N//2, N//2) * dx
+    X, Y = np.meshgrid(x, y)
+    
+    phase = -np.pi / (wavelength * f) * (X**2 + Y**2)
+    lens = np.exp(1j * phase)
+    
+    return lens
+@%
+
+! Próbka nieliniowa
+Między dwiema soczewkami o tej samej ogniskowej umieszczony jest cienki element nieliniowy, który zmienia fazę fali zgodnie z lokalnym natężeniem światła:
+\[ E_{out}(x,y) = E_{in}(x,y) \exp \left( i k \gamma I(x,y) L_{eff} \right)  \]
+Współczynnik γ jest proporcjonalny do n<sub>2</sub> i decyduje o sile efektu Kerr’a. W symulacji element ten jest przesuwany wzdłuż osi Z pomiędzy dwiema soczewkami oddalonymi o 20 cm.
+
+! Druga soczewka
+Po wyjściu z próbki wiązka przechodzi przez drugą soczewkę również f = 10 cm , która ponownie kolimuje lub skupia promienie w zależności od nieliniowej fazy nabytej w materiale.
+
+! Apertura kołowa i detektor
+W odległości 10 cm za drugą soczewką umieszczona jest kołowa apertura o promieniu r<sub>a</sub>. Przepuszcza ona jedynie centralną część wiązki:
+\[ A(x,y) = \left\{ \begin{array}{cl} 1 & : \ x^2+y^2 \le r_a^2  \\ 0 & : \ \text{poza aperturą} \end{array} \right. \]
+Taką aperturę mogę symulować w następujący sposób:
+%@# Definiowanie przysłony
+def getAperture(N, shape='circle', size=50):
+    """
+    Generuje maskę przysłony NxN.
+    
+    Parametry:
+    N     : int - rozmiar maski NxN
+    shape : str - 'circle' lub 'square'
+    size  : int - promień koła lub połowa boku kwadratu w pikselach
+    
+    Zwraca:
+    aperture : np.ndarray - maska przysłony (1 w otworze, 0 poza nim)
+    """
+    X, Y = np.meshgrid(np.arange(-N//2, N//2), np.arange(-N//2, N//2))
+    aperture = np.zeros((N, N))
+    
+    if shape == 'circle':
+        aperture[X**2 + Y**2 <= size**2] = 1
+    elif shape == 'square':
+        aperture[np.abs(X) <= size, np.abs(Y) <= size] = 1
+    else:
+        raise ValueError("shape musi być 'circle' lub 'square'")
+    
+    return aperture
+@%
+
+Za aperturą obliczana jest całkowita transmitancja, która odpowiada mocy zarejestrowanej przez detektor.
+\[ T(z) = \iint \left| E(x , y , z) \right|^2 A(x,y) dx dy \]
+Natomiast obliczanie to, co pada na detektor za przysłoną możemy obliczyć w python jako całkowitą moc:
+%@def getIntensity(E, dx=None, mode='total'):
+    """
+    Zwraca intensywność pola optycznego.
+
+    Parametry:
+    -----------
+    E : np.ndarray
+        Pole zespolone NxN
+    dx : float, opcjonalnie
+        Odstęp przestrzenny [m]. Jeśli podany, zwraca moc (suma |E|^2 * dx^2)
+    mode : str
+        'total'  -> całkowita intensywność (lub moc)
+        'mean'   -> średnia intensywność
+        'max'    -> maksymalna intensywność
+
+    Zwraca:
+    --------
+    float : liczba reprezentująca intensywność (lub moc)
+    """
+    I = np.abs(E)**2
+
+    if mode == 'total':
+        return np.sum(I) * (dx**2 if dx is not None else 1)
+    elif mode == 'mean':
+        return np.mean(I)
+    elif mode == 'max':
+        return np.max(I)
+    else:
+        raise ValueError("mode musi być 'total', 'mean' lub 'max'")
+@%
+
+! Propagacja pola
+Chyba najważniejszy element w całej symulacji, czyli propagacja wiązki między poszczególnymi elementami układu, którą opisałem w przybliżeniu Fresnela.
+W dziedzinie częstotliwości przestrzennych transmitancja propagacji ma postać:
+\[ H(f_x, f_y, z) = \exp \left[ - i \pi \lambda z (f_x^2 + f_y^2) \right] \]
+a pole w odległości z wyraża się poprzez transformatę Fouriera:
+\[ E(x , y , z) = F^{-1} \left\{ F \left[ E_0 (x , y) \right] \cdot H \left( x , y , z \right)\right\} \]
+W ten sposób numerycznie uzyskuje się ewolucję amplitudy i fazy pola wzdłuż osi propagacji. W python można to uzyskać w następujący sposób:
+%@# Propagacja Fresnela w dziedzinie Fouriera
+def fresnel_propagation(E0, z, wavelength, dx):
+    N = E0.shape[0]
+    k = 2 * np.pi / wavelength
+    fx = np.fft.fftfreq(N, d=dx)
+    fy = np.fft.fftfreq(N, d=dx)
+    FX, FY = np.meshgrid(fx, fy)
+    
+    # transmitancja Fresnela w dziedzinie Fouriera
+    H = np.exp(-1j * np.pi * wavelength * z * (FX**2 + FY**2))
+    E1 = np.fft.ifft2(np.fft.fft2(E0) * H)
+    return E1
+
+@%
+
+! Wyniki symulacji i interpretacja
+Na początek sygnał trzeba znormalizować to znaczy przepropagować wiązkę Gaussa przez układ bez elementu nieliniowego w ten sosób dostanę współczynnik "normalize":
+%@def get_Z_scan_normalize():
+  gauss_z_scan = getGaussianBeam(N, dx, N*dx/4)
+  lens1_z_scan = generateLens(N, dx, wavelength, 0.1)
+  E1_z_scan = gauss_z_scan*lens1_z_scan
+  E2_z_scan = fresnel_propagation(E1_z_scan, 0.2, wavelength, dx)
+  lens2_z_scan = generateLens(N, dx, wavelength, 0.1)
+  E4_z_scan = E2_z_scan*lens2_z_scan
+  E5_z_scan = fresnel_propagation(E4_z_scan, 0.10, wavelength, dx)
+  aperture_z_scan = getAperture(N, shape='circle', size=50)
+  E6_z_scan = E5_z_scan*aperture_z_scan
+  return getIntensity(E6_z_scan, dx=dx, mode='total')
+@%
+
+Następnie z dla każdej pozycji próbki Z w układzie obliczana jest transmitancja T(z).
+%@def get_Z_scan(z, gamma, L_eff):
+  z1 = 0.2
+  z2 = z1-z
+  gauss_z_scan = getGaussianBeam(N, dx, N*dx/4)
+  lens1_z_scan = generateLens(N, dx, wavelength, 0.1)
+  E1_z_scan = gauss_z_scan*lens1_z_scan
+  E2_z_scan = fresnel_propagation(E1_z_scan, z, wavelength, dx)
+  E_nl_z_scan = nonlinearElement(E2_z_scan, gamma, L_eff, wavelength)
+  E3_z_scan = fresnel_propagation(E_nl_z_scan, z2, wavelength, dx)
+  lens2_z_scan = generateLens(N, dx, wavelength, 0.1)
+  E4_z_scan = E3_z_scan*lens2_z_scan
+  E5_z_scan = fresnel_propagation(E4_z_scan, 0.10, wavelength, dx)
+  aperture_z_scan = getAperture(N, shape='circle', size=50)
+  E6_z_scan = E5_z_scan*aperture_z_scan
+  return getIntensity(E6_z_scan, dx=dx, mode='total')
+@% 
+Otrzymana zależność ma postać charakterystyczną dla pomiaru Z-scan:
+  * Dodatni nieliniowy współczynnik ( γ > 0 ) prowadzi do efektu samosoczewkowania - wiązka ulega dodatkowemu skupieniu w pobliżu ogniska, co objawia na wykresie transmitancji najpierw dolina potem wyżyna. Na wykresie przedstawiam symulacje dla przykładowego γ=10<sup>-10</sup> oraz dla L<sub>eff</sub>=0.2 mm.
+$sym1.png?600$
+  * Ujemny współczynnik ( γ < 0 ) powoduje samorozogniskowanie wiązki, skutkujące wzrostem transmitancji dla początkowych wartości z a następnie spadkiem (tzw. „valley”). Na wykresie przedstawiam symulacje dla przykładowego γ=-10<sup>-10</sup> oraz dla L<sub>eff</sub>=0.2 mm.
+$sym2.png?600$
+
+Na uzyskanym wykresie T(z) obserwuje się zatem symetryczny kształt typu „peak–valley” lub „valley–peak”, zależny od znaku nieliniowości. Z różnicy wartości szczyt-do-dołka można wyznaczyć maksymalną zmianę fazy ΔΦ₀, a stąd nieliniowy współczynnik załamania n<sub>2</sub>. W dalszych sekcjach pokaże jak można na podstawie wykresu wyznaczyć współczynnik załamania.
+
+Symulacja pozwala numerycznie odtworzyć zjawiska zachodzące w rzeczywistym pomiarze Z-scan i umożliwia analizę wpływu parametrów takich jak:
+* długość fali
+* promień wiązki
+* długość efektywna próbki
+* współczynnik nieliniowy γ
+
+Otrzymane wyniki są zgodne z przewidywaniami teoretycznymi i stanowią solidną podstawę do interpretacji eksperymentalnych pomiarów nieliniowego współczynnika załamania światła.
+
+4. Zastosowania Praktyczne i Interpretacja Danych
+
+Celem tej sekcji jest demonstracja praktycznego zastosowania teorii Z-scan w analizie rzeczywistych danych pomiarowych. Omówię po krutce jak obliczać współczynniki nieliniowe, rozróżniać naturę tych nieliniowości (np. termiczną) oraz jak radzić sobie z typowymi niedoskonałościami eksperymentalnymi, takimi jak niejednorodności próbki.
+
+4.1 Procedura Obliczeniowa Krok po Kroku
+
+Jak obliczyć nieliniowe współczynniki γ i n<sub>2</sub> na podstawie zmierzonej krzywej Z-scan.
+! Pomiar ΔT<sub>pv</sub>
+  * Wykonaj pomiar Z-scan i odczytaj z wykresu wartości znormalizowanej transmitancji (tj. wartość z detektora za aperturą) w szczycie (T<sub>p</sub>) i w dolinie (T<sub>v</sub>).  Można do tego skorzystać z współczynnika b<sub>2</sub>
+\[ b_2 = \frac{I_1}{I_2} \]
+  * Następnie w dużej odległości od punktu z/z<sub>R</sub> możemy wyliczyć przeskalowanie lub przesunięcie tak, aby była w pomiarach wartość 1.
+  * Następnie możemy oblicz różnicę:
+\[ \Delta T_{pv} = T_p - T_v \]
+
+! Obliczenie |ΔΦ₀|
+  * Użyj kluczowej relacji liniowej, aby wyznaczyć moduł osiowego przesunięcia fazowego w ognisku:
+\[ \frac{\Delta T_{pv}}{0.406 (1-S)^{0.25}} \approx  \left| \Delta \Phi_0 \right| \]
+gdzie S to transmisja apertury, która wyraża się w następujący sposób:
+\[ S = 1 - \exp \left( -\frac{2 r_a^2}{w_a^2} \right) \]
+
+Obliczmy to dla następującego wykresu z symulacji:
+$sym2.png?600$
+tutaj w szczycie mamy 1.01031, a w dolinie 0.99048 zatem nasze T<sub>pv</sub>=0.01983, za to w<sub>a</sub>=N*dx/4=512*dx oraz r<sub>a</sub>=50*dx. Zatem transmisja apertury w symulacji to jest:
+\[ S \approx 0.02 \]
+\[ \left| \Delta \Phi_0 \right| \approx 4.91 \cdot 10^{-2} \]
+
+! Obliczenie Δn<sub>2</sub> 
+Przekształć równanie na przesunięcie fazowe, aby obliczyć maksymalną zmianę współczynnika załamania na osi wiązki w ognisku:
+\[ \Delta n_2 = \frac{\Delta \Phi_0}{k L_{eff}}  \]
+Pamiętać trzeba o uwzględnieniu znaku nieliniowości (dodatni dla doliny-szczytu, ujemny dla szczytu-doliny) przy przypisywaniu wartości ΔΦ₀. Tutaj za to wychodzi:
+\[ \Delta n_2 = -1.95 \cdot 10^{-5} \]
+
+! Obliczenie γ z n<sub>2</sub>
+Skorzystam ze związku Δn<sub>2</sub> = γI<sub>0</sub>, aby wyznaczyć γ, gdzie I<sub>0</sub> to natężenie wiązki w ognisku i wynosi 1.66*10<sup5</sup>. To po obliczeniach mam:
+\[ \gamma \approx -1.17 \cdot 10^{-10} \]
+Natomiast w symulacji użyłem:
+\[ \gamma = -10^{-10} \]
+Drobna rozbieżność wyników (rząd się zgadza 10<sup>-10</sup>) może być wynikiem przybliżeń komputera podczas operowania na zmienno-przecinkowych liczbach lub moich błędach podczas obliczeń. Wykres był wygenerowany tylko dla 50 punktów, co też może mieć wpływ maksimum i minimum transmisji do obliczeń były brane wartości w ściśle określonych punktach symulacji.
+
+
+4.2 Rozróżnianie Rodzajów Nieliniowości (Efekty Czasowe)
+
+Natura nieliniowości często zależy od czasu trwania impulsu laserowego. Pomiar Z-scan dla dwusiarczku węgla (CS<sub>2</sub>) doskonale to ilustruje.
+
+* Długie impulsy (nanosekundowe): W pomiarze z użyciem impulsów o czasie trwania 300 ns, w CS<sub>2</sub> dominuje nieliniowość termiczna. Liniowa absorpcja energii prowadzi do lokalnego podgrzania materiału, co powoduje ujemną zmianę współczynnika załamania (dn/dT < 0). Skutkuje to sygnaturą szczyt-dolina (samorozogniskowanie), co zilustrowano dla CS<sub>2</sub>.
+$CS_2_szczyt.png?400$
+* Ultrakrótkie impulsy (pikosekundowe): W pomiarze z użyciem impulsów o czasie trwania 27 ps, efekty termiczne są pomijalne. Dominującym mechanizmem staje się reorientacyjny efekt Kerra, który jest procesem niemal natychmiastowym i ma charakter dodatni. Prowadzi to do charakterystycznej sygnatury dolina-szczyt (samoogniskowanie), co widać poniżej.
+$CS_2_dolina.png?400$
+
+Porównanie to demonstruje użyteczność techniki w badaniu różnych mechanizmów fizycznych: kumulatywnego, powolnego (nanosekundy do mikrosekund) efektu termicznego w przeciwieństwie do natychmiastowego, szybkiego (femtosekundy do pikosekund) elektronicznego i reorientacyjnego efektu Kerra.
+
+4.3 Eliminacja Wpływu Niedoskonałości Próbki
+
+Nierówności powierzchni lub wewnętrzne niejednorodności próbki mogą powodować zmiany transmitancji podczas skanowania, które nie są związane z nieliniowością optyczną. Te "pasożytnicze" efekty mogą maskować rzeczywisty sygnał nieliniowy.
+
+Skuteczną metodą korekcji jest wykonanie dwóch pomiarów:
+* Pomiar referencyjny: Przeprowadź skanowanie przy niskim natężeniu wiązki, gdzie efekty nieliniowe są pomijalnie małe. Zarejestrowana krzywa odzwierciedla jedynie wpływ niedoskonałości próbki.
+* Pomiar właściwy: Wykonaj skanowanie przy wysokim natężeniu, aby wzbudzić nieliniowość.
+* Korekcja: Odejmij znormalizowane dane z pomiaru referencyjnego od znormalizowanych danych z pomiaru właściwego. Ta procedura skutecznie usuwa tło i izoluje sygnał pochodzący wyłącznie od nieliniowości optycznej. Przedstawiono tą metodę między innymi w artykule: "Sensitive measurement of optical nonlinearities using a single beam"
+Bardzo często miałem taki problem przy pomiarach pamiętam. Poniżej przedstawiona jest ilustracja z artykułu, który przedstawia tą metodę:
+$metoda.png$
+
+Omówione dotąd przypadki dotyczyły materiałów z czystą nieliniowością refrakcyjną. Kolejny rozdział rozszerzy analizę o sytuacje, w których występuje również nieliniowa absorpcja.
+
+5. Analiza w Obecności Nieliniowej Absorpcji
+
+W wielu materiałach nieliniowej refrakcji towarzyszy nieliniowa absorpcja (np. absorpcja dwufotonowa, 2PA). Siłą techniki Z-scan jest zdolność do rozdzielenia i niezależnego pomiaru obu tych efektów za pomocą prostej modyfikacji procedury pomiarowej.
+
+5.1 Rola Pomiaru z Otwartą Aperturą
+
+Kluczowa zasada rozdzielania efektów opiera się na wykonaniu dodatkowego pomiaru z całkowicie otwartą aperturą (lub bez apertury), co odpowiada warunkowi S=1. W tej konfiguracji detektor zbiera całą przechodzącą przez próbkę wiązkę. Taki pomiar jest niewrażliwy na nieliniową refrakcję (zniekształcenia fazy), ale pozostaje w pełni czuły na zmiany w całkowitej transmitancji spowodowane nieliniową absorpcją.
+
+Krzywa Z-scan uzyskana z otwartą aperturą jest symetryczna względem ogniska (z=0) i jej kształt zależy od rodzaju nieliniowej absorpcji:
+
+* Absorpcja wielofotonowa (np. 2PA): Powoduje spadek transmitancji, więc krzywa wykazuje minimum w ognisku.
+* Nasycenie absorpcji: Prowadzi do wzrostu transmitancji, więc krzywa wykazuje maksimum w ognisku.
+
+Współczynnik absorpcji materiału można przedstawić jako:
+\[ \alpha(I) = \alpha_0 + \beta I \]
+Dzięki temu mogę łatwo przedstawić zmianę natężenia światła po przejściu przez próbkę nieliniową w następujący sposób:
+\[ \frac{d I}{d z'} = - \left( \alpha_0 + \beta I \right) I \]
+Natężenie wychodzące z próbki oświetlonej natężeniem I<sub>in</sub> wyraża się wzorem:
+\[ I_{out} = \frac{I_{in}(r,z,t) e^{-\alpha L}}{1+q(r,z,t)} \text{ ,gdzie } q(r,z,t) = \beta I_{in}(r,z,t) L_{eff} \]
+Natomiast zmiana fazy dla takiego elementu możemy zapisać jako:
+\[ \Delta \phi (r,z,t) = \frac{k \gamma}{\beta} \ln \left[ 1 + q(r,z,t) \right] \]
+Pole świetlne po przejściu przez ośrodek uwzględniając zmianę amplitudy i zmianę fazy opisujemy:
+\[ E_{out} (r,z,t) = E_{in} (r,z,t) \cdot e^{-\frac{\alpha L}{2}} \left( 1 + q \right)^{\frac{i k \gamma}{\beta} - \frac{1}{2}} \]
+Transmisja może być opisana za pomocą szeregu:
+\[ T (z, S=1) = \sum_{m=0}^{\infty } \frac{\left[ -q_0 (z,0) \right]^m}{\left( m + 1 \right)^{3/2}} \]
+\[ \text{,gdzie } q_0 (z,t) = \frac{\beta I_0 (t) L_{eff}}{1 + \frac{z^2}{z_R^2}} \]
+
+5.2 Praktyczna Procedura Rozdzielania Efektów
+
+Poniżej przedstawiam procedurę, która pozwala na jednoznaczne i niezależne wyznaczenie współczynnika nieliniowej absorpcji β.
+* Krok 1: Pomiar z otwartą aperturą (S=1). Wykonaj pomiar Z-scan bez apertury. Otrzymana symetryczna krzywa, jak na wykresie poniżej, odzwierciedla wyłącznie nieliniową absorpcję. Dopasowując dane do modelu teoretycznego, można jednoznacznie wyznaczyć współczynnik β.
+$absorpcja.png?350$
+
+9. null
+
+null
+

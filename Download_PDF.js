@@ -344,6 +344,56 @@ function generatePdfTable(input) {
     };
 }
 
+/*function generateCodeBox(codeText) {
+    return {
+        stack: [
+            {
+                text: codeText,
+                fontSize: 9,
+                color: '#00FF00',
+                background: '#1E1E1E',
+                margin: [6, 4, 6, 4],
+                border: [true, true, true, true],
+                borderColor: '#444444',
+                lineHeight: 1.2,
+                preserveLeadingSpaces: true
+            }
+        ],
+        margin: [0, 6, 0, 6]
+    };
+}*/
+
+function generateCodeBox(codeText) {
+    return {
+        table: {
+            widths: ['*'],
+            body: [
+                [
+                    {
+                        text: codeText,
+                        fontSize: 9,
+                        color: '#00FF00',
+                        lineHeight: 1.2,
+                        margin: [6, 4, 6, 4],
+                        preserveLeadingSpaces: true
+                    }
+                ]
+            ]
+        },
+        layout: {
+            fillColor: () => '#A1A1A1',      // tło całej ramki
+            hLineWidth: () => 1,              // grubość górnej i dolnej krawędzi
+            vLineWidth: () => 1,              // grubość lewej i prawej krawędzi
+            hLineColor: () => '#444444',      // kolor linii poziomych
+            vLineColor: () => '#444444',      // kolor linii pionowych
+            paddingLeft: () => 6,
+            paddingRight: () => 6,
+            paddingTop: () => 4,
+            paddingBottom: () => 4
+        },
+        margin: [0, 6, 0, 6]
+    };
+}
 
 
 async function formatTresc2Pdf(x, path) {
@@ -493,7 +543,67 @@ async function formatTresc2Pdf(x, path) {
 								margin: [0, 0, 0, 0]
 							});
 						}else{
-							wynik += tmp;
+							//Pomijanie
+							var tmp1 = x.charAt(i+1);
+							if(tmp === '%' && tmp1 === '%') {
+								i+=2;
+								var k = 0;
+								var nazwa = '';
+								for(var j = i; j < x.length; j++) {
+									var tmp_tmp = x.charAt(j);
+									var tmp_tmp1 = x.charAt(j+1);
+									k++;
+									if(tmp_tmp === '%' && tmp_tmp1 === '%') {
+										break;
+									}else{
+										nazwa += tmp_tmp;
+									}
+								}
+								i += (k+1);
+							}else{
+								//Pomijanie
+								var tmp1 = x.charAt(i+1);
+								if(tmp === '@' && tmp1 === '@') {
+									i+=2;
+									var k = 0;
+									var nazwa = '';
+									for(var j = i; j < x.length; j++) {
+										var tmp_tmp = x.charAt(j);
+										var tmp_tmp1 = x.charAt(j+1);
+										k++;
+										if(tmp_tmp === '@' && tmp_tmp1 === '@') {
+											break;
+										}else{
+											nazwa += tmp_tmp;
+										}
+									}
+									i += (k+1);
+								}else{
+									//Strefa CODE
+									var tmp1 = x.charAt(i+1);
+									if(tmp === '%' && tmp1 === '@') {
+										i+=2;
+										var k = 0;
+										var nazwa = '';
+										for(var j = i; j < x.length; j++) {
+											var tmp_tmp = x.charAt(j);
+											var tmp_tmp1 = x.charAt(j+1);
+											k++;
+											if(tmp_tmp === '@' && tmp_tmp1 === '%') {
+												break;
+											}else{
+												nazwa += tmp_tmp;
+											}
+										}
+										i += (k+1);
+										//tutaj mam cały 
+										wynik2.push(generateCodeBox(nazwa));
+									}else{
+										wynik += tmp;
+									}
+								}
+							}
+							
 						}
 					}
 					

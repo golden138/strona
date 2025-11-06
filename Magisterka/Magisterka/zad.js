@@ -4,7 +4,7 @@ function start() {
 	setPath(path);
 	setMaksSize(360);
 	var statusPath = localStorage.getItem("status");
-	if (statusPath !== null && statusPath !== "") {
+	if (statusPath === null || statusPath === "") {
 		localStorage.setItem("status", 'Post1');
 	}
 	getArtykul();

@@ -2,7 +2,7 @@
 	"posty": [
 		{
 			"kategoria": "Optyka Nieliniowa LC",
-			"data" : ["Post1"]
+			"data" : ["Post1" , "Post2"]
 		}
 	]
 }
