@@ -1,0 +1,136 @@
+{
+	"zad": [
+		{
+			"tresc" : "Zgodnie z rozkładem Boltzmanna, jaka jest relacja między obsadzeniem poziomów energetycznych N<sub>1</sub>​ i N<sub>2</sub>​ w układzie dwupoziomowym w stanie równowagi termodynamicznej przy temperaturze T>0 K?",
+			"odp" : [
+				{"war1" : "Obsadzienie wyższego poziomu jest zawsze większe niż niższego ( N<sub>2</sub> >  N<sub>1</sub> )", "war2" : "Ta sytuacja opisuje inwersję obsadzeiń, która jest stanem nierównowagi i wymaga zewnętrznego pompowania."},
+				{"war1" : "Obsadzenie wyższego poziomu jest zawsze mniejsze niż niższego ( N<sub>2</sub> <  N<sub>1</sub> )", "war2" : "Wykładnicza zależność  od energii w rozkładzie Boltzmanna sprawia, że stany o wyższej energii są statystycznie mniej prawdopodobne do obsadzenia poprzez wzbudzenie termiczne."},
+				{"war1" : "Obsadzenie obu poziomów są zawsze sobie równe ( N<sub>2</sub> =  N<sub>1</sub> )", "war2" : "Taki stan mógłby wystąpić jedynie w granicy nieskończonej temperatury, co nie jest typowym stanem równowagi."},
+				{"war1" : "Relacja między obsadzeniami zależy liniowo od temperatury", "war2" : "Zależność opisana przez rozkład Boltzmanna ma charakter wykładniczy, a nie liniowy."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Rozważ, czy łatwiej jest obsadzić stan o wyższej czy niższej energii w sposób naturalny, wyłącznie poprzez energię cieplną."
+		},
+		{
+			"tresc" : "Który z fundamentalnych procesów kwantowych jest kluczowy dla działania lasera, ponieważ prowadzi do powstania fotonu będącego idealną kopią fotonu stymulującego?",
+			"odp" : [
+				{"war1" : "Emisja wymuszona (stymulowana)", "war2" : "Oddziaływanie fotonu z wzbudzonym elektronem wymusza emisję drugiego, identycznego fotonu, co jest podstawą spójnego wzmocnienia światła."},
+				{"war1" : "Absorpcja", "war2" : "Ten proces prowadzi do zużycia (pochłonięcia) fotonu w celu wzbudzenia elektronu, co jest działaniem przeciwnym do wzmocnienia światła."},
+				{"war1" : "Emisja spontaniczna", "war2" : "Ten proces jest samorzutny i nie jest spójny; emitowane fotony mają przypadkowe fazy i kierunki"},
+				{"war1" : "Rekombinacja niepromienista", "war2" : "W tym procesie energia jest uwalniana w postaci ciepła (fononów), a nie światła (fotonów), więc nie przyczynia się on do wzmocnienia optycznego."}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Zastanów się, który proces odpowiada za powielanie fotonów w sposób spójny, zachowując ich energię, fazę i kierunek."
+		},
+		{
+			"tresc" : "Co wynika z relacji Einsteina dotyczących współczynników dla absorpcji (B<sub>12</sub>​) i emisji wymuszonej (B<sub>21​</sub>) ?",
+			"odp" : [
+				{"war1" : "Suma tych współczynników jest równa współczynnikowi emisji spontanicznej (B<sub>12</sub> + B<sub>21​</sub> = A<sub>21​</sub>).", "war2" : "Relacje Einsteina łączą współczynniki w inny sposób; A<sub>21​</sub> jest powiązane z B<sub>21​</sub> przez czynnik zależny od energii stałych fizycznych."},
+				{"war1" : "Stosunek tych współczynników zależny od temperatury układu.", "war2" : "Współczynniki B są wewnętrznymi właściwościami przejścia atomowego i nie zależą bezpośrednio od temperatury"},
+				{"war1" : "Współczynnik absorpcji jest zawsze większy od współczynnika emisji wymuszonej (B<sub>12</sub> > B<sub>21​</sub>)", "war2" : "Gdyby tak było, wzmocnienie optyczne byłoby niemożliwe, ponieważ absorpcja zawsze dominowałaby nad emisją wymuszoną."},
+				{"war1" : "Prawdopodobieństwa jednakowe dla obu tych procesów są sobie równe (B<sub>12</sub> = B<sub>21​</sub>)", "war2" : "Einstein wskazał, że podstawowe prawdopodobieństwo oddziaływania fotonu z elektronem jest symetryczne, niezależne od tego, czy prowadzi do wzbudzenia, czy do wymuszonego powrotu na niższy poziom"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o symetrii oddziaływania fotonu z elektronem. Czy natura faworyzuje proces wzbudzenia nad procesem odwrotnym?"
+		},
+		{
+			"tresc" : "Jaki jest fundamentalny warunek, który musi być spełniony w ośrodku materialnym, aby szybkość emisji stymulowanej przewyższyła szybkość absorpcji, prowadząc do wzmocnienia netto?",
+			"odp" : [
+				{"war1" : "Gęstość fotonów musi być zerowa", "war2" : "Zarówno absorpcja, jak i emisja wymuszona wymaga obecności fotonów; przy zerowej gęstości fotonów oba te procesy nie zachodzą"},
+				{"war1" : "Musi istnieć inwersja obsadzeń (N<sub>2</sub> > N<sub>1</sub>)", "war2" : "Ponieważ B<sub>12</sub> = B<sub>21</sub>, nierówność dla szybkości procesów B<sub>21</sub>N<sub>2</sub>N<sub>p</sub> >B<sub>12</sub>N<sub>1</sub>N<sub>p</sub> upraszcza się bezpośrednio do warunku na populacje poziomów energetycznych"},
+				{"war1" : "Szybkość emisji spontanicznej musi być większa od szybkości absorpcji.", "war2" : "Emisja spontaniczna jest procesem konkurencyjnym dla wzmocnienia, a nie jego warunkiem, jej dominacja prowadzi do niespójnego światła, jak w diodzie LED."},
+				{"war1" : "Temperatura materiału musi być bardzo wysoka.", "war2" : "Podgrzewanie w stanie równowagi termodynamicznej uniemożliwia osiągnięcie inwersji obsadzeń (N2>N1)"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Skorzystaj z faktu, że współczynniki Einsteina dla absorpcji i emisji wymuszonej są równe, i przeanalizuj nierówność opisującą dominację wzmocnienia."
+		},
+		{
+			"tresc" : "W kontekście półprzewodników, co jest odpowiednikiem inwersji obsadzeń (N<sub>2</sub> > N<sub>1</sub>) z modelu atomowego?",
+			"odp" : [
+				{"war1" : "Poziom Fermiego znajduje się dokładnie w środku przerwy energetycznej.", "war2" : "Taka pozycja poziomu Fermiego jest charakterystyczna dla półprzewodnika samoistego w stanie równowagi, gdzie dominuje absorpcja."},
+				{"war1" : "Spełnienie kryterium Bernarda-Duraffourga (E<sub>Fc</sub> - E<sub>Fv</sub> > E<sub>21</sub>)", "war2" : "To kryterium precyzyjnie definiuje stan nierównowagi, w którym separacja quasi-poziomów Fermiego jest wystarczająco duża, aby prawdopodobieństwo emisji przewyższyło prawdopodobieństwo absorpcji dla fotonów o energi E<sub>21</sub>"},
+				{"war1" : "Szerokość przerwy energetycznej Eg jest mniejsza od energii termicznej k<sub>B</sub>T.", "war2" : "Taka sytuacja oznaczałaby, że materiał zachowuje się bardziej jak metal, a nie półprzewodnik i nie jest to warunek na wzmocnienie optyczne."},
+				{"war1" : "Temperatura półprzewodnika jest wyższa od temperatury pokojowej.", "war2" : "Podniesienie temperatury zwiększa liczbę nośników, ale nie gwarantuje warunku wzmocnienia i samo w sobie nie proawdzi do inwersji."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się, jak pojęcie poziomów energetycznych jest uogólniane w teorii pasmowej przy użyciu statystyki Fermiego-Diraca w stanie nierównowagi."
+		},
+		{
+			"tresc" : "W równaniu opisującym tempo absorpcji w półprzewodniku, r<sub>12</sub>(abs), co fizycznie reprezentuje czynnik [1−f<sub>2</sub>]?",
+			"odp" : [
+				{"war1" : "Prawdopodobieństwo, że stan końcowy w paśmie przewodnictwa jest pusty.", "war2" : "Aby elektron mógł przejść do stanu o wyższej energii, ten stan musi być wolny. Prawdopodobieństwo zajęcia stanu f<sub>2</sub>, więc prawdopodobieństwo, że jest on wolny (1−f<sub>2</sub>)."},
+				{"war1" : "Całkowitą liczbę elektronów w paśmie przewodnictwo.", "war2" : "Ten czynnik jest prawdopodobieństwem dla pojedyńczego stanu, anie całkowitą liczbą cząstek w paśmie."},
+				{"war1" : "Gęstość stanów w paśmie przewodnictwa.", "war2" : "Gęstość stanów, ρ<sub>c</sub>(E) jest osobnym czynnikiem w równaniu i opisuje, ile stanów jest dostępnych na danej energii, anie jakie jest prawdopodobieństwo ich obsadzenia."},
+				{"war1" : "Prawdopodobieństwo, że stan początkowy w paśmie walencyjnym jest zajęty przez elektron", "war2" : "To prawdopodobieństwo jest opisane przez czynnik f<sub>1</sub>"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Pomyśl, co musi być prawdą o docelowym stanie energetycznym, aby elektron mógł się do niego przenieść?"
+		},
+		{
+			"tresc" : "Jaką podstawową rolę pełni rezonator optyczny w konstrukcji lasera?",
+			"odp" : [
+				{"war1" : "Generowanie początkowych fotonów poprzez emisję spontaniczną.", "war2" : "Emisja spontaniczna zachodzi samorzutnie w materiale; rezonator nie jest potrzebny do jej zainicjalizowania, ale do wzmocnienia jej produktów."},
+				{"war1" : "Filtrowanie światła, aby przepuścić tylko jedną, określoną polaryzację.", "war2" : "Chociaż niektóre elementy rezonatora mogą wpływać na polaryzacje, jego głównym zadaniem jest zapewnienie dodatniego sprzężenia zwrotnego dla fotonów, a nie polaryzacja."},
+				{"war1" : "Chłodzenie ośrodka aktywnego w celu zapobieżenia przegrzaniu.", "war2" : "Chociaż odporwadzanie ciepła jest ważne, nie jest to podstawowa funkcja optycznego rezonatora."},
+				{"war1" : "Zwiększenie gęstości fotonów w ośrodku w celu zdominowania emisji wymuszonej.", "war2" : "Poprzew wielokrotne odbicie fotonów, rezonator zmusza je do wielokrotnego przechodzenia przez ośrodek, co zwiększa prawdopodobieństwo wywołania emisji wymuszonej i prowadzi do lawinowego wzmocnienia."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Zastanów się, jak można sprawić, by fotony miały więcej szans na interakcję z wzbudzonymi elektronami w ośrodku wzmacniającym."
+		},
+		{
+			"tresc" : "Współczynnik wzmocnienia materiałowego g jest dodatni (g>0) w pewnym zakresie energii. Co to oznacza dla współczynnika absorpcji α w tym samym zakresie?",
+			"odp" : [
+				{"war1" : "Współczynnik absorpcji jest równie dodatni (α > 0)", "war2" : "Dodatni współczynnik absorpcji oznacza osłabienie światła, co jest procesem przeciwnym do wzmocnienia."},
+				{"war1" : "Współczynnik absorpcji jest równy 0 (α = 0)", "war2" : "Stan, w którym α = 0 nazywany jest przezroczystością optyczną. Wzmocnienie to krok dalej wymagającego aktywnego dodawania fotonów."},
+				{"war1" : "Współczynnik absorpcji staje się ujemny (α < 0)", "war2" : "Wzmocnienie jest z definicji ujemną absorpcją. Materiał zamiast pochłaniać energię z przechodzącej fali świetlnej, zaczyna ją do niej dodawać."},
+				{"war1" : "Współczynnik absorpcji staje się nieskończony.", "war2" : "Nieskończona absorpcja oznaczałaby natychmiastowe pochłonięcie całego światła, co fizycznie nieraealistyczne i sprzeczne z ideą wzmocnienia."}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl o wzmocnieniu jako o procesie odwrotnym do absorpcji. Jak matematycznie wyraża się tę odwrotność?"
+		},
+		{
+			"tresc" : "Kształt widma wzmocnienia g(E) jest w decydującym stopniu determinowany przez dwie wielkości. Jedną jest czynnik inwersji (f<sub>2</sub> − f<sub>1</sub>). Jaka jest druga kluczowa wielkość?",
+			"odp" : [
+				{"war1" : "Współczynnik załamania światła w ośrodku (n)", "war2" : "Współczynnik załamania wpływa na prędkość światła w ośrodku i pojawia się w pełny wyrażeniu na wzmocnienie, ale nie jest głównym czynnikiem kształtującym widmo g(E)"},
+				{"war1" : "Temperatura absolutna materiału (T)", "war2" : "Temperatura wpływa na funkcje rozkładu Fermiego (f<sub>1</sub> i f<sub>2</sub>), ale to nie ona bezpośrednio kształtuje podstawową formę widma."},
+				{"war1" : "Stała Plancka (h)", "war2" : "Stała Plancka jest fundamentalną stałą fizyczną, a nie właściwością materiału, która mogłaby determinować kształt specyficznego widma wzmocnienia."},
+				{"war1" : "Zredukowania gęstość stanów ρ(E<sub>21</sub>)", "war2" : "Gęstość stanów opisuje, ile par stanów początkowych i końcowych jest dostępnych dla przejścia o danej energii, co bezpośrednio determinuje kształt widma wzmocnienia."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Przypomnij sobie ogólny wzór g(E)≈ρ(E<sub>21</sub>)⋅(f<sub>2</sub> − f<sub>1</sub>). Który z tych czynników jest charakterystyczny dla struktury kwantowej materiału?"
+		},
+		{
+			"tresc" : "Zgodnie z danymi przedstawionymi w tekście dla lasera na studni kwantowej, co dzieje się z widmem wzmocnienia, gdy gęstość pompowanych nośników rośnie?",
+			"odp" : [
+				{"war1" : "Maksymalna wartość wzmocnienia rośnie, a widmo przesuwa się w stronę wyższych energii", "war2" : "Większa gęstość nośników oznacza silniejszą inwersję obsadzeń ( większe f<sub>2</sub> - f<sub>1</sub> ) oraz obsadzenie stanów o wyższych energiach w pasmach skutkuje wzrostem i przesunięciem widma."},
+				{"war1" : "Widmo staje się węższe, a jego maksymalna wartość pozostaje bez zmian", "war2" : "Zarówno szerokość, jak i maksimum widma ulegają zmianie wraz ze wzrostem pompowania"},
+				{"war1" : "Maksymalna wartość wzmocnienia maleje, a widmo przesuwa się w stronę niższych energii", "war2" : "Jest to efekt przeciwny do obserwowanego; większe pompowanie prowadzi do silniejszego wzmocnienia."},
+				{"war1" : "Widmo nie zmienia kształu, a jedynie jego całkowitą intensywność rośnie liniowo", "war2" : "Obserwacje pokazują, że ze wzrostem pompowania zmienia się nie tylko wysokość piku wzmocnienia, ale także jego położenie energetyczne i szerokość"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Pomyśl o efekcie zapełniania pasm (band filling). Gdy dodajesz więcej nośników, jakie stany energetyczne zaczynają one zajmować?"
+		},
+		{
+			"tresc" : "W jaki sposób diody elektroluminescencyjne (LED) generują światło?",
+			"odp" : [
+				{"war1" : "Poprzez absorpcje fotonów z otoczenia i ich reemisję na innej długości fali", "war2" : "To opisuje zjawisko fotoluminescencji lub fluorescencji, podczas gdy diody LED są zasilane prądem elektrycznym"},
+				{"war1" : "Poprzez spontaniczną rekombinacje promienistą elektronów i dziur w złączu p-n", "war2" : "Jest to zjawisko elektroluminescencji, gdzie energia elektryczna jest bezpośrednio zamienianna w światło w wyniku samorzutnych przejść elektronów na niższe poziomy energetyczne."},
+				{"war1" : "Poprzez emisje wymuszoną w rezonatorze optycznym", "war2" : "Ten mechanizm jest charakterystyczny dla laserów, które wymagają rezonatora do wzmocnienia światła. Diody LED go nie posiadają."},
+				{"war1" : "Poprzez podgrzewanie materiału półprzewodnikowego do wysokich temperatur (żarzenie)", "war2" : "To jest zasada działania tradycyjnej żarówki. Światło z diody LED jest wynikiem zjawiska kwantowego, a nie promieniowania termicznego."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się nad nazwą zjawiska leżącego u podstaw działania LED - 'elektroluminescencja' - i dominującym procesem emisyjnym w przypadku braku rezonatora."
+		},
+		{
+			"tresc" : "Jak zmienia się charakterystyka gęstości stanów ρ(E), gdy przechodzimy od materiału 3D (bulk) do materiału 2D (studnia kwantowa)?",
+			"odp" : [
+				{"war1" : "Z funkcji parabolicznej \\( \\sim \\sqrt{E} \\) staje się funckją schodkową", "war2" : "Ograniczenie ruchu nośników w jednym wymiarze kwantyzuje poziomy energetyczne w tym kierunku, co prowadzi do skokowych zmian gęstości dostępnych stanów."},
+				{"war1" : "Z serii ostrych pików (funkcji delta) staje się funkcją paraboliczną", "war2" : "Taka zmiana byłaby charakterystyczna dla przejść od kropki kwantowej ( 0D ) do materiału 3D"},
+				{"war1" : "Z funkcji schodnowej staje się funkcją paraboliczną \\( \\sim \\sqrt{E} \\)", "war2" : "To opisuje przejście w odwrotnym kierunku, od studni kwantowej (2D) do materiału (3D)"},
+				{"war1" : "Pozostaje paraboliczna, ale o mniejszej wartości.", "war2" : "Zmiana wymiarowości fundamentalnie zmienia zależność energetyczną gęstości stanów, a nie tylko skaluje jej wartość."}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Ograniczenie swobody ruchu nośników w jednym wymiarze prowadzi do kwantyzacji energii. Jak wpłynie to na ciągłą funkcję gęstości stanów?"
+		}
+	]
+}

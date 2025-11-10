@@ -1,0 +1,117 @@
+{
+	"zad": [
+		{
+			"tresc" : "Które zjawisko fizyczne jest główną przyczyną, dla której spadająca kropla deszczu przybiera niemal idealnie kulisty kształt?",
+			"odp" : [
+				{"war1" : "Siły przylegania (adhezja)", "war2" : "Adhezja opisuje przyciąganie cząsteczek cieczy do cząsteczek innej substacji (np. ścianek naczynia), a nie do siebie nawzajem"},
+				{"war1" : "Ściśliwość", "war2" : "Ściśliwość dotyczy zmiany objętości pod wpływem siły zewnętrznej i nie ma wpływu na kształt swobodnie spadającej kropli"},
+				{"war1" : "Siły spójności (kohezja)", "war2" : "Siły wzjaemnego przyciągania się cząsteczek wody powodują, że kropla dąży do uzyskania jak najmniejszej powierzchni przy danej objętości, co odpowiada kształtowi kuli"},
+				{"war1" : "Lepkość", "war2" : "Lepkość to opór wewnętrzny cieczy przed płynięciem, który nie jest bezpośrednią przyczyną formowania się kulistego kształtu kropli"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Zastanów się, jaka siła powoduje, że cząsteczki tej samej substancji trzymają się razem"
+		},
+		{
+			"tresc" : "Woda wlana do bardzo wąskiej szklanej rurki unosi się wzdłuż ścianek, tworząc menisk wklęsły. Dzieje się tak, ponieważ:",
+			"odp" : [
+				{"war1" : "Siły spójności w wodzie są znacznie silniejsze niż siły przylegania do szkła", "war2" : "Taka sytuacja doprowadziłaby do powstania menisku wypukłego, co obserwuje się na przykład w przypadku rtęci"},
+				{"war1" : "Siły przylegania między wodą a szkłem są większe niż siły spójności w wodzie", "war2" : "Woda wspina się po szklance, ponieważ jest silniej przyciągana przez cząsteczki szkła niż przez inne cząsteczki wody"},
+				{"war1" : "Gęstość wody jest mniejsza od gęstości szkła", "war2" : "Różnica gęstości między cieczą a naczyniem nie jest przyczyną formowania się menisku"},
+				{"war1" : "Napięcie powierzchniowe wody jest zbyt małe, by utrzymać płaską powierzchnię", "war2" : "Napięcie powierzchniowe jest skutkiem sił spójności, a kształt menisku zależy od relacji między spójnością a przyleganiem"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Pomyśl o rywalizacji dwóch sił: jednej, która ciągnie wodę do szkła, i drugiej, która trzyma cząsteczki wody razem."
+		},
+		{
+			"tresc" : "Olej kuchenny jest mniej gęsty, ale bardziej lepki od wody. Co to oznacza w praktyce?",
+			"odp" : [
+				{"war1" : "Olej będzie unosił się na wodzie i płynął wolniej niż woda", "war2" : "Mniejsza gęstość powoduje unoszenie się na wodzie, a większa lepkość oznacza większy opór wewnętrzny, czyli wolniejsze płynięcie"},
+				{"war1" : "Olej będzie się unosił na wodzie i płyną szybciej niż woda", "war2" : "Chociaż olej unosi się na wodzie, jego większa lepkość sprawia, że płynie on wolniej"},
+				{"war1" : "Olej zatonie w wodzie, ale będzie płyną szybciej niż woda", "war2" : "Mniejsza gęstość zapobiega tonięciu, a większa lepkość powoduje wolniejsze płynięcie"},
+				{"war1" : "Olej zatonie w wodzie i będzie płyną wolniej niż woda", "war2" : "Olej płynie wolniej, ale jego mniejsza gęstość powoduje, że unosi się na powierzchni wody"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Przypomnij sobie eksperyment z sosem sałatkowym i zastanów się, czym różni się gęstość od oporu przy przelewaniu."
+		},
+		{
+			"tresc" : "W jaki sposób dodatek detergentu do prania pomaga usunąć brud z ubrań?",
+			"odp" : [
+				{"war1" : "Zmniejsza napięcie powierzchniowe wody, ułatwiając jej zwilżanie tkanin", "war2" : "Dzięki obniżeniu napięcia powierzchniowego woda może łatwiej wniknąć między włókna materiału i skuteczniej usuwać zanieczyszczenia"},
+				{"war1" : "Zwiększa lepkość wody przez co łatwiej zbiera brud", "war2" : "Zwiększenie lepkości utrudniłoby wodzie wnikanie we włókna tkaniny"},
+				{"war1" : "Tworzy na ubraniach warstwę hydrofobową", "war2" : "Warstwa hydrofobowa odpycha wodę, co jest efektem przeciwnym do zamierzonego w procesie prania"},
+				{"war1" : "Zwiększa gęstość wody, co pozwala jej wypchnąć cząsteczki brudu", "war2" : "Gęstość wody nie jest kluczowym czynnikiem w procesie zwilżania tkaniny przez wodę"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Pomyśl, co przeszkadza wodzie w samodzielnym wnikaniu w gęsto utkany materiał."
+		},
+		{
+			"tresc" : "Zadanie obliczeniowe: Metalowa kostka o masie 216 g ma objętość 80 cm³. Jaka jest gęstość metalu, z którego wykonano kostkę?",
+			"odp" : [
+				{"war1" : "około 0,37 g/cm<sup>3</sup>", "war2" : "Nie pasuje"},
+				{"war1" : "17280 g/cm<sup>3</sup>", "war2" : "Nie pasuje"},
+				{"war1" : "2,7 g/cm<sup>3</sup>", "war2" : "Pasuje"},
+				{"war1" : "136 g/cm<sup>3</sup>", "war2" : "Nie pasuje"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Przypomnij sobie podstawowy wzór wiążący masę, objętość i gęstość."
+		},
+		{
+			"tresc" : "Woda wykazuje nietypową właściwość fizyczną, która ma kluczowe znaczenie dla przetrwania organizmów wodnych zimą. O jaką właściwość chodzi?",
+			"odp" : [
+				{"war1" : "Jej gęstość rośnie liniowo wraz ze spadkiem temperatury", "war2" : "To zachowanie jest typowe dla większości cieczy, ale woda stanowi wyjątek - jej gęstość maleje poniżej 4 °C"},
+				{"war1" : "Zamarzając, kurczy się i staje się gęstsza od wody w stanie ciekłym", "war2" : "Woda podczas zamarzania rozszerza się, co sprawia, że lód ma mniejszą gęstość i unosi się na wodzie"},
+				{"war1" : "Ma bardzo niskie napięcie powierzchniowe w niskich temperaturach", "war2" : "Napięcie powierzchniowe wody jest stosunkowo wysokie, a anomalia kluczowa dla życia wodnego dotyczy jej gęstości"},
+				{"war1" : "Największą gęstość osiąga w temperaturze 4 °C, a nie w punkcie zamarzania", "war2" : "Dzięki temu cięższa woda o temp. 4 °C opada na dno, zapobiegając zamarzaniu zbiorników wodnych od dna do góry"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Zastanów się, dlaczego lód unosi się na wodzie i jak to wpływa na życie w jeziorach zimą."
+		},
+		{
+			"tresc" : "Jaką metodę należy zastosować, aby wyznaczyć objętość kamienia o nieregularnym kształcie?",
+			"odp" : [
+				{"war1" : "Podzielić jego masę przez gęstość wody", "war2" : "Aby w ten sposób obliczyć objętość, trzeba by znać gęstość kamienia, a nie wody"},
+				{"war1" : "Zważyć go na wadze kuchennej", "war2" : "Ważenie na wadze pozwala wyznaczyć masę przedmiotu, a nie jego objętość"},
+				{"war1" : "Wymnożyć jego długość, szerokość i wysokość", "war2" : "Jest to metoda tylko do pomiaru objętości prostopadłościanów"},
+				{"war1" : "Zanurzyć go w naczyniu z miarką i zmierzyć zmianę poziomu wody", "war2" : "Objętość wypartej wody jest równa objętości znaurzonego przedmiotu. Jest to standardowa metoda dla ciał o nieregularnym kształcie."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o tym, jak zmierzyć przestrzeń, którą zajmuje przedmiot, nie używając linijki."
+		},
+		{
+			"tresc" : "Technologia samoczyszczących szyb i wodoodpornych tkanin często wykorzystuje efekt lotosu. Zjawisko to polega na tym, że powierzchnia materiału jest:",
+			"odp" : [
+				{"war1" : "Bardzo gęsta, co uniemożliwia wnikanie wody", "war2" : "Gęstość materiału powierzchniowego nie jest bezpośrednią przyczyną tego zjawiska; kluczowe są siły międzycząsteczkowe na styku powierzchni i wody"},
+				{"war1" : "Hydrofobowa, co oznacza, że silnie odpycha cząsteczki wody", "war2" : "Na powierzchni hydrofobowych siły spójności w kropli wody są znacznie większe niż siły przylegania do powierzchni, co powoduje formowanie się kropel i ich staczanie"},
+				{"war1" : "Wyjątkowo lepka, przez co brud przykleja się do kropli wody", "war2" : "Efekt ten nie jest związany z lepkością powierzchni, lecz z minimalnym kontaktem między wodą a powierzchnią"},
+				{"war1" : "Hydrofilowa, co oznacza, że silnie przyciąga cząsteczki wody", "war2" : "Powierzchnia hydrofilowa byłaby łatwo zwilżana przez wodę, która by się po niej rozpływała, co jest efektem przeciwnym do samoczyszczenia"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Przypomnij sobie, co dosłownie oznacza termin „hydrofobowy” i jak to się ma do zachowania wody."
+		},
+		{
+			"tresc" : "Dlaczego gazy, w przeciwieństwie do cieczy, są bardzo ściśliwe?",
+			"odp" : [
+				{"war1" : "Ponieważ odległości między cząsteczkami gazu są bardzo duże", "war2" : "Duże przestrzenie między cząsteczkami pozwalają na łatwe zbliżanie ich do siebie pod wpływem siły zewnętrznej"},
+				{"war1" : "Ponieważ siły spójności między cząsteczkami gazu są bardzo silne", "war2" : "Siły spójności w gazach są znikomo male, co pozwala cząsteczkom na swobodne oddalanie się od siebie"},
+				{"war1" : "Ponieważ gazy mają zawsze większą gęstość niż ciecze", "war2" : "Gazy mają zazwyczaj znacznie mniejszą gęstość niż ciecze, co wynika z dużych odległości między cząsteczkami"},
+				{"war1" : "Ponieważ cząsteczki gazu poruszają się znacznie wolniej niż cząsteczki cieczy", "war2" : "Cząsteczki gazu poruszają się z dużymi prędkościami; to odległość między nimi, a nie prędkość decydują o ściśliwości"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Wyobraź sobie cząsteczki substancji jako małe kuleczki i pomyśl, gdzie jest najwięcej pustej przestrzeni do upakowania."
+		},
+		{
+			"tresc" : "W tekście wspomniano, że łyżeczka materii z gwiazdy neutronowej ważyłaby niewyobrażalnie dużo. Co to świadczy o tej materii?",
+			"odp" : [
+				{"war1" : "Ma bardzo wysoką lepkość", "war2" : "Lepkość opisuje opór przed płynięciem, a nie stosunek masy do objętości"},
+				{"war1" : "Jest całkowicie nieściśliwa", "war2" : "Materia ta jest wynikiem ekstremalnego ściśnięcia, a jej waga w małej objętości świadczy o gęstości, a nie o dalszej (nie)ściśliwości"},
+				{"war1" : "Posiada ogromne napięcie powierzchniowe", "war2" : "Napięcie powierzchniowe to zjawisko występujące na granicy różnych ośrodków (np. woda - powietrze), a przykład mówi o właściwościach samej materii w jej objętości"},
+				{"war1" : "Ma ekstremalnie dużą gęstość", "war2" : "Gęstość to masa zawarta w jednostce objętości. Ogromna masa w małej objętości (łyżeczka) oznacza ekstremalnie wysoką gęstość"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o definicji wielkości fizycznej, która łączy ze sobą masę i objętość."
+		}
+
+
+
+	]
+}

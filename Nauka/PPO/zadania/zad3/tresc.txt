@@ -1,0 +1,114 @@
+{
+	"zad": [
+		{
+			"tresc" : "Jaka jest strategiczna rola rezonatora optycznego w laserze?",
+			"odp" : [
+				{"war1" : "Generowanie początkowych fotonów w losowych kierunkach, które inicjują akcję laserową", "war2" : "Inicjujące fotony pochodzą z emisji spontanicznej w medium wzmacniającym, a rola rezonatora polega na selekcji i wzmacnianiu tych, które propagują się wzdłuż jego osi"},
+				{"war1" : "Wzmacnianie światła poprzez proces wymuszonej emisji fotonów", "war2" : "Za wzmocnienie światła bezpośrednio odpowiada medium wzmacniające (ośrodek czynny)"},
+				{"war1" : "Zapewnienie dodatniego sprzężenia zwrotnego poprzez \"uwięzienie\" fotonów i zmuszenie ich do wielokrotnych przejść przez medium wzmacniające ", "war2" : "Rezonator, najczęściej w postaci dwóch zwierciadeł, tworzy pętle sprzężenia zwrotnego, co jest kluczowe dla lawinowego narastania liczby fotonów."},
+				{"war1" : "Dostarczanie energii do medium wzmacniającego w celu osiągnięcia inwersji obsadzeń", "war2" : "To zadanie jest realizowane przez pompę, a nie przez rezonator"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl o tym, jak fotony muszą być wielokrotnie zawracane, aby wzmocnienie mogło skutecznie narastać."
+		},
+		{
+			"tresc" : "W jaki sposób najczęściej tworzy się zwierciadła rezonatora Fabry-Perota w laserach półprzewodnikowych opartych na arsenku galu (GaAs)?",
+			"odp" : [
+				{"war1" : "Poprzez łupanie kryształu wzdłuż jego naturalnych płaszczyzn krystalograficznych", "war2" : "Płaszczyzny krystalograficzne, takie jak {110} w GaAs, po przełamaniu tworzą gładkie, równoległe powierzchnie o wysokiej jakości optycznej, które działają jak zwierciadła"},
+				{"war1" : "Poprzez napylanie cienkich wielowarstwowych powłok dielektrycznych na czołach kryształu", "war2" : "Chociaż jest to technika stosowana w kiektórych typach laserów, w prostych laserach Fabry-Perota z GaAs wykorzystuje się naturalne właściwości materiału."},
+				{"war1" : "Poprzez wytwarzanie w materiale siatek Bragga, które selektywnie odbijają światło", "war2" : "To opisuje budowę laserów z rozłożonym sprzężeniem zwrotnym (DFB), a nie klasycznego rezonatora Fabry-Perota"},
+				{"war1" : "Poprzez polerowanie czołowych powierzchni kryształu do uzyskania lustrzanej gładkości", "war2" : "Łupanie kryształu jest znacznie prostrzą i bardziej efektywną metodą uzyskania wymaganej jakości optycznej dla tego typu rezonatora"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Tekst źródłowy wspomina o \"naturalnym\" sposobie formowania zwierciadeł, który wykorzystuje wewnętrzną strukturę samego materiału."
+		},
+		{
+			"tresc" : "Jaka jest fundamentalna konsekwencja warunku fazowego ( \\( 2 k L = 2 m \\pi \\) )dla działania lasera?",
+			"odp" : [
+				{"war1" : "Moc wyjściowa lasera rośnie liniowo wraz z prądem pompy", "war2" : "Charakterystyka mocy wyjściowej jest konsekwencją dynamiki opisanej przez równaia bilansu, a nie bezpośrednio warunku fazowego"},
+				{"war1" : "Prąd zasilający laser musi przekroczyć określoną wartość progową", "war2" : "Próg laserowania jest związany z warunkiem amplitudowym - potrzebą osiągnięcia wystarczającego wzmocnienia do pokonania strat"},
+				{"war1" : "Wzmocnienie materiałowe musi dokładie równoważyć sumę wszystkich strat optycznych", "war2" : "Ta zasada wynika z warunku amplitudowego, który dotyczy bilansu energii fali w rezonatorze"},
+				{"war1" : "Rezonator pozwala na wzmacnianie tylko dyskretnego zestawu długości fal, zwanych modami podłużnymi", "war2" : "Warunek fazowy wymaga, aby fala po pełnym obiegu interferowała ze sobą konstruktywnie, co jest możliwe tylko dla określonych, dyskretnych częstotliwości (modów)"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Zastanów się, co się dzieje, gdy fala świetlna interferuje sama ze sobą po przebyciu drogi w tę i z powrotem. Warunek ten narzuca ograniczenia na długość fali."
+		},
+		{
+			"tresc" : "Zgodnie z równaniem na wzmocnienie progowe \\[ g = a_i \\cdot \\frac{1}{2 L} \\cdot ln \\left( \\frac{1}{R_1 R_2} \\right) \\], co należy zrobić, aby obniżyć próg akcji laserowej?",
+			"odp" : [
+				{"war1" : "Zmniejszyć długość rezonatora L i współczynniki odbicia zwierciadeł R<sub>1</sub>, R<sub>2</sub>", "war2" : "Zmniejszenie tych parametrów prowadzi do zwiększenia członu strat na zwierciadłach, co w efekcie podnosi wymagane wzmocnienie progowe"},
+				{"war1" : "Zwiększać straty wewnętrzne a<sub>i</sub>", "war2" : "Straty wewnętrzne są składnikiem wzmocnienia progowego; ich zwiększenie bezpośrednio podnosi próg działania lasera"},
+				{"war1" : "Zwiększyć zarówno straty wewnętrzne a<sub>i</sub>, jak i długość rezonatora L", "war2" : "Zwiększenie strat wewnętrznych a<sub>i</sub> zawsze podnosi próg, nawet jeśli zwiększenie L częściowo to kompensuje"},
+				{"war1" : "Zwiększyć długość rezonatora L lub współczynniki odbicia zwierciadeł R<sub>1</sub>, R<sub>2</sub>", "war2" : "Zwiększenie długości L lub współczynników odbicia R<sub>1</sub>, R<sub>2</sub> zmniejsza drugi człon równania (straty na zwierciadłach), co obniża całkowite wymagane wzmocnienie do rozpoczęcia akcji laserowej."}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Analizując równanie, zastanów się, które zmiany parametrów spowodują zmniejszenie wartości po prawej stronie."
+		},
+		{
+			"tresc" : "Jaki jest główny mechanizm strat wewnętrznych (a<sub>i</sub>) w laserach półprzewodnikowych, który staje się szczególnie dotkliwy w urządzeniach emitujących światło w zakresie długofalowym?",
+			"odp" : [
+				{"war1" : "Absorbcja na swobodnych nośnikach", "war2" : "W procesie tym foton oddaje energie elektronowi lub dziurze. Straty te rosną z koncentracją nośników i silnie zależą od długości fali."},
+				{"war1" : "Rozpraszanie światła na nierównościach i defektach struktury falowodowej", "war2" : "Chociaż jest to jeden z mechanizmów strat wewnętrznych w artykule można znaleźć, że absorpcje na swobodnych nośnikach jest głównym czynnikiem zwłaszcza dla dłuższych fal"},
+				{"war1" : "Ucieczka fotonów przez częściowo przepuszczjące zwierciadła", "war2" : "Jest to mechanizm strat na zwierciadłach (a<sub>m</sub>), a ne strat wewnętrznych (a<sub>i</sub>)"},
+				{"war1" : "Rekombinacja Auger", "war2" : "Rekombinacja Auger jest procesem strat nośników, a nie strat fotonów w rezonatorze, chociaż oba zjawiska są niekorzystne"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Pomyśl o procesie, w którym fotony są pochłaniane wewnątrz materiału lasera, a którego efektywność zależy od długości fali."
+		},
+		{
+			"tresc" : "W kontekście równań bilansu, czym jest rekombinacja Auger i dlaczego jest ona niekorzystna dla działania lasera?",
+			"odp" : [
+				{"war1" : "Jest to proces rekombinacji na defektach sieci krystalicznej, dominują przy niskich koncentracjach nośników", "war2" : "To opisuje rekombinacje typu Shockleya-Reada-Halla ( człon AN w modelu ABC), a nie rekombinacje Auger ( człon CN<sup>3</sup>"},
+				{"war1" : "Jest to proces niepromienisty, w którym energia rekombinacji elektronu i dziury jest przekazywana innemu nośnikowi, co prowadzi do strat nośników i generacji ciepła.", "war2" : "Jest to precyzyjny opis procesu Augera, który zużywa nośniki bez generowania światła, zwiększając prąd progowy i temperaturę urządzenia"},
+				{"war1" : "Jest to pożądany proces, który dominuje powyżej progu laserowania, prowadząc do emisji wymuszonej", "war2" : "Procesem dominującym powyżej progu, odpowiedzialnym za generację światła spójnego, jest rekombinacja stymulowana, a nie Auger"},
+				{"war1" : "Jest to proces promienisty, w którym energia jest przekazywana innemu fotonowi, co zwiększa moc wyjściową", "war2" : "Rekombinacja Auger jest procesem niepromienistym i nie generuje fotonów; stanowi stratę energii"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się nad procesem z udziałem trzech cząstek (dwóch elektronów i dziury lub odwrotnie), gdzie energia nie zamienia się w światło."
+		},
+		{
+			"tresc" : "Co opisuje współczynnik ograniczenia optycznego \\( \\Gamma \\) w równaniach bilansu lasera?",
+			"odp" : [
+				{"war1" : "Część fotonów z emisji spontanicznej, która jest emitowana do pojedyńczego modu laserującego>", "war2" : "Ten ułamenk jest reprezentowany przez współczynnik sprzężenia emisji spontanicznej \\( \\beta \\) ."},
+				{"war1" : "Średni czas życia fotonu w rezonatorze, zanim opuści go przez zwierciadło lub zostanie zaabsorbowany.", "war2" : "Czas życia fotonu \\( \\tau_p \\) jest związany ze stratami, a nie ze stopniem pokrycia modu z obszarem aktywnym."},
+				{"war1" : "Wydajność kwantową konwersji prądu na pary elektron-dziura w obszarze czynnym.", "war2" : "Parametr ten jest opisany przez wewnętrzną wydajność kwantową \\( \\eta_i \\)"},
+				{"war1" : "Ułamek mocy modu optycznego, który znajduje się wewnątrz medium wzmacniającego.", "war2" : "\\( \\Gamma \\) określa, jak dobrze mod optyczny pokrywa się z obszarek aktywnym, co decyduje o efektywności oddziaływania światła z nośnikami"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o tym, że światło w falowodzie lasera nie jest idealnie \"zamknięte\" tylko w warstwie, w której zachodzi wzmocnienie."
+		},
+		{
+			"tresc" : "W równaniu bilansu fotonów \\[ \\frac{d N_p}{dt} = \\Gamma N_p g v_g + \\Gamma \\beta R_{sp} - \\frac{N_p}{\\tau_p} \\] , który człon jest odpowiedzialny za lawinowe narastanie liczby fotonów i stanowi istotę akcji laserowej?",
+			"odp" : [
+				{"war1" : "\\( \\Gamma \\beta R_{sp} \\)", "war2" : "Ten człon opisuje wkład emisji spontanicznej do modu laserującego, który jest \"ziarnem\", ale nie mechanizm lawinowego wzmocnienia"},
+				{"war1" : "\\( \\Gamma N_p g v_g \\)", "war2" : "Ten człon, opisuje rekombinacje stymulowaną, pokazuje, że szybkość generacji nowych fotonów jest proporcjonalna do liczby fotonów już obecnych (N<sub>p</sub>), co prowadzi do wykładniczego wzrostu."},
+				{"war1" : "\\( R_{sp} \\)", "war2" : "To całkowita szybkość rekombinacji spontanicznej; tylko jej niewielka część (skalowana przez \\( \\Gamma \\) i \\( \\beta \\) ) przyczynia się do akcji laserowej, a sam proces nie ma charakteru lawinowego"},
+				{"war1" : "\\( - \\frac{N_p}{\\tau_p}  \\)", "war2" : "Ten człon reprezentuje straty fotonów z rezonatora (zarówno wewnętrzne, jak i na zwierciadłach), a więc działa przeciwnie do wzmocnienia"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Szukaj składnika równania, który pokazuje, że obecność fotonów stymuluje powstawanie kolejnych, identycznych fotonów."
+		},
+		{
+			"tresc" : "Porównując rekombinację promienistą i niepromienistą, która z nich jest pożądana w laserze i dlaczego?",
+			"odp" : [
+				{"war1" : "Obie są jednakowo ważne; promienista generuje światło, niepromienista dostarcza ciepła potrzebnego do utrzymania temperatury pracy", "war2" : "Generacja ciepła w laserze jest zjawiskiem wysoce niepożądanym, które pogarsza jego parametry, a nie jest potrzebne do jego działania"},
+				{"war1" : "Rekombinacja niepromienista, ponieważ efektywnie usuwa nadmiar nośników, stabilizując pracę lasera", "war2" : "Rekombinacja niepromienista jest procesem strat, który zmienjsza wydajność i zwiększa prąd progowy, a nie stabilizuje pracy w pożądany sposób"},
+				{"war1" : "Rekombinacja promienista, ponieważ każdy jej akt zwiększa liczbę fotonów w ośrodku, które mogą następnie zainicjalizować emisję wymuszoną", "war2" : "To właśnie ten proces dostarcza fotonów, które są następnie wzmacniane. Wysoka wydajność promienista przekłada się na niższy prąd progowy i większą sprawność lasera"},
+				{"war1" : "Żadna z nich nie jest kluczowa; najważniejszą jest rekombinacja stymulowana", "war2" : "Chociaż rekombinacja stymulowana jest sercem akcji laserowej, to rekombinacja (spontaniczna) jest niezbędna do jej zainicjalizowania i stanowi podstawę wydajności urządzenia"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Zastanów się, który proces bezpośrednio przyczynia się do zwiększenia liczby fotonów, a który marnuje energię w postaci ciepła."
+		},
+		{
+			"tresc" : "W równaniu bilansu dla nośników \\[ \\frac{d N}{dt} = \\eta_i \\frac{I}{q V} - \\frac{N}{\\tau} - N_p g v_g \\] , co fizycznie reprezentuje pierwszy człon, \\( \\eta_i \\frac{I}{q V} \\)?",
+			"odp" : [
+				{"war1" : "Całkowitą szybkość rekombinacji niepromienistej i spontanicznej", "war2" : "Te procesy strat są zawarte w członie \\( \\frac{N}{\\tau} \\), gdzie \\( \\tau \\) jest efektywnym czasem życia nośnika"},
+				{"war1" : "Gęstość prądu progowego wymaga do rozpoczęcia akcji laserowej", "war2" : "To jest szybkość generacji, a nie wartość progowa prądu. Próg jest osiągany gdy generacja jest w stanie zrównoważyć straty przy odpowiedniej gęstości nośników"},
+				{"war1" : "Szybkość z jaką nośniki są tracone w wyniku rekombinacji stymulowanej", "war2" : "Straty nośników w wyniku rekombinacji stymulowanej są opisane przez ostatni człon równania \\( N_p g v_g \\)"},
+				{"war1" : "Szybkość, z jaką nośniki są generowane w obszarze czynnym dzięki prądowi pompy", "war2" : "Ten człon opisuje tempo \"wstrzykiwania\" par elektron-dziura do objętości czynnej V prądem I, z uwzględnieniem wewnętrznej wydajności kwantowej \\(\\eta_i \\)"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o źródle, które dostarcza nośniki ładunku (elektrony i dziury) do obszaru, gdzie ma zajść emisja światła."
+		}
+	]
+}

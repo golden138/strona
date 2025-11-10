@@ -1,0 +1,8 @@
+{
+	"posty": [
+		{
+			"kategoria": "Fizyka 7SP",
+			"data" : ["Post1" , "Post2"]
+		}
+	]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>MultiScience Hub – Chemia, Fizyka, Matematyka i Więcej</title>
+	
+	<meta name="description" content="Strona z zadaniami z chemii, fizyki, matematyki i angielskiego. Znajdziesz tu także projekty elektroniczne, fizyczne oraz innowacyjny projekt tokena GoldenFlow inwestującego w ETF na złoto.">
+	<meta name="keywords" content="chemia, fizyka, matematyka, angielski, zadania, projekty elektroniczne, projekty fizyczne, edukacja, token, GoldenFlow, ETF, złoto, blockchain, kryptowaluty, nauka, grid trading">
+	<link rel="icon" type="image/png" href="/strona/img/animal.png">
+	<link rel="stylesheet" href="/strona/style.css" type="text/css" />
+	
+	<!-- PDF towrzenie -->
+	<script src="/strona/pdfmake.min.js"></script> 
+	<script src="/strona/vfs_fonts.min.js"></script>
+	<link rel="stylesheet" href="/strona/katex.min.css">
+	<script src="/strona/katex.min.js"></script>
+	<script src="/strona/html2canvas.min.js"></script>
+	<script type="text/javascript" src="/strona/Download_PDF.js"></script>
+	
+	<!-- Równania na stronie  -->
+	<script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	
+	<script type="text/javascript" src="/strona/zadLadowanie.js"></script>
+	
+	<!-- Podstawowe załadowanie arykułów z zadań i nawigacji -->
+	<script type="text/javascript" src="zad.js"></script>
+	<script type="text/javascript" src="nawigacja.js"></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+		
+			<div class="logo">
+				<img src="/strona/img/black-cat.png" style="float: left;"/>
+				<span style="margin-left: 10px;">MultiScience<span style="color: #e74c3c">Hub</span></span>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<!-- Nawigacja -->
+		<div id="nav-placeholder"></div>
+
+		<script>
+		  fetch("/strona/nav.html")
+			.then(response => response.text())
+			.then(data => document.getElementById("nav-placeholder").innerHTML = data);
+		</script>
+		
+		<div class="bok">
+			<div class="content">
+				<div id="Artykul"></div>
+				<div id="Wszystkie_zadania"> 
+					<p>Witaj na naszej multidyscyplinarnej platformie stworzonej z myślą o pasjonatach nauki i technologii!</p>
+					Znajdziesz tu:<br/>
+					<p>Zadania z chemii, fizyki, matematyki i języka angielskiego – od podstaw po zaawansowany poziom, idealne do nauki, powtórek i przygotowań do egzaminów.</p>
+					<p>Projekty elektroniczne i fizyczne – praktyczne realizacje, schematy, poradniki i eksperymenty, które pobudzają wyobraźnię i uczą działania świata w praktyce.</p>
+					<!-- <p>Token GoldenFlow – innowacyjny projekt kryptowalutowy inwestujący w ETF-y złota przy wykorzystaniu strategii grid trading. Łączymy tradycyjne aktywa z nowoczesnymi technologiami blockchain.</p> -->
+					<p>Nauka i innowacja idą tu ramię w ramię.</p>
+				</div>
+			</div>
+
+			<div id="manual" class="east">
+			
+			</div>
+		</div>
+		</br>
+		</br>
+		</br>
+		<div style="clear:both;"></div>
+		<div class="footer">2025 &copy; Sebastian G.</div>
+	
+		
+		
+	</div>
+	
+	<script src="/strona/jquery-1.11.3.min.js"></script>
+	
+
+	<script>
+  // Wczytanie menu
+  fetch("/strona/nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+
+      // Po wstawieniu menu inicjujemy sticky nav
+      initStickyNav();
+    });
+
+  function initStickyNav() {
+    var $nav = $('.nav');
+    if (!$nav.length) return; // bezpieczeństwo
+
+    var NavY = $nav.offset().top;
+
+    var stickyNav = function() {
+      var ScrollY = $(window).scrollTop();
+      if (ScrollY > NavY) {
+        $nav.addClass('sticky');
+      } else {
+        $nav.removeClass('sticky');
+      }
+    };
+
+    stickyNav(); // ustawienie przy starcie
+
+    $(window).scroll(function() {
+      stickyNav();
+    });
+  }
+	
+</script>
+</body>
+</html>
