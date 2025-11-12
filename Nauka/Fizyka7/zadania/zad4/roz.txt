@@ -1,4 +1,0 @@
-{
-	"typ_zad": "abc",
-	"odp": ["przystanku autobusowaego;p3;", "samochodu jadącego za nim z tą samą prędkością;p2", "jest równa drodze przebytej przez to ciało;p2;", "5km;p2;", "0 m;p2;"]
-}

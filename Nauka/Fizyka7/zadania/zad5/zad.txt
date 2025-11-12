@@ -1,0 +1,5 @@
+{
+	"typ_zad": "slowo_wpisywanie",
+	"polecenie": "Przelicz jednostki",
+	"slowa": "null"
+}

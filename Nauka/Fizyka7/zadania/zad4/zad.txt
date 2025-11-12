@@ -1,5 +1,0 @@
-{
-	"typ_zad": "podpowiedz",
-	"polecenie": "Zaznacz poprawne odpowiedzi",
-	"slowa": "null"
-}

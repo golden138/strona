@@ -1,6 +1,7 @@
 var path = '/Fotonika/OOA';
 var maksSize = 0;
 var scriptsToLoad = [];
+var zadToLoad = [];
 
 function setPath(p) {
 	path = p;
@@ -84,8 +85,38 @@ function sprawdzTextField(x, y) { // x to odpowiedzi a y to nr
 }
 
 function sprawdzTextField_One(x, y) {
+    var tablica = x.trim().split(';');
+    var element = document.getElementById(y);
+    if (!element) {
+        console.error("Nie znaleziono elementu o id:", y);
+        return 0; // lub inna wartość domyślna
+    }
+
+    var dane = element.value;
+    if (dane === null) {
+        dane = ' ';
+    }
+
+    var wynik = 0;
+    if (dane.trim() === "") {
+        return 0;
+    } else {
+        for (var i = 0; i < tablica.length; i++) {
+            if (porownajBezSpacjiILiter(tablica[i], dane)) {
+                wynik = 1;
+                break; // przerywamy pętlę
+            }
+        }
+        return wynik;
+    }
+}
+
+/*function sprawdzTextField_One(x, y) {
 	var tablica = x.trim().split(';');
 	var dane = document.getElementById(y).value;
+	if(dane === null) {
+		dane = ' ';
+	}
 	var wynik = 0;
 	if (dane.trim() === "") {
       return 0;
@@ -98,7 +129,7 @@ function sprawdzTextField_One(x, y) {
 		}
 		return wynik;
     }
-}
+}*/
 
 function sprawdzRadio(x, y) { // x to odpowiedzi a y to nr
 	var wynik = 0;
@@ -213,6 +244,9 @@ function zaladuj(x) {
 		document.getElementById(x).innerHTML = '<div class="zad">Zadanie ' + nr + '.</div><p>Nie udało się pobrać treści zadania</p>';
     });
 }
+
+
+
 
 function getSlowa(x) {
 	var tablica = x.trim().split(';');
@@ -462,6 +496,7 @@ function getArtykul() {
 		}
       document.getElementById('Artykul').innerHTML = '<div class="wieksze">' + formatText(data2) + '</div>';
 	  addApp();
+	  addZad();
     })
     .catch(error => {
       console.error('Wystąpił błąd:', error);
@@ -627,6 +662,7 @@ function formatTresc2(x) {
 	var first = 0;
 	var lista = 0;
 	var mocne = 0;
+	var strong_w = 0;
 	for(var i = 0; i < x.length; i++) {
 		var tmp = x.charAt(i);
 		if(tmp === '\r') {
@@ -634,9 +670,14 @@ function formatTresc2(x) {
 				if(mocne === 1) {
 					wynik2 += '<div style="margin-left: 20px;"><div class="w1">' + wynik + '</div></div>';
 				}else {
-					wynik2 += '<div style="margin-left: 20px;">' + wynik + '</div>';
+					if(strong_w === 1) {
+						wynik2 += '<div class="zad"><img src="/strona/img/online-learning.png">'+wynik+'</div>';
+					}else{
+						wynik2 += '<div style="margin-left: 20px;">' + wynik + '</div>';
+					}
 				}
 				mocne = 0;
+				strong_w = 0;
 				przesuniecie = 0;
 			}else{
 				var out = sprawdzPunktText(wynik);
@@ -698,55 +739,53 @@ function formatTresc2(x) {
 						mocne = 1;
 					}
 				}else {
-					if(tmp === '$') {
-						i++;
-						var k = 0;
-						var nazwa = '';
-						for(var j = i; j < x.length; j++) {
-							var tmp_tmp = x.charAt(j);
-							k++;
-							if(tmp_tmp === '$') {
-								break;
+					if(tmp === '&') {
+						if(i > 1) {
+							var tmp_1 = x.charAt(i-1);
+							if(tmp_1 === '\n') {
+								lista = 1;
+								przesuniecie = 1;
+								strong_w = 1;
 							}else{
-								nazwa += tmp_tmp;
+								wynik += tmp;
 							}
-						}
-						i += k;
-						//sprawdzam czy w nazwa jest ?rozmiar
-						var nazwa2 = nazwa.split('?')[0];
-						var sizeMaks = 0;
-						if (nazwa.indexOf('?') !== -1) {
-							sizeMaks = Number(nazwa.split('?')[1]);
-						}
-						
-						const statusPath = localStorage.getItem("status");
-						var gdzie = path + '/Posty/' + statusPath + '/img/' + nazwa2;
-						if(sizeMaks > 0) {
-							wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
-						}else{
-							wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
+						} else {
+							przesuniecie = 1;
+							lista = 1;
+							strong_w = 1;
 						}
 					}else{
-						var tmp1 = x.charAt(i+1);
-						if(tmp === '#' && tmp1 === '#') {
-							i+=2;
+						if(tmp === '$') {
+							i++;
 							var k = 0;
 							var nazwa = '';
 							for(var j = i; j < x.length; j++) {
 								var tmp_tmp = x.charAt(j);
-								var tmp_tmp1 = x.charAt(j+1);
 								k++;
-								if(tmp_tmp === '#' && tmp_tmp1 === '#') {
+								if(tmp_tmp === '$') {
 									break;
 								}else{
 									nazwa += tmp_tmp;
 								}
 							}
-							i += (k+1);
-							wynik += generateTable(nazwa);
+							i += k;
+							//sprawdzam czy w nazwa jest ?rozmiar
+							var nazwa2 = nazwa.split('?')[0];
+							var sizeMaks = 0;
+							if (nazwa.indexOf('?') !== -1) {
+								sizeMaks = Number(nazwa.split('?')[1]);
+							}
+							
+							const statusPath = localStorage.getItem("status");
+							var gdzie = path + '/Posty/' + statusPath + '/img/' + nazwa2;
+							if(sizeMaks > 0) {
+								wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto; width:' + sizeMaks + 'px; height: auto;"/>';
+							}else{
+								wynik2 += '<img src="'+gdzie+'" style="display: block; margin: auto;"/>';
+							}
 						}else{
 							var tmp1 = x.charAt(i+1);
-							if(tmp === '@' && tmp1 === '@') {
+							if(tmp === '#' && tmp1 === '#') {
 								i+=2;
 								var k = 0;
 								var nazwa = '';
@@ -754,20 +793,17 @@ function formatTresc2(x) {
 									var tmp_tmp = x.charAt(j);
 									var tmp_tmp1 = x.charAt(j+1);
 									k++;
-									if(tmp_tmp === '@' && tmp_tmp1 === '@') {
+									if(tmp_tmp === '#' && tmp_tmp1 === '#') {
 										break;
 									}else{
 										nazwa += tmp_tmp;
 									}
 								}
 								i += (k+1);
-								const statusPath = localStorage.getItem("status");
-								var gdzie = path + '/Posty/' + statusPath + '/' + nazwa;
-								scriptsToLoad.push(gdzie);
-								console.log("add script = " + gdzie);
+								wynik += generateTable(nazwa);
 							}else{
 								var tmp1 = x.charAt(i+1);
-								if(tmp === '%' && tmp1 === '%') {
+								if(tmp === '@' && tmp1 === '@') {
 									i+=2;
 									var k = 0;
 									var nazwa = '';
@@ -775,17 +811,20 @@ function formatTresc2(x) {
 										var tmp_tmp = x.charAt(j);
 										var tmp_tmp1 = x.charAt(j+1);
 										k++;
-										if(tmp_tmp === '%' && tmp_tmp1 === '%') {
+										if(tmp_tmp === '@' && tmp_tmp1 === '@') {
 											break;
 										}else{
 											nazwa += tmp_tmp;
 										}
 									}
 									i += (k+1);
-									wynik2 += generateHTML(nazwa);
+									const statusPath = localStorage.getItem("status");
+									var gdzie = path + '/Posty/' + statusPath + '/' + nazwa;
+									scriptsToLoad.push(gdzie);
+									console.log("add script = " + gdzie);
 								}else{
 									var tmp1 = x.charAt(i+1);
-									if(tmp === '%' && tmp1 === '@') {
+									if(tmp === '%' && tmp1 === '%') {
 										i+=2;
 										var k = 0;
 										var nazwa = '';
@@ -793,22 +832,62 @@ function formatTresc2(x) {
 											var tmp_tmp = x.charAt(j);
 											var tmp_tmp1 = x.charAt(j+1);
 											k++;
-											if(tmp_tmp === '@' && tmp_tmp1 === '%') {
+											if(tmp_tmp === '%' && tmp_tmp1 === '%') {
 												break;
 											}else{
 												nazwa += tmp_tmp;
 											}
 										}
 										i += (k+1);
-										wynik2 += generateCODE(nazwa);
+										wynik2 += generateHTML(nazwa);
 									}else{
-										wynik += tmp;
+										var tmp1 = x.charAt(i+1);
+										if(tmp === '%' && tmp1 === '@') {
+											i+=2;
+											var k = 0;
+											var nazwa = '';
+											for(var j = i; j < x.length; j++) {
+												var tmp_tmp = x.charAt(j);
+												var tmp_tmp1 = x.charAt(j+1);
+												k++;
+												if(tmp_tmp === '@' && tmp_tmp1 === '%') {
+													break;
+												}else{
+													nazwa += tmp_tmp;
+												}
+											}
+											i += (k+1);
+											wynik2 += generateCODE(nazwa);
+										}else{
+											var tmp1 = x.charAt(i+1);
+											if(tmp === '#' && tmp1 === '@') {
+												i+=2;
+												var k = 0;
+												var nazwa = '';
+												for(var j = i; j < x.length; j++) {
+													var tmp_tmp = x.charAt(j);
+													var tmp_tmp1 = x.charAt(j+1);
+													k++;
+													if(tmp_tmp === '@' && tmp_tmp1 === '#') {
+														break;
+													}else{
+														nazwa += tmp_tmp;
+													}
+												}
+												i += (k+1);
+												console.log('add zad = ' + nazwa)
+												zadToLoad.push(nazwa);
+												wynik2 += '<div id="'+nazwa+'"></div>';
+											}else{
+												wynik += tmp;
+											}
+										}
 									}
 								}
+								
 							}
 							
 						}
-						
 					}
 				}
 			}
@@ -864,6 +943,12 @@ function addApp() {
     });
 }
 
+function addZad() {
+	console.log("addZad = "+  zadToLoad.length);
+    zadToLoad.forEach(nazwa => {
+        zaladuj(nazwa);
+    });
+}
 
 function formatText(x) {
 	var wynik = '<div class="newest"><div class="entries2">';

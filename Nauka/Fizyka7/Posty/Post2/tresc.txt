@@ -1,173 +1,212 @@
-Podstawy opisu stanu polaryzacji
+Zadania Ciężar, Siły, Gęstość
 
-1. Matematyczny Opis Stanu Polaryzacji
+1. Równoważenie sił i siły wypadkowe
 
-Polaryzacja światła to zjawisko opisujące orientację drgań wektora pola elektrycznego w płaszczyźnie prostopadłej do kierunku propagacji. Pełny i precyzyjny opis tego zjawiska wymaga zastosowania różnych, wzajemnie uzupełniających się, formalizmów matematycznych. Od prostych metod trygonometrycznych, przez wektory i macierze Jonesa, aż po wektory Stokesa i sferę Poincarégo – każde z tych narzędzi oferuje unikalne spojrzenie i jest dostosowane do opisu różnych rodzajów światła i różnych problemów fizycznych.
+! Co to jest siła?
+  * Siła to oddziaływanie, które może zmienić ruch lub kształt ciała.
+  * Siłę oznaczamy literą F.
+  * Jednostka siły to niuton (N). Taką jednostkę możemy zapisać inaczej to jest:
+\[ 1N = 1 \frac{kg \cdot m}{s^2} \]
+##jednostka	znaczenie
+N	siła jaką działa na obiekt (Niuton)
+kg	masa ciała obiektu (kilo gramy)
+s	czas (sekunda)
+m	długość (metry)##
 
-1.1 Metoda Trygonometryczna
+  * Siła ma kierunek, zwrot, wartość i punkt przyłożenia (czyli miejsce, gdzie działa).
+$wektor.png?450$
 
-Wektor E fali elektromagnetycznej, która propaguje się w kierunku Z można opisać za pomocą wzorów:
-\[ E_x = m_{x} \cdot exp\left( \omega t - \delta_x \right) \]
-\[ E_y = m_{y} \cdot exp\left( \omega t - \delta_y \right) \]
-$propagacja.png$
-Następnie mogę uprościć, jeżeli faze dla E<sub>x</sub> przyjmę 0, a różnice faz pomiędzy składową x oraz y przyjmę jako delta. Dostaję w ten sposób:
-\[ \delta_x = 0 \text{ oraz } \delta = \delta_x -\delta_y \]
-\[ E_x = m_{x} \cdot cos\left( \omega t \right) \]
-\[ E_y = m_{y} \cdot cos\left( \omega t + \delta \right) \]
-Chcemy znaleźć jaki tor zakreśla wektor E, relacje między E<sub>x</sub> oraz E<sub>y</sub> niezawierające t.
-* Przekształcenia (eliminacja czasu)
-  * Użyjemy następującej tożsamości:
-\[ cos \left( \alpha + \beta \right) = cos \left( \alpha \right) cos \left( \beta \right) - sin \left( \alpha \right) sin \left( \beta \right) \]
-  * Zastosuje to do składnika E<sub>y</sub>
-\[ E_y = m_y \left[ cos \left( \omega t \right) cos \left( \delta \right) - sin \left( \omega t \right) sin \left( \delta \right) \right] \]
-  * Z równania na E<sub>x</sub> mamy:
-\[ cos \left( \omega t \right) = \frac{E_x}{m_x} \]
-  * Podstawiamy i rozwiązujemy względem sin(wt):
-\[ E_y = m_y \left[ \frac{E_x}{m_x} cos \left( \delta \right) - sin \left( \omega t \right) sin \left( \delta \right) \right] \]
-\[ sin \left( \omega t \right) = \frac{ \frac{E_x}{m_x} cos \delta - \frac{E_y}{m_y} }{ sin \delta } \]
-  * Teraz stosujemy jedynke trygonometryczną:
-\[ \left( \frac{E_x}{m_x} \right)^2 + \left( \frac{ \frac{E_x}{m_x} cos \delta - \frac{E_y}{m_y} }{ sin \delta } \right)^2 = 1 \]
-  * Jeżeli teraz przemnoże przez \( sin^2 \omega \) i uporządkuje to otrzymam:
-\[ \left( \frac{E_x}{m_x} \right)^2 - \frac{2 E_x E_y}{m_x m_y} \cdot cos \left( \delta \right) + \left( \frac{E_y}{m_y} \right)^2 = sin^2 \left( \delta \right) \]
-  * To jest nic innego jak równanie elipsy po transformacjach takich jak obroty i przesunięcia:
-\[ A x^2 + B x y + C y^2 + D x + E y = F \]
-$metoda_tryg.png$
+! Równoważenie sił
+  * Siły równoważą się, gdy działają na ciało tak, że siła wypadkowa = 0 N.
+  * Wtedy ciało:
+    * pozostaje w spoczynku, lub
+    * porusza się ruchem jednostajnym prostoliniowym (czyli ze stałą prędkością).
 
-Jest to najbardziej podstawowa metoda opisu, wykorzystująca dwa kluczowe parametry do scharakteryzowania elipsy polaryzacji:
+Przykład:
+Na klocek działa 6 N w prawo i 6 N w lewo.
+$rownowaga.png?450$
+Siły są sobie równe i przeciwnie skierowane – równoważą się, więc klocek się nie poruszy.
 
-* Kąt diagonalny (α - azymut): Określa orientację osi wielkiej elipsy polaryzacji względem osi odniesienia.
-\[ tan \left( 2 \alpha \right) = \frac{B}{A - C} \]
-\[ \alpha = \frac{1}{2} acrtan \left( \frac{2 m_x m_y cos \delta }{m_x^2 - m_y^2} \right) \]
-* Różnica faz: Definiuje kształt elipsy, czyli stosunek jej osi. Wartości graniczne odpowiadają polaryzacji liniowej i kołowej.
-\[ \frac{b}{a} = tan \left( \frac{\delta}{2} \right) \]
-$elipsa.png$
+! Siła wypadkowa
+Siła wypadkowa (F<sub>w</sub>) to jedna siła, która zastępuje działanie kilku sił.
+Pokazuje, jaki będzie ostateczny efekt ich działania.
 
-1.2 Wektor Jonesa
+  * Gdy siły działają w tym samym kierunku:
+\[ F_w = F_1 + F_2 \]
 
-Wektor Jonesa jest dwuelementowym wektorem zespolonym, który w zwięzły sposób opisuje amplitudę i fazę składowych pola elektrycznego wzdłuż dwóch ortogonalnych osi. Jego ogólna postać to: [E_x, E_y] Formalizm ten jest niezwykle użyteczny, ale ma jedno kluczowe ograniczenie: opisuje wyłącznie światło całkowicie spolaryzowane. Składowe wektora można wyznaczyć eksperymentalnie, mierząc natężenie światła przepuszczanego przez polaryzatory zorientowane wzdłuż osi x i y oraz mierząc przesunięcie fazowe między składowymi za pomocą kompensatora.
+Przykład:
+Na sanki działa siła 4 N i 3 N w tym samym kierunku
+\[ F_w = 4N + 3N = 7N \]
 
-1.3 Macierz Koherencji
+  * Gdy siły działają w przeciwnych kierunkach:
+\[ F_w = \left| F_1 - F_2 \right| \]
 
-Macierz koherencji to narzędzie przeznaczone do opisu quasi-monochromatycznej fali elektromagnetycznej, czyli fali o wąskim, ale niezerowym paśmie częstotliwości. Jest to macierz 2x2, której elementy są skorelowanymi w czasie średnimi iloczynów składowych pola elektrycznego. Ślad tej macierzy (suma elementów na przekątnej) jest równy całkowitemu natężeniu światła: I = I_xx + I_yy.
+Przykład:
+Na wózek działa 5 N w prawo i 3 N w lewo
+$wozek.jpg?450$
+\[ F_w = 5 N − 3 N = 2 N \text{ w prawo bo siła działająca w prawo jest większa od siły działającej w lewo} \]
+<hr>
+& Zadanie 1.
+Oblicz siłę wypadkową działającą na kule widocznej na ilustracji oraz wskaż zwrot siły (w którą stronę będzie działać siła)
+$sila_wypadkowa.jpg?600$
 
-1.4 Wektor Stokesa
+Rozwiązanie możesz przesłać na Discord
+<hr>
+& Zadanie 2.
+Oblicz siłę wypadkową działającą na kule widocznej na ilustracji oraz wskaż zwrot siły (w którą stronę będzie działać siła)
+$sila_wypadkowa2.jpg?600$
+Rozwiązanie możesz przesłać na Discord
+<hr>
+& Zadanie 3.
+Na sześcian o masie m działają dwie siły przerysuj obrazek i dorysuj siłę która będzie równoważyć te dwie siły.
+$szescian.png?600$
 
-Wektor Stokesa jest najpotężniejszym z omawianych narzędzi, ponieważ pozwala opisać dowolny stan polaryzacji: światło całkowicie spolaryzowane, częściowo spolaryzowane oraz niespolaryzowane. Jest to czteroelementowy wektor o składowych rzeczywistych [S₀, S₁, S₂, S₃], które mają bezpośrednią interpretację fizyczną i mogą być wyznaczone pomiarowo.
+<hr>
+& Zadanie 4.
+Na rysunkach a), b), c) pokazano wektory sił działających na ciała. Narysuj kolejne wektory sił działających na każde z tych ciał zgodnie z opisami.
+$inne_sily.png?650$
 
-* S₀: Całkowite natężenie światła.
-* S₁: Różnica natężeń między składową spolaryzowaną liniowo horyzontalnie a wertykalnie.
-* S₂: Różnica natężeń między składową spolaryzowaną liniowo pod kątem +45° a -45°.
-* S₃: Różnica natężeń między składową spolaryzowaną kołowo prawoskrętnie a lewoskrętnie.
+2. Przeliczanie jednostek z przedrostkami
 
-Parametry te pozwalają wyznaczyć kluczowe charakterystyki światła za pomocą następujących relacji:
+Co to są przedrostki jednostek?
+Przedrostki to krótkie słowa lub symbole, które pokazują, ile razy większa lub mniejsza jest dana jednostka od podstawowej.
+Np. 1 kilometr to 1000 metrów, bo przedrostek kilo- oznacza „tysiąc razy więcej”.
 
-* Stopień polaryzacji (P): P = (S₁² + S₂² + S₃²)¹/² / S₀
-* Azymut (α): tan(2α) = S₂ / S₁
-* Eliptyczność (e): sin(2e) = S₃ / (S₁² + S₂² + S₃²)¹/²
+! Najważniejsze przedrostki w fizyce
+##Przedrostek	Symbol	Znaczenie	Przykład
+mega	M	1 000 000 = 10<sup>6</sup>	1 MW = 1 000 000 W
+kilo	k	1000 = 10<sup>3</sup>	1 km = 1000 m
+hekto	h	100 = 10<sup>2</sup>	1 hPa = 100 Pa
+deka	da	10 = 10<sup>1</sup>	1 dam = 10 m
+(brak)	—	1	1 m = 1 m
+decy	d	0,1 = 10<sup>-1</sup>	1 dm = 0,1 m
+centy	c	0,01 = 10<sup>-2</sup>	1 cm = 0,01 m
+mili	m	0,001 = 10<sup>-3</sup>	1 mm = 0,001 m
+mikro	µ	0,000001 = 10<sup>-6</sup>	1 µm = 0,000001 m##
 
-1.5 Porównanie Formalizmów Jonesa i Stokesa
+Jak przeliczać jednostki z przedrostkami?
+* Zapisz, co chcesz przeliczyć.
+* Sprawdź, jaki jest przedrostek (czy zwiększa, czy zmniejsza jednostkę).
+* Pomnóż lub podziel przez odpowiednią potęgę 10.
 
-Chociaż oba formalizmy opisują polaryzację, ich zastosowania i możliwości znacząco się różnią. Formalizm wektorów i macierzy Jonesa jest elegancki i matematycznie zwięzły, ale jego stosowalność jest ograniczona do światła całkowicie spolaryzowanego i spójnego. Jest idealny do analizy teoretycznej układów, w których nie występuje depolaryzacja. Z kolei formalizm wektorów Stokesa i macierzy Muellera jest znacznie potężniejszy, ponieważ opiera się na rzeczywistych, mierzalnych wielkościach (natężeniach). Dzięki temu może opisać światło o dowolnym stopniu polaryzacji – od niespolaryzowanego, przez częściowo spolaryzowane, aż po całkowicie spolaryzowane. Czyni go to narzędziem niezbędnym w eksperymentalnej polarymetrii i w analizie rzeczywistych układów optycznych.
+Przykłady:
+* 2 km = ? m
+\[ 1 km = 1000 m \]
+\[ 2 km = 2 \cdot 1000 = 2000 m \]
 
-Sfera Poincarégo
+* 4500 g = ? kg
+\[ 1 kg = 1000 g \]
+\[ \frac{4500}{1000} = 4,5 kg \]
 
-Sfera Poincarégo to geometryczna reprezentacja wektora Stokesa, która pozwala na intuicyjną wizualizację wszystkich możliwych stanów polaryzacji. Każdy punkt na powierzchni sfery odpowiada unikalnemu stanowi światła w pełni spolaryzowanego. Kluczowe elementy sfery to:
+* 30 cm = ? m
+\[ 1 cm = 0,01 m \]
+\[ 30 \cdot 0,01 = 0,3 m \]
 
-* Równik: Reprezentuje wszystkie stany polaryzacji liniowej.
-* Bieguny (północny i południowy): Odpowiadają polaryzacji kołowej (prawoskrętnej i lewoskrętnej).
-* Południki: Łączą punkty o tym samym azymucie.
-* Równoleżniki: Łączą punkty o tej samej eliptyczności.
+* 0,5 m = ? mm
+\[ 1 m = 1000 mm \]
+\[ 0,5 \cdot 1000 = 500 mm \]
 
-Spójność Czasowa
+* 6 kN = ? mN
+\[ 1 kN = 1000 N \]
+\[ 1 N = 1000 mN \]
+\[ \text{Zatem 1 kN to } \Rightarrow 1000 \cdot 1000 mN = 1000000 mN \]
+\[ 6 \cdot 1000000 = 6000000 mN \]
 
-Spójność czasowa opisuje zdolność do interferencji dwóch wiązek światła pochodzących z tego samego źródła, ale poruszających się po drogach o różnej długości. Kluczowe pojęcia to:
+<hr>
+#@zad5@#
 
-* Funkcja spójności czasowej: Miara korelacji między falą a jej opóźnioną w czasie kopią.
-* Stopień spójności czasowej: Znormalizowana funkcja spójności, której wartość w interferometrze Michelsona jest równa kontrastowi prążków interferencyjnych.
-* Długość spójności: Maksymalna różnica dróg optycznych, dla której obserwuje się jeszcze zjawisko interferencji.
+3. Ciężar ciała
 
-Po scharakteryzowaniu stanu polaryzacji światła naturalnym kolejnym krokiem jest analiza jego zmian podczas przechodzenia przez różne ośrodki i elementy optyczne.
+! Co to jest ciężar?
+Ciężar ciała to siła, z jaką Ziemia przyciąga dane ciało.
+Nie należy mylić ciężaru z masą – masa to ilość materii w ciele, a ciężar to siła grawitacji działająca na to ciało. Masa nawet posiada inną jednostkę niż ciężar. Jednostka masy kilogram.
 
-2. Transformacja Stanu Polaryzacji: Macierze Jonesa i Muellera
+! Wzór na ciężar:
+\[ F_g = m \cdot g \]
+$ciezar_wzor.png?350$
+gdzie:
+##Oznaczenie	Co oznacza
+F<sub>g</sub>	Ciężar ciała [ N ]
+m	masa ciała [ kg ]
+g	przyspieszenie [ m/s<sup>2</sup> ] lub [ N/kg ] wynosi około 9,81 m/s<sup>2</sup> na ziemi##
 
-Do analizy zmian stanu polaryzacji światła w złożonych układach optycznych wykorzystuje się zaawansowane formalizmy macierzowe. Każdy element optyczny (polaryzator, płytka opóźniająca, rotator) może być reprezentowany przez macierz, która transformuje wektor opisujący stan polaryzacji na wejściu w wektor opisujący stan na wyjściu. Do tego celu służą macierze Jonesa (dla światła w pełni spolaryzowanego) i macierze Muellera (dla przypadków ogólnych).
+! Przykład obliczenia:
+Jeśli masa ciała wynosi 2 kg, to:
+\[ F_g = 2 kg \cdot 9.81 \frac{m}{s^2} =  19.62 \frac{kg \cdot m}{s^2} = 19.62 N \]
+czyli ciężar tego ciała to około 19,6 N.
 
-2.1 Formalizm Macierzy Jonesa
+! Różnice między masą a ciężarem:
 
-W tym formalizmie transformacja stanu polaryzacji opisywana jest przez mnożenie wektora Jonesa światła padającego [E₀] przez macierz Jonesa [J] danego elementu optycznego:
+##Cecha	Masa	Ciężar
+Symbol	m	F<sub>g</sub>
+Jednostka	kg	N
+Zależy od miejsca?	Nie	Tak (bo g jest inne na Ziemi, Księżycu itd.)
+Co opisuje?	Ilość materii	Siłę przyciągania grawitacyjnego##
 
-[E₁] = [J] * [E₀]
+<hr>
+& Zadanie 6.
+Oblicz ciężar tabliczki czekolady o masie 20 dag. Wynik podaj w N. Przyjmij wartość g = 10N/kg. Zapisz obliczenia.
 
-Istnieją różne formy zapisu macierzy Jonesa:
+<hr>
+& Zadanie 7.
+Jaką wartość wskaże siłomierz, gdy zawieszony na nim przedmiot ma masę 0,7 kg?
 
-* Forma ogólna (wg Ścierskiego i Ratajczyka): Jest bardziej uniwersalna i może być stosowana do opisu ośrodków dichroicznych (o różnej absorpcji dla różnych polaryzacji). Uwzględnia parametry takie jak transmisja fali szybkiej (Tf) i wolnej (Ts) oraz różnicę faz (γ).
-* Forma teoretyczna (wg Jonesa): Jest uproszczoną wersją stosowaną do ośrodków niedichroicznych i nieabsorbujących, które jedynie zmieniają fazę składowych fali.
+<hr>
+& Zadanie 8.
+Jeden hipopotam waży tyle, co pięć tygrysów. Jeden tygrys waży tyle, co 5 wilków. Jeden wilk ma masę 60 kg. Oblicz siłę ciężkości działającą na hipopotama.
 
-Przykłady macierzy Jonesa:
+<hr>
+& Zadanie 9.
+Oblicz przyspieszenie jakie jest na Marsie i na Księżycu (Przekształć odpowiednio wzór na ciężar, aby wyznaczyć g). Przyspieszenie na Księżycu będzie się różnić o przyspieszenia na Marsie i na Ziemi. Na ilustracji podany jest ciężar jaki posiada człowiek. Przyjmij, że na ziemi przyspieszenie wynosi g = 10 m/s<sup>2</sup>.
+$ciezar_inne.png?600$
 
-Element Optyczny	Macierz Jonesa [J]
-Próżnia	[[1, 0], [0, 1]]
-Materiał izotropowy (transmitancja p)	[[p, 0], [0, p]]
-Polaryzator liniowy (0°)	[[1, 0], [0, 0]]
-Polaryzator liniowy (90°)	[[0, 0], [0, 1]]
-Polaryzator liniowy (45°)	0.5 * [[1, 1], [1, 1]]
-Polaryzator kołowy (prawoskrętny)	0.5 * [[1, -i], [i, 1]]
-Polaryzator kołowy (lewoskrętny)	0.5 * [[1, i], [-i, 1]]
-Ćwierćfalówka (oś szybka 0°)	[[1, 0], [0, -i]] (znormalizowana)
-Półfalówka (oś szybka 45°)	[[0, 1], [1, 0]]
+<hr>
+& Zadanie 10.
+Oblicz masę ciała, którego ciężar na ziemi wynosi 13 kN. Pamiętaj o odpowiednich jednostkach.
 
-Przykład obliczeniowy: Przejście światła spolaryzowanego liniowo wertykalnie (wektor Jonesa [0, 1]) przez ćwierćfalówkę zorientowaną tak, że jej oś szybka jest wzdłuż osi x. [E₁] = [[1, 0], [0, -i]] * [0, 1] = [0, -i] Wynikowy wektor [0, -i] opisuje światło spolaryzowane kołowo lewoskrętnie.
+3. Gęstość
 
-Ograniczenia: Głównym ograniczeniem formalizmu Jonesa jest fakt, że może on być stosowany wyłącznie do opisu światła całkowicie spolaryzowanego.
+! Co to jest gęstość?
+Gęstość to wielkość fizyczna, która mówi, ile masy znajduje się w określonej objętości danej substancji.
+Inaczej mówiąc — im większa gęstość, tym „cięższa” dana substancja przy tej samej objętości.
 
-2.2 Formalizm Macierzy Muellera
+! Wzór na gęstość:
+\[ d = \frac{m}{V} \]
+$gestosc_wzor.png?350$
+gdzie:
+##Symbol	Co oznacza?
+d	gęstość [ kg/m<sup>3</sup> ]
+m	masa [kg]
+V	objętość [m<sup>3</sup>]##
 
-Macierze Muellera stanowią bardziej ogólne narzędzie, które działa na wektorach Stokesa i może opisywać transformację światła o dowolnym stopniu polaryzacji, w tym światła częściowo spolaryzowanego i niespolaryzowanego.
+! Przykład obliczenia:
+Jeśli ciało ma masę 2 kg i objętość 4 dm<sup>3</sup>, to jego gęstość można obliczyć:
 
-Przykłady macierzy Muellera:
+Na początek przeliczę dm<sup>3</sup> na m<sup>3</sup>
+\[ 1 dm = 10 cm = 0.1 m \]
+Tylko, że mamy do trzeciej potęgi
+\[ 1 dm^3 = 0.1 \cdot 0.1 \cdot 0.1 m^3 \]
+\[ 1 dm^3 = 0.001 m^3 \]
+\[ 4 dm^3 = 4 \cdot 1 dm^3 = 4 \cdot 0.001 m^3 = 0.004 m^3 \]
+Używam teraz wzoru na gęstość
+\[ d = \frac{m}{V} = \frac{2kg}{0.004 m^3} = 500 \frac{kg}{m^3} \]
+Odpowiedź: Gęstość wynosi 500 kg/m<sup>3</sup>.
 
-Element Optyczny	Macierz Muellera [M]
-Próżnia	[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
-Materiał absorbujący (transmitancja k)	k * [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
-Polaryzator liniowy (0°)	0.5 * [[1, 1, 0, 0], [1, 1, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-Polaryzator liniowy (45°)	0.5 * [[1, 0, 1, 0], [0, 0, 0, 0], [1, 0, 1, 0], [0, 0, 0, 0]]
-Ćwierćfalówka (oś szybka 0°)	[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, -1], [0, 0, 1, 0]]
-Półfalówka (oś szybka 45°)	[[1, 0, 0, 0], [0, -1, 0, 0], [0, 0, 1, 0], [0, 0, 0, -1]]
+<hr>
+& Zadanie 11.
+Oblicz masę bryłki siarki o objętości 30 cm<sup>3</sup> wiedząc, że gęstość siarki wynosi 2,07 g/cm<sup>3</sup>.
 
-Przykład obliczeniowy: Rozważmy przejście światła niespolaryzowanego przez polaryzator liniowy zorientowany pod kątem 0°, a następnie przez ćwierćfalówkę z osią szybką zorientowaną pod kątem 45°.
+<hr>
+& Zadanie 12.
+Oblicz objętość 5 kg oliwy jeżeli gęstość wynosi 0,92 g/cm<sup>3</sup>.
 
- 1. Stan początkowy: Światło niespolaryzowane opisane jest wektorem Stokesa S_in = [1, 0, 0, 0]ᵀ.
- 2. Przejście przez polaryzator: Macierz Muellera dla polaryzatora 0° to M_pol. Stan światła po przejściu to: S_mid = M_pol * S_in = 0.5 * [[1, 1, 0, 0], [1, 1, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]] * [1, 0, 0, 0]ᵀ = [0.5, 0.5, 0, 0]ᵀ Otrzymujemy światło spolaryzowane liniowo horyzontalnie o natężeniu zredukowanym o połowę.
- 3. Przejście przez ćwierćfalówkę: Macierz dla ćwierćfalówki 45° to M_qwr. Stan końcowy: S_out = M_qwr * S_mid = [[1, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, -1, 0, 0]] * [0.5, 0.5, 0, 0]ᵀ = [0.5, 0, 0, -0.5]ᵀ Wynikowy wektor [0.5, 0, 0, -0.5]ᵀ opisuje światło spolaryzowane kołowo lewoskrętnie.
+<hr>
+& Zadanie 13.
+Naczynie o objętości V=0,1 m<sup>3</sup> jest wypełnione cieczą o masie m=85 kg. Oblicz gęstość cieczy.
 
-Opis teoretyczny transformacji stanu polaryzacji musi być uzupełniony o praktyczne metody pomiaru tych właściwości, co pozwala na weryfikację modeli i charakteryzację rzeczywistych komponentów optycznych.
-
-3. Metody Pomiarowe Stanu Polaryzacji
-
-Praktyczne zastosowanie optyki polaryzacyjnej wymaga precyzyjnych metod pomiarowych, które pozwalają na ilościowe określenie stanu polaryzacji światła (tj. wyznaczenie składowych wektora Stokesa) oraz na charakterystykę właściwości elementów optycznych, takich jak opóźnienie fazowe płytek falowych.
-
-3.1 Eksperymentalne Wyznaczanie Osi Opóźnienia
-
-Jednym z podstawowych zadań laboratoryjnych jest identyfikacja osi optycznych płytki opóźniającej. Można to zrealizować, umieszczając badaną płytkę pomiędzy dwoma skrzyżowanymi polaryzatorami liniowymi. Procedura wygląda następująco:
-
-1. Układ składający się tylko ze skrzyżowanych polaryzatorów całkowicie wygasza światło.
-2. Po wstawieniu płytki opóźniającej między polaryzatory, światło na ogół pojawia się na wyjściu.
-3. Obracając płytką opóźniającą wokół osi propagacji, obserwuje się zmiany natężenia światła na detektorze.
-  * Jeśli badany element to półfalówka, podczas pełnego obrotu o 360° zaobserwujemy cztery pozycje kątowe, w których światło jest całkowicie wygaszane.
-  * Jeśli badany element to ćwierćfalówka, natężenie światła będzie zmieniać się okresowo, ale nigdy nie osiągnie zera (chyba że światło padające na nią jest spolaryzowane kołowo).
-
-Należy jednak podkreślić, że ta prosta metoda ma ograniczenie: nie pozwala na jednoznaczne odróżnienie osi szybkiej od osi wolnej płytki. Aby tego dokonać, można zastosować bardziej zaawansowane techniki, na przykład analizując współczynniki odbicia lub transmisji dla światła padającego pod kątem innym niż normalny, co jest opisane przez równania Fresnela.
-
-3.2 Pomiary Parametrów Wektora Stokesa
-
-Do wyznaczenia czterech składowych wektora Stokesa opracowano szereg metod pomiarowych. Do najpopularniejszych należą:
-
-* Metoda 6 (lub 4) pomiarów natężenia: Polega na pomiarze natężenia światła po jego przejściu przez układ składający się z ćwierćfalówki i polaryzatora liniowego, ustawionych w różnych, precyzyjnie zdefiniowanych orientacjach. Z sześciu (lub w wersji zoptymalizowanej – czterech) zmierzonych wartości natężeń można obliczyć wszystkie cztery składowe wektora Stokesa (S₀, S₁, S₂, S₃) za pomocą odpowiedniego zestawu równań.
-* Metoda z polaryzatorem kołowym: Alternatywna technika wykorzystująca polaryzator kołowy do analizy stanu polaryzacji.
-* Metoda z obracaną ćwierćfalówką: Jest to bardzo popularna metoda, często stosowana w komercyjnych polarymetrach. Układ pomiarowy składa się z szybko obracającej się ćwierćfalówki, za którą umieszczony jest nieruchomy polaryzator liniowy i detektor. Detektor rejestruje okresowy sygnał natężenia w czasie. Poprzez analizę tego sygnału, np. za pomocą transformaty Fouriera, można wyodrębnić składowe harmoniczne, które są bezpośrednio powiązane ze składowymi wektora Stokesa.
-* Metoda zerowego natężenia (The null-intensity method): Metoda o znaczeniu historycznym, stosowana przed erą precyzyjnych fotodetektorów, gdy jedynym dostępnym detektorem było ludzkie oko. Polega na wykorzystaniu regulowanego kompensatora (np. kompensatora Babineta-Soleila) oraz polaryzatora. Poprzez odpowiednie ustawienie tych elementów dąży się do całkowitego wygaszenia sygnału świetlnego. Z kątów ustawienia kompensatora i polaryzatora, przy których następuje wygaszenie, można obliczyć parametry eliptyczności i azymutu, a tym samym scharakteryzować wektor Stokesa.
-
-Przedstawione w niniejszym opracowaniu koncepcje teoretyczne – od równań Maxwella, przez formalizmy opisu polaryzacji, aż po metody pomiarowe – składają się na kompletny zestaw narzędzi niezbędnych do analizy, projektowania i charakteryzacji układów optycznych wykorzystujących spolaryzowane światło w ośrodkach anizotropowych.
+<hr>
+& Zadanie 14.
+W płaskiej łyżce stołowej mieści się 15 g wody albo 9 g mąki. Oblicz, ile razy gęstość wody jest większa od gęstości mąki.
 
 9. null
 
