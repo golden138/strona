@@ -1,0 +1,175 @@
+Kolokwium 1
+
+1. Warunki wzbudzenia akcji laserowej w diodzie laserowej.
+
+Warunki wzbudzenia akcji laserowej w diodzie laserowej opierają się na spełnieniu dwóch fundamentalnych kryteriów wynikających z obecności rezonatora optycznego oraz warunku fizycznego umożliwiającego wzmocnienie światła w materiale półprzewodnikowym.
+
+! Warunek Równowagi Wzmocnienia i Strat (Próg Laserowania)
+Głównym warunkiem koniecznym do zainicjowania akcji laserowej jest osiągnięcie stanu, w którym wzmocnienie optyczne w materiale czynnym jest w stanie zrównoważyć całkowite straty w rezonatorze. Ten stan definiuje prąd progowy ( I<sub>th</sub>).
+Warunek ten, wynikający z analizy modułu równania zespolonego, można rozłożyć na:
+* Warunek Amplitudowy: Wzmocnienie progowe ( Γg<sub>th</sub> ) musi być równe sumie wszystkich strat optycznych w rezonatorze. 
+\[ \Gamma g_{th} = \alpha_i + \alpha_m \]
+ Gdzie: α<sub>i</sub>  to straty wewnętrzne (np. absorpcja na swobodnych nośnikach), a α<sub>m</sub> to straty na zwierciadłach.
+* Warunek Fazowy: Fala świetlna po pełnym obiegu w rezonatorze (o długości 2L) musi wrócić do miejsca początkowego bez zmiany fazy, co zapewnia konstruktywną interferencję. Warunek ten narzuca, że w długości rezonatora musi zmieścić się całkowita liczba połówek długości fali: 
+\[ L = m \cdot \frac{\lambda}{2n} \]
+ Spełnienie tego warunku powoduje, że rezonator pozwala na istnienie tylko dyskretnego zestawu długości fal, zwanych modami podłużnymi.
+
+! Warunek Wzmocnienia Materiałowego (Inwersja Obsadzeń)
+Aby w ogóle doszło do wzmocnienia światła, emisja stymulowana musi dominować nad absorpcją. Stan ten w ogólnym modelu atomowym wymaga inwersji obsadzeń, czyli sytuacji, w której obsadzenie wyższego poziomu energetycznego ( N<sub>2</sub> ) jest większe niż niższego ( N<sub>1</sub> ) 
+\[ N_2 \gt N_1 \]
+Stan ten wymaga zewnętrznego dostarczania energii, zwanego pompowaniem (w diodzie laserowej jest to pompowanie elektryczne).
+W półprzewodnikach, gdzie poziomy dyskretne zastąpione są pasmami energetycznymi, ten warunek przyjmuje formę Kryterium Bernarda-Duraffourga:
+
+* Kryterium Bernarda-Duraffourga: Separacja energetyczna między quasi-poziomem Fermiego dla elektronów ( E<sub>Fc</sub> ) a quasi-poziomem Fermiego dla dziur ( E<sub>Fv</sub> ) musi być większa niż energia emitowanych fotonów (ℏω). 
+\[ E_{Fc} - E_{Fv} \gt \hbar \omega \]
+Wzrost współczynnika wzmocnienia (g) jest wprost proporcjonalny do czynnika inwersji, czyli różnicy w obsadzeniu stanów ( f<sub>2</sub> - f<sub>1</sub> ), a wzmocnienie jest osiągane tam, gdzie współczynnik absorpcji materiału staje się ujemny ( g = -α )
+
+2. Co ogranicza maksymalną moc w laserze półprzewodnikowym?
+
+Ograniczenie maksymalnej mocy w laserze półprzewodnikowym jest ściśle związane z wewnętrznymi mechanizmami strat, które stają się dominujące przy wysokich prądach zasilania i podwyższonej temperaturze. Mechanizmy te obniżają wewnętrzną sprawność kwantową lasera, co prowadzi do wzrostu prądu progowego ( I<sub>th</sub> ) oraz zmniejszenia sprawności różniczkowej, ograniczając tym samym użyteczną moc optyczną.
+
+Kluczowe czynniki ograniczające maksymalną moc w laserach półprzewodnikowych, na podstawie źródeł, to:
+
+! Rekombinacja Niepromienista (Straty Cieplne)
+Najważniejszym czynnikiem ograniczającym wydajność i moc w wielu laserach jest rekombinacja niepromienista, która nie generuje fotonów, lecz ciepło. Modele bilansu nośników opisują te straty za pomocą modelu ABC
+\[ R = A N + B N^2 + C N^3 \]
+gdzie szczególnie istotne są człony AN i CN<sup>3</sup>
+
+* Rekombinacja Augera ( CN<sup>3</sup> )
+Jest to główny mechanizm strat w laserach emitujących światło długofalowe (gdzie przerwa energetyczna jest mniejsza).
+  * Mechanizm: Zamiast emitować foton, energia rekombinacji pary elektron-dziura jest przekazywana innemu nośnikowi ładunku, który zostaje silnie wzbudzony. Jest to proces niepożądany, który nie wytwarza światła.
+  * Wpływ na moc: Rekombinacja Augera silnie zwiększa prąd progowy lasera. Ponadto, jej wydajność silnie rośnie z temperaturą. Wzrost temperatury w obszarze aktywnym (spowodowany przez ten i inne procesy niepromieniste) prowadzi do obniżenia wydajności lasera i ogranicza maksymalną stabilną moc wyjściową.
+
+* Rekombinacja na Defektach (AN)
+Straty wynikające z rekombinacji na defektach (współczynnik A) dominują przy bardzo niskich koncentracjach nośników, ale przyczyniają się do ogólnego zwiększenia strat niepromienistych i podgrzewania materiału.
+
+! Wewnętrzne Straty Optyczne ( α<sub>i</sub> )
+Wewnętrzne straty optyczne ( α<sub>i</sub> ) to wszelkie procesy powodujące absorpcję lub rozpraszanie fotonów wewnątrz struktury lasera. Aby akcja laserowa trwała, wzmocnienie progowe ( Γg<sub>th</sub> ) musi zrównoważyć te straty: 
+\[ \Gamma g_{th} = \alpha_i + \alpha_m \]
+* Absorpcja na Swobodnych Nośnikach: Jest to główny mechanizm strat wewnętrznych w półprzewodnikach. Foton oddaje swoją energię swobodnemu elektronowi lub dziurze. Straty te rosną wraz z koncentracją nośników. Ponieważ koncentracja nośników rośnie wraz z prądem pompowania, absorpcja na swobodnych nośnikach stanowi ograniczenie dla laserów pracujących z dużą mocą optyczną.
+* Zależność od długości fali: Problem absorpcji na swobodnych nośnikach jest znacznie bardziej dotkliwy w laserach emitujących światło w zakresie długofalowym (gdzie α<sub>i</sub> jest proporcjonalne do  λ<sup>p</sup>, a p jest bliskie 2).
+
+! Ograniczenia Materiałowe i Technologiczne
+Maksymalna stabilna moc jest również pośrednio ograniczona przez jakość i wytrzymałość materiałów półprzewodnikowych oraz struktury.
+* Trwałość Materiału: Półprzewodniki z grup II-VI i IV-VI mają niską odporność mechaniczną (twardość) w porównaniu do związków AIII-BV. Ta niska twardość może ograniczać możliwość pracy w ekstremalnych warunkach wymaganych do osiągnięcia bardzo wysokiej mocy.
+* Wyzwania Epitaksji: Trudności technologiczne, takie jak ryzyko rozpadu spinodalnego w stopach (np. In<sub>0.72</sub>Al<sub>0.28</sub>N ) czy trudności z efektywnym domieszkowaniem, wpływają na jakość obszaru aktywnego i tym samym na maksymalną gęstość mocy, jaką materiał może wytrzymać.
+
+Podsumowując, choć lasery półprzewodnikowe mogą osiągać moc od ułamków miliwata do ponad 30 kilowatów, to granica maksymalnej mocy jest ustalana przez wzrost niepromienistych strat Augera (silnie zależnych od temperatury i prądu) oraz wewnętrznych strat optycznych (absorpcja na swobodnych nośnikach), które destabilizują działanie lasera przy wysokim wysterowaniu prądowym.
+Można to porównać do próby utrzymania silnika samochodu na najwyższych obrotach (maksymalna moc) przez długi czas. Im więcej paliwa (prądu) dostarczasz, tym szybciej silnik (obszar aktywny lasera) generuje ciepło z powodu tarcia (rekombinacji Augera i strat wewnętrznych). W pewnym momencie, mimo dostarczania większej ilości paliwa, dodatkowe ciepło zamiast zwiększać moc (sprawność), zaczyna ją dramatycznie obniżać (degradując materiał i uniemożliwiając stabilną pracę), wyznaczając tym samym praktyczny limit wydajności i mocy.
+
+3. Ewolucja widma diody laserowej w funkcji prądu zasilania, jakie zmiany, jakie przyczyny?
+
+Ewolucja widma emisji diody laserowej jest najbardziej wyrazistym dowodem na przejście od chaotycznej emisji spontanicznej do koherentnej emisji stymulowanej, która jest istotą działania lasera. Widmo to zmienia się dynamicznie wraz ze wzrostem prądu pompowania (I), przechodząc przez trzy odrębne, charakterystyczne fazy.
+Poniżej omówiono zmiany spektralne i ich przyczyny w funkcji prądu zasilania, w odniesieniu do progu akcji laserowej ( I<sub>th</sub> ).
+
+! Faza 1: Luminescencja (Emisja Spontaniczna)
+Ta faza zachodzi przy bardzo niskim prądzie pompowania, gdy laser pracuje poniżej progu akcji laserowej (I≪I<sub>th</sub>).
+
+##Zmiany w widmie	Przyczyny (Mechanizmy)
+Widmo jest szerokie.	Dominuje emisja spontaniczna. Nośniki ładunku rekombinują w sposób losowy, emitując fotony o przypadkowych fazach i kierunkach.
+Pełna szerokość w połowie maksimum (FWHM) wynosi około 50 nm.	Koncentracja nośników jest niska. Quasi-poziomy Fermiego (ΔF) znajdują się wewnątrz przerwy energetycznej ( E<sub>g</sub> ), a wzmocnienie jest ujemne (g<0) – rezonator jest nieprzezroczysty.##
+
+W tym reżimie urządzenie działa w sposób zbliżony do diody elektroluminescencyjnej (LED).
+
+! Faza 2: Superluminescencja (Wzmocniona Emisja Spontaniczna)
+Ta faza zachodzi, gdy prąd zasilania zbliża się do wartości progowej ( I≈I<sub>th</sub> ).
+
+##Zmiany w widmie	Przyczyny (Mechanizmy)
+Widmo emisji jest wciąż szerokie.	Mimo wzrostu prądu, emisja stymulowana jeszcze nie dominuje, ale występuje niewielkie wzmocnienie ( 0<g<g<sub>th</sub> ).
+Zaczynają być widoczne mody rezonatora Fabry-Perota na tle szerokiego widma.	Quasi-poziomy Fermiego wchodzą do pasm ( ΔF>E<sub>g</sub> ). Rezonator staje się przezroczysty. Emisja spontaniczna jest selektywnie wzmacniana na długościach fal odpowiadających rezonansom wnęki optycznej (modom podłużnym).##
+
+Widoczność modów rezonatora (który "pozwala" na istnienie tylko dyskretnego zestawu długości fal) świadczy o tym, że sprzężenie zwrotne zaczyna wpływać na światło, chociaż proces wzmacniania jest dopiero inicjowany przez spontaniczne fotony.
+
+! Faza 3: Akcja Laserowa
+Ta faza następuje po przekroczeniu progu ( I>I<sub>th</sub> ).
+
+##Zmiany w widmie	Przyczyny (Mechanizmy)
+Następuje gwałtowna zmiana i drastyczne zawężenie widma emisyjnego.	Wzmocnienie osiąga wartość progową ( g=g<sub>th</sub> ) i jest wystarczające, aby zrównoważyć straty. Emisja stymulowana zaczyna dominować nad spontaniczną.
+FWHM spada do wartości rzędu 1 nm lub mniej.	Cała energia zaczyna być efektywnie transferowana do jednego (lub kilku) modów o najniższym progu. Niemal cała moc optyczna jest skoncentrowana w dominującym modzie laserowym.
+Widmo przyjmuje postać ostrej linii (lub serii ostrych linii).	Wzrost prądu zasilania powyżej progu prowadzi do stabilizacji koncentracji nośników ( N=N<sub>th</sub> ) i wzmocnienia ( g=g<sub>th</sub> ). Dodatkowe nośniki są natychmiast zużywane przez gwałtownie rosnącą szybkość rekombinacji stymulowanej.##
+
+Stabilizacja koncentracji i wzmocnienia na progu jest kluczowym mechanizmem, który utrzymuje stałe wzmocnienie i zapewnia stabilną oraz wydajną emisję spójnego światła, co objawia się właśnie drastycznym zawężeniem widma.
+
+<hr>
+
+! Podsumowanie przyczyn ewolucji:
+Ewolucja widma jest bezpośrednim skutkiem przejścia lasera przez punkt krytyczny, w którym emisja stymulowana pokonuje absorpcję i straty.
+* Poniżej progu: Absorpcja i straty dominują. Emisja jest szeroka, ponieważ zjawisko jest spontaniczne i nie jest selektywnie wzmacniane.
+* Na progu: Wzmocnienie zrównuje straty :
+\[ \Gamma g_{th}  = \alpha_i + \alpha_m \]
+ Zaczyna działać selektywność rezonatora Fabry-Perota (modów podłużnych).
+* Powyżej progu: Następuje stabilizacja wzmocnienia i koncentracji. Wszelka dodatkowa energia jest kierowana w jeden, wąski mod optyczny poprzez lawinową rekombinację stymulowaną, co prowadzi do drastycznego zawężenia widma i wzrostu koherencji.
+Można to porównać do zbioru instrumentów (emisja spontaniczna), które grają przypadkowe dźwięki w szerokim zakresie częstotliwości (szerokie widmo w Faza 1). Gdy zbliżamy się do progu, rezonator (sala koncertowa) zaczyna wzmacniać tylko niektóre dźwięki (mody Fabry-Perota), ale wciąż dominuje hałas (Faza 2 – Superluminescencja). Gdy prąd przekracza próg (Faza 3 – Akcja Laserowa), nagle wszystkie instrumenty synchronizują się i grają jedną, idealnie czystą, głośną nutę (dominujący mod laserowy), ponieważ mechanizm sprzężenia zwrotnego (dyrygent) natychmiast zużywa nadmiar energii, aby wzmocnić ten jeden ton, a nie podnosić ogólny chaos.
+
+4. Po co QW w laserze półprzewodnikowym?
+
+Zastosowanie jamy kwantowej (Quantum Well, QW) w obszarze czynnym lasera półprzewodnikowego jest kluczowym osiągnięciem inżynierii materiałowej, które pozwoliło na radykalną poprawę parametrów działania tych urządzeń w porównaniu do wcześniejszych heterostruktur podwójnych (DH).
+Jama kwantowa stanowi strukturę, w której grubość obszaru czynnego jest na tyle mała (rzędu długości fali de Broglie'a elektronu, np. około 24 nm dla GaAs), że klasyczne ograniczenie przestrzenne przechodzi w ograniczenie kwantowe.
+<hr>
+Główne cele i korzyści stosowania QW w laserach półprzewodnikowych to:
+<hr>
+! Drastyczna Redukcja Prądu Progowego i Zmiana Wydajności
+Struktura QW została wprowadzona, aby jeszcze efektywniej niż w przypadku DH rozwiązać problem wysokich prądów progowych.
+* Modyfikacja gęstości stanów (DOS): Przejście z materiału objętościowego (3D) na strukturę quasi-dwuwymiarową (2D) zmienia paraboliczną gęstość stanów ( ρ<sub>3D</sub> ∼ E<usp>1/2</sup> ) na schodkową/stałą ( ρ<sub>2D</sub> = const ).
+* Efektywność inwersji: Dzięki temu, wstrzyknięte nośniki koncentrują się przy krawędzi pasma, co prowadzi do szybszego i bardziej efektywnego rozsuwania quasi-poziomów Fermiego ( E<sub>Fc</sub> , E<sub>Fv</sub> ).
+* Niższy prąd progowy: Warunek inwersji obsadzeń (Kryterium Bernarda-Duraffourga: 
+\[ E_{Fc} - E_{Fv} \gt \hbar \omega \]
+jest osiągany przy niższej gęstości prądu. Zależność maksymalnego wzmocnienia od prądu staje się logarytmiczna, co przekłada się na niższy prąd przezroczystości ( J<sub>0</sub> ).
+* Wpływ na konfigurację: Struktury z pojedynczą jamą kwantową (SQW) są często preferowane w laserach dużej mocy, ponieważ minimalizują gęstość prądu progowego ( J<sub>th</sub>​ ).
+
+! Inżynieria Pasma i Długości Fali Emisji
+Jama kwantowa pozwala na precyzyjną kontrolę właściwości optoelektronicznych lasera:
+* Dostrojenie długości fali: Energia przejścia optycznego (a tym samym długość fali emitowanego światła) zależy nie tylko od przerwy energetycznej materiału, ale również od grubości jamy kwantowej i składu chemicznego barier. Ta elastyczność projektowa umożliwia tworzenie emiterów w szerokim zakresie spektralnym (np. od czerwieni do zieleni w systemie (Al<sub>x</sub>Ga<sub>1-x</sub>)<sub>0.5</sub>In<sub>0.5</sub>P).
+* Zniesienie degeneracji pasm: Kwantowanie znosi degenerację pasma walencyjnego w materiałach kubicznych, rozdzielając pasma ciężkich dziur (HH) i lekkich dziur (LH).
+
+! Zaawansowana Optymalizacja poprzez Naprężenia (Strained QW)
+Wprowadzenie kontrolowanych naprężeń mechanicznych (przez niedopasowanie stałych sieci krystalicznej) do struktury QW jest potężnym narzędziem inżynierii pasmowej, oferującym szereg dodatkowych korzyści:
+* Silniejsze zniesienie degeneracji: Naprężenia znoszą degenerację pasm HH i LH silniej niż samo kwantowanie, co prowadzi do redukcji masy efektywnej dziur na krawędzi pasma walencyjnego.
+* Redukcja Rekombinacji Augera: Zwiększona separacja podpasm utrudnia niepromieniste procesy Augera, co zwiększa wydajność kwantową lasera przy wysokich prądach.
+* Zwiększone wzmocnienie różniczkowe: Zmodyfikowana struktura pasmowa prowadzi do wyższego i węższego spektralnie wzmocnienia, co jest kluczowe dla laserów wymagających szybkiej modulacji (często realizowanej w strukturach wielokrotnej jamy kwantowej, MQW).
+* Kontrola polaryzacji: Naprężenia determinują, które przejścia optyczne dominują, co pozwala na kontrolę polaryzacji emitowanego światła (np. naprężenia ściskające faworyzują polaryzację TE).
+
+! Optymalizacja dla Zastosowań (SQW vs. MQW)
+Projekt QW jest dostosowywany do zastosowania:
+* Pojedyncza Jama Kwantowa (SQW): Stosowana do minimalizacji gęstości prądu progowego ( J<sub>th</sub> ).
+* Wielokrotna Jama Kwantowa (MQW): Stosowana do maksymalizacji wzmocnienia modowego i wzmocnienia różniczkowego (dg/dn), co jest niezbędne w szybkich laserach telekomunikacyjnych. Struktury MQW pozwalają również na kompensację naprężeń.
+
+Podsumowując, zastosowanie jamy kwantowej miało na celu przejście od klasycznego do kwantowego ograniczenia nośników, co fundamentalnie zmodyfikowało funkcję gęstości stanów i umożliwiło inżynierię pasma, prowadząc do rewolucyjnej redukcji prądów progowych i zwiększenia sprawności laserów.
+
+Można to widzieć jak precyzyjnie zaprojektowany lejek: zamiast rozlewać wodę (nośniki) po dużym zbiorniku (obszar 3D), jama kwantowa skupia całą energię w bardzo wąskim kanale (2D), co sprawia, że wystarczy minimalna ilość wody, aby wytworzyć wysokie ciśnienie (inwersję obsadzeń) i uzyskać wydajny strumień światła.
+
+5. Czym się różnią obszary czynne LED i lasera? Uzasadnij odpoiwedź
+
+Obszary czynne diod elektroluminescencyjnych (LED) i laserów półprzewodnikowych mają wspólną podstawę – wykorzystują rekombinację promienistą w materiale półprzewodnikowym z prostą przerwą energetyczną (głównie związki AIII-BV). Różnią się jednak kluczowymi aspektami konstrukcyjnymi, które są niezbędne do osiągnięcia odmiennych mechanizmów emisji światła: spontanicznej (LED) versus stymulowanej (Laser).
+<hr>
+Poniżej przedstawiono główne różnice i ich uzasadnienie:
+<hr>
+
+! Różnica Fundamentalna: Mechanizm Emisji
+Główna różnica między laserem a diodą LED sprowadza się do dominującego procesu emisji w obszarze czynnym:
+* LED (Dioda elektroluminescencyjna): W diodzie LED światło powstaje w wyniku emisji spontanicznej. Elektrony i dziury rekombinują w sposób losowy, emitując fotony o przypadkowych fazach i kierunkach.
+*Laser Półprzewodnikowy: W laserze obszar czynny jest projektowany tak, aby zdominowała emisja stymulowana (wymuszona). Wymaga to inwersji obsadzeń oraz wysokiej gęstości fotonów, co prowadzi do lawinowego narastania spójnego światła.
+
+Dlatego, aby emisja stymulowana zdominowała spontaniczną (warunek lasera), obszar czynny musi być zintegrowany z rezonatorem optycznym, podczas gdy LED pracuje bez efektywnego rezonatora (chociaż w reżimie podprogowym laser działa jak LED).
+
+! Konieczność Ograniczenia Optycznego i Elektrycznego
+Obszar czynny lasera musi być strukturą, która nie tylko generuje nośniki, ale także ogranicza zarówno same nośniki, jak i światło optyczne, aby zapewnić wysoką efektywność wzmocnienia.
+##Cecha	Obszar Czynny LED	Obszar Czynny Lasera	Uzasadnienie (Cel)
+Typ Struktury	Często prostsze złącze p-n lub prosta heterostruktura.	Podwójna Heterostruktura (DH), Jama Kwantowa (QW) lub Kropki Kwantowe (QD).	Ograniczenie przestrzenne nośników (carrier confinement) i fali optycznej (optical confinement) w cienkiej warstwie jest kluczowe dla drastycznej redukcji prądu progowego (I<sub>th</sub>).
+Ograniczenie Optyczne	Brak lub minimalne.	Falowód optyczny (np. wyższy współczynnik załamania światła w obszarze czynnym) i współczynnik ograniczenia optycznego (Γ).	Uwięzienie światła i zwiększenie współczynnika Γ, co oznacza, że większa część mocy modu optycznego pokrywa się z obszarem aktywnym, gdzie zachodzi wzmocnienie.
+Wymiarowość	Często struktura materiału objętościowego (3D).	Często struktury quasi-dwuwymiarowe (QW) lub niższe (QD).	Zmiana gęstości stanów (DOS) z parabolicznej (3D) na schodkową (2D), co pozwala na osiągnięcie inwersji obsadzeń przy znacznie niższej gęstości prądu.
+Inżynieria Pasma	Minimalna.	Stosowanie naprężeń (strained QW) i precyzyjna kontrola grubości.	Optymalizacja pasma walencyjnego (np. redukcja masy efektywnej dziur) w celu zwiększenia wzmocnienia różniczkowego i redukcji rekombinacji Augera.##
+
+! Wymagania dotyczące Inwersji Obsadzeń
+Kluczowym warunkiem działania lasera jest spełnienie Kryterium Bernarda-Duraffourga:
+\[ E_{Fc} - E_{Fv} \gt \hbar \omega \]
+co stanowi precyzyjną definicję inwersji obsadzeń w półprzewodniku.
+* W LED: Choć zachodzi rekombinacja promienista, prąd zasilania jest zazwyczaj zbyt niski, a koncentracja nośników zbyt mała, aby quasi-poziomy Fermiego rozeszły się na tyle, by spełnić ten warunek. Emisja jest szerokopasmowa, a wzmocnienie jest ujemne (g<0).
+* W Laserze: Obszar czynny musi być tak zaprojektowany i wysterowany, aby osiągnąć stan, w którym funkcja Fermiego dla stanu w paśmie przewodnictwa (f<sub>2</sub> ) jest większa niż dla stanu w paśmie walencyjnym (f<sub>1</sub>)(f<sub>2</sub> > f<sub>1</sub>). 
+Tylko w tym stanie wzmocnienie netto jest dodatnie (g>0). Zastosowanie QW ułatwia osiągnięcie tego stanu przy minimalnym prądzie.
+Podsumowując, podczas gdy obszar czynny LED (pracujący na emisji spontanicznej) wymaga jedynie efektywnej rekombinacji promienistej, obszar czynny lasera (pracujący na emisji stymulowanej) musi być zaawansowaną, precyzyjnie zaprojektowaną strukturą (najczęściej QW/QD) zdolną do generowania inwersji obsadzeń i efektywnego uwięzienia światła, co prowadzi do zawężenia widma i wzrostu spójności.
+
+9. null
+
+null
+

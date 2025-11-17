@@ -1,0 +1,136 @@
+{
+	"zad": [
+		{
+			"tresc" : "Dlaczego obiekty w temperaturze pokojowej (około 300 K) nie emitują światła w zakresie widzialnym?",
+			"odp" : [
+				{"war1" : "Ponieważ ich maksimum emisji przypada w zakresie głębokiej podczerwieni", "war2" : "Zgodnie z równaniem Plancka, ciało o temperaturze 300K emituje promieniowanie głównie w dalekiej podczerwieni, daleko poza zakresem widzialnym dla ludzkiego oka."},
+				{"war1" : "Ponieważ w tej temperaturze nie zachodzi zjawisko promieniowania termicznego", "war2" : "Każde ciało o temperaturze powyżej zera absolutnego emituje promieniowanie termiczne; różnica polega na zakresie spektralnym tej emisji"},
+				{"war1" : "Ponieważ cała energia jest emitowana w postaci ciepła konwencjonalnego, a nie promieniowania", "war2" : "Chociaż wymiana ciepła przez konwekcję ma miejsce, nie emliminuje to fundamentalnego procesu emisji promieniowania elektromagnetycznego przez obiekty."},
+				{"war1" : "Ponieważ absorpcja atmosferyczna blokuje całe promieniowanie emitowane w tej temperaturze", "war2" : "Absorbcja atmosferyczna modyfikuje widmo, ale nie jest przyczyną, dla której obiekty w temperaturze pokojowej same w sobie nie świecą w paśmie widzialnym"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Zastanów się, jak temperatura obiektu wpływa na dominującą długość fali emitowanego przez niego promieniowania."
+		},
+		{
+			"tresc" : "Jaka jest główna przyczyna, dla której widmo słoneczne docierające do powierzchni Ziemi jest silnie pofalowane?",
+			"odp" : [
+				{"war1" : "Rozpraszanie światła na cząsteczkach pyłu w atmosferze", "war2" : "Rozpraszanie (np. Rayleigha) wpływa na ogólne osłabienie sygnału i kolor nieba, ale nie tworzy ono ostrych, selektywnych pasm absorpcyjnych"},
+				{"war1" : "Selektywna absorpcja promieniowania przez gazy atmosferyczne, głównie przez parę wodną H<sub>2</sub>O.", "war2" : "Cząsteczki gazów w atmosferze, zwłaszcza H<sub>2</sub>O, pochłaniają energię na określonych długościach fal, tworząc charakterystyczne doliny w widmie słonecznym"},
+				{"war1" : "Zmienność temperatury na powierzchni słońca.", "war2" : "Temperatura powierzchni Słońca jest stosunkowo stała i odpowiada za ogólny kształt widma ciała doskonale czarnego, a nie za jego drobne pofałdowania."},
+				{"war1" : "Zjawisko całkowitego wewnętrznego odbicia na granicy atmosfery", "war2" : "Całkowite wewnętrzne odbicie dotyczy propagacji światła w ośrodkach o różnym współczynniku załamania, jak światłowód i nie jest głównym mechanizmem modyfikacji widma słonecznego."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Pomyśl, co dzieje się ze światłem słonecznym podczas jego podróży przez ziemską atmosferę."
+		},
+		{
+			"tresc" : "Która właściwość krzemu (Si) jest fundamentalna dla jego dominacji w mikroelektronice w porównaniu z germanem (Ge)?",
+			"odp" : [
+				{"war1" : "Znacznie wyższa ruchliwość elektronów, co pozwala na szybsze działanie tranzystorów.", "war2" : "Zgodnie z tabelą w tekście, german ma wyższą ruchliwość elektronów niż krzem."},
+				{"war1" : "Prosta przerwa energetyczna, która ułatwia produkcję wydajnych tranzystorów", "war2" : "Krzem ma pośrednią przerwę energetyczną, co jest jego wadą w zastosowaniach emisyjnych, a nie zaletą w mikroelektronice"},
+				{"war1" : "Możliwość tworzenia stabilnego i wysokiej jakości tlenku (SiO<sub>2</sub> kluczowego jako dielektryka", "war2" : "Tworzenie doskonałej warstwy izolacyjnej SiO<sub>2</sub> jest kluczową przewagą technologiczną krzemu, która umożliwia rozwój technologii tranzystorów MOS."},
+				{"war1" : "Mniejsza stała sieci, co ułatwia wzrost monokryształów", "war2" : "Chociaż stała sieci jest ważnym parametrem, to nie ona, lecz właściwości tlenku, zadecydował o dominacji krzemu."}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Rozważ, który element tranzystora jest kluczowy dla jego działania jako przełącznika i jak jest on realizowany w technologii krzemowej."
+		},
+		{
+			"tresc" : "Dlaczego półprzewodniki z grupy III-V, takie jak GaAs, są znacznie lepszymi emiterami światła niż krzem?",
+			"odp" : [
+				{"war1" : "Ponieważ krystalizują wyłącznie w strukturze wurcytu, która sprzyja emisji światła", "war2" : "Materiały III-V krystalizują zarówno w strukturze wurcytu, jak i blendy cynkowej; kluczowa dla emisji jest struktura pasmowa, a nie tylko krystaliczna."},
+				{"war1" : "Ponieważ posiadają prostą przerwę energetyczną, umożliwiającą wydają rekombinację promienistą", "war2" : "Prosta przerwa energetyczna oznacza, że elektron może przejść z pasma przewodnictwa do walencyjnego emitując foton bez potrzeby zmiany pędu, co jest procesem wysoce wydajnym."},
+				{"war1" : "Ponieważ mają wyższą twardość i odporność mechaniczną.", "war2" : "Wyższa twardość jest zaletą mechaniczną, ale nie jest bezpośrednią przyczyną wydajnej emisji światła."},
+				{"war1" : "Ponieważ są znacznie tańsze i łatwiej dostępne niż krzem.", "war2" : "Materiały III-V są generalnie droższe i trudniejsze w produkcji niż krzem, który jest jednym z najpowszechniejszych pierwiastków."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Skup się na różnicach w strukturze pasmowej obu typów materiałów i jak wpływa to na proces rekombinacji nośników."
+		},
+		{
+			"tresc" : "Co charakteryzuje heterostrukturę typu I, taką jak GaAs/AlGaAs?",
+			"odp" : [
+				{"war1" : "Występuje w niej zjawisko rozpadu spinodalnego, prowadzące do rozdziału faz", "war2" : "Rozpad spinodalny jest problemem technologicznym w niektórych stopach,a nie definiującą cechą hemostruktury typu I."},
+				{"war1" : "Elektrony i dziury są uwięzione w tej samej warstwie, zwanej jamą kwantową", "war2" : "W typie I zarówno minimum pasma przewodnictwa, jak i maksimum pasma walencyjnego znajdują się w materiale o węższej przerwie energetycznej, co maksymalizuje prawdopodobieństwo ich spotkania i rekombinacji"},
+				{"war1" : "Warstwy mają niedopasowane stałe sieci, co prowadzi do defektów strukturalnych", "war2" : "Chociaż niedopasowanie sieci jest problemem epitaksji, nie definiuje ono typu heterostruktury ( I czy II )"},
+				{"war1" : "Elektrony i dziury są przestrzennie rozdzielone w sąsiadujących warstwach.", "war2" : "To jest definicja heterostruktury typu II, wykorzystywanej np. w detektorach podczerwieni, gdzie celem nie jest maksymalizacja rekombinacji"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Pomyśl o tym, jak ułożenie pasm energetycznych w różnych warstwach wpływa na lokalizację elektronów i dziur."
+		},
+		{
+			"tresc" : "Jakie jest główne ograniczenie materiałów z grup II-VI (np. HgCdTe) i IV-VI (np. PbS), które zawęża ich zastosowanie głównie do detektorów podczerwieni?",
+			"odp" : [
+				{"war1" : "Pośrednia przerwa energetyczna, uniemożliwiająca emisję światła", "war2" : "Chociaż wiele z nich ma prostą przerwę energetyczną, ich głównym ograniczeniem jest inna właściwość fizyczna"},
+				{"war1" : "Niska odporność mechaniczna (twardość)", "war2" : "Tekst wyraźnie stwierdza, że ich niska twardość w porównaniu do krzemu czy związków AIII-BV jest główną przyczyną ograniczenia zastosowania."},
+				{"war1" : "Bardzo wysoki koszt produkcji w porównaniu do związków AIII-BV", "war2" : "Koszt jest czynnikiem, ale artykuł wskazuje na bardziej fundamentalne fizyczne ograniczenia"},
+				{"war1" : "Niemożność efektywnego domieszkowania na typ p lub n", "war2" : "Problem z domieszkowaniem są wyzwaniem w azotkach z grupy AIII-BV, a nie jako główne ograniczenie dla grupy II-VI i IV-VI."}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się nad właściwościami fizycznymi, które decydują o trwałości i niezawodności gotowego urządzenia."
+		},
+		{
+			"tresc" : "W technologii światłowodowej, dlaczego okno transmisyjne 1550 nm jest preferowane do przesyłania sygnału na bardzo duże odległości?",
+			"odp" : [
+				{"war1" : "Ponieważ  tym zakresie występuje minimum dyspersji chromatycznej.", "war2" : "Minimum dyspersji chromatycznej dla standardowych światłowodów krzemionkowych występuje w okolicach 1300 nm, co ogranicza zniekształcenia impulsu"},
+				{"war1" : "Ponieważ przy tej długości fali najłatwiej jest uzyskać zjawisko całkowitego wewnętrznego odbicia.", "war2" : "Całkowite wewnętrzne odbicie zależy od kąta padania i współczynników załamania, a nie jest specyficznie uprzywilejowane dla jednej długości fali."},
+				{"war1" : "Ponieważ w tym zakresie występuje minimum absorpcji materiałowej", "war2" : "W okolicach 1550 nm straty sygnału spowodowane pochłanianiem przez materiał światłowodu (krzemionkę) są najniższe, co pozwala na transmisję na najdłuższe dystanse."},
+				{"war1" : "Ponieważ lasery emitujące na tej długości fali są najtańsze w produkcji.", "war2" : "Wybór okna transmisyjnego jest podyktowany właściwościami samego medium transmisyjnego (światłowodu) a nie kosztem źródła światła."}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl o dwóch głównych czynnikach ograniczających jakość sygnału w światłowodzie: rozmyciu impulsu i jego osłabieniu."
+		},
+		{
+			"tresc" : "Które z wymienionych zastosowań wymaga emiterów półprzewodnikowych o największej mocy, rzędu kilowatów (kW)?",
+			"odp" : [
+				{"war1" : "Transmisja danych w światłowodach telekomunikacyjnych", "war2" : "Systemy telekomunikacyjne wykorzystują lasery w zakresie od 5 do 40 mW"},
+				{"war1" : "Wzmacniacze optyczne w sieciach światłowodowych", "war2" : "Chociaż moc wzmacniaczy jest większa niż w transmiterach, typowo wynosi ona klika atów (2 W) a nie kW"},
+				{"war1" : "Zapis danych na płytach Blu-ray", "war2" : "Zgodnie z tabelą na stronie, zapis Blu-ray wymaga mocy rzędu dziesiątek miliwatów (30 mW)"},
+				{"war1" : "Obróbka metali i zastosowania wojskowe", "war2" : "Aplikacje takie jak cięcie, spawanie metali czy systemy broni energetycznej wymaga mocy od jednego do ponad 30 kW"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Przeanalizuj tabelę zastosowań emiterów i zwróć uwagę na rząd wielkości mocy dla zastosowań przemysłowych."
+		},
+		{
+			"tresc" : "Na czym polega mechanizm detekcji cząsteczek chemicznych, takich jak metan (CH<sub>4​</sub>), w podczerwieni?",
+			"odp" : [
+				{"war1" : "Na selektywnej absorpcji promieniowania na skutek wzbudzenia przejść oscylacyjno-rotacyjnych", "war2" : "Każda cząsteczka ma unikalny zestaw energi drgań i obrotów, co prowadzi do absorpcji światła na charakterystycznych dla niej długościach fal, towrząc odcisk palca cząsteczki"},
+				{"war1" : "Na zjawisku fotoelektrycznym, gdzie fotony podczerwone wybijają elektrony z cząsteczek gazu", "war2" : "Energia fotonów w podczerwieni jest zazwyczja zbyt niska, aby wywołać zjawisko fotoelektryczne; odpowiada ona energiom przejść wewnątrzmolekularnych."},
+				{"war1" : "Na emisji promieniowania przez cząsteczki wzbudzone światłem podczerwonym", "war2" : "Mechanizm opiera się na pochłanianiu, anie emisji; cząsteczki pochłaniają energie, przechodząc na wyższe stany energetyczne"},
+				{"war1" : "Na rozpraszaniu promieniowania podczerwonego, którego intensywność zależy od stężenia cząsteczek", "war2" : "Chociaż rozpraszanie występuje, to selektywna absorbcjia jest znacznie bardziej specyficznym i czułym mechanizmem do identyfikacji substancji."}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Każda cząsteczka, niczym struna w instrumencie, może drgać i obracać się tylko z określonymi częstotliwościami."
+		},
+		{
+			"tresc" : "Które z poniższych jest wymienione jako jedno z głównych wyzwań technologicznych w epitaksji związków AIII-BV?",
+			"odp" : [
+				{"war1" : "Niska ruchliwość dziur, ograniczająca szybkość urządzeń", "war2" : "Właściwości transportowe nośników są cechą materiału, a nie wyzwaniem w procesie jego wzrostu (epitaksji)"},
+				{"war1" : "Ryzyku rozpadu spinodalnego w stopach trójskładnikowych i czteroskładnikowych", "war2" : "Artykuł na stronie wskazuje, że stopy takie jak InGaN mogą być termodynamicznie niestabilne i samoistnie rozdzielić się na fazy, co degraduje ich właściwości."},
+				{"war1" : "Niestabilność chemiczna tlenków, utrudniająca tworzenie warstw izolacyjnych", "war2" : "To właśnie stabilny tlenek jest zaletą krzemu; w przypadku związków III-V tworzenie dobrych natywnych tlenków jest problemem, ale rozpad spinodalny jest specyficznym wyzwaniem dla stopów."},
+				{"war1" : "Zbyt duża przerwa energetyczna, uniemożliwiająca pracę w podczerwieni.", "war2" : "Inżynieria przerwy energetycznej w związkach AIII-BV pozwala na działanie w szerokim zakresie spektralnym, od UV po podczerwień. Jest to ich zaleta, anie wyzwanie technologiczne"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Pomyśl o problemach, które mogą pojawić się podczas mieszania różnych pierwiastków w celu uzyskania pożądanego materiału półprzewodnikowego."
+		},
+		{
+			"tresc" : "Porównując właściwości krzemu (Si) i germanu (Ge) podane w tabeli, które stwierdzenie jest prawdziwe?",
+			"odp" : [
+				{"war1" : "Ruchliwość zarówno elektronów jak i dziur jest wyższa w krzemie", "war2" : "Tabelka pokazuje, że zarówno ruchliwość elektronów jak i dziur jest znacznie wyższa w germanie"},
+				{"war1" : "Krzem posiada prostą przerwę energetyczną, a german pośrednią", "war2" : "Jest odwronie krzem posiada przerwę pośrednia, a german prostą w punkcie L (choć absolutne minimum jest pośrednie, co jest uproszeniem w tabeli)"},
+				{"war1" : "German ma szerszą przerwę energetyczną niż krzem", "war2" : "Przerwa energetyczna dla Ge 0.67 eV jest węższa niż krzemu 1.12 eV"},
+				{"war1" : "Długość fali odpowiada przerwie energetycznej (λ<sub>g</sub>) jest większa dla germanu", "war2" : "German ma węższą przerwę energetyczną, co zgodnie z zależnościa E<sub>g</sub>=hcλ<sub>g</sub> przekłada się na większa długość fali (1850 nm dla germanu vs 1100 nm dla krzemu)"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pamiętaj o odwrotnej zależności między energią przerwy energetycznej a odpowiadającą jej długością fali."
+		},
+		{
+			"tresc" : "W standardowym światłowodzie telekomunikacyjnym rdzeń jest wykonany z krzemionki domieszkowanej tlenkiem germanu (GeO<sub>2​</sub>), a płaszcz z czystej krzemionki (SiO<sub>2​</sub>). Jaki jest cel takiego doboru materiałów?",
+			"odp" : [
+				{"war1" : "Zwiększenie wytrzymałości mechanicznej rdzenia w stosunku do płaszcza", "war2" : "Chociaż właściwości mechaniczne są ważne, głównym celem domieszkowania jest modyfikacja właściwości optycznych"},
+				{"war1" : "Zminimalizowanie absorpcji w rdzeniu i dyspersji w płaszczu", "war2" : "Zarówno absorpcja jak i dyspersją są właściwościami całego światłowodu, a różnica we współczynnikach załamania służy prowadzeniu światła."},
+				{"war1" : "Uzyskanie wyższego współczynnika załamania w rdzeniu niż w płaszczu, aby umożliwić całkowite wewnętrzne odbicie.", "war2" : "Domieszkowanie GeO<sub>2</sub> podnosi współczynnik załamania światła. Warunek n<sub>rdzeń</sub> &gt; n<sub>płaszcz</sub> jest niezbędnym do uwięzienia światła w rdzeniu"},
+				{"war1" : "Obniżenie kosztów produkcji poprzez użycie tańszego materiału w płaszczu", "war2" : "Celem jest uzyskanie konkretnego profilu współczynnika załamania, co jest podyktowane zasadą działania światłowodu, a nie tylko kosztem."}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Przypomnij sobie warunek konieczny do zajścia zjawiska, które utrzymuje światło wewnątrz rdzenia światłowodu."
+		}
+	]
+}

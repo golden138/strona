@@ -1,0 +1,431 @@
+Fundamenty Mechaniki Kwantowej
+
+1. Wprowadzenie do Fotoniki Kwantowej
+
+Podstawowe zasady mechaniki kwantowej stanowią fundament dla zrozumienia zjawisk świetlnych na poziomie fundamentalnym. Fotonika kwantowa wykracza poza klasyczny opis światła, traktując je nie jako falę elektromagnetyczną, ale jako obiekt kwantowy – zbiór fotonów. Takie podejście jest nie tylko konieczne do wyjaśnienia zjawisk niemożliwych do zinterpretowania w ramach optyki klasycznej, ale również otwiera drogę do rewolucyjnych technologii. Zrozumienie kwantowej natury światła pozwala na precyzyjne modelowanie jego oddziaływania z materią i projektowanie zaawansowanych systemów.
+
+Główne cele fotoniki kwantowej obejmują szeroki zakres zagadnień, od fundamentalnego opisu po praktyczne zastosowania:
+
+* Opis światła przy użyciu formalizmu kwantowego.
+* Oddziaływanie światła z materią (w szczególności źródła światła) – wyjaśnienie i interpretacja.
+* „Przetłumaczenie” klasycznego opisu działania instrumentów lub elementów układów optycznych na język kwantowy.
+* Planowanie eksperymentów, w których muszą być wzięte pod uwagę kwantowe właściwości światła.
+* Różne zastosowania elementów (układów) opisywanych kwantowo (kryptografia kwantowa, komputery kwantowe).
+* „Przyrządy kwantowe”.
+
+1.1. Formalizm Matematyczny: Stany i Operatory
+
+Do precyzyjnego opisu układów kwantowych niezbędny jest solidny aparat matematyczny. W mechanice kwantowej stan fizyczny systemu jest reprezentowany przez wektor stanu w abstrakcyjnej przestrzeni wektorowej, zwanej przestrzenią Hilberta. Z kolei wielkości fizyczne, które można zmierzyć (obserwable), są reprezentowane przez operatory działające na te wektory. Ten formalizm stanowi język, za pomocą którego formułujemy prawa rządzące mikroświatem.
+
+! Pojęcie Stanu Kwantowego
+
+Stan układu jest opisywany za pomocą wektora stanu. W notacji Diraca zapisujemy go jako:
+
+* Wektor ket: |Ψ⟩
+* Wektor bra: ⟨Ψ|
+
+Wektor bra jest sprzężeniem hermitowskim wektora ket:
+\[ \left( \left| \Psi  \right\rangle \right)^{\dagger} = \left\langle \Psi  \right| \text{ oraz } \left( \left\langle \Psi  \right| \right)^{\dagger} = \left| \Psi  \right\rangle \]
+W reprezentacji położeniowej, gdzie stan jest opisywany przez funkcję falową Ψ(r), sprzężenie hermitowskie sprowadza się do sprzężenia zespolonego:
+\[ \left\langle \Psi  \right| = \Psi^* \]
+
+* Iloczyn skalarny dwóch stanów |β⟩ i |γ⟩ definiuje się jako:
+\[ \left\langle \beta | \gamma \right\rangle \]
+  * Natomiast w relacji położeniowej możemy to rozpisać następująco:
+\[ \left\langle \beta | \gamma \right\rangle = \int_{}^{} \Psi_\beta^* \left( \overrightarrow{r} , t \right) \Psi_\gamma \left( \overrightarrow{r} , t \right) d^3 \overrightarrow{r} \]
+* Warunek normalizacji dla każdego wektora stanu opisującego fizyczny układ ma postać:
+\[ \left\langle \gamma | \gamma \right\rangle = 1 \]
+  * Długość wektora normalna
+\[ \left| \gamma \right| = \sqrt{\left\langle \gamma | \gamma \right\rangle } \]
+* Warto zauważyć, że wektory stanu |γ⟩ oraz C|γ⟩ (gdzie C jest dowolną liczbą zespoloną różną od zera) opisują ten sam stan fizyczny, ponieważ fizyczne znaczenie ma kierunek wektora w przestrzeni Hilberta, a nie jego długość czy faza globalna.
+
+! Przestrzeń Hilberta
+
+Przestrzeń Hilberta to złożona przestrzeń wektorowa, która zawiera wszystkie możliwe stany kwantowe danego układu. W tej przestrzeni można zdefiniować bazę, czyli zbiór liniowo niezależnych wektorów, za pomocą których można przedstawić dowolny inny wektor.
+
+Dla bazy policzalnej { |e_n⟩ } wektory bazowe muszą spełniać dwa kluczowe warunki:
+
+* Ortogonalność: Wektory są wzajemnie prostopadłe.
+\[ ⟨e_m|e_n⟩ = δ_{mn} \text{ - gdzie } δ_{mn} \text{ to delta Kroneckera} \]
+* Zupełność: Dowolny wektor stanu w przestrzeni Hilberta można przedstawić jako kombinację liniową wektorów bazy.
+\[ \sum_{}^{}|e_n⟩⟨e_n| = \widehat{I} \text{ - gdzie } \widehat{I} \text{ to operator tożsamościowy} \]
+
+Dowolny unormowany stan |γ⟩ można rozłożyć w tej bazie:
+\[ |γ⟩ = \sum_{}^{} c_n |e_n⟩  \]
+gdzie współczynniki c<sub>n</sub> = ⟨e<sub>n</sub>|γ⟩ są rzutami wektora |γ⟩ na wektory bazy. Z warunku normalizacji wynika, że:
+\[ \left\langle \gamma | \gamma \right\rangle = \sum_{n}^{} \left| c_n \right|^2 = \sum_{n}^{} P_n = 1 \]
+, gdzie |c<sub>n</sub>|<sup>2</sup>  jest interpretowane jako prawdopodobieństwo  P znalezienia układu w stanie |e<sub>n</sub>⟩.
+
+! Operatory Kwantowe
+
+Operator (Ô) to matematyczna reguła, która transformuje jeden wektor stanu w inny:
+\[ \widehat{O} \left| \gamma \right\rangle = \left| \gamma' \right\rangle \]
+
+* Przemienność działań
+\[ C \widehat{O} \left| \gamma \right\rangle = \widehat{O} C \left| \gamma \right\rangle = C \left| \gamma' \right\rangle \]
+* Sprzężenie hermitowskie operatora jest jego uogólnionym sprzężeniem zespolonym.
+\[ \widehat{O}^\dagger \left| \gamma \right\rangle = \left( \left\langle \gamma \right| \widehat{O} \right)^\dagger \Rightarrow \begin{array}{cl} \left( \widehat{O}^\dagger \right)^\dagger = O \\ \left( C \widehat{O} \right)^\dagger = C^* \widehat{O}^\dagger \end{array} \]
+* Operator hermitowski (samosprzężony) to taki, który jest równy swojemu sprzężeniu hermitowskiemu: 
+\[ \widehat{O} = \widehat{O}^\dagger \]
+Wielkościom fizycznym, które można zmierzyć (obserwablom), odpowiadają operatory hermitowskie. Ich wartości oczekiwane są zawsze liczbami rzeczywistymi.
+* Pomiar wielkości fizycznej W w stanie |γ⟩ odpowiada obliczeniu wartości oczekiwanej operatora Ŵ:
+\[ \left\langle W \right\rangle = \left\langle γ|\widehat{W}|γ \right\rangle \]
+
+! Algebra Operatorów
+
+Operatory podlegają określonym działaniom algebraicznym, które mają swoje fizyczne interpretacje.
+
+* Przedstawienie operatora w postaci macierzowej
+\[ \left( \widehat{M} \right)_{ij} = M_{ij} \]
+  * Działanie operatora macierzowego na jakiś stan kwantowy:
+\[ \left( \widehat{M} \left| \Psi \right\rangle \right)_i = \sum_{j}^{} M_{ij} \Psi_j \]
+  * Sprzeżenie hermitowskie operatora macierzowego
+\[ \left( \widehat{M}^\dagger \right)_{ij} = M_{ji}^* \]
+
+* Iloczyn operatorów (Ô<sub>1</sub>Ô<sub>2</sub>) oznacza sekwencję ich działań, przy czym operator po prawej stronie działa jako pierwszy.
+* Sprzężenie hermitowskie iloczynu odwraca kolejność operatorów:
+\[ \left( \widehat{O}_1 \widehat{O}_2 \right)^\dagger = \widehat{O}_2^\dagger \widehat{O}_1^\dagger \]
+* Komutator dwóch operatorów jest zdefiniowany jako:
+\[ \left[ \widehat{O}_1, \widehat{O}_2 \right] = \widehat{O}_1 \widehat{O}_2 - \widehat{O}_2 \widehat{O}_1 \]
+  * Właściwość komutatorów, która wynika z definicji:
+\[ \left[ \widehat{O}_1, \widehat{O}_2 \right] = - \left[ \widehat{O}_2, \widehat{O}_1 \right] \]
+  * Jeśli [Ô<sub>1</sub>, Ô<sub>2</sub>] = 0, operatory komutują, co oznacza, że odpowiadające im wielkości fizyczne mogą być zmierzone jednocześnie z dowolną precyzją.
+  * Jeśli [Ô<sub>1</sub>, Ô<sub>2</sub>] ≠ 0, operatory nie komutują.
+
+* Operator tożsamościowy (jednostkowy):
+\[ \widehat{I} \widehat{O} = \widehat{O} \widehat{I} = \widehat{O} \]
+* Operator odwrotny (Ô<sup>-1</sup>):
+\[ \widehat{O} \widehat{O}^{-1} = \widehat{O}^{-1} \widehat{O} = \widehat{I} \]
+* Operator unitarny (Û):
+\[ \widehat{O}^{-1} = \widehat{O}^{\dagger} \Rightarrow \widehat{O} \widehat{O}^{\dagger} = \widehat{O}^{\dagger} \widehat{O} = \widehat{I} \]
+* Nieoznaczoność (dyspersja) operatora hermitowskiego Ŵ w stanie |γ⟩ jest miarą statystycznego rozrzutu wyników pomiarów i jest dana wzorem:
+\[ \left( \Delta W \right)^2 = \left\langle W^2 \right\rangle - \left\langle W \right\rangle^2 = \left\langle γ|\widehat{W}^2|γ \right\rangle - \left( ⟨γ|\widehat{W}|γ⟩ \right)^2 \]
+
+1.2. Równanie Własne i Zasada Nieoznaczoności
+
+Równanie własne oraz zasada nieoznaczoności to dwa filary mechaniki kwantowej, które fundamentalnie odróżniają ją od fizyki klasycznej. Równanie własne prowadzi do kwantyzacji, czyli istnienia dyskretnych, dozwolonych wartości dla wielkości fizycznych, takich jak energia. Zasada nieoznaczoności nakłada natomiast fundamentalne ograniczenie na precyzję, z jaką możemy jednocześnie poznawać pewne pary wielkości fizycznych.
+
+! Równanie Własne Operatora
+
+Równanie własne dla operatora Γ ma ogólną postać:
+\[ \Gamma \left| \gamma \right\rangle = \gamma \left| \gamma \right\rangle \]
+
+* |γ⟩ to wektor własny operatora Γ.
+* γ to odpowiadająca mu wartość własna (w ogólności liczba zespolona).
+
+Dla operatorów hermitowskich wartości własne są zawsze rzeczywiste i odpowiadają możliwym wynikom pomiaru danej obserwabli. Wektory własne odpowiadające różnym wartościom własnym są wzajemnie ortogonalne. Zjawisko, w którym jednej wartości własnej odpowiada więcej niż jeden liniowo niezależny wektor własny, nazywamy degeneracją.
+Zbiór wszystkich niezdegenerowanych i znormalizowanych wektorów własnych |γ⟩ pewnego operatora może utworzyć bazę w przestrzeni Hilberta:
+\[ \left| e_n \right\rangle = \frac{\left| \gamma_n \right\rangle}{\sqrt{\left\langle \gamma_n | \gamma_n \right\rangle}} \text{ dla n = 0, 1, 2, ...} \]
+
+! Ślad operatora
+
+\[ Tr \left( \widehat{W} \right) = \sum_{n}^{} \left\langle e_n | \widehat{W} | e_n \right\rangle \]
+ Natomiast element macierzowy operatora W możemy zdefiniować jako:
+\[ \widehat{W}_{\beta \gamma} = \left\langle \beta | \widehat{W} | \gamma \right\rangle \]
+
+! Zasada Nieoznaczoności
+
+Zasada nieoznaczoności Heisenberga stanowi, że jeśli dwie wielkości fizyczne są reprezentowane przez niekomutujące operatory hermitowskie Ŵ<sub>1</sub> i Ŵ<sub>2</sub>, gdzie
+\[ \left[ \widehat{W}_1, \widehat{W}_2 \right] = i \widehat{C} \text{ - gdzie } \widehat{C} \text{ jest operatorem hermitowskim} \]
+to iloczyn ich nieoznaczoności w dowolnym stanie |γ⟩ jest ograniczony z dołu:
+\[ \Delta W_1 \cdot \Delta W_2 \ge \frac{1}{2} \left| C_\gamma \right| \text{ - gdzie } C_\gamma = \left\langle \gamma | C | \gamma \right\rangle \]
+gdzie C jest wartością oczekiwaną operatora Ĉ.
+
+! Najbardziej znane przykłady tej zasady to:
+* Położenie i pęd:
+  * Operatory definiuje się:
+\[ \widehat{x} = x \text{ oraz } \widehat{p}_x = -i \hbar \frac{\partial }{\partial x} \]
+  * Definicja komutatora:
+\[ \left[ \widehat{x} , \widehat{p}_x \right] = \widehat{x} \widehat{p}_x - \widehat{p}_x \widehat{x} \]
+    * Obliczam pierwszy składnik:
+\[ \left( \widehat{x} \widehat{p}_x \right) \psi (x) = \widehat{x} \left( -i \hbar \frac{\partial \psi (x)}{\partial x} \right) = -i \hbar x \frac{\partial \psi (x)}{\partial x} \]
+    * Obliczam drugi składnik:
+\[ \left( \widehat{p}_x \widehat{x} \right) \psi (x) = -i \hbar \frac{\partial }{\partial x} \left( \widehat{x} \psi (x) \right) = -i \hbar \frac{\partial }{\partial x} \left( x \psi (x) \right) = -i \hbar \left( \psi (x) + x \frac{\partial \psi (x)}{\partial x} \right) \]
+    * Obliczam różnice składników:
+\[ \left( \widehat{x} \widehat{p}_x - \widehat{p}_x \widehat{x} \right) \psi (x) = -i \hbar x \frac{\partial \psi (x)}{\partial x} + i \hbar \left( \psi (x) + x \frac{\partial \psi (x)}{\partial x} \right) = i \hbar \psi (x) \]
+  * Zatem:
+\[ \left[ \widehat{x} , \widehat{p}_x \right] = i \hbar \widehat{I} \]
+\[ i \widehat{C} = i \hbar \Rightarrow \widehat{C} = \hbar \]
+  * Ostateczny wynik:
+\[ \Delta x \cdot \Delta p_x \ge \frac{\hbar}{2} \]
+
+* Czas i energia:
+\[ \Delta t \cdot \Delta E \ge \frac{\hbar}{2} \]
+\[ \left[ \widehat{t} , \widehat{E} \right] = -i \hbar \widehat{I} \]
+
+1.3. Stany Mieszane i Macierz Gęstości
+
+Dotychczasowy opis zakładał, że stan kwantowy układu jest w pełni znany i może być opisany przez pojedynczy wektor stanu (tzw. stan czysty). W praktyce często mamy do czynienia z sytuacją, w której nasza wiedza o układzie jest niepełna. W takich przypadkach mówimy o stanie mieszanym, a do jego opisu wykorzystujemy potężniejsze narzędzie – macierz gęstości.
+
+Stan mieszany pojawia się, gdy pewne cechy stanu są nieznane lub gdy mamy do czynienia ze statystyczną mieszaniną różnych stanów kwantowych, których nie potrafimy rozróżnić. W takiej sytuacji nie możemy opisać układu pojedynczym wektorem stanu.
+
+Narzędziem matematycznym służącym do opisu zarówno stanów czystych, jak i mieszanych, jest operator (macierz) gęstości ρ̂. Dla układu, który z prawdopodobieństwem P_n znajduje się w jednym ze stanów bazowych |e_n⟩, macierz gęstości definiuje się jako:
+
+ρ̂ = Σ P_n |e_n⟩⟨e_n|
+
+* Normalizacja: Ślad macierzy gęstości jest zawsze równy jedności. Tr(ρ̂) = Σ P_n = 1
+* Wartość oczekiwana operatora Ŵ jest obliczana jako: ⟨W⟩ = Tr(ρ̂Ŵ)
+* Dla stanu czystego |Ψ⟩, macierz gęstości przyjmuje prostą formę rzutnika na ten stan: ρ̂ = |Ψ⟩⟨Ψ|
+
+1.4. Zastosowanie Formalizmu: Przykłady Rachunkowe
+
+Aby ugruntować zrozumienie teoretycznych koncepcji, przeanalizujmy kilka konkretnych przykładów rachunkowych. Poniższe zadania ilustrują praktyczne zastosowanie formalizmu przestrzeni Hilberta, operatorów i macierzy gęstości.
+
+Problem 1: Zmiana Bazy w Przestrzeni Hilberta
+
+Zadanie: W 2-wymiarowej przestrzeni Hilberta wektory |e₁⟩ i |e₂⟩ tworzą bazę ortonormalną. Nowe wektory bazy zdefiniowano jako |f₁⟩ = cos(α)|e₁⟩ + sin(α)|e₂⟩ oraz |f₂⟩ = c₁|e₁⟩ + c₂|e₂⟩. Należy znaleźć rzeczywiste współczynniki c₁ i c₂, dla których nowa baza { |f₁⟩, |f₂⟩ } jest również ortonormalna, a następnie wyrazić wektory starej bazy przez nową.
+
+Rozwiązanie:
+
+1. Warunek normalizacji dla |f₂⟩: ⟨f₂|f₂⟩ = ⟨c₁e₁+c₂e₂|c₁e₁+c₂e₂⟩ = c₁²⟨e₁|e₁⟩ + c₂²⟨e₂|e₂⟩ = c₁² + c₂² = 1
+2. Warunek ortogonalności |f₁⟩ i |f₂⟩: ⟨f₁|f₂⟩ = ⟨cos(α)e₁+sin(α)e₂|c₁e₁+c₂e₂⟩ = c₁cos(α) + c₂sin(α) = 0
+3. Rozwiązanie układu równań: Z powyższego układu równań otrzymujemy jedno z możliwych rozwiązań: c₁ = -sin(α) c₂ = cos(α)
+4. Wyrażenie starej bazy w nowej: Odwracając relacje, otrzymujemy: |e₁⟩ = cos(α)|f₁⟩ - sin(α)|f₂⟩ |e₂⟩ = sin(α)|f₁⟩ + cos(α)|f₂⟩
+5. Dowód zupełności: Aby potwierdzić, że nowa baza jest zupełna, pokazujemy, że |f₁⟩⟨f₁| + |f₂⟩⟨f₂| = Î. Podstawiamy wyrażenia na |e₁⟩ i |e₂⟩ do warunku zupełności starej bazy |e₁⟩⟨e₁| + |e₂⟩⟨e₂| = Î: (cosα|f₁⟩-sinα|f₂⟩)(cosα⟨f₁|-sinα⟨f₂|) + (sinα|f₁⟩+cosα|f₂⟩)(sinα⟨f₁|+cosα⟨f₂|) = = cos²α|f₁⟩⟨f₁| - cosαsinα|f₁⟩⟨f₂| - sinαcosα|f₂⟩⟨f₁| + sin²α|f₂⟩⟨f₂| + + sin²α|f₁⟩⟨f₁| + sinαcosα|f₁⟩⟨f₂| + cosαsinα|f₂⟩⟨f₁| + cos²α|f₂⟩⟨f₂| Po redukcji wyrazów mieszanych i pogrupowaniu pozostałych otrzymujemy: = (cos²α+sin²α)|f₁⟩⟨f₁| + (sin²α+cos²α)|f₂⟩⟨f₂| = |f₁⟩⟨f₁| + |f₂⟩⟨f₂| Co dowodzi, że |f₁⟩⟨f₁| + |f₂⟩⟨f₂| = Î.
+
+Problem 2: Wartości i Wektory Własne Operatora
+
+Zadanie: Znaleźć wartości własne i znormalizowane wektory własne operatora hermitowskiego Ŵ danego macierzą: Ŵ = [[λ_l sin²(φ) + λ_u cos²(φ), (λ_u - λ_l)sin(φ)cos(φ)], [(λ_u - λ_l)sin(φ)cos(φ), λ_l cos²(φ) + λ_u sin²(φ)]]
+
+Rozwiązanie:
+
+1. Równanie charakterystyczne: Wartości własne w znajdujemy, rozwiązując równanie Det(Ŵ - wÎ) = 0. Obliczmy jawnie wyznacznik: Det([[λ_l sin²φ + λ_u cos²φ - w, (λ_u-λ_l)sinφcosφ], [(λ_u-λ_l)sinφcosφ, λ_l cos²φ + λ_u sin²φ - w]]) = 0 (λ_l sin²φ + λ_u cos²φ - w)(λ_l cos²φ + λ_u sin²φ - w) - (λ_u - λ_l)²sin²φcos²φ = 0 Po wymnożeniu i uporządkowaniu wyrazów względem potęg w, otrzymujemy: w² - w(λ_l(sin²φ+cos²φ) + λ_u(cos²φ+sin²φ)) + λ_lλ_u(sin⁴φ+cos⁴φ) + (λ_l²+λ_u²)sin²φcos²φ - (λ_u-λ_l)²sin²φcos²φ = 0 Upraszczając dalej, dochodzimy do równania kwadratowego: w² - w(λ_l + λ_u) + λ_lλ_u = 0 Które można zapisać jako: (w - λ_l)(w - λ_u) = 0. Stąd wartości własne to w = λ_l oraz w = λ_u.
+2. Wektor własny dla w = λ_l: Rozwiązujemy równanie (Ŵ - λ_l Î)|x_l⟩ = 0. Prowadzi to do układu równań na składowe wektora, z którego wynika, że znormalizowany wektor własny ma postać: |x_l⟩ = [[-sin(φ)], [cos(φ)]]
+3. Wektor własny dla w = λ_u: Postępując analogicznie, dla w = λ_u otrzymujemy znormalizowany wektor własny: |x_u⟩ = [[cos(φ)], [sin(φ)]]
+4. Reprezentacja spektralna: Operator Ŵ można teraz zapisać w swojej bazie własnej jako: Ŵ = λ_l |x_l⟩⟨x_l| + λ_u |x_u⟩⟨x_u|
+
+Problem 3: Macierz Gęstości i Nieoznaczoność
+
+Zadanie: Dla stanu mieszanego opisanego macierzą gęstości ρ̂ = [[P, 0], [0, 1-P]] (gdzie 0 ≤ P ≤ 1) znaleźć nieoznaczoność ΔN operatora inwersji N̂ = [[1, 0], [0, -1]]. Dla jakiej wartości P nieoznaczoność jest maksymalna?
+
+Rozwiązanie:
+
+1. Formuła na nieoznaczoność: W formalizmie macierzy gęstości nieoznaczoność operatora M̂ dana jest wzorem: (ΔM)² = Tr(M̂²ρ̂) - (Tr(M̂ρ̂))²
+2. Obliczenie wartości średnich:
+  * Średnia inwersja: ⟨N⟩ = Tr(N̂ρ̂) = Tr([[1,0],[0,-1]] [[P,0],[0,1-P]]) = Tr([[P,0],[0,-(1-P)]]) = P - (1-P) = 2P - 1.
+  * Średnia z kwadratu operatora: Ponieważ N̂² = Î, mamy ⟨N²⟩ = Tr(N̂²ρ̂) = Tr(Îρ̂) = Tr(ρ̂) = 1.
+3. Obliczenie nieoznaczoności: Podstawiając wyniki do wzoru, otrzymujemy: (ΔN)² = 1 - (2P - 1)² = 1 - (4P² - 4P + 1) = 4P - 4P² = 4P(1 - P)
+4. Maksymalna nieoznaczoność: Nieoznaczoność jest maksymalna, gdy funkcja f(P) = 4P(1-P) osiąga maksimum. Dzieje się tak dla P_max = 1/2. Dla tej wartości maksymalna nieoznaczoność wynosi (ΔN)² = 1, a średnia inwersja ⟨N⟩ = 0.
+
+Przedstawione przykłady pokazują, jak abstrakcyjny formalizm matematyczny przekłada się na konkretne, obliczalne wielkości fizyczne, stanowiąc potężne narzędzie analizy układów kwantowych. Zrozumienie statycznych właściwości tych układów jest punktem wyjścia do analizy ich zachowania w czasie.
+
+
+2. Ewolucja Układów Kwantowych
+
+Poprzedni rozdział opisywał stany i wielkości fizyczne w określonej chwili. Teraz zajmiemy się dynamiką, czyli ewolucją układów kwantowych w czasie. Centralnym prawem rządzącym tą ewolucją jest równanie Schrödingera. Kluczową rolę odgrywa w nim operator Hamiltona (Hamiltonian), który odpowiada całkowitej energii układu.
+
+Zależne od czasu równanie Schrödingera ma postać: iħ ∂/∂t |Ψ(r,t)⟩ = Ĥ|Ψ(r,t)⟩ gdzie Ĥ to Hamiltonian układu.
+
+Hamiltonian Niezależny od Czasu
+
+W wielu ważnych fizycznie przypadkach Hamiltonian Ĥ nie zależy jawnie od czasu. Wówczas formalne rozwiązanie równania Schrödingera można zapisać jako: |Ψ(r,t)⟩ = exp(-iĤt/ħ)|Ψ(r,0)⟩
+
+Wprowadzamy tu operator ewolucji (propagator) Û(t) = exp(-iĤt/ħ), który przekształca stan początkowy |Ψ(r,0)⟩ w stan w chwili t. Operator ten ma następujące właściwości:
+
+* Jest unitarny: Û†(t) = Û⁻¹(t), co zapewnia zachowanie normalizacji wektora stanu w czasie.
+* Jego odwrotność Û⁻¹(t) = Û(-t) opisuje ewolucję wstecz w czasie.
+* Jest niehermitowski.
+
+Dla stanów o określonej, stałej energii E (stanów stacjonarnych), ewolucja sprowadza się do mnożenia przez czynnik fazowy. Stany te są rozwiązaniami niezależnego od czasu równania Schrödingera: Ĥ|Ψ(r)⟩ = E|Ψ(r)⟩
+
+Obraz Schrödingera a Obraz Heisenberga
+
+Ewolucję czasową w mechanice kwantowej można opisywać na dwa równoważne sposoby, zwane obrazami.
+
+Obraz Schrödingera	Obraz Heisenberga
+Wektory stanu ewoluują w czasie: `	Ψ(t)⟩ = Û(t)
+Operatory są stałe w czasie (chyba że jawnie zależą od t).	Operatory ewoluują w czasie: Ŵ(t)_H = Û†(t)Ŵ_SÛ(t).
+
+W obrazie Heisenberga dynamika układu jest opisana przez równanie ruchu Heisenberga dla operatora Ŵ(t): dŴ(t)/dt = (i/ħ)[Ĥ, Ŵ(t)]
+
+2.1. Kwantowy Oscylator Harmoniczny (QOH): Wprowadzenie
+
+Kwantowy oscylator harmoniczny (QOH) to jeden z najważniejszych modeli w całej fizyce kwantowej. Jego znaczenie wynika z faktu, że stanowi on doskonałe przybliżenie dla wielu różnorodnych systemów fizycznych w pobliżu punktu równowagi, takich jak drgania atomów w cząsteczkach czy drgania sieci krystalicznej. Co kluczowe dla fotoniki, model QOH jest podstawą do kwantowego opisu pola elektromagnetycznego.
+
+Klasyczny Oscylator Harmoniczny
+
+Przypomnijmy, że dla klasycznego oscylatora o masie m i częstości drgań ω, całkowita energia, opisana funkcją Hamiltona, jest sumą energii kinetycznej i potencjalnej: H_kl = p²/2m + (mω²x²)/2 Ewolucja czasowa położenia x i pędu p jest opisana przez kanoniczne równania Hamiltona: dx/dt = ∂H_kl/∂p = p/m dp/dt = -∂H_kl/∂x = -mω²x
+
+Przejście do Modelu Kwantowego
+
+Kwantyzacja polega na zastąpieniu klasycznych wielkości fizycznych odpowiadającymi im operatorami kwantowymi: x → x̂, p → p̂, H_kl → Ĥ.
+
+* Hamiltonian QOH ma postać: Ĥ = p̂²/2m + (mω²x̂²)/2
+* W obrazie Schrödingera i reprezentacji położeniowej operatory położenia i pędu działają następująco: x̂|Ψ⟩ = x|Ψ⟩ p̂|Ψ⟩ = -iħ(∂/∂x)|Ψ⟩
+* Fundamentalna relacja komutacyjna między tymi operatorami wynosi: [x̂, p̂] = iħÎ
+* Z tej relacji bezpośrednio wynika zasada nieoznaczoności Heisenberga: ΔxΔp ≥ ħ/2
+
+2.2. Operatory Anihilacji i Kreacji
+
+Bezpośrednie rozwiązanie równania własnego dla hamiltonianu QOH jest matematycznie skomplikowane. Wygodniejszym podejściem jest wprowadzenie dwóch nowych, niehermitowskich operatorów, które znacząco upraszczają problem poprzez diagonalizację hamiltonianu. Są to operatory anihilacji i kreacji.
+
+Definiujemy operator anihilacji (â) i operator kreacji (â†) jako liniowe kombinacje operatorów położenia x̂ i pędu p̂: â = √(mω/2ħ) x̂ + i/√(2mħω) p̂ â† = √(mω/2ħ) x̂ - i/√(2mħω) p̂
+
+Kluczowe właściwości tych operatorów:
+
+* Są bezwymiarowe.
+* Są niehermitowskie.
+* Są wzajemnie sprzężone hermitowsko: (â)† = â†.
+* Ich komutator wynosi: [â, â†] = Î. (W niektórych notacjach, dla uproszczenia, operator tożsamościowy jest pomijany, a komutator zapisuje się jako [â, â†] = 1).
+
+Wyrażając Ĥ za pomocą â i â†, otrzymujemy: Ĥ = (ħω/2)(ââ† + â†â) = ħω(â†â + 1/2)
+
+Wprowadzamy operator liczby wzbudzeń (Number Operator), N̂ = â†â.
+
+* Hamiltonian w nowej postaci: Ĥ = ħω(N̂ + 1/2)
+* Operator N̂ jest hermitowski i komutuje z hamiltonianem [N̂, Ĥ] = 0, co oznacza, że liczba wzbudzeń jest wielkością zachowaną w czasie (stałą ruchu).
+
+W obrazie Heisenberga ewolucja czasowa operatorów anihilacji i kreacji jest prosta: â(t) = â(0)exp(-iωt) â†(t) = â†(0)exp(iωt)
+
+2.3. Stany FOCKA (Stany Liczby Wzbudzeń)
+
+Stany Focka (lub stany liczby wzbudzeń) to stany własne operatora liczby wzbudzeń N̂, a co za tym idzie – również stany własne hamiltonianu QOH. Reprezentują one stany oscylatora o dokładnie określonej, skwantowanej energii. Tworzą one naturalną i wygodną bazę do opisu układów kwantowych, w których liczba kwantów energii (np. fotonów) jest dobrze zdefiniowana.
+
+* Równanie własne dla operatora liczby wzbudzeń: N̂|n⟩ = n|n⟩, gdzie n = 0, 1, 2, ... to nieujemne liczby całkowite.
+* Wartości własne energii: E_n = ħω(n + 1/2)
+* Działanie operatorów drabinkowych na stany Focka:
+  * â|n⟩ = √n |n-1⟩ (operator anihilacji "niszczy" jeden kwant energii)
+  * â†|n⟩ = √(n+1) |n+1⟩ (operator kreacji "tworzy" jeden kwant energii)
+* Stan podstawowy |0⟩: Jest to stan o najniższej możliwej energii E_min = ħω/2, zwanej energią zerową. Jest on definiowany przez warunek: â|0⟩ = 0
+* Dowolny stan Focka |n⟩ można wygenerować, działając n-krotnie operatorem kreacji na stan podstawowy: |n⟩ = ( (â†)ⁿ / √n! ) |0⟩
+* Zbiór stanów Focka { |n⟩ } dla n = 0, 1, 2, ... tworzy ortonormalną i zupełną bazę w przestrzeni Hilberta oscylatora.
+
+2.4. Wielkości Fizyczne w Stanach Focka
+
+Przeanalizujmy teraz właściwości fizyczne kwantowego oscylatora harmonicznego, gdy znajduje się on w stanie o określonej energii, czyli w stanie Focka |n⟩. Porównanie z klasycznym oscylatorem ujawnia fundamentalne różnice.
+
+Operatory położenia x̂ i pędu p̂ można wyrazić przez operatory drabinkowe: x̂ = √(ħ/2mω) (â + â†) p̂ = i√(mħω/2) (â† - â)
+
+* Wartości oczekiwane położenia i pędu w stanie |n⟩ są równe zeru: ⟨x⟩_n = ⟨n|x̂|n⟩ = 0 ⟨p⟩_n = ⟨n|p̂|n⟩ = 0 Oznacza to, że średnie położenie oscylatora kwantowego w stanie stacjonarnym to pozycja równowagi.
+* Nieoznaczoności (odchylenia standardowe) wynoszą: Δx_n = √(ħ/2mω) √(2n + 1) Δp_n = √(mħω/2) √(2n + 1)
+* Zasada nieoznaczoności jest spełniona: Δx_n ⋅ Δp_n = ħ(n + 1/2) ≥ ħ/2
+* Funkcja falowa stanu podstawowego Ψ₀(x) to gaussowska paczka falowa: Ψ₀(x) = (1/(πσ²))^(1/4) exp(-x²/2σ²), gdzie σ² = ħ/mω. Oscylator kwantowy, nawet w stanie o najniższej energii, wykazuje "drgania zerowe" o amplitudzie Δx_0, co jest bezpośrednią konsekwencją zasady nieoznaczoności.
+* Ewolucja czasowa stanu Focka |n(t)⟩ = exp(-iE_n t/ħ)|n(0)⟩ polega jedynie na pojawieniu się oscylującego czynnika fazowego. Wartości oczekiwane położenia i pędu pozostają równe zeru, co oznacza, że stany Focka nie opisują oscylacji w sensie klasycznym.
+
+2.5. Zastosowanie Formalizmu: Przykłady Rachunkowe
+
+Poniższy przykład ugruntowuje wiedzę na temat algebraicznych manipulacji operatorami kreacji i anihilacji w bazie stanów Focka.
+
+Problem: Analiza Operatora w Bazie Focka
+
+Zadanie: Rozważmy operator Â = Σ_m √(m+1) |m⟩⟨m+1| działający w nieskończenie wymiarowej przestrzeni Hilberta, w której bazę tworzą stany Focka |m⟩.
+
+A. Wartość Oczekiwana Należy obliczyć wartość oczekiwaną ⟨A⟩ = ⟨χ|Â|χ⟩ w stanie |χ⟩ = exp(-|α|²/2) Σ_n (αⁿ/√n!) |n⟩, gdzie α jest liczbą zespoloną.
+
+* Rozwiązanie: Obliczenie wartości oczekiwanej wykonujemy krok po kroku. Najpierw zadziałajmy operatorem Â na ket |χ⟩: Â|χ⟩ = (Σ_m √(m+1)|m⟩⟨m+1|) (exp(-|α|²/2) Σ_n (αⁿ/√n!)|n⟩) Dzięki ortonormalności bazy ⟨m+1|n⟩ = δ_{m+1, n}, co implikuje m = n-1. Suma po m redukuje się, dając: Â|χ⟩ = exp(-|α|²/2) Σ_n (αⁿ/√n!) √(n) |n-1⟩ Teraz obliczamy iloczyn skalarny ⟨χ| z powyższym wektorem: ⟨χ|Â|χ⟩ = (exp(-|α|²/2) Σ_l (α*^l/√l!) ⟨l|) (exp(-|α|²/2) Σ_n (αⁿ/√n!) √n |n-1⟩) = exp(-|α|²) Σ_l Σ_n ( (α*^l αⁿ) / (√l! √n!) ) √n ⟨l|n-1⟩ Warunek ortonormalności ⟨l|n-1⟩ = δ_{l, n-1} oznacza, że l=n-1. Podstawiając to do sumy: = exp(-|α|²) Σ_n ( (α*^{n-1} αⁿ) / (√(n-1)! √n!) ) √n Upraszczając √n! = √n √(n-1)! i redukując wyrazy: = exp(-|α|²) Σ_n ( α*^{n-1} αⁿ / (n-1)! ) Wyciągając α* przed sumę i zmieniając indeks sumowania k=n-1: = α* exp(-|α|²) Σ_{k=0}^∞ ( (α*α)^k / k! ) = α* exp(-|α|²) Σ_{k=0}^∞ ( |α|²^k / k! ) Suma jest rozwinięciem w szereg Taylora funkcji exp(|α|²), zatem: ⟨A⟩ = α* exp(-|α|²) exp(|α|²) = α*
+
+B. Komutator Należy obliczyć komutator [Â, Â†].
+
+* Rozwiązanie: Z definicji operatora Â wynika, że jego sprzężenie hermitowskie to Â† = Σ_n √(n+1) |n+1⟩⟨n|.
+  1. Obliczamy iloczyn ÂÂ†: ÂÂ† = (Σ_m √(m+1)|m⟩⟨m+1|) (Σ_n √(n+1)|n+1⟩⟨n|) = Σ_m (m+1)|m⟩⟨m|
+  2. Obliczamy iloczyn Â†Â: Â†Â = (Σ_n √(n+1)|n+1⟩⟨n|) (Σ_m √(m+1)|m⟩⟨m+1|) = Σ_n (n+1)|n+1⟩⟨n+1|
+  3. Obliczamy komutator [Â, Â†] = ÂÂ† - Â†Â. W wyrażeniu na Â†Â dokonujemy zmiany indeksu sumowania, podstawiając m = n+1. Oznacza to, że n = m-1, a suma po m będzie przebiegać od 1 do nieskończoności. Â†Â = Σ_{m=1}^∞ m|m⟩⟨m|
+  4. Teraz możemy wykonać odejmowanie: [Â, Â†] = Σ_{m=0}^∞ (m+1)|m⟩⟨m| - Σ_{m=1}^∞ m|m⟩⟨m|
+  5. Wyodrębniamy składnik m=0 z pierwszej sumy: [Â, Â†] = (0+1)|0⟩⟨0| + Σ_{m=1}^∞ (m+1)|m⟩⟨m| - Σ_{m=1}^∞ m|m⟩⟨m| = |0⟩⟨0| + Σ_{m=1}^∞ (m+1-m)|m⟩⟨m| = |0⟩⟨0| + Σ_{m=1}^∞ |m⟩⟨m|
+  6. Ostatecznie, suma rzutników na wszystkie stany bazy jest, z relacji zupełności, równa operatorowi tożsamościowemu: [Â, Â†] = Σ_{m=0}^∞ |m⟩⟨m| = Î
+
+Stany Focka, mimo że stanowią wygodną bazę energetyczną, nie oddają klasycznego obrazu oscylacji. W kolejnym rozdziale wprowadzimy inny rodzaj stanów – stany koherentne – które znacznie lepiej przybliżają zachowanie klasycznej fali.
+
+3. Stany Koherentne i Wstęp do Kwantyzacji Pola Stany Koherentne |α⟩
+
+W przeciwieństwie do stanów Focka, które opisują cząstkową naturę pola (określona liczba kwantów), stany koherentne |α⟩ to szczególna klasa stanów kwantowych oscylatora harmonicznego, które najlepiej oddają jego naturę falową. Wykazują one zachowanie niezwykle zbliżone do klasycznej, stabilnej fali o dobrze określonej amplitudzie i fazie.
+
+Stan koherentny |α⟩ jest zdefiniowany jako stan własny operatora anihilacji â: â|α⟩ = α|α⟩ gdzie wartość własna α jest dowolną liczbą zespoloną.
+
+Rozkład w Bazie Focka
+
+Stan koherentny można przedstawić jako superpozycję wszystkich stanów Focka: |α⟩ = exp(-|α|²/2) Σ (αⁿ/√n!) |n⟩ (dla n od 0 do ∞)
+
+Z tej postaci wynikają ważne wnioski:
+
+* Stan koherentny nie ma określonej liczby kwantów energii; jest superpozycją stanów o różnej liczbie wzbudzeń.
+* Prawdopodobieństwo P(n) = |⟨n|α⟩|² znalezienia oscylatora w n-tym stanie Focka jest dane rozkładem Poissona: P(n) = exp(-|α|²) (|α|²ⁿ / n!)
+* Jedynym stanem, który jest jednocześnie stanem Focka i stanem koherentnym, jest stan podstawowy |0⟩, który odpowiada α = 0.
+
+Ewolucja Czasowa
+
+Ewolucja stanu koherentnego jest niezwykle prosta. Stan koherentny pozostaje koherentny w każdej chwili czasu: |α(t)⟩ = |α(0)exp(-iωt)⟩ Oznacza to, że jego indeks α po prostu obraca się w płaszczyźnie zespolonej z częstością ω, co odpowiada klasycznej ewolucji fazy fali.
+
+3.1. Własności Fizyczne Stanów Koherentnych
+
+Analiza wielkości fizycznych dla oscylatora w stanie koherentnym pokazuje, dlaczego stany te są uznawane za "najbardziej klasyczne" stany kwantowe.
+
+* Średnia liczba wzbudzeń i jej nieoznaczoność: ⟨n⟩_α = ⟨α|N̂|α⟩ = |α|² Δn_α = |α|
+* Wartości oczekiwane położenia i pędu ewoluują w czasie w sposób sinusoidalny, dokładnie tak jak dla klasycznego oscylatora: ⟨x(t)⟩_α = √(2ħ/mω) |α| cos(θ - ωt) ⟨p(t)⟩_α = -√(2mħω) |α| sin(θ - ωt) (gdzie α = |α|exp(iθ))
+* Nieoznaczoności położenia i pędu są stałe w czasie i niezależne od α: Δx_α = √(ħ/2mω) Δp_α = √(mħω/2)
+* Zasada nieoznaczoności: Stany koherentne są stanami o minimalnej nieoznaczoności, co oznacza, że "nasycają" nierówność Heisenberga: Δx_α ⋅ Δp_α = ħ/2
+
+Interpretacja Klasyczna
+
+Funkcja falowa stanu koherentnego Ψ_α(x) ma postać gaussowskiej paczki falowej, której środek wykonuje w przestrzeni harmoniczne drgania, dokładnie tak jak klasyczna cząstka, a jej kształt pozostaje niezmieniony.
+
+3.2. Porównanie Stanów Focka i Stanów Koherentnych
+
+Poniższa tabela zestawia kluczowe właściwości obu klas stanów, podkreślając ich komplementarny charakter w opisie kwantowego oscylatora.
+
+| Właściwość | Stany Focka (|n⟩) | Stany Koherentne (|α⟩) | | :--- | :--- | :--- | | Równanie własne | N̂|n⟩ = n|n⟩ | â|α⟩ = α|α⟩ | | Wartości własne | n = 0, 1, 2, ... (liczby całkowite) | α (dowolne liczby zespolone) | | Ortogonalność | ⟨m|n⟩ = δ_mn (są ortogonalne) | Nie są ortogonalne | | Zupełność | Σ|n⟩⟨n| = Î (tworzą bazę) | (1/π)∫d²α |α⟩⟨α| = Î (nadzupełne, co oznacza, że wektory nie są liniowo niezależne) | | Ewolucja | |n(t)⟩ = exp(-i(n+1/2)ωt)|n⟩ | |α(t)⟩ = |αexp(-iωt)⟩ | | Średnia energia | E_n = ħω(n+1/2) | ⟨E⟩_α = ħω(|α|²+1/2) | | Nieoznaczoność energii | ΔE_n = 0 (dokładnie określona) | ΔE_α = ħω|α| (nieokreślona) | | Zasada nieoznaczoności | ΔxΔp = ħ(n+1/2) | ΔxΔp = ħ/2 (minimalna) | | Część wspólna | Stan podstawowy |0⟩ | Stan podstawowy |0⟩ (dla α=0) |
+
+3.3. Operatory Kwadratury i Operator Przesunięcia
+
+Do opisu stanów koherentnych i kwantyzacji pola elektromagnetycznego wprowadza się dodatkowe, użyteczne operatory.
+
+Operatory Położenia i Pędu w Wersji Bezwymiarowej
+
+Definiujemy bezwymiarowe, hermitowskie operatory X̂ i P̂, które są analogami położenia i pędu:
+
+* X̂ = (â + â†) / √2
+* P̂ = (â - â†) / (i√2) Ich komutator wynosi [X̂, P̂] = i.
+
+W płaszczyźnie fazowej (X̂, P̂) stan kwantowy można przedstawić jako obszar nieoznaczoności:
+
+* Stan Focka |n⟩: Ma postać pierścienia, co odzwierciedla zerowe wartości średnie ⟨X⟩_n = ⟨P⟩_n = 0, ale niezerową, rosnącą z n nieoznaczoność. Faza jest całkowicie nieokreślona.
+* Stan koherentny |α⟩: Ma postać koła o minimalnym promieniu, przesuniętego z początku układu współrzędnych do punktu (⟨X⟩_α, ⟨P⟩_α). Odzwierciedla to dobrze zdefiniowaną amplitudę i fazę.
+
+Operatory Kwadratury
+
+Operatory X̂ i P̂ są często nazywane operatorami kwadratury i oznaczane odpowiednio X̂₁ i X̂₂. Operator anihilacji można rozłożyć na te składowe: â = (X̂₁ + iX̂₂) / √2.
+
+Znajdują one bezpośrednie zastosowanie w opisie jednomodowego pola elektrycznego, które można wyrazić jako: Ê(r,t) ∝ X̂₁ cos(k·r - ωt + φ) + X̂₂ sin(k·r - ωt + φ) Interpretuje się je jako amplitudy dwóch składowych pola, przesuniętych w fazie o 90°.
+
+Operator Przesunięcia
+
+Każdy stan koherentny można otrzymać, działając na stan podstawowy |0⟩ operatorem przesunięcia D̂(α): |α⟩ = D̂(α)|0⟩
+
+Operator ten jest unitarny (D̂†(α) = D̂⁻¹(α) = D̂(-α)) i ma ważną właściwość "przesuwania" operatora anihilacji: D̂†(α)âD̂(α) = â + α
+
+3.4. Wstęp do Kanonicznego Opisu Pola Elektromagnetycznego
+
+Przejście od abstrakcyjnego modelu kwantowego oscylatora harmonicznego do kwantowego opisu światła polega na potraktowaniu każdego modu (fali płaskiej) pola elektromagnetycznego jako niezależnego oscylatora harmonicznego.
+
+Klasyczne pole elektryczne E(r,t) i magnetyczne B(r,t) można przedstawić jako superpozycję fal płaskich (transformację Fouriera): E(r,t) = ∫ E(k,t) exp(ik·r) d³k
+
+Warunek fizyczny, że pola E i B muszą być rzeczywiste, prowadzi do modyfikacji tego zapisu, wymagając dodania składnika sprzężonego zespolonego (c.c.): E(r,t) = ∫ [ E(k,t) exp(ik·r) + c.c. ] d³k
+
+Fale płaskie exp(ik·r) tworzą zbiór funkcji bazowych, które spełniają warunki ortogonalności i zupełności (wyrażone za pomocą delty Diraca), co pozwala jednoznacznie rozłożyć w tej bazie dowolne pole.
+
+3.5. Zastosowanie Formalizmu: Przykłady Rachunkowe
+
+Ostatni przykład pokazuje, jak zastosować poznane koncepcje – stany Focka i macierz gęstości – do obliczenia nieoznaczoności mierzalnej wielkości fizycznej, jaką jest pole elektryczne, w stanie mieszanym.
+
+Problem: Nieoznaczoność Pola Elektrycznego w Stanie Mieszanym
+
+Zadanie: Stan niekoherentny opisany jest macierzą gęstości ρ̂ = Σ P_n |n⟩⟨n|. Wiadomo, że dla operatora jednomodowego pola elektrycznego Ê zachodzą relacje: ⟨n|Ê|n⟩ = 0 oraz ⟨n|Ê²|n⟩ = (n+1/2) E₀²/2. Należy znaleźć nieoznaczoność pola ΔE w tym stanie.
+
+Rozwiązanie:
+
+1. Nieoznaczoność w stanach czystych: Najpierw obliczmy nieoznaczoność dla stanów bazowych |0⟩ i |1⟩:
+  * Dla |0⟩: (ΔE)²₀ = ⟨0|Ê²|0⟩ - (⟨0|Ê|0⟩)² = (1/2) E₀²/2 - 0 = E₀²/4. Stąd ΔE₀ = E₀/2.
+  * Dla |1⟩: (ΔE)²₁ = ⟨1|Ê²|1⟩ - (⟨1|Ê|1⟩)² = (3/2) E₀²/2 - 0 = 3E₀²/4. Stąd ΔE₁ = √3 E₀/2.
+2. Średnia wartość pola w stanie mieszanym: ⟨E⟩ = Tr(ρ̂Ê) = Σ_n P_n ⟨n|Ê|n⟩ = Σ_n P_n · 0 = 0
+3. Średnia wartość kwadratu pola: ⟨E²⟩ = Tr(ρ̂Ê²) = Σ_n P_n ⟨n|Ê²|n⟩ = Σ_n P_n (n+1/2) E₀²/2
+4. Nieoznaczoność w stanie mieszanym: Ponieważ ⟨E⟩ = 0, nieoznaczoność (ΔE)² jest równa ⟨E²⟩: (ΔE)² = (E₀²/2) Σ P_n (n + 1/2)
+
+Ostateczny wynik pokazuje, jak nieoznaczoność pola elektrycznego w stanie mieszanym zależy od statystycznego rozkładu P_n prawdopodobieństw obsadzenia poszczególnych stanów energetycznych.
+
+Przedstawione notatki prowadzą nas przez intelektualną podróż od fundamentalnych, abstrakcyjnych postulatów mechaniki kwantowej, takich jak wektor stanu |Ψ⟩ i hamiltonian Ĥ, do ich zastosowania w jednym z najważniejszych modeli fizyki – kwantowym oscylatorze harmonicznym. Analiza tego modelu ujawniła jego dwie komplementarne, fizyczne manifestacje: stany Focka, opisujące cząstkową naturę pola o określonej liczbie kwantów, oraz stany koherentne, które doskonale oddają jego falowy, klasyczny charakter. Zrozumienie tych koncepcji stanowi solidny fundament, na którym opiera się ostateczny cel fotoniki kwantowej – pełny opis skwantowanego pola elektromagnetycznego i kwantowej natury światła.
+
+
+9. null
+
+null
+
