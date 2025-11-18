@@ -24,6 +24,11 @@ W półprzewodnikach, gdzie poziomy dyskretne zastąpione są pasmami energetycz
 \[ E_{Fc} - E_{Fv} \gt \hbar \omega \]
 Wzrost współczynnika wzmocnienia (g) jest wprost proporcjonalny do czynnika inwersji, czyli różnicy w obsadzeniu stanów ( f<sub>2</sub> - f<sub>1</sub> ), a wzmocnienie jest osiągane tam, gdzie współczynnik absorpcji materiału staje się ujemny ( g = -α )
 
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie1.mp3" type="audio/mpeg"></audio>
+%%
+
 2. Co ogranicza maksymalną moc w laserze półprzewodnikowym?
 
 Ograniczenie maksymalnej mocy w laserze półprzewodnikowym jest ściśle związane z wewnętrznymi mechanizmami strat, które stają się dominujące przy wysokich prądach zasilania i podwyższonej temperaturze. Mechanizmy te obniżają wewnętrzną sprawność kwantową lasera, co prowadzi do wzrostu prądu progowego ( I<sub>th</sub> ) oraz zmniejszenia sprawności różniczkowej, ograniczając tym samym użyteczną moc optyczną.
@@ -56,6 +61,11 @@ Maksymalna stabilna moc jest również pośrednio ograniczona przez jakość i w
 
 Podsumowując, choć lasery półprzewodnikowe mogą osiągać moc od ułamków miliwata do ponad 30 kilowatów, to granica maksymalnej mocy jest ustalana przez wzrost niepromienistych strat Augera (silnie zależnych od temperatury i prądu) oraz wewnętrznych strat optycznych (absorpcja na swobodnych nośnikach), które destabilizują działanie lasera przy wysokim wysterowaniu prądowym.
 Można to porównać do próby utrzymania silnika samochodu na najwyższych obrotach (maksymalna moc) przez długi czas. Im więcej paliwa (prądu) dostarczasz, tym szybciej silnik (obszar aktywny lasera) generuje ciepło z powodu tarcia (rekombinacji Augera i strat wewnętrznych). W pewnym momencie, mimo dostarczania większej ilości paliwa, dodatkowe ciepło zamiast zwiększać moc (sprawność), zaczyna ją dramatycznie obniżać (degradując materiał i uniemożliwiając stabilną pracę), wyznaczając tym samym praktyczny limit wydajności i mocy.
+
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie2.mp3" type="audio/mpeg"></audio>
+%%
 
 3. Ewolucja widma diody laserowej w funkcji prądu zasilania, jakie zmiany, jakie przyczyny?
 
@@ -101,6 +111,11 @@ Ewolucja widma jest bezpośrednim skutkiem przejścia lasera przez punkt krytycz
 * Powyżej progu: Następuje stabilizacja wzmocnienia i koncentracji. Wszelka dodatkowa energia jest kierowana w jeden, wąski mod optyczny poprzez lawinową rekombinację stymulowaną, co prowadzi do drastycznego zawężenia widma i wzrostu koherencji.
 Można to porównać do zbioru instrumentów (emisja spontaniczna), które grają przypadkowe dźwięki w szerokim zakresie częstotliwości (szerokie widmo w Faza 1). Gdy zbliżamy się do progu, rezonator (sala koncertowa) zaczyna wzmacniać tylko niektóre dźwięki (mody Fabry-Perota), ale wciąż dominuje hałas (Faza 2 – Superluminescencja). Gdy prąd przekracza próg (Faza 3 – Akcja Laserowa), nagle wszystkie instrumenty synchronizują się i grają jedną, idealnie czystą, głośną nutę (dominujący mod laserowy), ponieważ mechanizm sprzężenia zwrotnego (dyrygent) natychmiast zużywa nadmiar energii, aby wzmocnić ten jeden ton, a nie podnosić ogólny chaos.
 
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie3.mp3" type="audio/mpeg"></audio>
+%%
+
 4. Po co QW w laserze półprzewodnikowym?
 
 Zastosowanie jamy kwantowej (Quantum Well, QW) w obszarze czynnym lasera półprzewodnikowego jest kluczowym osiągnięciem inżynierii materiałowej, które pozwoliło na radykalną poprawę parametrów działania tych urządzeń w porównaniu do wcześniejszych heterostruktur podwójnych (DH).
@@ -138,6 +153,11 @@ Podsumowując, zastosowanie jamy kwantowej miało na celu przejście od klasyczn
 
 Można to widzieć jak precyzyjnie zaprojektowany lejek: zamiast rozlewać wodę (nośniki) po dużym zbiorniku (obszar 3D), jama kwantowa skupia całą energię w bardzo wąskim kanale (2D), co sprawia, że wystarczy minimalna ilość wody, aby wytworzyć wysokie ciśnienie (inwersję obsadzeń) i uzyskać wydajny strumień światła.
 
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie4.mp3" type="audio/mpeg"></audio>
+%%
+
 5. Czym się różnią obszary czynne LED i lasera? Uzasadnij odpoiwedź
 
 Obszary czynne diod elektroluminescencyjnych (LED) i laserów półprzewodnikowych mają wspólną podstawę – wykorzystują rekombinację promienistą w materiale półprzewodnikowym z prostą przerwą energetyczną (głównie związki AIII-BV). Różnią się jednak kluczowymi aspektami konstrukcyjnymi, które są niezbędne do osiągnięcia odmiennych mechanizmów emisji światła: spontanicznej (LED) versus stymulowanej (Laser).
@@ -168,6 +188,11 @@ co stanowi precyzyjną definicję inwersji obsadzeń w półprzewodniku.
 * W Laserze: Obszar czynny musi być tak zaprojektowany i wysterowany, aby osiągnąć stan, w którym funkcja Fermiego dla stanu w paśmie przewodnictwa (f<sub>2</sub> ) jest większa niż dla stanu w paśmie walencyjnym (f<sub>1</sub>)(f<sub>2</sub> > f<sub>1</sub>). 
 Tylko w tym stanie wzmocnienie netto jest dodatnie (g>0). Zastosowanie QW ułatwia osiągnięcie tego stanu przy minimalnym prądzie.
 Podsumowując, podczas gdy obszar czynny LED (pracujący na emisji spontanicznej) wymaga jedynie efektywnej rekombinacji promienistej, obszar czynny lasera (pracujący na emisji stymulowanej) musi być zaawansowaną, precyzyjnie zaprojektowaną strukturą (najczęściej QW/QD) zdolną do generowania inwersji obsadzeń i efektywnego uwięzienia światła, co prowadzi do zawężenia widma i wzrostu spójności.
+
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie5.mp3" type="audio/mpeg"></audio>
+%%
 
 9. null
 

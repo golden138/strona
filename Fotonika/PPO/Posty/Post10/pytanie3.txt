@@ -1,0 +1,43 @@
+Ewolucja widma diody laserowej w funkcji prądu zasilania, jakie zmiany, jakie przyczyny?
+
+Ewolucja widma emisji diody laserowej jest najbardziej wyrazistym dowodem na przejście od chaotycznej emisji spontanicznej do koherentnej emisji stymulowanej, która jest istotą działania lasera. Widmo to zmienia się dynamicznie wraz ze wzrostem prądu pompowania (I), przechodząc przez trzy odrębne, charakterystyczne fazy.
+Poniżej omówiono zmiany spektralne i ich przyczyny w funkcji prądu zasilania, w odniesieniu do progu akcji laserowej ( I<sub>th</sub> ).
+
+! Faza 1: Luminescencja (Emisja Spontaniczna)
+Ta faza zachodzi przy bardzo niskim prądzie pompowania, gdy laser pracuje poniżej progu akcji laserowej (I≪I<sub>th</sub>).
+
+##Zmiany w widmie	Przyczyny (Mechanizmy)
+Widmo jest szerokie.	Dominuje emisja spontaniczna. Nośniki ładunku rekombinują w sposób losowy, emitując fotony o przypadkowych fazach i kierunkach.
+Pełna szerokość w połowie maksimum (FWHM) wynosi około 50 nm.	Koncentracja nośników jest niska. Quasi-poziomy Fermiego (ΔF) znajdują się wewnątrz przerwy energetycznej ( E<sub>g</sub> ), a wzmocnienie jest ujemne (g<0) – rezonator jest nieprzezroczysty.##
+
+W tym reżimie urządzenie działa w sposób zbliżony do diody elektroluminescencyjnej (LED).
+
+! Faza 2: Superluminescencja (Wzmocniona Emisja Spontaniczna)
+Ta faza zachodzi, gdy prąd zasilania zbliża się do wartości progowej ( I≈I<sub>th</sub> ).
+
+##Zmiany w widmie	Przyczyny (Mechanizmy)
+Widmo emisji jest wciąż szerokie.	Mimo wzrostu prądu, emisja stymulowana jeszcze nie dominuje, ale występuje niewielkie wzmocnienie ( 0<g<g<sub>th</sub> ).
+Zaczynają być widoczne mody rezonatora Fabry-Perota na tle szerokiego widma.	Quasi-poziomy Fermiego wchodzą do pasm ( ΔF>E<sub>g</sub> ). Rezonator staje się przezroczysty. Emisja spontaniczna jest selektywnie wzmacniana na długościach fal odpowiadających rezonansom wnęki optycznej (modom podłużnym).##
+
+Widoczność modów rezonatora (który "pozwala" na istnienie tylko dyskretnego zestawu długości fal) świadczy o tym, że sprzężenie zwrotne zaczyna wpływać na światło, chociaż proces wzmacniania jest dopiero inicjowany przez spontaniczne fotony.
+
+! Faza 3: Akcja Laserowa
+Ta faza następuje po przekroczeniu progu ( I>I<sub>th</sub> ).
+
+##Zmiany w widmie	Przyczyny (Mechanizmy)
+Następuje gwałtowna zmiana i drastyczne zawężenie widma emisyjnego.	Wzmocnienie osiąga wartość progową ( g=g<sub>th</sub> ) i jest wystarczające, aby zrównoważyć straty. Emisja stymulowana zaczyna dominować nad spontaniczną.
+FWHM spada do wartości rzędu 1 nm lub mniej.	Cała energia zaczyna być efektywnie transferowana do jednego (lub kilku) modów o najniższym progu. Niemal cała moc optyczna jest skoncentrowana w dominującym modzie laserowym.
+Widmo przyjmuje postać ostrej linii (lub serii ostrych linii).	Wzrost prądu zasilania powyżej progu prowadzi do stabilizacji koncentracji nośników ( N=N<sub>th</sub> ) i wzmocnienia ( g=g<sub>th</sub> ). Dodatkowe nośniki są natychmiast zużywane przez gwałtownie rosnącą szybkość rekombinacji stymulowanej.##
+
+Stabilizacja koncentracji i wzmocnienia na progu jest kluczowym mechanizmem, który utrzymuje stałe wzmocnienie i zapewnia stabilną oraz wydajną emisję spójnego światła, co objawia się właśnie drastycznym zawężeniem widma.
+
+<hr>
+
+! Podsumowanie przyczyn ewolucji:
+Ewolucja widma jest bezpośrednim skutkiem przejścia lasera przez punkt krytyczny, w którym emisja stymulowana pokonuje absorpcję i straty.
+* Poniżej progu: Absorpcja i straty dominują. Emisja jest szeroka, ponieważ zjawisko jest spontaniczne i nie jest selektywnie wzmacniane.
+* Na progu: Wzmocnienie zrównuje straty :
+\[ \Gamma g_{th}  = \alpha_i + \alpha_m \]
+ Zaczyna działać selektywność rezonatora Fabry-Perota (modów podłużnych).
+* Powyżej progu: Następuje stabilizacja wzmocnienia i koncentracji. Wszelka dodatkowa energia jest kierowana w jeden, wąski mod optyczny poprzez lawinową rekombinację stymulowaną, co prowadzi do drastycznego zawężenia widma i wzrostu koherencji.
+Można to porównać do zbioru instrumentów (emisja spontaniczna), które grają przypadkowe dźwięki w szerokim zakresie częstotliwości (szerokie widmo w Faza 1). Gdy zbliżamy się do progu, rezonator (sala koncertowa) zaczyna wzmacniać tylko niektóre dźwięki (mody Fabry-Perota), ale wciąż dominuje hałas (Faza 2 – Superluminescencja). Gdy prąd przekracza próg (Faza 3 – Akcja Laserowa), nagle wszystkie instrumenty synchronizują się i grają jedną, idealnie czystą, głośną nutę (dominujący mod laserowy), ponieważ mechanizm sprzężenia zwrotnego (dyrygent) natychmiast zużywa nadmiar energii, aby wzmocnić ten jeden ton, a nie podnosić ogólny chaos.

@@ -2,7 +2,7 @@
 	"posty": [
 		{
 			"kategoria": "Półprzewodnikowe Przyrządy Optoelektroniczne",
-			"data" : ["Post1" , "Post2" , "Post3" , "Post4" , "Post5", "Post6", "Post10"]
+			"data" : ["Post1" , "Post2" , "Post3" , "Post4" , "Post5", "Post6", "Post7", "Post10"]
 		}
 	]
 }

@@ -1,0 +1,114 @@
+{
+	"zad": [
+		{
+			"tresc" : "Jaka była fundamentalna wada pierwszych laserów homozłączowych, która uniemożliwiała ich praktyczne zastosowanie w temperaturze pokojowej?",
+			"odp" : [
+				{"war1" : "Krótki czas życia urządzenia spowodowany szybką degeneracją materiału", "war2" : "Chociaż trwałość była problemem, wynikała ona w dużej mierze z potrzeb pracy przy ekstremalnie wysokich gęstościach prądu"},
+				{"war1" : "Niska sprawność kwantowa uniemożliwiająca efektywną konwersję energii", "war2" : "Niska sprawność była konsekwencją głównego problemu, a nie jego pierwotną przyczyną"},
+				{"war1" : "Emisja światła w zakresie podczerwieni, niewidzialnym dla oka", "war2" : "Wiele wczesnych laserów półprzewodnikowych emitowało podczerwień, jednak nie było ich główną barierą technologiczną"},
+				{"war1" : "Ekstremalnie wysoki prąd progowy z powodu słabego ograniczenia nośników", "war2" : "Brak barier energetycznych powodował swobodną dyfuzję nośników, co wymagało ogromnych prądów do osiągnięcia inwersji obsadzeń"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl, co działo się z wstrzykiwanymi elektronami i dziurami w prostej strukturze złącza p-n wykonanego z tego samego materiału."
+		},
+		{
+			"tresc" : "W jaki sposób podwójna heterostruktura (DH) realizuje kluczową funkcję ograniczenia optycznego (falowodowania)?",
+			"odp" : [
+				{"war1" : "Poprzez zastosowanie materiału o wyższym współczynniku załamania w obszarze czynnym w stosunku do otaczających go barier", "war2" : "Różnica we współczynnikach załamania światła prowadzi do całkowitego wewnętrznego odbicia i uwięzienie fali optycznej w obszarze czynnym"},
+				{"war1" : "Poprzez różnicę w przerwach energetycznych, która tworzy barierę potencjału dla fotonów", "war2" : "Różnica w przerwach energetycznych tworzy barierę potencjału dla nośników ładunku (elektronów i dziur), a nie bezpośrednio dla fotonów"},
+				{"war1" : "Poprzez wprowadzenie naprężeń mechanicznych, które modyfikują drogę rozchodzenia się światła", "war2" : "Naprężenia modyfikują strukturę pasmową, ale za falowodowanie odpowiada inna właściwość materiałowa"},
+				{"war1" : "Poprzez znaczne zmniejszenie grubości obszaru czynnego, co wymusza propagację tylko jednego modu optycznego", "war2" : "Grubość warstwy wpływa na charakterystykę falowodu, ale sam mechanizm jego tworzenia opiera się na różnicy właściwości optycznych"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Zastanów się, jaka właściwość materiału decyduje o tym, jak światło jest w nim prowadzone."
+		},
+		{
+			"tresc" : "Jak zmiana gęstości stanów (DOS) przy przejściu z materiału 3D do jamy kwantowej (2D) wpływa na działanie lasera?",
+			"odp" : [
+				{"war1" : "Stała wartość DOS między poziomami kwantowymi zwiększa liczbę procesów rekombinacji niepromienistej", "war2" : "Modyfikacja DOS ma na celu poprawę wydajności rekombinacji promienistej, a nie zwiększenie strat"},
+				{"war1" : "Zastąpienie funkcji ρ<sub>3D</sub> (E) ~ E<sup>1/2</sup> funkcją schodkową prowadzi do poszerzenia widma emisji lasera", "war2" : "Skupienie stanów energetycznych i dyskretne poziomy prowadzą do węższego spektrum wzmocnienia, a nie jego poszerzenia"},
+				{"war1" : "Schodkowy charakter DOS powoduje, że warunek inwersji obsadzeń jest osiągany przy niższej koncentracji nośników", "war2" : "Skupienie stanów energetycznych blisko krawędzi pasma pozwala na efektywne osiąganie inwersji przy tej samej liczbie wstrzykniętych nośników"},
+				{"war1" : "Zmniejszenie liczby dostępnych stanów energetycznych znacząco obniża maksymalną moc optyczną lasera", "war2" : "Chociaż objętość jest mniejsza, efektywność procesu jest na tyle wyższa, że nie jest to główną konsekwencją wpływającą na moc"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl, jak koncentracja dostępnych stanów energetycznych blisko krawędzi pasma wpływa na efektywność osiągania inwersji obsadzeń."
+		},
+		{
+			"tresc" : "Jaka jest główna korzyść z wprowadzenia naprężeń ściskających w jamie kwantowej o strukturze kubicznej (np. InGaAs na InP)?",
+			"odp" : [
+				{"war1" : "Poprawa dopasowania stałej sieci do podłoża, co zapobiega powstawaniu defektów", "war2" : "Naprężenia są wprowadzane celowo poprzez niedopasowanie stałej sieci; celem nie jest idealne dopasowanie"},
+				{"war1" : "Redukcja masy efektywnej dziur poprzez silniejsze zniesienie degeneracji pasm ciężkich i lekkich dziur", "war2" : "Lżejsze dziury oznaczają niższą gęstość stanów w paśmie walencyjnym, co bezpośrednio prowadzi do obniżenia prądu progowego"},
+				{"war1" : "Wyeliminowanie polaryzacji spontanicznej i piezoelektrycznej w strukturze", "war2" : "Te zjawiska są charakterystyczne dla materiałów heksagonalnych (azotków), a nie dla typowych materiałów kubicznych"},
+				{"war1" : "Zwiększenie przerwy energetycznej, co pozwala na emisję światła o krótszej fali", "war2" : "Naprężenia modyfikują przerwę energetyczną, ale ich kluczowa korzyść leży w modyfikacji struktury pasma walencyjnego"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Skup się na tym, jak kontrolowana deformacja sieci krystalicznej wpływa na właściwości nośników ładunku w paśmie walencyjnym."
+		},
+		{
+			"tresc" : "W jaki sposób rodzaj naprężenia (ściskające vs rozciągające) w jamie kwantowej o strukturze kubicznej determinuje polaryzację emitowanego światła?",
+			"odp" : [
+				{"war1" : "Naprężenia ściskające faworyzują polaryzację TE (poziomą), a rozciąganie TM (pionową)", "war2" : "Ściskanie w płaszczyźnie wzrostu faworyzuje obsadzenie orbitali P<sub>x</sub> i P<sub>y</sub>, co prowadzi do emisji TE, natomiast rozciąganie faworyzuje orbital P<sub>z</sub>, generując emisję TM"},
+				{"war1" : "Naprężenie ściskające faworyzuje polaryzację TM (pionową), a rozciąganie TE (poziomą)", "war2" : "Ta odpowiedź odwraca zależność opisaną w artykule"},
+				{"war1" : "Zarówno naprężenia ściskające, jak i rozciągające faworyzują polaryzację TE", "war2" : "Różne typy naprężeń prowadzą do faworyzowania różnych prostopadłych do siebie polaryzacji"},
+				{"war1" : "Naprężenie nie wpływa na polaryzację, a jedynie na długość fali emisji", "war2" : "Deformacja komórki elementarnej bezpośrednio faworyzuje określone przejścia optyczne, co determinuje polaryzacje"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Przypomnij sobie, które orbitale atomowe (P<sub>x</sub>, P<sub>y</sub> czy P<sub>z</sub> ) są faworyzowane przy każdym typie deformacji komórki elementarnej."
+		},
+		{
+			"tresc" : "Co jest dominującym zjawiskiem w azotkowych jamach kwantowych (np. InGaN/GaN) rosnących na podłożach o orientacji polarnej, które negatywnie wpływa na wydajność lasera?",
+			"odp" : [
+				{"war1" : "Brak możliwości wprowadzenia naprężeń w strukturze z powodu podobnych stałych sieci", "war2" : "W systemach azotkowych występują bardzo silne naprężenia z powodu braku rodzimych podłoży i dużego niedopasowania stałych sieci"},
+				{"war1" : "Kwantowy efekt Starka (QCSE) spowodowany silnymi wewętrznymi polami elektrycznymi", "war2" : "Pola te pochylają pasma energetyczne, rozdzielając przestrzennie funkcje falowe elektronów i dziur, co obniża prawdopodobieństwo rekombinacji."},
+				{"war1" : "Silna rekombinacja niepromienista typu Auger z powodu małej przerwy energetycznej", "war2" : "Lasery azotkowe działają w zakresie od UV do zielonego, co oznacza szeroką przerwę energetyczną, a procesy Augera nie są tu dominującym problemem w takim stopniu jak QCSE"},
+				{"war1" : "Bardzo małe masy efektywne nośników, prowadzące do ich ucieczki z jamy kwantowej", "war2" : "W rzeczywistości azotki charakteryzują się dużymi masami efektywnymi nośników, co jest jedynym z wyzwań projektowych"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zjawisko to jest bezpośrednio związane z polarną naturą wiązań w krysztale o strukturze wurcytu."
+		},
+		{
+			"tresc" : "W jakiej sytuacji projektant lasera półprzewodnikowego zdecyduje się na zastosowanie struktury z wieloma jamami kwantowymi (MQW) zamiast pojedynczej (SQW)?",
+			"odp" : [
+				{"war1" : "Gdy laser musi pracować w bardzo wysokich temperaturach bez chłodzenia", "war2" : "Stabilność temperaturowa jest bardziej związana z głębokością studni i typem struktury (np. kropki kwantowe), a nie samą liczbą jam"},
+				{"war1" : "Gdy celem jest osiągnięcie jak najniższej gęstości prądu progowego (J<sub>th</sub>) w laserze dużej mocy", "war2" : "Struktury SQW są preferowane do minimalizacji gęstości prądu progowego"},
+				{"war1" : "Gdy laser ma być używany w zastosowaniach telekomunikacyjnych wymagających szybkiej modulacji", "war2" : "Zwiększenie liczby jam kwantowych pozwala uzyskać wyższe wzmocnienie różniczkowe (dg/dn), kluczowe dla szybkiej zmiany mocy wyjściowej"},
+				{"war1" : "Gdy konieczne jest uproszczenie procesu technologicznego i obniżenie kosztów produkcji", "war2" : "Wzrost struktury MQW jest bardziej złożony niż SQW, ponieważ wymaga precyzyjnej kontroli nad wieloma warstwami"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl o kompromisie między minimalnym prądem potrzebnym do rozpoczęcia akcji laserowej a zdolnością do efektywnej zmiany mocy wyjściowej sygnałem elektrycznym."
+		},
+		{
+			"tresc" : "Która z wymienionych cech jest kluczową zaletą laserów na kropkach kwantowych (QD) w porównaniu do laserów na jamach kwantowych (QW)?",
+			"odp" : [
+				{"war1" : "Prostszy i bardziej powtarzalny proces wzrostu epitaksjalnego", "war2" : "Wzrost kropek kwantowych w procesie samoorganizacji jest złożonym procesem technologicznym wymagającym precyzyjnej kontroli"},
+				{"war1" : "Wyższa stabilność temperaturowa progu i wydajności, charakteryzowana wysokim parametrem T<sub>0</sub>", "war2" : "Dyskretna, atomopodobna gęstość stanów sprawia, że paramentry lasera QD są mniej wrażliwe na zmiany temperatury"},
+				{"war1" : "Znacznie wyższa maksymalna moc wyjściowa w pracy ciągłej", "war2" : "Chociaż lasery QD mogą osiągać wysokie moce, ich unikalna przewaga leży w innych parametrach"},
+				{"war1" : "Możliwość łatwego uzyskania emisji w zakresie ultrafioletu", "war2" : "Emisja w UV jest domeną głównie laserów na bazie azotków, a nie typowych systemów kropek kwantowych, np. InAs/GaAs"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Zastanów się, jak całkowite uwięzienie nośników we wszystkich trzech wymiarach wpływa na zależność działania lasera od temperatury."
+		},
+		{
+			"tresc" : "Dlaczego w systemach azotkowych korzyści z naprężeń, obserwowane w materiałach o strukturze kubicznej (np. redukcja masy efektywnej dziur), są znacznie ograniczone?",
+			"odp" : [
+				{"war1" : "Gdyż dominujący kwantowy efekt Starka (QCSE) całkowicie niweluje pozytywny wpływ naprężeń", "war2" : "Chociaż QCSE jest dominujący i negatywnym efektem, przyczyna ograniczonej skuteczności naprężeń leży w samej strukturze pasmowej materiału"},
+				{"war1" : "Z powodu małego rozszczepienia spin-orbital, co sprawia, że naprężenia nie modyfikują efektywnie pasma walencyjnego", "war2" : "Małe rozszczepienie spin-orbita jest fundamentalną właściwością azotków, która ogranicza skuteczność inżynierii pasmowej za pomocą naprężeń"},
+				{"war1" : "Ponieważ w azotkach występują tylko naprężenia rozciągające, które nie przynoszą korzyści", "war2" : "W azotkach, ze względu na wzrost na obcych podłożach, występują głównie naprężenia ściskające"},
+				{"war1" : "Ponieważ azotki mają idealne dopasowaną stałą sieci do podłoży szafirowych, co uniemożliwia wprowadzenie naprężeń", "war2" : "Wręcz przeciwnie, występuje bardzo duże niedopasowanie stałej sieci między GaN a szafirem, co jest źródłem silnych naprężeń"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Odpowiedź leży w fundamentalnej właściwości struktury pasmowej azotków, która odróżnia je od materiałów takich jak GaAs czy InP."
+		},
+		{
+			"tresc" : "Kiedy, zgodnie z tekstem, klasyczne ograniczenie przestrzenne nośników w heterostrukturze przechodzi w kwantowe, tworząc jamę kwantową (QW)?",
+			"odp" : [
+				{"war1" : "Gdy gęstość prądu wstrzykiwanego przekracza próg przezroczystości materiału", "war2" : "Próg przezroczystości materiału jest warunkiem wymaganym do uzyskania wzmocnienia, a nie jest warunkiem definiującym strukturę kwantową"},
+				{"war1" : "Gdy grubość obszaru czynnego staje się mniejsza niż długość fali emitowanego światła", "war2" : "Warunek ten jest spełniony w praktycznie w każdym laserze półprzewodnikowym i definiuje raczej reżim falowodowy a nie kwantowy"},
+				{"war1" : "Gdy grubość obszaru czynnego jest porównywalna z długością fali de Brogliea elektronu", "war2" : "Jest to fundamentalny warunek, przy którym falowa natura cząstek staje się dominująca i prowadzi do kwantyzacji poziomów energetycznych"},
+				{"war1" : "Gdy różnica przerwy energetycznej między barierą a studnią jest większa niż energia termiczna (k<sub>B</sub>T)", "war2" : "Ten warunek jest potrzebny do skutecznego ograniczenia nośników, ale nie definiuje on przejścia do reżimu kwantowego"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Pomyśl o granicy, przy której opis cząstki jako punktu materialnego przestaje być wystarczający i należy uwzględnić jej naturę falową."
+		}
+	]
+}
