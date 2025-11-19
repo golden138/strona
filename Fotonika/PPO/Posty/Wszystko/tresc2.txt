@@ -1,0 +1,283 @@
+Wzmocnienie Optyczne w Materiałach Półprzewodnikowych
+
+1. Podstawowe Oddziaływania Promieniowania z Materią: Układ Dwupoziomowy
+
+Zrozumienie fundamentalnych oddziaływań między światłem a materią na poziomie kwantowym stanowi podstawę działania wszystkich nowoczesnych przyrządów optoelektronicznych, od prostych diod elektroluminescencyjnych (LED) po zaawansowane lasery półprzewodnikowe. Aby zbudować solidne fundamenty, rozpoczniemy od analizy najprostszego możliwego modelu: izolowanego układu z dwoma dyskretnymi poziomami energetycznymi, znajdującego się w stanie równowagi termodynamicznej.
+
+Wyobraźmy sobie układ posiadający jedynie dwa dozwolone stany energetyczne: niższy, E<sub>1</sub>, oraz wyższy, E<sub>2</sub>. Populacje elektronów na tych poziomach, oznaczone odpowiednio jako N1 i N2, nie są dowolne.
+$dwa_poziomy.png$
+W stanie równowagi termodynamicznej, przy określonej temperaturze T, ich względne obsadzenie jest precyzyjnie opisane przez rozkład Boltzmanna. Ta wykładnicza zależność jest kamieniem węgielnym mechaniki statystycznej i odzwierciedla fakt, że obsadzenie stanów o wyższej energii wyłącznie poprzez przypadkowe wzbudzenia termiczne jest wykładniczo trudniejsze.
+
+Równanie to ma postać:
+\[ N_2=N_1 \cdot exp \left( {- \frac{E_{21}}{k_B T}} \right) \]
+gdzie poszczególne symbole oznaczają:
+
+* N<sub>1</sub> , N<sub>2</sub> – liczba elektronów na poziomie energetycznym odpowiednio N<sub>1</sub> i N<sub>2</sub>.
+* E<sub>21</sub> – różnica energii między poziomami, N<sub>21</sub> = N<sub>2</sub> - N<sub>1</sub>.
+* k<sub>B</sub> – stała Boltzmanna.
+* T – temperatura absolutna w Kelwinach.
+
+Fizyczna interpretacja tego wzoru jest kluczowa: w stanie równowagi termodynamicznej wyższy poziom energetyczny jest zawsze słabiej obsadzony niż niższy (N<sub>2</sub> < N<sub>1</sub>). Im większa jest różnica energii E<sub>21</sub> lub niższa temperatura T, tym ta dysproporcja staje się bardziej wyraźna.
+
+Układ ten znajduje się w równowadze nie tylko wewnętrznej, ale również z otaczającym go polem promieniowania elektromagnetycznego, które dla ciała doskonale czarnego opisuje rozkład Plancka. Wzór ten podaje gęstość spektralną fotonów, czyli informuje, ile fotonów na jednostkę objętości przypada na wąski przedział energii:
+\[ N_p (E) = \frac{8\pi n^3}{h^3 c^3} \cdot \frac{E^2}{exp \left( \frac{E}{k_B T}\right) - 1} \]
+* N<sub>p</sub>(E) – spektralna gęstość fotonów (liczba fotonów na jednostkę objętości na jednostkę energii).
+* n – współczynnik załamania światła w ośrodku.
+* h – stała Plancka.
+* c – prędkość światła w próżni.
+
+Aby zrozumieć, jak możemy zakłócić tę równowagę w celu wytworzenia światła w sposób kontrolowany, musimy przeanalizować trzy fundamentalne procesy kwantowe rządzące przejściami elektronów między tymi poziomami: emisję spontaniczną, absorpcję oraz emisję wymuszoną.
+
+1.1 Elementarne Procesy Kwantowe i Relacje Einsteina
+
+Dynamika obsadzenia poziomów energetycznych pod wpływem promieniowania jest wynikiem nieustannej rywalizacji trzech fundamentalnych procesów. W swojej przełomowej pracy z 1917 roku, „Zur Quantentheorie der Strahlung” („O kwantowej teorii promieniowania”), Albert Einstein jako pierwszy w sposób kompletny opisał ich wzajemne relacje, kładąc teoretyczne podwaliny pod technologię laserową.
+
+1.2 Emisja Spontaniczna
+
+Jest to proces samorzutny, w którym elektron znajdujący się na wzbudzonym poziomie energetycznym E<sub>2</sub> spontanicznie przechodzi na niższy poziom E<sub>1</sub>, emitując przy tym foton o energii równej różnicy energii poziomów (ħω = E<sub>21</sub>).
+$przejscie2_1.png$
+Zmianę populacji N<sub>2</sub> w czasie opisuje równanie: 
+\[ dN_2 = -A_{21} \cdot N_2 \cdot dt \]
+
+Rozwiązanie tego równania prowadzi do wykładniczego zaniku obsadzenia stanu wzbudzonego:
+\[ N_2(t) = N_2(0) \cdot exp(-t/τ_{sp}) \]
+
+W powyższych wzorach:
+* A<sub>21</sub> to współczynnik Einsteina dla emisji spontanicznej, określający prawdopodobieństwo zajścia tego procesu na jednostkę czasu.
+* τ<sub>sp</sub> to czas życia luminescencji, czyli średni czas, jaki elektron spędza w stanie wzbudzonym przed spontaniczną emisją. Zachodzi między nimi prosta relacja: A<sub>21</sub> = 1/τ<sub>sp</sub>.
+
+1.3 Absorpcja
+
+W procesie absorpcji foton o energii ħω = E<sub>21</sub>, pochodzący z zewnętrznego pola promieniowania, jest pochłaniany przez elektron na niższym poziomie E<sub>1</sub>. Energia fotonu powoduje wzbudzenie elektronu i jego przejście na wyższy poziom E<sub>2</sub>. 
+$absorpcja.png$
+Szybkość tego procesu zależy nie tylko od liczby elektronów N<sub>1</sub>, ale również od gęstości fotonów Np(E<sub>21</sub>).
+\[  dN_2 = B_{12} \cdot N_1 \cdot N_p(E_{21}) \cdot dt \]
+
+* B<sub>12</sub> to współczynnik Einsteina dla absorpcji.
+
+1.4 Emisja Wymuszona (Stymulowana)
+
+To kluczowy proces dla działania laserów. Padający foton o energii ħω = E<sub>21</sub> oddziałuje z elektronem znajdującym się już w stanie wzbudzonym E<sub>2</sub>. To oddziaływanie "wymusza" na elektronie przejście na niższy poziom E<sub>1</sub>, co skutkuje emisją drugiego fotonu. Co najważniejsze, nowo powstały foton jest idealną kopią fotonu stymulującego – ma tę samą energię, fazę, polaryzację i kierunek propagacji. To właśnie ta właściwość prowadzi do spójnego wzmocnienia światła.
+$emisja_wymuszona.png?650$
+Zmianę obsadzenia  poziomu 2 można wyrazić:
+\[ dN_2 = -B_{21} \cdot N_2 \cdot N_p(E_{21}) \cdot dt \]
+
+* B<sub>21</sub> to współczynnik Einsteina dla emisji wymuszonej.
+
+1.5 Relacje Einsteina
+
+$bilans.png?650$
+Całkowita zmiana obsadzenia poziomu N2 jest sumą wkładów od wszystkich trzech procesów:
+\[ \frac{dN_2}{dt} = -A_{21} \cdot N_2 + B_{12} \cdot N_1 \cdot N_p(E_{21}) - B_{21} \cdot N_2 \cdot N_p(E_{21}) \]
+Einstein rozważył ten układ w stanie równowagi termodynamicznej, gdzie wypadkowa szybkość zmian musi być równa zeru \( \frac{dN_2}{dt} = 0 \). Podstawiając do tego równania znane już rozkłady Boltzmanna (dla N2/N1) i Plancka (dla N<sub>p</sub>(E<sub>21</sub>)), wyprowadził dwie fundamentalne relacje, które łączą ze sobą współczynniki dla tych trzech procesów:
+1. B<sub>12</sub> = B<sub>21</sub> = B Prawdopodobieństwa jednostkowe dla absorpcji i emisji wymuszonej są sobie równe.
+2. \(A_{21} = \left( \frac{8 \pi E_{21}^2}{h^3 c^3} \right) \cdot B \) : Relacja ta wiąże ze sobą proces spontaniczny i wymuszony, pokazując, że są one ze sobą nierozerwalnie związane.
+
+* Jak do tych współczynników Einsteina można dojść
+Jeśli zbiór atomów jest wstanie równowagi termodynamicznej, to liczba atomów które są w stanie energetycznym E<sub>2</sub>, jest dana przez rozkład Boltzmana.
+$stan_rownowagi.png$
+\[ \frac{N_2}{N_1} = exp \left( \frac{-(E_2−E_1)}{k_B T} \right) \]
+\[ \frac{N_1}{N_2} = exp \left( \frac{E_2−E_1}{k_B T} \right) \]
+Bilans obsadzenia poziomów energii E<sub>1</sub> i E<sub>2</sub> w obecności promieniowania o gęstości energii u(ν) :
+\[ N_1 \cdot B_{12} \cdot u(ν) = N_2 \cdot A_{21}+N_2 \cdot B_{21} \cdot u(ν) \]
+Gęstość energii promieniowania w równowadze z układem atomów:
+\[ u \left( \nu \right) = \frac{N_2 A_{21}}{ N_1 B_{12} - N_2 B_{21} } = \frac{A_{21} / B_{21}}{\frac{N_1 B_{12}}{ N_2 B_{21}}-1} = \frac{A_{21} / B_{21}}{\frac{B_{12}}{B_{21}} \cdot exp \left( \frac{h \nu}{k_B T} \right) - 1} \]
+Powinna być zgodna z rozkładem Plancka promieniowania ciała doskonale czarnego w temperaturze T:
+\[ u \left( \nu , T \right) d\nu = \frac{8 \pi h v^3 d\nu}{c^3 \left[ exp \left( \frac{h \nu}{k_B T} \right) - 1 \right]} \]
+Porównując oba wyrażenia, otrzymujemy warunki zgodności:
+\[ B_{12}​ = B_{21} = B \]
+\[ \frac{B_{21}}{​A_{21}}​​= \frac{8 \pi h \nu^3}{c^3}​ \Leftrightarrow A_{21} = \left( \frac{8 \pi E_{21}^2}{h^3 c^3} \right) \cdot B \]
+
+
+Dzięki tym relacjom możemy teraz precyzyjnie określić, jakie warunki muszą zostać spełnione, aby w materii uzyskać efekt wzmocnienia światła zamiast jego naturalnej absorpcji.
+
+2. Warunki Uzyskania Wzmocnienia: Inwersja Obsadzeń
+
+Celem inżynierii urządzeń laserowych jest stworzenie warunków, w których emisja stymulowana dominuje nad dwoma pozostałymi procesami – absorpcją i emisją spontaniczną. Analiza relacji Einsteina pozwala nam określić te warunki w sposób ilościowy.
+
+Po pierwsze, rozważmy stosunek szybkości emisji stymulowanej do spontanicznej. Bazując na równaniach z poprzedniej sekcji, stosunek ten wynosi:
+\[ \frac{stymulowana}{spontaniczna} = \frac{B_{21} \cdot N_2 \cdot N_p(E_{21})}{A_{21} \cdot N_2} \]
+
+Możemy zauważyć, że populacja stanu wzbudzonego N<sub>2</sub> skraca się w tym wyrażeniu. Otrzymujemy zatem:
+\[ Stym./Spon. = \frac{B_{21}}{A_{21}} \cdot N_p(E_{21}) \]
+
+Płynie stąd kluczowy wniosek: stosunek ten zależy wyłącznie od wewnętrznych właściwości atomu (A<sub>21</sub>, B<sub>21</sub>) oraz od zewnętrznego pola fotonów (N<sub>p</sub>). Aby emisja wymuszona zdominowała spontaniczną, konieczna jest wysoka gęstość fotonów o energii dokładnie równej E<sub>21</sub>.
+
+Po drugie, i co ważniejsze, aby uzyskać wzmocnienie netto, szybkość emisji stymulowanej musi przewyższać szybkość absorpcji. To jest centralna "bitwa" w naszym układzie. B<sub>21</sub> ∙ N<sub>2</sub> ∙ N<sub>p</sub>(E<sub>21</sub>) > B<sub>12</sub> ∙ N<sub>1</sub> ∙ N<sub>p</sub>(E<sub>21</sub>)
+
+Ponieważ, jak pokazał Einstein, B<sub>21</sub> = B<sub>12</sub>, powyższa nierówność upraszcza się do fundamentalnego warunku wzmocnienia:
+
+N<sub>2</sub> > N<sub>1</sub>
+
+Stan, w którym obsadzenie wyższego poziomu energetycznego jest większe niż niższego, nazywamy inwersją obsadzeń. Jest to stan głębokiej nierównowagi termodynamicznej. Jak wynika z rozkładu Boltzmanna, nie można go osiągnąć przez proste podgrzewanie materiału. Wymaga on zewnętrznego dostarczania energii do układu w procesie zwanym pompowaniem (np. za pomocą światła z innego źródła – pompowanie optyczne, lub prądu elektrycznego – pompowanie elektryczne).
+$inwersja.png$
+
+Aby spełnić pierwszy warunek – wysoką gęstość fotonów – stosuje się rezonator optyczny. Najprostsza forma rezonatora to para równoległych zwierciadeł umieszczonych na końcach ośrodka materialnego. Rezonator działa jak komora echa dla fotonów, zmuszając je do wielokrotnego przemierzania ośrodka aktywnego. Każde przejście daje kolejną szansę na wywołanie aktu emisji wymuszonej, co prowadzi do lawinowego narastania spójnego światła.
+$rezonator.png$
+
+Tym samym dochodzimy do fundamentalnej definicji lasera: jest to urządzenie składające się z ośrodka wzmacniającego (materiału, w którym można uzyskać inwersję obsadzeń) oraz rezonatora optycznego.
+
+Teraz musimy dokonać kluczowego skoku koncepcyjnego: przenieść nasz prosty, klarowny model dwupoziomowy do znacznie bardziej złożonej, ale praktycznie ważnej, rzeczywistości kryształu półprzewodnikowego. Podstawowe zasady pozostaną te same, ale nasz język musi ulec zmianie: dyskretne poziomy poszerzą się do ciągłych pasm, a proste zliczanie populacji zostanie zastąpione przez funkcje prawdopodobieństwa.
+
+3. Półprzewodnik jak to działa
+
+Diody elektroluminescencyjne (ang. light emitting diodes, LED) – wykonywane są na bazie półprzewodnikowych złączy p-n. Działają w oparciu o zjawisko elektroluminescencji, tzn. przetwarzają energię elektryczną na energię promieniowania elektromagnetycznego. Barwa światła, które emitują diody LED, jak również długość fali, zależy od materiału półprzewodnikowego, z którego dioda jest wykonana.
+$polprzewodniki.png$
+
+Zjawisko elektroluminescencji, w oparciu o które działają diody LED, polega nawytwarzaniu światła pod wpływem pola elektrycznego (napięcia polaryzacji w kierunku przewodzenia). Elektroluminescencja zachodzi w wyniku rekombinacji promienistej dziur i elektronów w obszarze warstwy zubożonej złącza p-n. Przejściom elektronów z wyższego poziomu energetycznego na niższy towarzyszy wydzielenie energii w postaci światła.
+$pn.png$
+
+* Rekombinacja promienista – zachodzi w półprzewodnikach z prostą przerwą energetyczną.
+* Rekombinacja niepromienista – zachodzi w półprzewodnikach ze skośną przerwą energetyczną.
+$rekombinacja.png$
+
+3.1 Zastosowanie do Półprzewodników: Pasma Energetyczne i Funkcja Fermiego-Diraca
+
+W ciałach stałych, takich jak półprzewodniki, oddziaływania między blisko upakowanymi atomami powodują, że dyskretne poziomy energetyczne zlewają się w szerokie, dozwolone pasma energetyczne. Koncepcja dwóch poziomów zostaje zastąpiona przez pasmo walencyjne (VB), które w stanie podstawowym jest w pełni zapełnione elektronami, oraz pasmo przewodnictwa (CB), które jest puste. Te dwa pasma rozdziela przerwa energetyczna Eg, czyli obszar energii, w którym nie ma dozwolonych stanów elektronowych.
+$pasma.png$
+
+W półprzewodnikach rolę poziomów E<sub>1</sub> i E<sub>2</sub> odgrywają odpowiednio stany w paśmie walencyjnym i przewodnictwa. Obsadzenie tych stanów przez nośniki ładunku (elektrony i dziury) nie jest już opisywane statystyką Boltzmanna, lecz funkcją rozkładu Fermiego-Diraca. W stanie nierównowagi, takim jak inwersja obsadzeń, nie można zdefiniować jednego poziomu Fermiego dla całego materiału. Zamiast tego wprowadza się koncepcję quasi-poziomów Fermiego: E<sub>Fc</sub> dla elektronów w paśmie przewodnictwa i E<sub>Fv</sub> dla dziur w paśmie walencyjnym.
+Funkcje Fermiego-Diracka rozkładu elektronów w pasmach:
+\[ f_1 = \frac{1}{exp \left[ \left( E_1 - E_{Fv} \right) / \left( k_B T \right)\right] + 1} \]
+\[ f_2 = \frac{1}{exp \left[ \left( E_2 - E_{Fc} \right) / \left( k_B T \right)\right] + 1} \]
+
+Trzy fundamentalne procesy kwantowe mają swoje odpowiedniki w strukturze pasmowej: absorpcje, emisje wymuszoną i spontaniczną.
+
+3.2 Absorpcja
+
+Foton o energii ħω > Eg jest pochłaniany, przenosząc elektron z zajętego stanu w paśmie walencyjnym do pustego stanu w paśmie przewodnictwa. W rezultacie powstaje para elektron-dziura.
+$absorpcja_polprzewodnik.png$
+Korzystając z funkcji Fermiego-Diracka rozkładu elektronów w pasmach możemy dostać równanie opisujące tempo (lub prawdopodobieństwo) przejść optycznych w procesie absorpcji fotonu w półprzewodniku: 
+\[ r_{12} \left( abs \right) = B_{12} p_2 n_1 n_{ph} \left( E_{21} \right) = B_{12} n_{ph} \left( E_{21} \right) \rho_c \left( E_2 - E_c \right) \rho_v \left( E_v - E_1 \right) f_1 \cdot \left[ 1 - f_2 \right] \]
+##Symbol Oznaczenia	Znaczenie fizyczne
+r<sub>12</sub>(abs)	Tempo przejść (liczba przejść na jednostkę czasu i objętości) z poziomu 1 → 2, czyli tempo absorpcji.
+B<sub>12</sub>	Współczynnik Einsteina absorpcji – określa prawdopodobieństwo przejścia elektronowego pod wpływem pola elektromagnetycznego o danej gęstości energii.
+n<sub>ph</sub>(E<sub>21</sub>)	Liczba fotonów (gęstość fotonów) o energii E<sub>21</sub> = hν = E<sub>2</sub> - E<sub>1</sub>. W praktyce to funkcja częstości fotonów n<sub>ph</sub>(ν).
+ρ<sub>c</sub>(E<sub>2</sub> - E<sub>c</sub>)	Gęstość stanów elektronowych w paśmie przewodnictwa na energii E<sub>2</sub>.
+ρ<sub>v</sub>(E<sub>v</sub> - E<sub>1</sub>)	Gęstość stanów w paśmie walencyjnym na energii E<sub>1</sub>.
+f<sub>1</sub>	Funkcja Fermiego-Diraca dla stanu początkowego (w paśmie walencyjnym). Oznacza prawdopodobieństwo, że stan o energii E<sub>1</sub> jest zajęty przez elektron.
+[1 - f<sub>2</sub>]	Prawdopodobieństwo, że stan końcowy (w paśmie przewodnictwa, energia E<sub>2</sub>) jest pusty.
+E<sub>c</sub>, E<sub>v</sub>	Odpowiednio dno pasma przewodnictwa i wierzchołek pasma walencyjnego.
+n<sub>1</sub>, p<sub>2</sub>	Odpowiednio liczba elektronów w stanie początkowym oraz liczba dostępnych stanów końcowych (często zastępowane przez gęstości stanów).##
+
+Znaczenie fizyczne czynnika 
+\[ f_1 \cdot \left[ 1 - f_2 \right] \]
+Ten czynnik jest kluczowy w fizyce półprzewodników:​
+* f<sub>1</sub> musi być elektron w stanie początkowym, by mógł zaabsorbować foton.
+* ( 1 - f<sub>2</sub> ) stan końcowy musi być wolny, by elektron mógł tam przejść.
+Iloczyn tych dwóch wyrażeń mówi, jaka jest efektywna liczba możliwych przejść optycznych.
+Dzięki temu prawo absorpcji uwzględnia fakt, że przy wysokim poziomie domieszkowania (lub przy silnym zapełnieniu pasma przewodnictwa) absorpcja maleje — bo brakuje wolnych stanów, w które elektron mógłby przeskoczyć (tzw. efekt zatykania pasma – band filling effect).
+
+Interpretacja całego równania:
+Można to czytać tak:
+
+Tempo absorpcji fotonów o energii E<sub>21</sub> jest proporcjonalne do:
+* liczby fotonów o tej energii,
+* gęstości stanów elektronowych w obu pasmach,
+* prawdopodobieństwa, że stan początkowy jest zajęty,
+* oraz prawdopodobieństwa, że stan końcowy jest pusty.
+
+3.3 Emisja spontaniczna
+
+Elektron z pasma przewodnictwa samorzutnie rekombinuje z dziurą w paśmie walencyjnym, emitując foton o energii bliskiej Eg.
+$spontaniczna_polprzewodnik.png?500$
+Korzystając z funkcji Fermiego-Diracka rozkładu elektronów w pasmach możemy dostać równanie opisujące tempo (lub prawdopodobieństwo) przejść optycznych w procesie emisji spontanicznej fotonu w półprzewodniku:
+\[ r_{21} \left( spon \right) = A_{21} p_1 n_2 = A_{21} \rho_c \left( E_2 - E_c \right) \rho_v \left( E_v - E_1 \right) f_2 \cdot \left[ 1 - f_1 \right] \]
+
+3.4 Emisja stymulowana
+
+Foton o odpowiedniej energii stymuluje rekombinację pary elektron-dziura, co prowadzi do emisji drugiego, identycznego fotonu, skutkując wzmocnieniem światła.
+$stymulowana_polprzewodnik.png?500$
+Korzystając z funkcji Fermiego-Diracka rozkładu elektronów w pasmach możemy dostać równanie opisujące tempo (lub prawdopodobieństwo) przejść optycznych w procesie emisji wymuszonej fotonu w półprzewodniku:
+\[ r_{21} \left( wymuszona \right) = B_{21} p_1 n_2 n_{ph} \left( E_{21} \right) = B_{21} n_{ph} \left( E_{21} \right) \rho_c \left( E_2 - E_c \right) \rho_v \left( E_v - E_1 \right) f_2 \cdot \left[ 1 - f_1 \right] \]
+
+4. Warunek Wzmocnienia w Półprzewodnikach: Kryterium Bernarda-Duraffourga
+
+Prosty warunek inwersji obsadzeń, N<sub>2</sub> > N<sub>1</sub>, jest niewystarczający w świecie pasm energetycznych, gdzie mamy do czynienia z kontinuum stanów. Potrzebujemy nowego kryterium, które uwzględni probabilistyczny charakter obsadzenia tych stanów, opisany przez funkcje Fermiego-Diraca. Takie kryterium zostało sformułowane w 1961 roku przez M. G. A. Bernarda i G. Duraffourga.
+Wzmocnienie optyczne netto występuje, gdy szybkość emisji stymulowanej (r<sub>21</sub>(stim)) jest większa niż szybkość absorpcji (r<sub>12</sub>(abs)). Analiza tych procesów w kontekście statystyki Fermiego-Diraca prowadzi do fundamentalnego warunku Bernarda-Duraffourga. To jest linia demarkacyjna w bitwie o wzmocnienie w półprzewodniku. Jeśli separacja quasi-poziomów Fermiego przekroczy ten próg, wygrywa emisja stymulowana. Jeśli nie – dominuje absorpcja.
+Emisja stymulowana:
+\[ r \left( stymulowana \right) = r_{21} \left( wymuszona \right) - r_{12} \left( abs \right) \]
+Stąd prosty warunek:
+\[ r \left( stymulowana \right) > 0 \Rightarrow  r_{21} \left( wymuszona \right) > r_{12} \left( abs \right) \]
+Po wstawieniu wzorów na r z absorpcji i emisji wymuszonej mogę sformułować Warunek Bernada-Duraffourga:
+\[ E_{Fc} – E_{Fv} > E_2 - E_1 = E_{21} = \hbar \omega \]
+
+
+Fizyczny sens tego kryterium jest następujący: separacja energetyczna między quasi-poziomem Fermiego dla elektronów (E<sub>Fc</sub>) a quasi-poziomem Fermiego dla dziur (E<sub>Fv</sub>) musi być większa niż energia emitowanych fotonów (ħω). Ponieważ fotony mają energię zbliżoną do szerokości przerwy energetycznej (Eg), warunek ten oznacza konieczność tak silnego pompowania półprzewodnika, aby "wepchnąć" quasi-poziomy Fermiego głęboko w odpowiednie pasma. Jest to precyzyjna, matematyczna definicja "inwersji obsadzeń" w materiale półprzewodnikowym.
+
+Po ustaleniu warunku koniecznego do uzyskania wzmocnienia, możemy przejść do wyprowadzenia wyrażenia opisującego jego wielkość, czyli współczynnika wzmocnienia materiałowego.
+
+5. Wyprowadzenie Współczynnika Wzmocnienia (Gain)
+
+Celem tej sekcji jest przedstawienie matematycznego opisu wzmocnienia światła w półprzewodniku. Proces ten opiera się na fundamentalnych narzędziach mechaniki kwantowej, takich jak złota reguła Fermiego, i pozwala na ilościowe określenie, jak efektywnie dany materiał wzmacnia światło.
+
+Zanim zdefiniujemy współczynnik wzmocnienia g, kluczowe jest zrozumienie, że nie jest to nowe, niezależne zjawisko. Wzmocnienie to po prostu absorpcja, która przybrała wartość ujemną. Poszukujemy warunków, w których materiał, zamiast osłabiać przechodzące przez niego światło, zaczyna je amplifikować.
+$wzmocnienie.png$
+Wzmocnienie materiałowe g definiuje się poprzez równanie opisujące wykładniczy wzrost natężenia światła I w miarę jego propagacji na odległość dz w ośrodku:
+\[ dI = g \cdot I \cdot dz \]
+Natężenie światła natomiast możemy zdefiniować jako:
+\[ I = \nu \cdot E_{21} \cdot n_{ph} \left( E_{21} \right) \]
+\[ \nu = \frac{d \omega}{d k} = \frac{c}{n_{osrodka}} \]
+Teraz możemy wyprowadzić g:
+$wyprowadzenie.png$
+\[ g = \frac{n_{osrodka}}{c} \cdot B \cdot  \rho_c \left( E_2 - E_c \right) \rho_v \left( E_v - E_1 \right) \cdot \left[ f_2 - f_1 \right] \]
+
+5.1 Prawdopodobieństwo przejścia dla półprzewodników
+
+Aby obliczyć g, należy najpierw wyznaczyć prawdopodobieństwo przejścia optycznego. Używa się do tego złotej reguły Fermiego, która wiąże szybkość przejść z kwadratem elementu macierzowego hamiltonianu oddziaływania H'21 między stanem początkowym |1> (elektron w VB) a końcowym |2> (elektron w CB):
+\[ r_{wymuszone} = \frac{2 \pi}{ \hbar }\left| H_{21} \right|^2 \cdot \delta \left( E_{21} \right) \]
+gdzie funkcja delta Diraca δ wymusza zachowanie energii.
+Przy przejściach optycznych w półprzewodnikach muszą być spełnione zarówno zasada zachowania energii, jak i zasada zachowania pędu (zewnętrzny pęd fotonu jest zwykle mały — wymaga to udziału rozpraszania na fononach lub różnic w k wektorach, albo użycia przybliżenia pionowego k<sub>c</sub> ≈ k<sub>v</sub> w układach bezpośredniej przerwy).
+
+Hamiltonian oddziaływania ładunku z polem (przy minimalnym sprzężeniu, oznaczając ładunek elektronu przez −e ) można zapisać jako
+\[ E = - \frac{\partial A}{\partial t} - \nabla \phi , B =rot A \]
+\[ H_c = \frac{1}{2m} \left( p + e A \right)^2 - e \phi \approx \frac{p^2}{2m} - e \phi + \frac{e}{2m} A \cdot p \] 
+Miarą „siły” przejścia pomiędzy dwoma stanami pod wpływem zewnętrznego pola elektromagnetycznego:
+\[ H_{21} \equiv \left\langle \psi_2 | H'_{21} | \psi_1 \right\rangle \]
+Zatem nasze B to:
+\[ B = \frac{e^2 h}{2 m^2 \varepsilon_0 n_{osrodka}^2 E_{21}} \left| \left\langle 1 | p | 2 \right\rangle \right|^2 \]
+
+5.2 Wzmocnienie spektralne
+
+$wzm2.png?650$
+Po uwzględnieniu tych zasad oraz statystyki Fermiego-Diraca można wyprowadzić finalne wyrażenie na współczynnik wzmocnienia spektralnego g(E).
+
+Wartość wzmocnienia przy określonej energii zależy od dwóch czynników: po pierwsze, od tego, ile par elektron-dziura jest dostępnych do wygenerowania światła o tej energii, a po drugie, od tego, czy dla tych konkretnych stanów występuje inwersja obsadzeń. Matematycznym wyrazem tej idei jest następujący wzór: g(E) ≈ ρ(E<sub>21</sub>) ∙ (f<sub>2</sub> - f<sub>1</sub>)
+
+Znaczenie poszczególnych członów jest następujące:
+
+* ρ(E<sub>21</sub>) to zredukowana gęstość stanów. Opisuje ona, jak wiele par stanów (jeden w paśmie walencyjnym, drugi w przewodnictwa) jest dostępnych dla przejścia optycznego o danej energii E<sub>21</sub>. Kształt tej funkcji zależy od struktury materiału.
+* (f<sub>2</sub> - f<sub>1</sub>) to czynnik inwersji obsadzeń. f<sub>2</sub> i f<sub>1</sub> to funkcje rozkładu Fermiego-Diraca określające prawdopodobieństwo zajęcia odpowiednio stanu w paśmie przewodnictwa i walencyjnym. Wzmocnienie (g > 0) jest możliwe tylko wtedy, gdy f<sub>2</sub> > f<sub>1</sub>, co oznacza, że prawdopodobieństwo zajęcia stanu początkowego (dla emisji) jest większe niż prawdopodobieństwo zajęcia stanu końcowego. Jest to bezpośrednia konsekwencja warunku Bernarda-Duraffourga.
+
+Teraz zobaczymy, jak ten ogólny wzór przekłada się na konkretne kształty widm wzmocnienia w zależności od struktury kwantowej materiału.
+
+6. Widmo Wzmocnienia i Wpływ Struktury Materiału
+
+Współczynnik wzmocnienia g nie jest stałą wartością, lecz silnie zależy od energii fotonu (a tym samym od długości fali światła). Ta zależność, g(E), nazywana jest widmem wzmocnienia. Kształt tego widma jest w decydującym stopniu determinowany przez gęstość stanów energetycznych ρ(E) danego materiału, co otwiera drogę do projektowania właściwości laserów poprzez inżynierię materiałową na poziomie nanometrów.
+
+Wpływ wymiarowości materiału na gęstość stanów, a co za tym idzie na widmo wzmocnienia, można podsumować następująco:
+
+* Materiał 3D (tzw. bulk): Gęstość stanów rośnie parabolicznie z energią (ρ(E) ~ √E). Prowadzi to do szerokiego, asymetrycznego widma wzmocnienia.
+* Materiał 2D (studnia kwantowa - QW): Ograniczenie ruchu nośników w jednym wymiarze prowadzi do schodkowej gęstości stanów. Skutkuje to węższym, ale znacznie bardziej wydajnym widmem wzmocnienia.
+* Materiał 1D (drut kwantowy): Dalsze ograniczenie swobody ruchu nośników powoduje, że gęstość stanów ma postać ostrych pików.
+* Materiał 0D (kropka kwantowa): Nośniki są uwięzione we wszystkich trzech wymiarach, a gęstość stanów zapada się do serii ostrych, podobnych do funkcji delta funkcji, bardzo przypominających dyskretne poziomy energetyczne izolowanego atomu.
+
+Praktyczną ilustrację tych koncepcji stanowi widmo wzmocnienia dla lasera opartego na studni kwantowej (GaIn)Sb/(AlGa)(AsSb). Pomiary i symulacje pokazują, jak widmo to ewoluuje wraz ze wzrostem pompowania. Przy gęstościach nośników rosnących od 0.65 do 1.0 ∙ 10¹² cm⁻² (od dolnej do górnej krzywej na wykresie), obserwujemy, że maksymalna wartość współczynnika wzmocnienia rośnie, a całe widmo przesuwa się w stronę wyższych energii i poszerza. Oznacza to, że poprzez kontrolę warunków pracy urządzenia możemy aktywnie stroić jego charakterystykę wzmocnienia.
+
+Podsumowując, inżynieria struktury materiału na poziomie kwantowym jest kluczowym narzędziem pozwalającym na precyzyjne kształtowanie właściwości optycznych, takich jak wydajność, zakres długości fali i stabilność temperaturowa urządzeń laserowych.
+
+7. Podsumowanie i Kluczowe Wnioski
+
+Przedstawiona analiza prowadzi nas od fundamentalnych zasad oddziaływania światła z materią, opisanych przez Einsteina dla prostego układu dwupoziomowego, aż do praktycznego opisu wzmocnienia optycznego w złożonych strukturach półprzewodnikowych, które stanowią serce nowoczesnej optoelektroniki. Zrozumienie tej drogi jest kluczowe dla świadomego projektowania i wykorzystywania laserów.
+
+Najważniejsze koncepcje i wnioski z wykładu można zebrać w następujących punktach:
+
+* Współczynniki Einsteina: Prawdopodobieństwa jednostkowe dla emisji wymuszonej i absorpcji są sobie równe (B<sub>21</sub> = B<sub>12</sub>), co stanowi fundament dla analizy konkurencji między tymi procesami.
+* Warunek dominacji emisji stymulowanej: Aby proces wzmocnienia był wydajny, konieczne jest zapewnienie wysokiej gęstości fotonów w ośrodku, co w praktyce realizuje się za pomocą rezonatora optycznego.
+* Warunek Bernarda-Duraffourga: Jest to fundamentalne kryterium uzyskania wzmocnienia w półprzewodnikach: E<sub>Fc</sub> - E<sub>Fv</sub> > ħω. Stanowi ono ścisły odpowiednik inwersji obsadzeń z modelu atomowego, wyrażony w języku quasi-poziomów Fermiego.
+* Współczynnik wzmocnienia g: Jego wartość jest wprost proporcjonalna do czynnika inwersji, czyli różnicy w obsadzeniu stanów (f<sub>2</sub> - f<sub>1</sub>). W konsekwencji wzmocnienie (g > 0) występuje w tym zakresie energii, w którym współczynnik absorpcji materiału staje się ujemny (g = -α).
+
+9. null
+
+null
+

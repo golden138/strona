@@ -1,0 +1,149 @@
+Wstęp
+
+1. Podstawy Fizyczne: Zakresy Spektralne i Promieniowanie
+
+Strategiczne znaczenie dla projektowania i aplikacji przyrządów optoelektronicznych ma dogłębne zrozumienie widma elektromagnetycznego oraz natury promieniowania termicznego. Analiza tych zjawisk pozwala określić, w jakich zakresach długości fal dane urządzenie będzie pracować najefektywniej i do jakich celów może zostać wykorzystane.
+
+1.1 Promieniowanie Ciała Doskonale Czarnego
+
+Koncepcja promieniowania ciała doskonale czarnego opisuje widmo promieniowania emitowanego przez idealny obiekt, który pochłania całe padające na niego promieniowanie, niezależnie od częstotliwości. Jego widmo emisyjne zależy wyłącznie od temperatury. Jego widmo emisyjne zależy wyłącznie od temperatury:
+\[ I \left( \nu , T \right) = \frac{2h \nu^3}{c^2} \cdot \frac{1}{e^{ \frac{h \nu}{kT} } - 1} \]
+$promieniowanie.png$
+Widma dla charakterystycznych temperatur:
+* T = 300 K: Odpowiada promieniowaniu otoczenia w temperaturze pokojowej. Emisja jest zlokalizowana głęboko w podczerwieni, co wyjaśnia, dlaczego obiekty w tej temperaturze nie świecą w paśmie widzialnym.
+* T = 2200 K: Charakterystyczne dla promieniowania emitowanego przez włókno tradycyjnej żarówki. Większość energii jest wciąż emitowana w podczerwieni (jako ciepło), ale część widma wchodzi już w zakres widzialny, co postrzegamy jako żółto-pomarańczowe światło.
+* T = 6200 K: Odpowiada temperaturze powierzchni Słońca. Maksimum emisji przypada na środek pasma widzialnego, co jest wynikiem ewolucji ludzkiego oka, dostosowanego do najsilniejszego źródła światła na Ziemi.
+
+1.2 Widmo Słoneczne i Absorpcja Atmosferyczna
+
+$atmosfera_promieniowanie.png$
+Promieniowanie słoneczne, docierając do powierzchni Ziemi, ulega znaczącej modyfikacji. Jak pokazują dane dotyczące "Solar and thermal quantum spectra", widmo to jest silnie pofalowane z powodu absorpcji atmosferycznej. Kluczowym czynnikiem wpływającym na jego ostateczny kształt jest absorpcja promieniowania przez cząsteczki wody (H<sub>2</sub>O) oraz innych gazów obecnych w atmosferze. Zjawisko to tworzy specyficzne "okna" transmisyjne, które determinują, jakie długości fal słonecznych docierają do nas najefektywniej.
+
+Zrozumienie tych fundamentalnych zjawisk fizycznych jest kluczowe, ponieważ materiały półprzewodnikowe, stanowiące serce przyrządów optoelektronicznych, są projektowane tak, aby emitować lub wykrywać światło w precyzyjnie określonych zakresach spektralnych, często dopasowanych do wspomnianych okien transmisyjnych.
+
+2. Analiza Materiałów Półprzewodnikowych
+
+Wybór odpowiedniego materiału półprzewodnikowego jest fundamentalną decyzją, która determinuje wydajność, zakres spektralny, koszt i ostateczne zastosowanie każdego przyrządu optoelektronicznego. Każda grupa materiałowa oferuje unikalny zestaw właściwości, ale również stawia przed inżynierami specyficzne wyzwania technologiczne.
+
+2.1 Grupa IV: Krzem (Si) i German (Ge) – Fundament Mikroelektroniki i Fotoniki
+
+Krzem (Si) jest niekwestionowanym liderem w dziedzinie mikroelektroniki, a jego dominacja jest bezpośrednim następstwem Prawa Moore'a. Ilustruje to ewolucja od historycznego procesora Intel® 4004 (1971) z 2300 tranzystorami do współczesnych układów wykonanych w technologii 22 nm FinFET (2012) z 1,4 miliardem tranzystorów, a nawet testowych chipów 7 nm. German (Ge) odgrywa rolę uzupełniającą, głównie w specjalistycznych zastosowaniach.
+
+Poniższa tabela zestawia kluczowe właściwości obu materiałów:
+
+##Właściwość	Krzem (Si)	German (Ge)
+Stała sieci (a)	0.54311 nm	0.565791 nm
+Przerwa energetyczna (Eg)	1.12 eV (pośrednia)	0.67 eV (prosta w punkcie L)
+Długość fali (λg)	1100 nm	1850 nm
+Ruchliwość elektronów (μe)	1600 cm²/Vs	3900 cm²/Vs
+Ruchliwość dziur (μh)	430 cm²/Vs	1900 cm²/Vs##
+
+Technologiczna przewaga krzemu nad germanem wynika z trzech fundamentalnych przyczyn:
+
+* Stabilny tlenek: Możliwość tworzenia niezwykle stabilnego i wysokiej jakości dielektryka, dwutlenku krzemu (SiO<sub>2</sub>), który jest kluczowym elementem izolacyjnym w tranzystorach.
+* Większa przerwa energetyczna: Szersza przerwa energetyczna Si pozwala na pracę urządzeń w wyższych temperaturach i przy niższych prądach upływu w porównaniu do Ge.
+* Powszechna dostępność: Krzem jest drugim najpowszechniej występującym pierwiastkiem w skorupie ziemskiej (w postaci SiO<sub>2</sub>), co czyni go tanim i łatwo dostępnym surowcem.
+
+W fotonice zarówno krzem, jak i german odgrywają kluczową rolę jako materiały do budowy fotodetektorów w zakresie światła widzialnego (VIS) i bliskiej podczerwieni (IR).
+
+2.2 Grupa III-V (AIII-BV): Wszechstronność w Emisji Światła
+
+Podczas gdy krzem dominuje w elektronice, jego pośrednia przerwa energetyczna czyni go nieefektywnym emiterem światła. Aby przezwyciężyć to ograniczenie, inżynierowie zwracają się ku półprzewodnikom złożonym z grup III-V (np. arsenek galu GaAs, fosforek indu InP, azotek galu GaN), które pozwalają na tworzenie zaawansowanych struktur znanych jako heterostruktury. Ich przewaga wynika z unikalnej kombinacji właściwości.
+
+* Struktura krystaliczna: Najczęściej krystalizują w regularnej strukturze blendy cynkowej lub (w przypadku azotków) wurcytu, co sprzyja wzrostowi wysokiej jakości warstw.
+$Sphalerite.png$
+Sfaleryt
+$Wurtzite.png$
+Wurcyt
+* Struktura pasmowa: Posiadają prostą przerwę energetyczną (minimum pasma przewodnictwa i maksimum pasma walencyjnego znajdują się w tym samym punkcie przestrzeni pędów, tzw. punkcie Γ). Ta prosta przerwa energetyczna jest kluczowym powodem, dla którego materiały AIII-BV są wykorzystywane do budowy emiterów światła, ponieważ pozwala na wydajną konwersję energii elektrycznej w światło. W przeciwieństwie do tego, pośrednia przerwa energetyczna krzemu wymaga udziału fononu (kwantu drgań sieci krystalicznej) w celu zachowania pędu, co czyni rekombinację promienistą zjawiskiem znacznie rzadszym i mniej wydajnym. Dlatego też krzem dominuje w elektronice i detekcji, a nie w emisji światła.
+* Właściwości mechaniczne: Charakteryzują się znacznie wyższą twardością niż półprzewodniki z grup II-VI czy IV-VI, co przekłada się na większą trwałość i niezawodność przyrządów.
+
+Fundamentalne znaczenie w technologii związków AIII-BV ma możliwość tworzenia heterostruktur – złożonych struktur składających się z warstw różnych materiałów półprzewodnikowych. Pozwala to na precyzyjną "inżynierię" właściwości optycznych i elektrycznych urządzenia.
+
+* Heterostruktury typu I: Elektrony i dziury są uwięzione w tej samej warstwie (jamie kwantowej – cienkiej warstwie materiału półprzewodnikowego, w której nośniki ładunku są uwięzione w jednym wymiarze), co maksymalizuje prawdopodobieństwo rekombinacji. Przykłady to jamy kwantowe GaAs/AlGaAs (emisja w okolicach 830 nm) oraz InGaN/GaN, które zrewolucjonizowały rynek, umożliwiając produkcję wydajnych niebieskich i zielonych diod LED.
+* Heterostruktury typu II: Elektrony i dziury są rozdzielone przestrzennie w sąsiadujących warstwach. Taka konfiguracja jest wykorzystywana m.in. w heterostrukturach InAs/GaSb do budowy detektorów podczerwieni.
+
+Chociaż związki AIII-BV oferują doskonałe właściwości optyczne, ich wytwarzanie stawia przed inżynierami znaczące wyzwania technologiczne, które muszą zostać przezwyciężone:
+
+* Dostępność podłoży: Wzrost wysokiej jakości warstw wymaga monokrystalicznego podłoża o idealnie dopasowanej stałej sieci, co często jest trudne i kosztowne do osiągnięcia.
+* Rozpad spinodalny: Stopy trójskładnikowe i czteroskładnikowe (np. In<sub>0.72</sub>Al<sub>0.28</sub>N) mogą być termodynamicznie niestabilne i ulegać samoistnemu rozdzieleniu na fazy o różnym składzie, co degraduje właściwości materiału.
+* Domieszkowanie: Uzyskanie efektywnego domieszkowania na typ p lub n w niektórych materiałach (zwłaszcza w azotkach o szerokiej przerwie energetycznej) jest niezwykle trudne technologicznie.
+
+2.3 Grupy II-VI (AII-BVI) i IV-VI (Sole Ołowiu): Specjalistyczne Zastosowania w Podczerwieni
+
+Główną przyczyną ograniczonego zastosowania tych dwóch grup materiałów jest ich niska odporność mechaniczna (twardość) w porównaniu do krzemu czy związków AIII-BV. Mimo to, odgrywają one niezastąpioną rolę jako materiały dla fotoniki w zakresie średniej i dalekiej podczerwieni (IR), zwłaszcza dla fal o długości λ > 2.5 μm.
+
+* Związki AII-BVI: Kluczowym przedstawicielem tej grupy jest HgCdTe (MCT, tellurek kadmu-rtęci), który jest dominującym materiałem do produkcji wysokoczułych fotodetektorów podczerwieni.
+* Sole Ołowiu (AIV-BVI): Związki takie jak PbS (siarczek ołowiu) i PbSe (selenek ołowiu) są również wykorzystywane jako materiały detekcyjne. Charakteryzują się unikalnymi cechami: bardzo wąską przerwą energetyczną oraz strukturą krystaliczną soli kuchennej (NaCl), odmienną od większości półprzewodników.
+
+Ostatecznie, wybór pomiędzy tymi grupami materiałowymi jest zawsze kompromisem, w którym pożądane właściwości optyczne, takie jak zakres spektralny emisji czy detekcji, muszą być zrównoważone z wyzwaniami technologicznymi, kosztem i właściwościami mechanicznymi gotowego przyrządu.
+
+3. Zastosowania i Technologie Optoelektroniczne
+
+Technologie optoelektroniczne znalazły zastosowanie w niemal każdej dziedzinie życia, od elektroniki użytkowej, przez telekomunikację, po zaawansowane systemy przemysłowe i wojskowe. Moc i długość fali emitowanego światła są bezpośrednio powiązane z przeznaczeniem danego urządzenia, co ilustruje niezwykłą wszechstronność technologii półprzewodnikowej.
+
+3.1 Spektrum Mocy i Zastosowań Emiterów
+
+Szeroki wachlarz zastosowań przedstawionych poniżej jest możliwy dzięki inżynierii materiałowej związków AIII-BV, która pozwala na precyzyjne dostrojenie długości fali i mocy wyjściowej – co jest wyczynem niemożliwym do osiągnięcia przy użyciu samych półprzewodników z grupy IV. Poniższa tabela przedstawia przegląd typowych zastosowań emiterów półprzewodnikowych w zależności od ich mocy i długości fali.
+
+##Zastosowanie	Typowa Moc Emisji	Długość Fali (nm)	Kluczowy Cel
+CD	< 1 mW	780	Odtwarzanie danych
+DVD (zapis)	< 0.5 W	650	Zapis danych
+Blu-ray	30 mW	405	Zapis danych
+Telekomunikacja	5 - 40 mW	1310 / 1550 (min. dyspersji / min. absorpcji)	Transmisja danych w światłowodach
+Spektroskopia	1 mW	Podczerwień	Analiza składu chemicznego
+Wzmacniacze Optyczne	2 W	-	Wzmocnienie sygnału w sieciach światłowodowych
+Pompy laserów na ciele stałym	kW	808, 980, ...	Wzbudzanie ośrodka aktywnego w innych laserach
+Obróbka Metali	1 - 20 kW	-	Cięcie, spawanie, znakowanie
+Zastosowania Wojskowe	> 30 kW	-	Systemy broni energetycznej, dalmierze##
+
+Jak widać, zakres mocy rozciąga się od ułamków miliwata do ponad 30 kilowatów. Ta ogromna skala świadczy o niezwykłej elastyczności i dojrzałości technologii laserów półprzewodnikowych, które można precyzyjnie dostosować do niemal każdego zadania.
+
+3.2 Detekcja Substancji Chemicznych w Podczerwieni
+
+Zakresy średniej (MIR) i bliskiej (NIR) podczerwieni są kluczowe dla detekcji śladowych ilości związków chemicznych. Mechanizm detekcji opiera się na zjawisku selektywnej absorpcji promieniowania przez cząsteczki na skutek wzbudzenia ich przejść oscylacyjno-rotacyjnych. Każda cząsteczka posiada unikalny "odcisk palca" w widmie absorpcyjnym, co pozwala na jej identyfikację i pomiar stężenia.
+
+##Cząsteczka	Długość fali MIR (nm)	Długość fali NIR (nm)
+H<sub>2</sub>O	5940	1390
+CO<sub>2</sub>	4230	1960
+CH<sub>4</sub>	3260	1650
+NH<sub>3</sub>	10300	1500##
+
+3.3 Technologie Telekomunikacyjne: Światłowody Optyczne
+
+Propagacja światła w standardowym światłowodzie telekomunikacyjnym (typu G.652) opisywana jest przez model "Zig-zag", w którym promień świetlny jest uwięziony w rdzeniu dzięki zjawisku całkowitego wewnętrznego odbicia na granicy z płaszczem.
+$swiatlowod.png$
+
+Budowa takiego światłowodu jest precyzyjnie zdefiniowana:
+
+* Rdzeń: Wykonany z krzemionki domieszkowanej tlenkiem germanu (GeO<sub>2</sub>), ma promień 5 μm i wyższy współczynnik załamania (n=1.449).
+* Płaszcz: Zbudowany z czystej krzemionki (SiO<sub>2</sub>), ma promień 62.5 μm i niższy współczynnik załamania (n=1.4435).
+
+Dla światłowodów krzemionkowych zidentyfikowano dwa kluczowe okna transmisyjne, w których straty sygnału są minimalne:
+
+* 1300 nm: W tym zakresie występuje minimum dyspersji chromatycznej, co oznacza, że impulsy światła o różnych długościach fal propagują z niemal tą samą prędkością, ograniczając zniekształcenia sygnału.
+* 1550 nm: Charakteryzuje się minimum absorpcji materiałowej, co pozwala na przesyłanie sygnału na największe odległości bez konieczności wzmacniania.
+
+Istnienie tych dwóch oddzielnych okien transmisyjnych stanowiło znaczące wyzwanie inżynieryjne we wczesnych systemach światłowodowych. Chociaż okno 1550 nm oferuje najniższe straty sygnału, pozwalając na największe odległości między wzmacniaczami, cierpi ono na większą dyspersję. Doprowadziło to do rozwoju światłowodów z przesuniętą dyspersją oraz zaawansowanych technik modulacji, aby w pełni wykorzystać potencjał tego niskotłumiennego okna.
+
+Przedstawione powyżej zastosowania są bezpośrednim wynikiem unikalnych właściwości materiałów i struktur półprzewodnikowych omówionych w poprzednich rozdziałach, co pokazuje ścisły związek między fizyką materiałów a końcową funkcjonalnością technologiczną.
+
+4. Podsumowanie Kluczowych Koncepcji (Wykład 1)
+
+Ta sekcja podsumowuje esencję wiedzy z pierwszej, wprowadzającej części kursu. Zrozumienie poniższych koncepcji jest niezbędne do dalszej analizy bardziej zaawansowanych zagadnień, takich jak budowa i zasada działania konkretnych typów laserów czy diod LED.
+
+* Emitery:
+  * Zakresy spektralne: Należy znać i rozumieć fundamentalne obszary pracy przyrządów optoelektronicznych: nadfiolet (UV), pasmo widzialne (VIS) oraz podczerwień (IR).
+  * Zakresy mocy: Trzeba być świadomym ogromnej skali mocy emiterów, od miliwatów (mW) w elektronice użytkowej, przez waty (W) w pompach laserowych, aż po kilowaty (kW) w zastosowaniach przemysłowych i wojskowych.
+* Półprzewodniki grupy IV (Si, Ge):
+  * Główne zastosowania: Ich dominującą rolą jest mikroelektronika (głównie krzem), ale odgrywają też ważną funkcję jako materiały do budowy fotodetektorów.
+* Półprzewodniki AII-BVI i Sole Ołowiu:
+  * Ograniczenia i zastosowania: Ich głównym ograniczeniem jest niska odporność mechaniczna. Mimo to, są kluczowe jako materiały dla fotodetektorów podczerwieni (np. HgCdTe, PbS).
+* Półprzewodniki AIII-BV:
+  * Przyczyny szerokiego stosowania: Ich popularność wynika z korzystnej struktury krystalicznej (blenda cynkowa, wurcyt) i pasmowej (prosta przerwa energetyczna), które umożliwiają tworzenie wydajnych heterostruktur do emisji światła.
+  * Ograniczenia epitaksji: Najważniejsze wyzwania technologiczne w ich produkcji to: ograniczona dostępność dopasowanych podłoży, ryzyko rozpadu spinodalnego w stopach oraz trudności z efektywnym domieszkowaniem.
+
+9. null
+
+null
+

@@ -194,6 +194,158 @@ Podsumowując, podczas gdy obszar czynny LED (pracujący na emisji spontanicznej
 <audio controls=""><source src="Posty/Post10/pytanie5.mp3" type="audio/mpeg"></audio>
 %%
 
+6. Czy emisja krawędziowego lasera półprzewodnikowego Fabry Perot dużej mocy jest: kierunkowa, monochromatyczna, spolaryzowana?
+
+Emitowany przez laser półprzewodnikowy krawędziowy Fabry-Perota dużej mocy strumień światła w dużym przybliżeniu jest kierunkowy i spolaryzowany, natomiast nie jest monochromatyczny, lecz charakteryzuje się wąskim, ale wielomodowym widmem.
+Poniżej znajduje się szczegółowy opis tych charakterystyk, z uwzględnieniem specyfiki laserów dużej mocy.
+
+! Kierunkowość (Directionality)
+
+Emisja lasera jest z definicji kierunkowa w porównaniu do emisji spontanicznej (np. diody LED), gdzie fotony są emitowane w sposób losowy. Jednakże, dla laserów krawędziowych o dużej mocy, kierunkowość jest silnie asymetryczna i ograniczona przez jakość wiązki.
+* Asymetria Wiązki: W laserach krawędziowych, falowód jest znacznie węższy w kierunku prostopadłym do złącza (oś Y, grubość warstw d, rzędu 0.3-3 µm) niż w kierunku równoległym (oś X, szerokość paska w, dla laserów dużej mocy w≫10 μm).
+* Rozbieżność (θ): Zgodnie z zasadą dyfrakcji, im silniejsze jest ograniczenie światła w falowodzie (mniejszy wymiar), tym większa jest rozbieżność wiązki.
+  * Rozbieżność w płaszczyźnie prostopadłej do złącza (θ⊥) jest znacznie większa (rzędu 30<sup>o</sup> - 38<sup>o</sup>).
+  * Rozbieżność w płaszczyźnie równoległej do złącza (θ∣∣) jest mniejsza.
+* Jakość Wiązki (M<sup>2</sup>): Lasery dużej mocy często wykorzystują szerokie paski aktywne (np. w=200 μm), co ma na celu rozłożenie mocy na większej powierzchni i zapobieganie katastroficznemu uszkodzeniu zwierciadeł (COMD).
+  * W szerszym falowodzie może propagować się większa liczba modów bocznych, co prowadzi do znacznego pogorszenia jakości wiązki.
+  * Jakość wiązki jest mierzona parametrem M<sup>2</sup>. Dla laserów szerokopaskowych M<sup>2</sup> jest wysoki (np. >10), co oznacza, że wiązka nie jest idealną wiązką gaussowską i trudniej ją skupić do małej plamki.
+
+Wnioskując, emisja jest kierunkowa, ale wysoce rozbieżna i ma niską jakość (M<sup>2</sup> ≫ 1) w płaszczyźnie bocznej ze względu na wielomodowy charakter konstrukcji dużej mocy.
+
+! Monochromatyczność (Spectrum)
+
+Emisja lasera półprzewodnikowego Fabry-Perota jest wąskopasmowa (zawężona spektralnie), ale z reguły nie jest monochromatyczna (tzn. nie jest jednoukładowa), zwłaszcza w przypadku lasera dużej mocy.
+* Zawężenie Spektralne: Po przekroczeniu progu akcji laserowej, emisja stymulowana zaczyna dominować nad emisją spontaniczną. Prowadzi to do gwałtownego zawężenia widma emisyjnego. Pełna szerokość w połowie maksimum (FWHM) spada z rzędu 50 nm (emisja spontaniczna) do wartości rzędu 1 nm lub mniej.
+* Wielomodowość Podłużna: Rezonator Fabry-Perota (utworzony przez dwa równoległe zwierciadła, często łupane płaszczyzny kryształu) narzuca dyskretny zestaw dozwolonych długości fal, zwanych modami podłużnymi (q), które mogą ulec wzmocnieniu i istnieć w rezonatorze.
+* Przestrzenne Wypalanie Dziur (Spatial Hole Burning): W typowym rezonatorze FP, interferencja fal biegnących w przód i w tył tworzy falę stojącą z maksimami i minimami (węzłami) natężenia.
+  * Intensywna emisja wymuszona zużywa nośniki ładunku w maksimach, prowadząc do lokalnego spadku wzmocnienia ("wypalanie dziury").
+  * Inny mod rezonansowy, którego maksima wypadają w obszarach niewyczerpanego wzmocnienia, może osiągnąć próg laserowania, co prowadzi do jednoczesnej emisji wielu modów podłużnych.
+* Wielomodowość Boczna: Jak opisano w sekcji 1, lasery dużej mocy są często szerokopaskowe i emitują wiele modów bocznych (s), co dodatkowo komplikuje spektrum.
+
+Zatem, chociaż jest to światło o bardzo wąskim zakresie długości fal w porównaniu do światła białego czy diody LED, nie jest ono idealnie monochromatyczne (jednoczęstotliwościowe), lecz wielomodowe.
+
+! Polaryzacja (Polarization)
+
+Emisja krawędziowego lasera półprzewodnikowego jest zazwyczaj silnie spolaryzowana.
+* Dominacja TE: Dominuje polaryzacja TE (Transwersalna Elektryczna), w której wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n (równolegle do warstw półprzewodnika).
+* Przyczyny Dominacji TE:
+  * Straty na Zwierciadłach: Współczynnik odbicia od łupanego zwierciadła półprzewodnik-powietrze jest wyższy dla polaryzacji TE niż dla polaryzacji TM (Transwersalnej Magnetycznej). Wyższy współczynnik odbicia oznacza niższe straty lustrzane, co skutkuje niższym progiem akcji laserowej dla modu TE.
+  * Anizotropia Wzmocnienia: W strukturach ze studniami kwantowymi (QW), które stanowią rdzeń obszaru czynnego większości nowoczesnych laserów, reguły wyboru optycznego faworyzują wzmocnienie dla światła o polaryzacji TE. Proces ten jest wzmacniany przez wprowadzenie naprężeń ściskających w studniach kwantowych, które generują światło o polaryzacji TE (poziomej).
+
+W konsekwencji, większość mocy jest skoncentrowana w modzie o polaryzacji TE.
+
+<hr>
+Podsumowanie w formie analogii:
+Działanie lasera Fabry-Perota dużej mocy można porównać do bardzo szybkiego, asymetrycznego pistoletu maszynowego.
+* Kierunkowość: Pistolet strzela do przodu, ale z szerokim i zniekształconym stożkiem rozbieżności (nie jest to idealny snajperski strzał).
+* Monochromatyczność: Broń używa amunicji tego samego kalibru, ale strzela serią (wielomodowość podłużna), a nie pojedynczym pociskiem (jednomodowość).
+* Polaryzacja: Wszystkie pociski trafiają w cel obrócone w ten sam sposób (polaryzacja TE), dzięki geometrycznym i materiałowym ograniczeniom komory (rezonatora).
+
+7. Dlaczego współczesne lasery półprzewodnikowe wykorzystują naprężony jamy kwantowe ( np. InGaAs/GaAs )?
+
+Współczesne lasery półprzewodnikowe wykorzystują naprężone jamy kwantowe (ang. Strained Quantum Wells, SQW), takie jak InGaAs/GaAs, ponieważ celowe wprowadzenie kontrolowanych naprężeń mechanicznych jest potężnym narzędziem inżynierii pasmowej, które pozwala na dalszą, znaczną optymalizację kluczowych parametrów lasera, prowadząc do obniżenia prądu progowego i zwiększenia stabilności termicznej.
+
+Poniżej przedstawiono główne korzyści wynikające ze stosowania naprężonych jam kwantowych, szczególnie w systemach o strukturze kubicznej (takich jak InGaAs na podłożu GaAs lub InP):
+
+! Fundamentalna Redukcja Prądu Progowego (I<sub>th</sub>)
+
+Podstawowym celem wprowadzenia naprężeń (zwłaszcza naprężeń ściskających, gdy stała sieci jamy kwantowej a<sub>QW</sub> jest większa niż stała sieci barier a<sub>bar</sub> ) jest optymalizacja struktury pasma walencyjnego.
+* Zniesienie Degeneracji Pasm: W strukturach kubicznych pasmo walencyjne jest zdegenerowane (pasma ciężkich dziur, HH, i lekkich dziur, LH, mają tę samą energię). Kwantowanie w jamie kwantowej znosi tę degenerację, ale naprężenia robią to znacznie silniej.
+* Redukcja Masy Efektywnej Dziur: Naprężenia prowadzą do zredukowania masy efektywnej dziur na krawędzi pasma walencyjnego.
+* Łatwiejsza Inwersja Obsadzeń: Mniejsza masa efektywna dziur oznacza mniejszą gęstość stanów (DOS) w paśmie walencyjnym. Mniejsza gęstość stanów oznacza, że do osiągnięcia warunku inwersji obsadzeń (kryterium Bernarda-Duraffourga: 
+\[ E_{Fc} - E_{Fv} \gt \hbar \omega \]
+potrzebna jest mniejsza koncentracja nośników (N<sub>th</sub>).
+* Krzywa Wzmocnienia: Zależność maksymalnego wzmocnienia od prądu w QW jest logarytmiczna:
+\[ g_{max} \approx b \cdot \ln \left( \frac{J_{nom}}{J_0} \right) \]
+co w połączeniu ze zredukowaną gęstością stanów dziur, prowadzi do drastycznego obniżenia gęstości prądu progowego (J<sub>th</sub>). Cały postęp ewolucji obszaru czynnego (od homozłącz do SQW) umożliwił redukcję J<sub>th</sub> o około 5000 razy.
+
+! Zwiększenie Stabilności Termicznej i Redukcja Rekombinacji Auger
+
+Naprężenia pomagają zminimalizować dominujące mechanizmy strat niepromienistych, które drastycznie pogarszają wydajność laserów w podwyższonej temperaturze (mierzoną parametrem T<sub>0</sub> ).
+* Redukcja Rekombinacji Auger ( CN<sup>3</sup> ): 
+Rekombinacja Auger jest głównym mechanizmem strat niepromienistych w laserach długofalowych i silnie zależy od temperatury. Naprężenia (poprzez zwiększoną separację podpasm w paśmie walencyjnym) utrudniają zachowanie jednoczesne energii i pędu w procesach Augera (np. CHCC, CHSH, CHLH). Zredukowanie tych strat znacząco zwiększa wydajność kwantową lasera przy wysokich prądach i poprawia jego stabilność temperaturową (wyższy T<sub>0</sub>).
+
+! Kontrola Polaryzacji Emisji
+
+Naprężenia determinują, które przejścia optyczne są dominujące.
+* Dominacja Polaryzacji TE: Wprowadzenie naprężeń ściskających faworyzuje obsadzenie orbitali w płaszczyźnie (Px, Py), co prowadzi do generacji światła o polaryzacji TE (Transwersalnej Elektrycznej), gdzie wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n.
+* Niższe Straty Rezonatora: W optyce półprzewodnikowej moduł odbicia od zwierciadeł Fabry-Perota (łupana fasetka) jest wyższy dla polaryzacji TE niż dla TM. Dominacja polaryzacji TE oznacza więc niższe straty na zwierciadłach dla modu lasującego, co dodatkowo obniża prąd progowy.
+
+! Zwiększenie Wzmocnienia Różniczkowego
+
+Zmodyfikowana struktura pasmowa prowadzi do wyższego i węższego spektralnie wzmocnienia dla tej samej koncentracji nośników. Wyższe wzmocnienie różniczkowe (dg/dn) jest kluczowe w laserach telekomunikacyjnych, ponieważ pozwala na szybszą modulację sygnału optycznego.
+
+<hr>
+Wykorzystanie naprężonych jam kwantowych jest zaawansowanym etapem ewolucji obszaru czynnego, po którym nastąpiło dalsze ograniczanie wymiarowości do kropek kwantowych (QD). O ile same jamy kwantowe (QW) zapewniały kwantowe ograniczenie nośników w jednym wymiarze (strukturę quasi-2D), o tyle wprowadzenie naprężeń pozwoliło na precyzyjną, mechaniczną kontrolę nad właściwościami elektronicznymi materiału, co jest niezbędne do osiągnięcia wysokiej mocy, stabilności termicznej i wydajności.
+
+8. Mechanika Przejścia z Emisji Spontanicznej do Stymulowanej
+
+! Pytanie: 
+W jaki sposób relacje Einsteina, opisujące równowagę w układzie dwupoziomowym, przenoszą się na świat półprzewodników z pasmami energetycznymi? Opisz i porównaj procesy rekombinacji promienistej (spontanicznej i stymulowanej) i niepromienistej w kontekście bilansu nośników, a następnie wyjaśnij, dlaczego akcja laserowa wymaga, aby separacja quasi-poziomów Fermiego spełniała kryterium Bernarda-Duraffourga
+
+! Uzasadnienie szczegółowe: 
+Pytanie to koncentruje się na fundamentalnych różnicach między modelem atomowym a modelem półprzewodnikowym. Źródła szczegółowo opisują trzy procesy kwantowe (absorpcja, emisja spontaniczna i wymuszona) i formalne relacje Einsteina. Następnie przechodzą do zastosowania tych zasad w strukturze pasmowej, wprowadzając quasi-poziomy Fermiego oraz wyrażenia na tempo absorpcji i emisji stymulowanej. Wreszcie, źródła definiują warunek wzmocnienia netto (kryterium Bernarda-Duraffourga) jako fundamentalny próg inwersji obsadzeń w półprzewodnikach. Pytanie wymaga także porównania roli rekombinacji promienistej (pożądanej) i niepromienistej (niepożądanej straty, np. Augera) w bilansie fotonów.
+
+9. Inżynieria Falowodu dla Kontroli Modów i Jakości Wiązki
+
+! Pytanie: 
+Omów, w jaki sposób konstrukcja falowodu w laserze krawędziowym kontroluje mody optyczne w kierunku poprzecznym (osi Y) i bocznym (osi X). Szczególnie wyjaśnij:
+* Dlaczego w modach poprzecznych dominują mody parzystego rzędu (m=0, 2, 4...)?
+* Jak inżynieria geometrii falowodu bocznego (głębokość trawienia i szerokość grzbietu) wpływa na jednomodową pracę lasera (wysoka jakość wiązki, niskie M<sup>2</sup> )?
+* Jaki jest związek między polem bliskim a polem dalekim i dlaczego silne ograniczenie pola w jednym wymiarze prowadzi do dużej rozbieżności?
+
+! Uzasadnienie szczegółowe: 
+To pytanie dotyczy zagadnień geometrycznych i optyki falowodowej. Źródła szczegółowo analizują mody poprzeczne, objaśniając, że mody parzyste posiadają maksimum pola w studni kwantowej, co zapewnia wysoki współczynnik ograniczenia optycznego (Γ<sub>QW</sub>) i efektywne wzmocnienie. Analiza modów bocznych koncentruje się na tym, jak zmiana geometrii (szerokość grzbietu, głębokość trawienia) wpływa na efektywny współczynnik załamania (Δn<sub>eff</sub> ) i przełączanie między trybem jedno- a wielomodowym. Wreszcie, źródła definiują zależność między polem bliskim (w rezonatorze) a polem dalekim (dyfrakcja emitowanej wiązki) za pomocą transformaty Fouriera.
+
+10. Jednomodowy laser krawędziowy.
+
+Jednomodowy laser krawędziowy to zaawansowane urządzenie optoelektroniczne, które jest projektowane w celu ograniczenia propagacji światła w rezonatorze do pojedynczego modu optycznego, szczególnie w płaszczyźnie bocznej (równoległej do złącza).
+Uzyskanie pracy jednomodowej jest kluczowe dla zastosowań wymagających wysokiej jakości wiązki (niskiego M 
+2
+ ) i stabilnego widma, takich jak telekomunikacja, gdzie typowa moc tych laserów wynosi 5-40 mW.
+Poniżej znajduje się opis konstrukcji i działania jednomodowego lasera krawędziowego, opartego na rezonatorze Fabry-Perota, z uwzględnieniem mechanizmów ograniczających mody optyczne:
+1. Budowa i Ograniczenie Światła (Falowód)
+Laser krawędziowy (ang. Edge-Emitting Laser) wykorzystuje rezonator optyczny typu Fabry-Perota, utworzony przez dwa równoległe zwierciadła, często otrzymywane przez łupanie kryształu półprzewodnikowego. Wewnątrz tego rezonatora znajduje się falowód półprzewodnikowy, którego zadaniem jest ograniczanie światła w dwóch prostopadłych kierunkach: poprzecznym (oś Y) i bocznym (oś X).
+Ograniczenie Poprzeczne (Oś Y) – Mody Poprzeczne (m)
+Ograniczenie w kierunku prostopadłym do złącza (oś Y) jest realizowane przez heterostrukturę (zmianę materiałów, np. GaAs otoczony AlGaAs), która zapewnia wyższy współczynnik załamania światła w rdzeniu.
+• W tym kierunku dominuje mod podstawowy m=0 (mod parzystego rzędu).
+• Dzieje się tak, ponieważ mody parzyste (np. m=0) mają maksimum natężenia pola w centrum studni kwantowej (QW), co zapewnia wysoki współczynnik ograniczenia optycznego (Γ 
+QW
+​
+ ) i efektywne wzmocnienie.
+• Mody nieparzystego rzędu (np. m=1) posiadają węzeł (zero natężenia) w QW, co uniemożliwia im efektywne wzmocnienie i laserowanie.
+Ograniczenie Boczne (Oś X) – Mody Boczne (s)
+Ograniczenie w płaszczyźnie złącza (oś X) jest realizowane przez strukturę falowodu grzbietowego (ang. ridge waveguide). Jest to kluczowy element decydujący o jednomodowej pracy.
+• Laser jednomodowy wymaga, aby w kierunku bocznym propagował się tylko mod podstawowy s=0.
+• Uzyskanie jednomodowej pracy bocznej polega na kontrolowaniu geometrii grzbietu (szerokości w i głębokości trawienia), co wpływa na skok efektywnego współczynnika załamania (Δn 
+eff
+​
+ ).
+• Węższy grzbiet (typowa szerokość w≈3 μm) oraz płytsze trawienie (mniejszy Δn 
+eff
+​
+ ) faworyzują mod podstawowy, podczas gdy szersze falowody (np. w≥5 μm) pozwalają na propagację modów wyższego rzędu, prowadząc do emisji wielomodowej.
+2. Charakterystyka Emisji Jednomodowego Lasera
+Jednomodowość geometryczna przekłada się na korzystne właściwości emitowanej wiązki:
+• Jakość Wiązki (M 
+2
+ ): Jednomodowe lasery (wąskopaskowe) charakteryzują się wysoką jakością wiązki, bliską idealnej wiązce gaussowskiej, co jest kwantyfikowane niską wartością parametru M 
+2
+ ≈1. Dla porównania, lasery szerokopaskowe (wielomodowe, dużej mocy) mają M 
+2
+ >10.
+• Kierunkowość i Rozbieżność: Emisja jest kierunkowa. Ze względu na dużą asymetrię wymiarów falowodu (L≫w>d), rozbieżność wiązki w płaszczyźnie prostopadłej do złącza (θ⊥) jest znacznie większa (np. 30 
+∘
+ ) niż w płaszczyźnie równoległej (θ∣∣). Zgodnie z zasadą dyfrakcji (relacja między polem bliskim a dalekim), im silniejsze jest ograniczenie światła (mniejszy wymiar), tym większa jest rozbieżność wiązki.
+• Widmo: Po przekroczeniu progu akcji laserowej widmo emisji ulega drastycznemu zawężeniu. Niemal cała moc optyczna jest skoncentrowana w dominującym modzie laserowym, a pełna szerokość w połowie maksimum (FWHM) spada do wartości rzędu 1 nm lub mniej.
+• Polaryzacja: Emisja jest liniowo spolaryzowana, z dominującą polaryzacją TE (Transwersalną Elektryczną), w której wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n. Jest to wynik anizotropii wzmocnienia w studniach kwantowych oraz wyższego współczynnika odbicia od łupanych zwierciadeł dla polaryzacji TE, co obniża straty rezonatorowe dla tego modu.
+3. Wielomodowość Podłużna i Wyzwania Spektralne
+Chociaż laser krawędziowy jest jednomodowy w płaszczyznach poprzecznej i bocznej (geometrycznie), prosty rezonator Fabry-Perota z natury sprzyja wielomodowości podłużnej (q).
+• Rezonator FP narzuca warunek fazowy, zgodnie z którym w jego długości (L) musi zmieścić się całkowita liczba połówek długości fali, co prowadzi do dyskretnego zestawu dozwolonych długości fal (modów podłużnych).
+• Mechanizm przestrzennego wypalania dziur (Spatial Hole Burning) powoduje, że jeden mod, który osiągnął próg, nie zużywa wzmocnienia w sposób jednorodny wzdłuż osi rezonatora. Prowadzi to do tego, że drugi mod może osiągnąć próg laserowania w obszarach niewyczerpanego wzmocnienia, co skutkuje jednoczesną emisją wielu modów podłużnych.
+• Uzyskanie stabilnej jednomodowej pracy spektralnej (emisja tylko jednego modu podłużnego) wymaga zastosowania bardziej zaawansowanych struktur rezonatorowych, takich jak lasery DFB (Distributed Feedback) czy DBR (Distributed Bragg Reflector), w celu skutecznego tłumienia niepożądanych modów.
+Zatem, terminy "jednomodowy laser krawędziowy" często odnoszą się do jego jednomodowości przestrzennej (wysoka jakość wiązki), osiąganej przez wąski falowód grzbietowy, niezależnie od ewentualnej wielomodowości podłużnej w rezonatorze Fabry-Perota.
+
 9. null
 
 null

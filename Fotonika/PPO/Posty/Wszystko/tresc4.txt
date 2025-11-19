@@ -1,0 +1,202 @@
+Charakterystyki Konwersji Mocy i Widmo Emisji Lasera Półprzewodnikowego
+
+1. Wprowadzenie do Stanów Pracy Lasera Półprzewodnikowego
+
+Celem artykułu jest zrozumienie charakterystyk konwersji mocy w laserach półprzewodnikowych, co stanowi fundament dla ich prawidłowego projektowania i eksploatacji. Analiza zachowania urządzenia w dwóch kluczowych reżimach pracy – poniżej i powyżej progu akcji laserowej – pozwala na zilustrowanie fundamentalnych mechanizmów fizycznych rządzących jego działaniem.
+
+W toku wykładu zdefiniujemy i przeanalizujemy kluczowe pojęcia, które opisują pracę lasera:
+* Próg akcji laserowej (I<sub>th</sub>): Minimalna wartość prądu zasilania, przy której wzmocnienie optyczne w materiale czynnym jest w stanie zrównoważyć całkowite straty w rezonatorze, inicjując dominację emisji stymulowanej.
+* Emisja spontaniczna: Proces, w którym wzbudzone nośniki ładunku rekombinują w sposób losowy, emitując fotony o przypadkowych fazach i kierunkach. Dominuje poniżej progu akcji laserowej.
+* Emisja stymulowana: Proces, w którym foton przechodzący przez ośrodek wzmocnienia wymusza rekombinację wzbudzonego nośnika, generując nowy foton o identycznej energii, fazie i kierunku. Jest to podstawowy mechanizm działania lasera.
+* Sprawność: Zbiór parametrów, takich jak wewnętrzna sprawność kwantowa, sprawność ekstrakcji czy sprawność różniczkowa, które ilościowo opisują poszczególne etapy konwersji energii elektrycznej na użyteczną energię optyczną.
+
+Analizę rozpoczniemy od reżimu podprogowego, aby zbudować solidne podstawy do zrozumienia gwałtownej zmiany charakterystyki pracy urządzenia po przekroczeniu progu akcji laserowej.
+
+2. Analiza Mocy Emisji Poniżej Progu Akcji Laserowej
+
+Analiza stanu podprogowego jest kluczowa, ponieważ w tym reżimie pracy dominuje emisja spontaniczna. Urządzenie działa wówczas w sposób zbliżony do diody elektroluminescencyjnej (LED), a zrozumienie tego stanu pozwala precyzyjnie zdefiniować warunki konieczne do zainicjowania akcji laserowej.
+
+W stanie stacjonarnym (dN/dt = 0) i przy braku emisji stymulowanej (R<sub>st</sub> = 0), równanie bilansu dla nośników ładunku w obszarze aktywnym przyjmuje postać:
+\[ \frac{d N}{dt} = \eta_i \cdot \frac{I}{q \cdot V} - \frac{N}{\tau}  - R_{st} \]
+\[ 0 = \eta_i \cdot \frac{I}{q \cdot V} - \frac{N}{\tau}  \]
+\[ 0 = \eta_i \cdot \frac{I}{q \cdot V} - \left( R_{sp} + R_{nr} + R_{L} \right) \]
+
+##Symbol	Znaczenie
+η<sub>i</sub>	to wewnętrzna sprawność kwantowa
+I	to prąd zasilania
+q	to ładunek elementarny
+V	to objętość obszaru aktywnego
+N	to koncentracja nośników
+τ	to całkowity czas życia nośników##
+
+Moc emitowaną P definiujemy jako iloczyn szybkości rekombinacji promienistej i energii fotonu: 
+\[ P = R_{sp} \cdot \hbar \omega V \]
+Wprowadzając sprawność emisji spontanicznej (rekombinacji promienistej) η<sub>R</sub>:
+\[ \eta_R = \frac{ R_{sp} }{ R_{sp} + R_{nr} + R_{L} } \]
+Możemy przekształcić równanie bilansu i wyprowadzić zależność mocy od prądu. Uwzględniając, że nie każdy foton wygenerowany wewnątrz struktury jest w stanie ją opuścić, wprowadzamy sprawność ekstrakcji η<sub>ext.</sub>. Ostateczna zależność mocy optycznej od prądu zasilania w reżimie podprogowym ma postać:
+\[ \eta_i \cdot \frac{I}{q \cdot V} = R_{sp} + R_{nr} + R_{L} = \frac{R_{sp}}{\eta_R} \]
+\[ P = \eta_i  \cdot \eta_R \cdot \frac{ \hbar \omega}{q} \cdot I \]
+* Moc Emisji Poniżej Progu (LED):
+\[ P_{LED} = \eta_{ext.} \cdot \eta_i  \cdot \eta_R \cdot \frac{ \hbar \omega}{q} \cdot I \]
+
+Z powyższego wzoru wynika, że poniżej progu moc optyczna rośnie liniowo wraz z prądem, jednak z relatywnie niską sprawnością. Ta liniowa, lecz mało wydajna konwersja stanowi punkt odniesienia dla analizy reżimu pracy lasera powyżej progu, gdzie charakter działania urządzenia ulega drastycznej zmianie.
+
+3. Analiza Mocy Emisji Powyżej Progu Akcji Laserowej
+
+Przekroczenie prądu progowego (I > I<sub>th</sub>) inicjuje fundamentalną zmianę w mechanizmie działania lasera. Emisja stymulowana zaczyna dominować nad spontaniczną, co prowadzi do gwałtownego wzrostu mocy optycznej. W tym reżimie kluczowe parametry, takie jak wzmocnienie materiałowe (g) oraz koncentracja nośników (N), ulegają stabilizacji, osiągając swoje wartości progowe.
+
+! Warunek progu
+
+Warunkiem koniecznym do zainicjowania akcji laserowej jest zrównoważenie wzmocnienia i strat w rezonatorze. Wartość progowa wzmocnienia (g<sub>th</sub>) jest określona przez straty wewnętrzne (α<sub>i</sub>) oraz straty na zwierciadłach rezonatora (α<sub>m</sub>):
+\[ \Gamma g_{th} = \alpha_i + \alpha_m = \alpha_i + \frac{1}{2L} \ln\left(\frac{1}{R_1 R_2}\right) \]
+
+
+Gdy prąd zasilania przekracza Ith, wzmocnienie zostaje "przypięte" do wartości progowej (g = g<sub>th</sub>), a koncentracja nośników stabilizuje się na poziomie N = N<sub>th</sub>. Gdyby wzmocnienie rosło dalej, amplituda pola optycznego rosłaby nieograniczenie, co jest fizycznie niemożliwe w stanie stacjonarnym.
+
+Wyprowadzenie wzoru na moc
+* Równania bilansu: W stanie stacjonarnym (dN<sub>th</sub>/dt = 0, dN<sub>p</sub>/dt = 0) dla prądu I > I<sub>th</sub>, równanie bilansu dla nośników uwzględnia już człon związany z rekombinacją stymulowaną: 
+\[ \frac{d N_{th}}{dt} = \eta_i \frac{I}{q \cdot V} - \frac{N_{th}}{\tau}-N_p g_th v_g \]
+\[ \frac{d N_{th}}{p} = \Gamma N_p g v_g + \Gamma \beta R_{sp} - \frac{N_p}{\tau_p} \]
+\[ 0 = \eta_i \frac{I}{qV} - \frac{N_{th}}{\tau} - N_p g_{th} v_g  \]
+* Koncentracja fotonów: Wiemy, że na progu (I = I<sub>th</sub>) rekombinacja stymulowana jest pomijalna, więc zachodzi relacja:
+\[  \frac{N_{th}}{\tau} = \eta_i \cdot \frac{I_{th}}{q V}\]
+  * Podstawiając tę zależność do powyższego równania, otrzymujemy wzór na koncentrację fotonów N<sub>p</sub> w rezonatorze:  
+\[ N_p = \frac{\eta_i}{qV g_{th} v_g} (I - I_{th}) \] 
+* Definicja mocy i współczynnika wypełnienia: Moc optyczna emitowana przez jedno zwierciadło to energia fotonów w rezonatorze (Ep = N<sub>p</sub> ⋅ ℏω ⋅ V<sub>p</sub>) podzielona przez czas życia fotonu względem strat na zwierciadłach (τ<sub>m</sub>):
+\[ P = \frac{E_p}{\tau_m} \] 
+  * Kluczowe jest tu zdefiniowanie współczynnika wypełnienia Γ, który określa stosunek objętości obszaru aktywnego V do objętości modu optycznego V<sub>p</sub> (Γ = V/V<sub>p</sub>). Fizycznie reprezentuje on ułamek modu optycznego, który przestrzennie pokrywa się z obszarem aktywnym, gdzie zachodzi wzmocnienie.
+* Finalne przekształcenia: Wykorzystując zależności
+\[ \frac{1}{\tau_m}= v_g \alpha_m \]
+oraz definicję współczynnika wypełnienia Γ, po uporządkowaniu wyrażeń dochodzimy do ostatecznej postaci wzoru na moc.
+
+! Finalna zależność P(I)
+
+Ostateczny wzór opisujący liniowy wzrost mocy optycznej lasera w funkcji prądu zasilania powyżej wartości progowej jest następujący:
+
+* Moc Emisji Powyżej Progu:
+\[ P = \eta_i \cdot \frac{ \hbar \omega}{q} \cdot \frac{ \alpha_m}{ \alpha_m + \alpha_i} \cdot \left( I - I_{th} \right) \]
+
+Zależność mocy P od prądu I, przedstawiona graficznie, ma charakterystyczny "złamany" kształt. Poniżej progu I<sub>th</sub> obserwujemy słabą emisję spontaniczną, a po jego przekroczeniu następuje gwałtowny, liniowy wzrost mocy z dużo większą sprawnością, co jest sygnaturą działania lasera. Wyprowadzone zależności pozwalają zdefiniować i zmierzyć kluczowe parametry charakteryzujące wydajność diody laserowej, co zostanie omówione w kolejnej sekcji.
+$moc_prog.png?650$
+
+4. Stabilizacja koncentracji i wzmocnienia na progu
+
+Koncepcja Stabilizacji koncentracji i wzmocnienia na progu jest kluczowym elementem opisu funkcjonowania przyrządów laserowych. Dotyczy ona stanu pracy lasera, gdy prąd zasilania (I) przekracza prąd progowy (I<sub>th</sub>​).
+Oto opis tego zjawiska w oparciu o dostarczone źródła:
+! Stan powyżej progu:
+* Gdy laser pracuje w stanie stacjonarnym powyżej progu akcji laserowej ( I > I<sub>th</sub> ), wzmocnienie g musi być równe progowemu wzmocnieniu g<sub>th</sub>.
+* Gdy laser jest wysterowany tuż nad progiem ( I > I<sub>th</sub> ), koncentracja nośników (N) oraz wzmocnienie (g) nie ulegają zmianie.
+* Koncentracja nośników pozostaje na poziomie koncentracji progowej N=N<sub>th</sub> , a wzmocnienie pozostaje na poziomie g=g<sub>th</sub> , mimo że prąd pompowania wzrasta.
+* Gdyby wzmocnienie g było większe niż g<<sub>th</sub> , amplituda rosłaby do nieskończoności, co oznaczałoby, że stan nie byłby stacjonarny.
+
+! Równania bilansu i stan stacjonarny:
+* Stabilizacja koncentracji oznacza, że stan stacjonarny tuż powyżej progu charakteryzuje się zerową zmianą koncentracji progowej nośników w czasie, tzn.:  
+\[ \frac{d N_{th}}{dt} = 0 \]
+* Równanie bilansu dla nośników w stanie stacjonarnym tuż powyżej progu zapisuje się jako: 
+\[ 0 = \eta_i \frac{I}{q \cdot V} - \frac{N_{th}}{\tau} - N_p g_{th} v_g \]
+ Gdzie N<sub>p</sub>g<sub>th</sub>v<sub>g</sub> to człon reprezentujący rekombinację stymulowaną.
+* Dzięki stabilizacji podstawiając zależność
+\[ \frac{N_{th}}{\tau} = \eta_i \frac{I_{th}}{q \cdot V} \]
+pochodzącą ze stanu tuż pod progiem, możliwe jest wyprowadzenie zależności koncentracji fotonów w (N<sub>p</sub>) od prądu zasilania powyżej progu: 
+\[ N_p = \frac{\eta_i}{q V g_{th} v_g} \cdot \left( I - I_{th} \right) \]
+
+! Mechanizm sprzężenia zwrotnego:
+* Stabilizacja koncentracji i wzmocnienia jest powiązana z odwrotnym sprzężeniem zwrotnym.
+* Czas rekombinacji stymulowanej jest odwrotnie proporcjonalny do koncentracji fotonów.
+* Wzrost wysterowania lasera (np. I=2I<sub>th</sub> skutkuje skróceniem czasu życia emisji stymulowanej.
+* Oznacza to, że prędkość rekombinacji stymulowanej jest równa prędkości rekombinacji spontanicznej plus niepromienistej.
+
+Stabilizacja koncentracji i wzmocnienia na progu jest fundamentalna dla liniowej zależności mocy emitowanej przez laser od prądu zasilania powyżej progu. Działanie tego mechanizmu jest często określane w kontekście równań bilansu i wanny Coldrena (Coldren’s well).
+$wanna.png?650$
+Można to porównać do działania termostatu: Termostat (mechanizm sprzężenia zwrotnego) utrzymuje stałą temperaturę (koncentrację nośników N<sub>th</sub> ) niezależnie od tego, jak dużo energii grzewczej (prądu pompowania I) dostarczamy. Nadmiar dostarczanej energii nie podnosi temperatury, lecz jest przekształcany w użyteczną pracę (emisję stymulowaną/moc lasera P)
+
+5. Parametry i Charakterystyka Diody Laserowej
+
+Teoretyczne modele opisujące moc lasera pozwalają na zdefiniowanie mierzalnych parametrów, które są kluczowe dla oceny i porównywania wydajności rzeczywistych urządzeń. Jednym z najważniejszych jest sprawność różniczkowa, która opisuje nachylenie charakterystyki P-I powyżej progu.
+$przyklad.png?500$
+
+! Sprawność różniczkową η<sub>d</sub> 
+* Sprawność definiujemy na podstawie wyprowadzonego wcześniej wzoru na moc powyżej progu:
+\[ P = \eta_d \cdot \frac{\hbar\omega}{q} \cdot (I - I_{th}) \]
+* gdzie η<sub>d</sub> jest bezpośrednio związane z parametrami wewnętrznymi lasera:
+\[ \eta_d = \eta_i \cdot \frac{\alpha_m}{\alpha_m + \alpha_i} \]
+* Powyższy wzór można przekształcić do postaci liniowej, wyrażając odwrotność sprawności różniczkowej 1/η<sub>d</sub> w funkcji długości rezonatora L. Wiedząc, że straty na zwierciadłach α<sub>m<sub> są odwrotnie proporcjonalne do L
+\[ \alpha_m = \frac{1}{2L} \cdot \ln \left( \frac{1}{R_1 R_2} \right) \]
+  * po podstawieniu otrzymujemy:
+\[ \frac{1}{\eta_d} = \frac{1}{\eta_i} \left(1 + \frac{2\alpha_i}{\ln(1/R_1R_2)} \cdot L\right) \]
+
+
+Ta liniowa zależność ma ogromne znaczenie praktyczne. Produkując serię laserów o identycznej strukturze, ale różnej długości rezonatora L, i mierząc dla każdego z nich sprawność różniczkową η<sub>d</sub> , można wykreślić zależność 1/η<sub>d</sub>  od L. Z dopasowania linii prostej do danych eksperymentalnych wyznacza się fundamentalne parametry materiałowe:
+
+* Wewnętrzną sprawność kwantową η<sub>i</sub>  (z punktu przecięcia z osią Y).
+* Współczynnik strat wewnętrznych α<sub>i</sub>  (z nachylenia prostej).
+
+Analiza danych eksperymentalnych dla laserów GRIN SQW AlGaAs/GaAs (ITE, 1997) doskonale ilustruje zastosowanie tej metody w analizie struktur z pionierskiego okresu rozwoju tych technologii. Dla dwóch serii próbek uzyskano następujące wyniki:
+$eksperyment.png?500$
+
+Wyniki te pokazują, jak projekt struktury (długość rezonatora) oraz jakość materiału (straty wewnętrzne) bezpośrednio przekładają się na mierzalną wydajność lasera. Podczas gdy parametry takie jak sprawność różniczkowa kwantyfikują, jak dużo światła jest produkowane, analiza spektralna jest niezbędna, aby zrozumieć, jaki rodzaj światła jest emitowany i jak jego charakter fundamentalnie zmienia się na progu akcji laserowej.
+
+6. Ewolucja Widma Emisji Lasera
+
+Charakterystyka P-I opisuje całkowitą moc emitowaną przez laser, jednak równie ważna jest jej dystrybucja spektralna. Widmo emisji nie jest stałe – zmienia się dynamicznie wraz ze wzrostem prądu pompowania, przechodząc przez trzy odrębne, charakterystyczne fazy, które odzwierciedlają zmianę dominującego mechanizmu emisji.
+$widmo.png?650$
+
+! Faza 1: Luminescencja
+
+$luminescencja.png?650$
+Przy bardzo niskim prądzie pompowania, gdy quasi-poziomy Fermiego znajdują się wewnątrz przerwy energetycznej (ΔF < E<sub>g</sub>), rezonator jest nieprzezroczysty (g < 0). Emisja ma charakter czysto spontaniczny. Widmo jest szerokie, z pełną szerokością w połowie maksimum (FWHM) rzędu 50 nm, co odpowiada typowej emisji fotoluminescencyjnej materiału półprzewodnikowego.
+
+! Faza 2: Superluminescencja
+
+$superluminescencja.png?650$
+Gdy prąd rośnie i zbliża się do wartości progowej, quasi-poziomy Fermiego wchodzą do pasm (ΔF > E<sub>g</sub>), a rezonator staje się przezroczysty, zapewniając niewielkie wzmocnienie (0 < g < g<sub>th</sub>). Widmo emisji wciąż jest szerokie, ale na jego tle zaczynają być widoczne mody rezonatora Fabry-Perota. Świadczy to o tym, że emisja spontaniczna jest już selektywnie wzmacniana na długościach fal odpowiadających rezonansom wnęki optycznej.
+
+! Faza 3: Akcja Laserowa
+
+$akcjaLaserowa.png?650$
+Po przekroczeniu progu (g = g<sub>th</sub>) następuje gwałtowna zmiana. Wzmocnienie jest wystarczające do zrównoważenia strat dla jednego (lub kilku) modów o najniższym progu. Energia zaczyna być efektywnie transferowana do tych modów poprzez emisję stymulowaną, co prowadzi do drastycznego zawężenia widma emisyjnego. FWHM spada do wartości rzędu 1 nm lub mniej, a niemal cała moc optyczna jest skoncentrowana w dominującym modzie laserowym.
+
+Pomiary dla lasera na kropkach kwantowych (QD) emitującego w paśmie 1300 nm doskonale ilustrują tę ewolucję. Poniżej progu obserwujemy szerokie widmo superluminescencji z zaznaczonymi modami, natomiast powyżej progu widmo zapada się do pojedynczej, ostrej linii.
+$ewolucja.png?650$
+Ewolucja widma jest zatem bezpośrednim i najbardziej wyrazistym dowodem na przejście od chaotycznej emisji spontanicznej do koherentnej emisji stymulowanej, która jest istotą działania lasera.
+
+7. Rola Sprzężenia Emisji Spontanicznej i Stabilizacja Parametrów
+
+Przedstawione do tej pory modele, choć dobrze opisują ogólne zachowanie lasera, są w pewnym stopniu uproszczone. Zakładały one idealnie ostre przejście ("kolano") na charakterystyce P-I, co implikowało zerowe sprzężenie emisji spontanicznej do modu laserowego (β=0). Aby uzyskać pełniejszy obraz, należy uwzględnić ten efekt oraz przeanalizować kluczowy mechanizm stabilizacji wzmocnienia powyżej progu.
+
+! Parametr Sprzężenia Emisji Spontanicznej (β)
+
+W rzeczywistości niewielka część fotonów generowanych w procesie emisji spontanicznej jest emitowana w kierunku i w zakresie częstotliwości modów rezonatora. Tę część opisuje współczynnik sprzężenia emisji spontanicznej β. Jest to stosunek liczby fotonów spontanicznych sprzęgniętych z modem laserowym do całkowitej liczby fotonów spontanicznych. Typowe wartości tego parametru dla laserów krawędziowych mieszczą się w zakresie β = 10<sup>-5</sup> – 10<sup>-4</sup>.
+$parametr_b.png?650$
+Choć wartość β jest mała, ma ona zauważalny wpływ na kształt charakterystyki P-I w okolicy progu. Zamiast ostrego, matematycznego załamania, w rzeczywistych pomiarach obserwujemy "miękkie" przejście. Jest to efekt tego, że emisja stymulowana jest "zasiewana" przez fotony spontaniczne sprzęgnięte z modem, co powoduje płynniejsze przejście z reżimu zdominowanego przez emisję spontaniczną do reżimu akcji laserowej.
+
+! Przypomnienie Stabilizacji Parametrów na Progu ("Clamping")
+
+Jednym z najważniejszych zjawisk w laserze jest mechanizm stabilizacji (tzw. "clamping") koncentracji nośników i wzmocnienia powyżej progu. Kiedy prąd zasilania rośnie powyżej I<sub>th</sub> (np. do I = 2 ⋅ I<sub>th</sub>), dodatkowe nośniki wstrzykiwane do obszaru aktywnego nie powodują już wzrostu koncentracji N ani wzmocnienia g. Zamiast tego są one natychmiast zużywane przez gwałtownie rosnącą szybkość rekombinacji stymulowanej. Prowadzi to do fundamentalnej zależności, która opisuje stan równowagi na progu:
+
+prędkość rekombinacji stymulowanej = prędkość rekombinacji spontanicznej + niepromienistej
+
+Można to zinterpretować jako działanie układu z ujemnym sprzężeniem zwrotnym. Wzrost liczby fotonów w rezonatorze przyspiesza proces emisji stymulowanej, co z kolei skraca efektywny czas życia nośników. Im wyżej wysterowany jest laser, tym krótszy staje się czas życia nośników związany z emisją stymulowaną. Ten samoregulujący mechanizm utrzymuje stałe wzmocnienie i zapewnia stabilną pracę lasera powyżej progu. Uwzględnienie parametru β i mechanizmu stabilizacji jest kluczowe dla dokładnego modelowania dynamiki i charakterystyk laserów półprzewodnikowych.
+
+8. Podsumowanie Wykładu
+
+Niniejszy wykład przedstawił kompleksową analizę charakterystyk mocy i widma emisji laserów półprzewodnikowych, koncentrując się na fundamentalnych zjawiskach fizycznych leżących u podstaw ich działania. Kluczowe wnioski z analizy można podsumować w następujących punktach:
+
+* Charakterystyka mocy emisji w funkcji prądu zasilania (P-I) wykazuje dwa odrębne reżimy pracy: reżim podprogowy, zdominowany przez liniową, lecz mało wydajną emisję spontaniczną, oraz reżim nadprogowy, charakteryzujący się gwałtownym, liniowym wzrostem mocy pochodzącej z wysoce wydajnej emisji stymulowanej.
+* Parametr β, opisujący sprzężenie emisji spontanicznej do modów laserowych, odpowiada za "miękkie" przejście na charakterystyce P-I w okolicy progu, co jest obserwowane w rzeczywistych urządzeniach.
+* Ewolucja widma lasera wraz ze wzrostem prądu jest bezpośrednim dowodem na zmianę mechanizmu emisji. Przechodzi ona przez trzy etapy: szerokopasmowej luminescencji, wzmocnionej emisji spontanicznej z modami rezonatora (superluminescencji) oraz wąskopasmowej, koherentnej akcji laserowej.
+
+<hr>
+
+Polecana literatura
+
+W celu dalszego pogłębienia wiedzy na temat fizyki i dynamiki laserów półprzewodnikowych, polecane są następujące pozycje:
+
+* Michael A. Parker, Physics of Optoelectronics, ch. 2 Introduction to Laser Dynamics, Taylor & Francis Group, LLC (2005)
+* Peter Blood, Quantum Confined Laser Devices: Optical gain and recombination in semiconductors, Oxford University Press (2015)
+* Takahiro Numai, Fundamentals of Semiconductor Lasers, Springer Series in Optical Sciences, Springer (2015)
+
+9. null
+
+null
+

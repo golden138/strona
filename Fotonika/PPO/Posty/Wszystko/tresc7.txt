@@ -1,0 +1,325 @@
+Analiza Falowodu w Półprzewodnikowych Laserach o Emisji Krawędziowej
+
+1. Wprowadzenie do Falowodu Półprzewodnikowego
+
+Falowód stanowi serce każdego lasera półprzewodnikowego o emisji krawędziowej. Jego fundamentalną rolą jest prowadzenie i ograniczanie generowanej fali świetlnej w ściśle zdefiniowanym obszarze, zwanym rdzeniem falowodu. To właśnie w tej strukturze zachodzi proces wzmocnienia optycznego poprzez emisję wymuszoną, co jest warunkiem koniecznym do zaistnienia akcji laserowej. Precyzyjne zaprojektowanie geometrii i właściwości optycznych falowodu jest kluczowe dla określenia niemal wszystkich parametrów wyjściowych lasera, od długości emitowanej fali, przez rozkład modów optycznych, po jakość i rozbieżność finalnej wiązki.
+
+Struktura falowodu jest zaprojektowana tak, aby ograniczać propagację światła w dwóch prostopadłych kierunkach. Poniższy schemat ilustruje typową budowę lasera grzbietowego (ang. ridge waveguide):
+
+* W kierunku wzrostu heterostruktury (oś Y): Ograniczenie światła jest realizowane poprzez zastosowanie heterostruktury, czyli sekwencji warstw półprzewodnikowych o różnych współczynnikach załamania światła. Warstwa rdzenia (np. GaAs o współczynniku załamania n ≈ 3.5) jest otoczona warstwami płaszcza (np. Al₀.₄Ga₀.₇As o n ≈ 3.3). Wyższy współczynnik załamania w rdzeniu powoduje, że światło jest uwięzione na zasadzie całkowitego wewnętrznego odbicia. Ten wymiar falowodu jest definiowany podczas procesu wzrostu epitaksjalnego.
+* W płaszczyźnie złącza (oś X): Ograniczenie boczne jest zazwyczaj realizowane poprzez wytrawienie w górnej warstwie płaszcza struktury zwanej grzbietem lub mezą. Taka modyfikacja geometrii również prowadzi do lokalnej zmiany efektywnego współczynnika załamania, tworząc falowód boczny. Ten etap jest realizowany w procesach technologicznych po zakończeniu wzrostu kryształu.
+* Wzdłuż osi rezonatora (oś Z): Jest to kierunek propagacji światła, w którym następuje jego wzmocnienie. Oś ta jest zakończona prostopadłymi, częściowo odbijającymi zwierciadłami, które tworzą rezonator optyczny.
+
+$falowod.png?650$
+[Podstawowy schemat falowodu w laserze o emisji krawędziowej. Ograniczenie pionowe (oś Y) wynika z heterostruktury materiałowej, a ograniczenie boczne (oś X) jest realizowane przez strukturę grzbietową. Propagacja i wzmocnienie światła następują wzdłuż osi Z.]
+
+Zrozumienie działania takiej struktury wymaga sięgnięcia do teoretycznych podstaw propagacji fali elektromagnetycznej, które determinują, w jaki sposób i w jakich postaciach (modach) światło może być prowadzone wewnątrz falowodu.
+
+2. Podstawy Teoretyczne Propagacji Fali
+
+Działanie falowodu dielektrycznego, jakim jest struktura lasera półprzewodnikowego, opiera się na fundamentalnych prawach elektromagnetyzmu, opisanych przez równania Maxwella. Równania te, wraz z odpowiednimi warunkami brzegowymi, precyzyjnie determinują zachowanie fali świetlnej na granicach ośrodków o różnych współczynnikach załamania, a ich rozwiązania opisują dozwolone sposoby propagacji światła wewnątrz struktury.
+
+2.1 Równania Maxwella i Warunki Brzegowe
+
+Dla ośrodków bez swobodnych ładunków i prądów, zachowanie pól elektrycznych i magnetycznych na granicy dwóch materiałów opisują następujące warunki brzegowe:
+
+##Warunek brzegowy dla równania	Opis i Znaczenie Symboli
+\( \left( \overrightarrow{D_2} - \overrightarrow{D_1} \right) \cdot \overrightarrow{n} = 4 \pi \sigma \)	Prawo Gaussa dla elektryczności. Określa skok składowej normalnej wektora indukcji elektrycznej (D) na granicy ośrodków, proporcjonalny do powierzchniowej gęstości ładunku swobodnego (σ). Wektor n jest wektorem normalnym do powierzchni granicznej.
+\( \overrightarrow{n} \times \left( \overrightarrow{E_2} - \overrightarrow{E_1} \right) = 0 \)	Prawo Faradaya. Warunek ciągłości składowej stycznej wektora natężenia pola elektrycznego (E) na granicy ośrodków.
+\( \left( \overrightarrow{B_2} - \overrightarrow{B_1} \right) \cdot \overrightarrow{n} = 0 \)	Prawo Gaussa dla magnetyzmu. Warunek ciągłości składowej normalnej wektora indukcji magnetycznej (B) na granicy ośrodków.
+\( \overrightarrow{n} \times \left( \overrightarrow{H_2} - \overrightarrow{H_1} \right) = \frac{4 \pi}{c} K \)	Prawo Ampère'a. Określa skok składowej stycznej wektora natężenia pola magnetycznego (H) na granicy, który jest proporcjonalny do gęstości prądu powierzchniowego (K). Symbol c oznacza prędkość światła w próżni.##
+
+Z równań Maxwella można wyprowadzić ogólne równanie falowe dla pola elektrycznego:
+\[ \Delta E = \frac{1}{c^2} \cdot \frac{\partial^2 E}{\partial t^2} \]
+
+Równanie to opisuje propagację fali elektromagnetycznej w przestrzeni. Jego rozwiązania dla konkretnej geometrii falowodu definiują dozwolone mody optyczne.
+
+2.2 Rozwiązania Równania Falowego
+
+Aby znaleźć rozwiązania dla złożonej geometrii falowodu, stosuje się metodę separacji zmiennych, która zakłada, że całkowite pole E(r,t) można przedstawić jako iloczyn funkcji zależnych tylko od jednej zmiennej: 
+\[ E(r,t) = E(x) \cdot E(y) \cdot E(z) \cdot E(t) \]
+
+! Analiza ta prowadzi do dwóch fundamentalnych modeli:
+
+* Model rezonatora (wnęki rezonansowej): Dostarcza ogólnego obrazu kwantyzacji fali elektromagnetycznej w trzech wymiarach. Prowadzi do dyskretnych wartości wektora falowego k oraz częstotliwości rezonansowych ω, które zależą od wymiarów wnęki (d, w, L):
+\[ \omega = c \sqrt{k_x^2 + k_y^2 + k_z^2} \]
+\[ k = k_{msq} = \left( m \frac{\pi}{d} , s \frac{\pi}{w} , q \frac{\pi}{L} \right) \]
+\[ \omega = \omega_{msq} = c \sqrt{ \left( m \frac{\pi}{d} \right)^2 + \left( s \frac{\pi}{w} \right)^2 + \left( q \frac{\pi}{L} \right)^2 } \]
+m - mody poprzeczne
+s - mody boczne
+q - mody podłużne
+Rozwiązania mają postać fali stojącej:
+\[ \overrightarrow{E} (\overrightarrow{r},t) = E(x) \cdot E(y) \cdot E(z) \cdot \exp \left( i \omega t \right) \]
+
+* Model fali biegnącej (falowodowy): Jest to specyficzne i bardziej praktyczne podejście do analizy propagacji fali wzdłuż osi lasera (oś Z). Poszukuje się rozwiązań w postaci fali biegnącej o stałym rozkładzie poprzecznym:
+\[ \overrightarrow{E} (x, y, z, t) = E(x,y) \cdot \exp \left( i \beta z - i \omega t \right) \]
+Funkcja E(x, y) opisuje rozkład pola w płaszczyźnie prostopadłej do kierunku propagacji.
+
+! Kluczowe parametry opisujące falę biegnącą to:
+
+* β (stała propagacji): Jest miarą zmiany fazy fali na jednostkę długości wzdłuż kierunku propagacji (oś Z). Jest bezpośrednio związana ze skutecznym współczynnikiem załamania falowodu (n<sub>eff</sub>), który "widzi" propagująca fala: 
+\[ \beta = k_0 n_{eff} \]
+* k<sub>0</sub> (liczba falowa w próżni): Definiuje, jak szybko zmienia się faza fali w próżni, i jest związana z częstotliwością kątową (ω) i długością fali (λ):
+\[ k_0 = \frac{\omega}{c} = \frac{2 \pi}{\lambda} \]
+* Związek dyspersyjny: Łączy stałą propagacji ze składowymi wektora falowego w kierunkach poprzecznych (k<sub>x</sub>, k<sub>y</sub>): 
+\[ k_0^2 = \beta^2 + k_{x,y}^2 \]
+Równanie to pokazuje, że tylko fale o określonych składowych poprzecznych mogą efektywnie propagować się w falowodzie.
+
+Te teoretyczne rozwiązania manifestują się w postaci konkretnych modów optycznych, których charakter i liczba zależą bezpośrednio od fizycznej struktury oraz wymiarów falowodu.
+
+3. Struktura i Mody Optyczne Falowodu
+
+Fizyczna budowa lasera, narzucająca ograniczenie światła w kierunku prostopadłym (poprzecznym) i równoległym (bocznym) do złącza p-n, prowadzi do powstania dyskretnych, dozwolonych form propagacji fali, zwanych modami optycznymi. Każdy mod charakteryzuje się unikalnym rozkładem przestrzennym natężenia pola elektrycznego. Analiza tych modów jest kluczowa dla zrozumienia fundamentalnych właściwości emitowanej wiązki, takich jak jej kształt, rozbieżność i jakość.
+
+Wyróżniamy trzy główne rodziny modów, z których każda jest związana z jednym z wymiarów geometrycznych rezonatora lasera:
+
+* Mody podłużne (q): Związane z długością rezonatora L. Definiują one dokładne długości fal, które mogą istnieć w rezonatorze Fabry-Perot.
+* Mody boczne (s): Związane z szerokością falowodu w płaszczyźnie złącza w. Określają rozkład pola wzdłuż osi X.
+* Mody poprzeczne (m): Związane z grubością warstw aktywnych w kierunku wzrostu d. Opisują rozkład pola wzdłuż osi Y.
+
+Typowe wymiary geometryczne lasera krawędziowego wynoszą w = 3-10 µm, d = 0.3-3 µm oraz L = 300-6000 µm. Z relacji L >> w, d wynika, że odstępy energetyczne (i spektralne) między modami podłużnymi są znacznie mniejsze niż między modami bocznymi czy poprzecznymi.
+$struktura.png?450$
+
+3.1 Mody Poprzeczne (Ograniczenie w Kierunku Osi Y)
+
+Mody poprzeczne powstają w wyniku ograniczenia światła przez heterostrukturę półprzewodnikową w kierunku prostopadłym do złącza (wzdłuż osi Y). Intuicyjnym sposobem wizualizacji tego zjawiska jest model Zig-zag, w którym fala świetlna jest prowadzona w rdzeniu o wyższym współczynniku załamania (np. GaAs, n=3.5) dzięki wielokrotnym całkowitym wewnętrznym odbiciom od granic z płaszczem o niższym współczynniku załamania (np. AlGaAs, n=3.0).
+
+Bardziej zaawansowana analiza, przeprowadzona dla wielomodowej struktury SCH-SQW LOC (Separate Confinement Heterostructure - Single Quantum Well - Large Optical Cavity), pozwala na precycyjne wyznaczenie rozkładu pola i właściwości poszczególnych modów. Poniższy wykres przedstawia rozkład pola elektrycznego E<sub>x</sub> dla fali o długości λ = 905 nm.
+
+$mody_Ex.png?450$
+[Rozkład pola elektrycznego E<sub>x</sub> w funkcji pozycji w kierunku poprzecznym (oś Y) dla różnych modów w strukturze SCH-SQW LOC.]
+
+Poniższa tabela zestawia kluczowe parametry dla kilku pierwszych modów poprzecznych:
+
+##mode	n<sub>eff</sub>	Γ<sub>QW</sub>Γ<sub>n-clad</sub>	Γ<sub>p-clad</sub>
+0	3.4054	1.5881	0.0348	0.0363
+1	3.3773	0.0001	0.3203	0.3334
+2	3.3539	0.8492	0.6950	0.7224
+3	3.3037	0.0003	1.4388	1.4904
+4	3.2556	0.8504	2.4097	2.4868
+5	3.1810	0.0005	4.3251	4.4344
+6	3.1106	0.7782	7.9928	8.1281##
+
+Analiza danych pozwala na sformułowanie następujących wniosków:
+
+* n<sub>eff</sub> (efektywny współczynnik załamania): Reprezentuje średni współczynnik załamania, jakiego "doświadcza" dany mod. Mody wyższego rzędu mają niższy neff, co oznacza, że ich pole w większym stopniu penetruje warstwy płaszcza.
+* Γ (współczynnik ograniczenia optycznego): Określa, jaka część mocy optycznej danego modu znajduje się w określonym obszarze (np. w studni kwantowej QW lub w warstwach płaszcza clad).
+* Mody parzystego rzędu (0, 2, 4...) posiadają maksimum natężenia pola (strzałkę) w centrum studni kwantowej (QW). Zapewnia to doskonałe pokrycie ze wzmocnieniem optycznym, co przekłada się na wysoki współczynnik Γ<sub>QW</sub>. Mod podstawowy (m=0) jest zawsze modem parzystym.
+* Mody nieparzystego rzędu (1, 3, 5...) posiadają węzeł (zero natężenia) w centrum QW. Skutkuje to znikomym Γ<sub>QW</sub> i praktycznie uniemożliwia im osiągnięcie progu laserowania, ponieważ nie są efektywnie wzmacniane.
+* W miarę wzrostu rzędu modu, maleje jego ograniczenie w studni kwantowej, a rośnie udział pola w warstwach płaszcza (Γ<sub>clad</sub>), co prowadzi do większych strat optycznych.
+
+3.2 Mody Boczne (Ograniczenie w Kierunku Osi X)
+
+Ograniczenie światła w płaszczyźnie złącza (oś X) jest realizowane przez strukturę falowodu grzbietowego. Do analizy modów bocznych powszechnie stosuje się metodę efektywnego współczynnika załamania. Jest to kluczowe uproszczenie analityczne, które pozwala zredukować złożony problem trójwymiarowy do bardziej rozwiązywalnego problemu dwuwymiarowego. W pierwszym kroku oblicza się profil efektywnego współczynnika załamania w kierunku pionowym (Y), a następnie wykorzystuje się go do rozwiązania równania falowego dla modów w płaszczyźnie bocznej (X).
+
+Projektowanie lasera jednomodowego bocznie jest kluczowe dla wielu zastosowań. Można to osiągnąć, kontrolując geometrię grzbietu – jego szerokość i głębokość trawienia. Głębokość trawienia bezpośrednio wpływa na skok efektywnego współczynnika załamania (Δn<sub>eff</sub>) między obszarem pod grzbietem a obszarami sąsiednimi. Głębsze trawienie prowadzi do większej wartości Δn<sub>eff</sub>, co silniej ogranicza światło i może prowadzić do pojawienia się modów wyższego rzędu.
+
+$trawienie.png?450$
+[Zależność efektywnego współczynnika załamania od głębokości trawienia. Większa głębokość zwiększa skok Δn<sub>eff</sub>.]
+
+! Porównajmy dwa przypadki, aby zilustrować wpływ geometrii na mody boczne:
+
+* Głębokość trawienia = 0.9 µm, szerokość (w) = 5 µm: W tych warunkach falowód wspiera propagację dwóch modów bocznych: modu podstawowego o n<sub>eff</sub>(0) = 3.4634 oraz modu pierwszego rzędu o n<sub>eff</sub>(1) = 3.4621. Laser jest dwumodowy.
+$dwa_mody.png?500$
+[Rozkład natężenia pola |TE<sub>x</sub>|<sup>2</sup> dla przypadku (1) dwumodowego]
+
+* Głębokość trawienia = 0.8 µm, szerokość (w) = 4.5 µm: Zmniejszenie szerokości grzbietu oraz głębokości trawienia (co skutkuje mniejszym skokiem Δn<sub>eff</sub>) powoduje, że warunki prowadzenia dla modu pierwszego rzędu nie są już spełnione. W falowodzie propaguje się tylko mod podstawowy o n<sub>eff</sub>(0) = 3.4635. Laser staje się jednomodowy.
+$jeden_mod.png?500$
+[Rozkład natężenia pola |TE<sub>x</sub>|<sup>2</sup> dla przypadku (2) jednomodowego.]
+
+Można sformułować ogólną zasadę projektową: węższy grzbiet oraz płytsze trawienie (czyli mniejszy skok Δn<sub>eff</sub>) sprzyjają pracy lasera w modzie podstawowym (jednomodowym).
+
+Rozkład modów optycznych wewnątrz rezonatora, nazywany polem bliskim, bezpośrednio determinuje charakterystykę wiązki propagującej się na zewnątrz lasera, czyli pole dalekie.
+
+4. Charakterystyka Wiązki Emitowanej
+
+Analiza wiązki emitowanej przez laser jest kluczowa z punktu widzenia praktycznych zastosowań. Parametry takie jak kształt, rozbieżność i jakość wiązki decydują o możliwościach jej skupienia do małej plamki, efektywnego sprzęgnięcia ze światłowodem czy wykorzystania w precyzyjnych systemach optycznych. Zrozumienie tych cech wymaga zdefiniowania pojęć pola bliskiego i pola dalekiego.
+
+4.1 Pole Bliskie i Pole Dalekie
+
+* Pole Bliskie (U(x)): Jest to rozkład amplitudy i fazy pola elektromagnetycznego bezpośrednio na powierzchni emitującej lasera, czyli na jego zwierciadle (facecie). Pole bliskie jest bezpośrednim odzwierciedleniem rozkładu modów optycznych wewnątrz rezonatora.
+* Pole Dalekie (E): Jest to rozkład natężenia pola optycznego w dużej odległości od lasera, gdzie czoło fali można uznać za płaskie.
+
+Związek między tymi dwoma polami opisuje fizyka dyfrakcji. Pole dalekie jest matematycznie równoważne transformacie Fouriera pola bliskiego:
+\[ E = \frac{e^{-i k R}}{R} \int_{-\infty }^{+\infty } U(x) \cdot \exp \left( -i k_0 x \sin\theta \right) dx \]
+$znaczenie_pola.png?500$
+
+gdzie θ to kąt obserwacji. Dla małych kątów, typowych dla laserów półprzewodnikowych, można zastosować przybliżenie sin(θ) ≈ θ. Równanie to wyraża fundamentalną zasadę dyfrakcji: im węższy jest rozkład pola bliskiego (co odpowiada silniejszemu ograniczeniu światła w falowodzie), tym szerszy staje się rozkład pola dalekiego (co oznacza większą rozbieżność wiązki).
+\[ E = \frac{e^{-i k R}}{R} \int_{-\infty }^{+\infty } U(x) \cdot \exp \left( -i k_0 x \theta \right) dx \]
+$bliskie_dalekie.png?450$
+
+W zależności od szerokości paska aktywnego, lasery można podzielić na:
+
+* Laser wąskopaskowy: Zazwyczaj pracuje w jednym modzie bocznym, co daje dobrze zdefiniowane, gładkie pole bliskie i dalekie.
+* Laser szerokopaskowy: Jest z natury wielomodowy. Posiada jednak istotne zalety, takie jak wysoki próg katastrofalnego uszkodzenia zwierciadła (COMD) i niski opór cieplny, co pozwala na osiąganie dużych mocy wyjściowych.
+
+Eksperyment spektralnie rozdzielczego pola bliskiego dla lasera szerokopaskowego (InGaAs-InGaP, w = 100 µm, L = 1008 µm) doskonale ilustruje jego wielomodową naturę. Zarówno widmo pola bliskiego (a), mierzone przy prądzie 600 mA, jak i pola dalekiego (b), mierzone przy 700 mA, wykazują złożoną strukturę przestrzenną, która jest superpozycją wielu konkurujących modów bocznych.
+
+$eksperyment_dalekie_pole.png?450$
+[Eksperymentalne widma pola bliskiego i pola dalekiego dla lasera szerokopaskowego, ukazujące jego wielomodowy charakter emisji.]
+
+4.2 Rozbieżność Wiązki
+
+Rozbieżność wiązki to miara tego, jak szybko wiązka laserowa rozszerza się (dywerguje) po opuszczeniu rezonatora. Jest ona zwykle podawana jako pełna szerokość w połowie maksimum (FWHM) kątowego rozkładu natężenia. Ze względu na asymetrię falowodu, rozbieżność jest różna w dwóch prostopadłych płaszczyznach.
+
+Poniższa tabela porównuje parametry dwóch typowych komercyjnych laserów:
+
+##Parametr	Laser jednomodowy	Laser wielomodowy (dużej mocy)
+Długość fali (λ)	975 nm	975 nm
+Moc (P)	10 mW	3 W
+Szerokość paska (w)	3 µm	200 µm
+**θ<sub>		</sub> (FWHM)**
+θ⊥ (FWHM)	30°	38°##
+
+Analiza danych pokazuje, że rozbieżność w płaszczyźnie prostopadłej do złącza (θ⊥) jest zazwyczaj znacznie większa niż w płaszczyźnie równoległej do złącza (θ||). Wynika to z faktu, że wymiar falowodu w kierunku prostopadłym (oś Y, grubość warstw) jest znacznie mniejszy niż w kierunku bocznym (oś X, szerokość grzbietu). Silniejsze ograniczenie światła prowadzi, zgodnie z zasadą dyfrakcji, do większej rozbieżności wiązki.
+
+4.3 Jakość Wiązki i Parametr M²
+
+Parametr M<sup>2</sup> (M-kwadrat) jest standardową, bezwymiarową miarą jakości wiązki laserowej. Porównuje on rozbieżność rzeczywistej wiązki do rozbieżności idealnej wiązki gaussowskiej (dyfrakcyjnie ograniczonej) o tej samej średnicy w przewężeniu.
+
+* Dla idealnej, czystej wiązki gaussowskiej (mod TEM<sub>00</sub>), M<sup>2</sup> = 1.
+* Dla wszystkich rzeczywistych laserów, zwłaszcza wielomodowych, M<sup>2</sup> > 1. Im wyższa wartość M<sup>2</sup>, tym gorsza jakość wiązki, co oznacza, że trudniej jest ją skupić do małej plamki.
+
+Minimalny możliwy do osiągnięcia promień plamki w ognisku dla wiązki gaussowskiej (limit dyfrakcyjny) opisuje wzór:
+\[ 2 \omega_0 = \frac{4 \lambda}{\pi} \cdot \frac{F}{D} \]
+
+gdzie F to ogniskowa soczewki, a D to średnica wiązki padającej na soczewkę. Dla wiązki rzeczywistej, średnica plamki w ognisku będzie M<sup>2</sup> razy większa.
+$M2.png?650$
+
+Jakość wiązki jest silnie skorelowana z szerokością falowodu. Przykładowe wartości dla laserów dużej mocy pokazują tę zależność:
+
+* Dla falowodu o szerokości 30 µm, typowa wartość M<sup>2</sup> ≈ 5-7.
+* Dla falowodu o szerokości 90 µm, M<sup>2</sup> > 10.
+
+Wniosek jest jednoznaczny: szerszy falowód, pozwalający na propagację większej liczby modów bocznych, prowadzi do znacznego pogorszenia jakości wiązki (wyższe M<sup>2</sup>). Charakterystyka wiązki jest zatem bezpośrednim wynikiem konkretnych rozwiązań konstrukcyjnych lasera.
+
+5. Praktyczne Konstrukcje i Zjawiska Ograniczające
+
+Projektowanie laserów półprzewodnikowych jest sztuką kompromisu. Dążenie do maksymalizacji mocy wyjściowej często stoi w sprzeczności z wymaganiami dotyczącymi jakości wiązki czy niezawodności. Inżynierowie muszą równoważyć pożądane parametry z fizycznymi ograniczeniami materiałowymi i niepożądanymi zjawiskami, takimi jak niestabilności optyczne (filamentacja) czy procesy degradacji.
+
+5.1 Porównanie Konstrukcji Falowodów
+
+Dwa podstawowe typy konstrukcji falowodów bocznych to falowód wzmocnieniowy oraz falowód grzbietowy.
+
+##Cecha	Falowód wzmocnieniowy (gain-guided)	Laser grzbietowy (ridge waveguide)
+Typowa szerokość (w)	100-300 µm	5 µm
+Natura	Wielomodowy laser mocy	Zwykle jednomodowy##
+
+Lasery szerokopaskowe (w = 30-300 µm), choć z natury wielomodowe i o niskiej jakości wiązki, posiadają dwie kluczowe zalety, które czynią je standardem w zastosowaniach dużej mocy:
+
+* Niski opór cieplny: Duża powierzchnia pozwala na efektywne odprowadzanie ciepła, co jest krytyczne przy pracy z wysokimi prądami.
+* Wysoki próg degradacji zwierciadła (COMD): Moc optyczna jest rozłożona na dużej powierzchni, co obniża gęstość mocy na zwierciadle i zapobiega jego katastrofalnemu uszkodzeniu.
+
+Maksymalną moc wyjściową ograniczoną przez COMD można oszacować za pomocą wzoru:
+\[ P_{max} = \frac{d}{\Gamma} \cdot W \cdot \frac{1 - R}{1 + R} \cdot P_{COMD} \]
+
+gdzie d to grubość warstwy aktywnej, W to jej szerokość, Γ to współczynnik ograniczenia optycznego, R to współczynnik odbicia zwierciadła, a P<sub>COMD </sub> to progowa gęstość mocy uszkodzenia.
+
+Te zalety pozwalają na osiąganie wysokich mocy, jednak odbywa się to kosztem jakości wiązki i wprowadza fundamentalne ograniczenie w postaci niestabilności optycznych, takich jak filamentacja.
+
+5.2 Filamentacja
+
+Filamentacja to zjawisko dynamicznej niestabilności, które jest głównym ograniczeniem wydajności laserów szerokopaskowych. Polega ono na samorzutnym rozpadzie szerokiej, jednolitej wiązki na wiele wąskich, intensywnych włókien (filamentów). Mechanizm ten opiera się na nieliniowym sprzężeniu zwrotnym między polem optycznym a ośrodkiem wzmacniającym:
+
+* Lokalny wzrost natężenia pola (|E|<sup>2</sup>) powoduje gwałtowny wzrost tempa emisji wymuszonej.
+* Prowadzi to do lokalnego spadku koncentracji nośników ładunku (n).
+* Zgodnie z zależnościami fizycznymi, spadek koncentracji nośników powoduje wzrost współczynnika załamania materiału (n<sub>r</sub>).
+* Obszar o podwyższonym współczynniku załamania działa jak soczewka skupiająca, co prowadzi do samoogniskowania wiązki i dalszego wzrostu natężenia pola w tym miejscu.
+
+Ta pętla dodatniego sprzężenia zwrotnego prowadzi do niestabilnego, chaotycznego zachowania wiązki.
+$schemat_sprzezenia.png?650$
+[Schemat pętli sprzężenia zwrotnego prowadzącej do filamentacji.]
+
+! Eksperymentalne obserwacje dla laserów InGaN (405 nm) pokazują silną zależność tego zjawiska od szerokości grzbietu (w):
+$InGaN.png?650$
+
+* Wąskie grzbiety (w < 2.5 µm): Silne prowadzenie falowodowe tłumi mody wyższego rzędu i stabilizuje emisję w postaci jednego, stabilnego filamentu.
+* Szersze grzbiety (w ≥ 5 µm): Pojawia się wiele niestabilnych filamentów, których liczba, pozycja i szerokość zmieniają się dynamicznie.
+
+5.3 Polaryzacja Promieniowania
+
+Lasery o emisji krawędziowej emitują światło o dobrze zdefiniowanej polaryzacji liniowej. Zazwyczaj dominującą polaryzacją jest TE (transwersalna elektryczna), gdzie wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n. Decydują o tym dwa główne czynniki:
+
+* Odbicie od zwierciadeł: Współczynnik odbicia od prostopadłego, łupanego zwierciadła półprzewodnikowego jest zazwyczaj wyższy dla polaryzacji TE niż dla polaryzacji TM (transwersalnej magnetycznej). Oznacza to niższe straty rezonatorowe dla modu TE.
+* Anizotropia wzmocnienia: W strukturach opartych na studniach kwantowych, reguły wyboru dla przejść promienistych faworyzują wzmocnienie dla światła o polaryzacji TE.
+
+Dominacja modu TE jest zatem wynikiem zarówno niższych strat, jak i wyższego wzmocnienia w porównaniu do modu TM.
+
+6. Systemy Materiałowe i Zaawansowane Struktury
+
+Wybór systemu materiałowego, na którym bazuje heterostruktura lasera, ma fundamentalny wpływ na jego właściwości. Systemy takie jak arsenek galu (AlGaAs/GaAs) czy azotek galu (AlGaN/GaN) determinują kluczowe parametry falowodu, takie jak dostępny skok współczynnika załamania, straty wewnętrzne, a przede wszystkim – długość emitowanej fali.
+
+6.1 Porównanie Systemów Materiałowych
+
+Poniższa tabela zestawia najważniejsze właściwości falowodów opartych na dwóch głównych rodzinach materiałów półprzewodnikowych.
+
+##Parametr	System AIII-(As,P) (np. GaAs, InP)	System AIII-N (np. GaN)
+Typowy Skok Δn	0.3 - 0.6 (np. InGaAsP/InP: 0.3-0.4; GaAs/AlAs: 0.6)	0.06 - 0.44 (np. GaN/Al₀.₁Ga₀.₉N: 0.06; GaN/AlN: 0.44)
+Absorpcja Wewnętrzna (αᵢ)	0.5 - 5 cm⁻¹	15 - 50 cm⁻¹
+Współczynnik Odbicia (R)	R ≈ 0.3 (dla GaAs, n ≈ 3.5)	R ≈ 0.2 (dla GaN, n ≈ 2.6)##
+
+Współczynnik odbicia mocy od prostopadłej granicy półprzewodnik-powietrze dany jest wzorem:
+\[ R = \left( \frac{n - 1}{n + 1} \right)^2 \]
+Wyższy współczynnik załamania n w systemach arsenkowych prowadzi do wyższego współczynnika odbicia, a co za tym idzie – do niższych strat lustrzanych w rezonatorze. Z kolei w systemach azotkowych wyzwaniem są wyższe straty wewnętrzne, częściowo spowodowane absorpcją na swobodnych nośnikach, która rośnie wraz z koncentracją domieszek.
+
+6.2 Wyzwania w Laserach Niebieskich i UV (AIII-N)
+
+W technologii laserów emitujących w zakresie niebieskim i UV, opartych na azotku galu, projektanci starają się unikać stosowania warstw AlGaN o dużej zawartości aluminium (Al) jako warstw płaszcza falowodu. Pomimo że duża zawartość Al pozwalałaby na uzyskanie dużego skoku współczynnika załamania i silnego ograniczenia światła, wiąże się to z szeregiem poważnych problemów technologicznych:
+
+* Pogorszenie jakości krystalograficznej: Duże niedopasowanie stałej sieciowej między GaN a AlGaN o wysokiej zawartości Al prowadzi do powstawania defektów i dyslokacji w krysztale.
+* Wzrost energii aktywacji akceptorów: Wraz ze wzrostem zawartości Al rośnie energia potrzebna do aktywacji akceptorów (np. magnezu), co drastycznie obniża efektywną koncentrację dziur w warstwach typu p.
+* Zwiększone domieszkowanie tlenem: Warstwy AlGaN są podatne na nieintencjonalne wbudowywanie tlenu, który działa jako donor. To dodatkowo kompensuje akceptory i obniża koncentrację dziur.
+
+6.3 Zintegrowane Wzmacniacze Mocy (Tapered MOPA)
+
+Aby pogodzić wymóg wysokiej mocy wyjściowej z potrzebą zachowania dobrej jakości wiązki, opracowano zaawansowane struktury, takie jak lasery typu MOPA (Master Oscillator Power Amplifier). Precyzyjny model fizyczny opisujący działanie urządzeń stożkowych jest złożony i stanowi przedmiot dyskusji, co doprowadziło do sformułowania trzech głównych, nie do końca wykluczających się, interpretacji ich pracy. Urządzenia te składają się z dwóch zintegrowanych na jednym chipie sekcji:
+
+* Oscylator Główny (Master Oscillator): Wąski, jednomodowy falowód grzbietowy, który generuje stabilną wiązkę o wysokiej jakości.
+* Wzmacniacz Mocy (Power Amplifier): Szeroka, stożkowo rozszerzająca się sekcja (ang. tapered), w której wiązka z oscylatora jest wzmacniana do wysokich poziomów mocy.
+
+Główne teorie działania tych urządzeń to:
+
+* Teoria Lasera MOPA: Oscylator i wzmacniacz działają oddzielnie. Oscylator generuje jednomodową wiązkę, która jest następnie swobodnie wzmacniana w sekcji stożkowej.
+* Teoria Lasera Stożkowego: Cała struktura (grzbiet + stożek) tworzy jeden, wspólny rezonator. Geometria stożka działa jak filtr przestrzenny, który faworyzuje mod podstawowy i tłumi mody wyższego rzędu.
+* Teoria Lasera Jednostronnego: Urządzenie działa bez rezonansu. Światło jest generowane spontanicznie w sekcji grzbietowej, a następnie wzmacniane do poziomu nasycenia w sekcji stożkowej.
+
+W praktyce, rzeczywiste urządzenia wykazują cechy charakterystyczne dla wszystkich trzech teorii. Przykładowe parametry konstrukcyjne takiego lasera to: długość sekcji grzbietowej LRW = 1 mm o szerokości WRW = 4 µm oraz długość sekcji stożkowej LTA = 3 mm o kącie rozwarcia 6°.
+
+7. Dynamika Wewnątrzrezonatorowa
+
+Rezonator lasera nie jest środowiskiem statycznym. Nieustanna interakcja fali świetlnej z ośrodkiem wzmacniającym prowadzi do złożonych zjawisk dynamicznych, które mają fundamentalny wpływ na charakterystykę emisji, zwłaszcza w laserach wielomodowych.
+
+7.1 Rozkład Pola w Rezonatorze Fabry-Perot
+
+W rezonatorze Fabry-Perot, utworzonym przez dwa równoległe zwierciadła, fala świetlna biegnąca w przód (P+) oraz fala odbita, biegnąca w tył (P-), nakładają się na siebie. W wyniku ich koherentnej interferencji powstaje fala stojąca. Rozkład natężenia tej fali, |E(z)|², nie jest jednorodny wzdłuż osi rezonatora (Z), lecz ma charakterystyczny, sinusoidalny kształt z wyraźnymi maksimami i minimami (węzłami).
+
+[Ilustracja: Schematyczny rozkład mocy fali biegnącej w przód (P+), w tył (P-) oraz wynikowego natężenia fali stojącej |E(z)|² w rezonatorze Fabry-Perot.]
+
+7.2 Przestrzenne i Spektralne Wypalanie Dziur
+
+Niejednorodny rozkład fali stojącej jest przyczyną zjawiska zwanego przestrzennym wypalaniem dziur (ang. spatial hole burning), które jest jednym z głównych mechanizmów prowadzących do wielomodowej emisji laserów. Proces ten przebiega w następujących krokach:
+
+* Jako pierwszy wzbudza się mod rezonansowy (Mod 1), który osiąga próg akcji laserowej. Tworzy on w rezonatorze charakterystyczną dla siebie falę stojącą.
+* W obszarach maksimów natężenia fali stojącej zachodzi intensywna emisja wymuszona. Powoduje to lokalne, silne wyczerpanie (konsumpcję) nośników ładunku, co prowadzi do spadku wzmocnienia w tych miejscach. W spektrum wzmocnienia powstaje "dziura".
+* Jednocześnie w obszarach, gdzie Mod 1 miał węzły (minimalne natężenie), wzmocnienie pozostaje wysokie, ponieważ nośniki nie są efektywnie zużywane.
+* W rezultacie, inny mod rezonansowy (Mod 2), o innej długości fali i innym przestrzennym rozkładzie maksimów, może osiągnąć próg akcji laserowej, ponieważ "widzi" on większe średnie wzmocnienie w rezonatorze. Maksima Modu 2 wypadają tam, gdzie wzmocnienie nie zostało "wypalone" przez Mod 1.
+
+[Ilustracja: Mechanizm przestrzennego i spektralnego wypalania dziur. Wypalenie wzmocnienia przez Mod 1 pozwala na osiągnięcie progu akcji laserowej przez Mod 2.]
+
+Mechanizm ten jest fundamentalnym powodem, dla którego lasery oparte na prostym rezonatorze Fabry-Perot z natury dążą do emisji wielomodowej, a uzyskanie stabilnej pracy jednomodowej wymaga zastosowania bardziej zaawansowanych struktur rezonatorowych, takich jak lasery DFB czy DBR.
+
+8. Podsumowanie
+
+Analiza falowodu w laserach półprzewodnikowych o emisji krawędziowej ujawnia złożoną sieć zależności między fundamentalnymi prawami fizyki, inżynierią materiałową a praktycznymi parametrami urządzenia. Od precyzyjnego ukształtowania profilu współczynnika załamania na poziomie nanometrów zależy sposób prowadzenia światła, co z kolei determinuje charakterystykę emitowanej wiązki – od jej mocy, przez spektrum, po jakość i zastosowanie w świecie rzeczywistym.
+
+Kluczowe zagadnienia omówione w niniejszym opracowaniu obejmują:
+
+* Falowód: Zrozumienie jego działania w oparciu o równania Maxwella, analiza powstawania modów optycznych (poprzecznych, bocznych, podłużnych) oraz ich wpływu na polaryzację promieniowania. Omówiono również bezpośredni związek między rozkładem pola wewnątrz lasera (pole bliskie) a charakterystyką wiązki na zewnątrz (pole dalekie), w tym jej jakością opisywaną przez parametr M².
+* Filamentacja: Zidentyfikowanie tego zjawiska jako kluczowej niestabilności ograniczającej wydajność i jakość wiązki w laserach szerokopaskowych dużej mocy. Zrozumienie mechanizmu samoogniskowania jest niezbędne do projektowania bardziej stabilnych urządzeń.
+* Konstrukcja Tapered (MOPA): Przedstawienie tej zaawansowanej struktury jako jednego z najbardziej efektywnych rozwiązań inżynieryjnych, pozwalającego na osiągnięcie kompromisu między wysoką mocą wyjściową a zachowaniem dobrej, jednomodowej jakości wiązki.
+
+
+9. null
+
+null
+
