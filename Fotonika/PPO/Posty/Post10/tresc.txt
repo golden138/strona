@@ -283,6 +283,11 @@ Zmodyfikowana struktura pasmowa prowadzi do wyższego i węższego spektralnie w
 <hr>
 Wykorzystanie naprężonych jam kwantowych jest zaawansowanym etapem ewolucji obszaru czynnego, po którym nastąpiło dalsze ograniczanie wymiarowości do kropek kwantowych (QD). O ile same jamy kwantowe (QW) zapewniały kwantowe ograniczenie nośników w jednym wymiarze (strukturę quasi-2D), o tyle wprowadzenie naprężeń pozwoliło na precyzyjną, mechaniczną kontrolę nad właściwościami elektronicznymi materiału, co jest niezbędne do osiągnięcia wysokiej mocy, stabilności termicznej i wydajności.
 
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie7.mp3" type="audio/mpeg"></audio>
+%%
+
 8. Mechanika Przejścia z Emisji Spontanicznej do Stymulowanej
 
 ! Pytanie: 
