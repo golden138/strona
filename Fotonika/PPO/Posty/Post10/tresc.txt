@@ -241,6 +241,11 @@ Działanie lasera Fabry-Perota dużej mocy można porównać do bardzo szybkiego
 * Monochromatyczność: Broń używa amunicji tego samego kalibru, ale strzela serią (wielomodowość podłużna), a nie pojedynczym pociskiem (jednomodowość).
 * Polaryzacja: Wszystkie pociski trafiają w cel obrócone w ten sam sposób (polaryzacja TE), dzięki geometrycznym i materiałowym ograniczeniom komory (rezonatora).
 
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie6.mp3" type="audio/mpeg"></audio>
+%%
+
 7. Dlaczego współczesne lasery półprzewodnikowe wykorzystują naprężony jamy kwantowe ( np. InGaAs/GaAs )?
 
 Współczesne lasery półprzewodnikowe wykorzystują naprężone jamy kwantowe (ang. Strained Quantum Wells, SQW), takie jak InGaAs/GaAs, ponieważ celowe wprowadzenie kontrolowanych naprężeń mechanicznych jest potężnym narzędziem inżynierii pasmowej, które pozwala na dalszą, znaczną optymalizację kluczowych parametrów lasera, prowadząc do obniżenia prądu progowego i zwiększenia stabilności termicznej.

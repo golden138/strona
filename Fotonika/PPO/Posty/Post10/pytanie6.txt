@@ -1,0 +1,46 @@
+Czy emisja krawędziowego lasera półprzewodnikowego Fabry Perot dużej mocy jest: kierunkowa, monochromatyczna, spolaryzowana?
+
+Emitowany przez laser półprzewodnikowy krawędziowy Fabry-Perota dużej mocy strumień światła w dużym przybliżeniu jest kierunkowy i spolaryzowany, natomiast nie jest monochromatyczny, lecz charakteryzuje się wąskim, ale wielomodowym widmem.
+Poniżej znajduje się szczegółowy opis tych charakterystyk, z uwzględnieniem specyfiki laserów dużej mocy.
+
+! Kierunkowość (Directionality)
+
+Emisja lasera jest z definicji kierunkowa w porównaniu do emisji spontanicznej (np. diody LED), gdzie fotony są emitowane w sposób losowy. Jednakże, dla laserów krawędziowych o dużej mocy, kierunkowość jest silnie asymetryczna i ograniczona przez jakość wiązki.
+* Asymetria Wiązki: W laserach krawędziowych, falowód jest znacznie węższy w kierunku prostopadłym do złącza (oś Y, grubość warstw d, rzędu 0.3-3 µm) niż w kierunku równoległym (oś X, szerokość paska w, dla laserów dużej mocy w≫10 μm).
+* Rozbieżność (θ): Zgodnie z zasadą dyfrakcji, im silniejsze jest ograniczenie światła w falowodzie (mniejszy wymiar), tym większa jest rozbieżność wiązki.
+  * Rozbieżność w płaszczyźnie prostopadłej do złącza (θ⊥) jest znacznie większa (rzędu 30<sup>o</sup> - 38<sup>o</sup>).
+  * Rozbieżność w płaszczyźnie równoległej do złącza (θ∣∣) jest mniejsza.
+* Jakość Wiązki (M<sup>2</sup>): Lasery dużej mocy często wykorzystują szerokie paski aktywne (np. w=200 μm), co ma na celu rozłożenie mocy na większej powierzchni i zapobieganie katastroficznemu uszkodzeniu zwierciadeł (COMD).
+  * W szerszym falowodzie może propagować się większa liczba modów bocznych, co prowadzi do znacznego pogorszenia jakości wiązki.
+  * Jakość wiązki jest mierzona parametrem M<sup>2</sup>. Dla laserów szerokopaskowych M<sup>2</sup> jest wysoki (np. >10), co oznacza, że wiązka nie jest idealną wiązką gaussowską i trudniej ją skupić do małej plamki.
+
+Wnioskując, emisja jest kierunkowa, ale wysoce rozbieżna i ma niską jakość (M<sup>2</sup> ≫ 1) w płaszczyźnie bocznej ze względu na wielomodowy charakter konstrukcji dużej mocy.
+
+! Monochromatyczność (Spectrum)
+
+Emisja lasera półprzewodnikowego Fabry-Perota jest wąskopasmowa (zawężona spektralnie), ale z reguły nie jest monochromatyczna (tzn. nie jest jednoukładowa), zwłaszcza w przypadku lasera dużej mocy.
+* Zawężenie Spektralne: Po przekroczeniu progu akcji laserowej, emisja stymulowana zaczyna dominować nad emisją spontaniczną. Prowadzi to do gwałtownego zawężenia widma emisyjnego. Pełna szerokość w połowie maksimum (FWHM) spada z rzędu 50 nm (emisja spontaniczna) do wartości rzędu 1 nm lub mniej.
+* Wielomodowość Podłużna: Rezonator Fabry-Perota (utworzony przez dwa równoległe zwierciadła, często łupane płaszczyzny kryształu) narzuca dyskretny zestaw dozwolonych długości fal, zwanych modami podłużnymi (q), które mogą ulec wzmocnieniu i istnieć w rezonatorze.
+* Przestrzenne Wypalanie Dziur (Spatial Hole Burning): W typowym rezonatorze FP, interferencja fal biegnących w przód i w tył tworzy falę stojącą z maksimami i minimami (węzłami) natężenia.
+  * Intensywna emisja wymuszona zużywa nośniki ładunku w maksimach, prowadząc do lokalnego spadku wzmocnienia ("wypalanie dziury").
+  * Inny mod rezonansowy, którego maksima wypadają w obszarach niewyczerpanego wzmocnienia, może osiągnąć próg laserowania, co prowadzi do jednoczesnej emisji wielu modów podłużnych.
+* Wielomodowość Boczna: Jak opisano w sekcji 1, lasery dużej mocy są często szerokopaskowe i emitują wiele modów bocznych (s), co dodatkowo komplikuje spektrum.
+
+Zatem, chociaż jest to światło o bardzo wąskim zakresie długości fal w porównaniu do światła białego czy diody LED, nie jest ono idealnie monochromatyczne (jednoczęstotliwościowe), lecz wielomodowe.
+
+! Polaryzacja (Polarization)
+
+Emisja krawędziowego lasera półprzewodnikowego jest zazwyczaj silnie spolaryzowana.
+* Dominacja TE: Dominuje polaryzacja TE (Transwersalna Elektryczna), w której wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n (równolegle do warstw półprzewodnika).
+* Przyczyny Dominacji TE:
+  * Straty na Zwierciadłach: Współczynnik odbicia od łupanego zwierciadła półprzewodnik-powietrze jest wyższy dla polaryzacji TE niż dla polaryzacji TM (Transwersalnej Magnetycznej). Wyższy współczynnik odbicia oznacza niższe straty lustrzane, co skutkuje niższym progiem akcji laserowej dla modu TE.
+  * Anizotropia Wzmocnienia: W strukturach ze studniami kwantowymi (QW), które stanowią rdzeń obszaru czynnego większości nowoczesnych laserów, reguły wyboru optycznego faworyzują wzmocnienie dla światła o polaryzacji TE. Proces ten jest wzmacniany przez wprowadzenie naprężeń ściskających w studniach kwantowych, które generują światło o polaryzacji TE (poziomej).
+
+W konsekwencji, większość mocy jest skoncentrowana w modzie o polaryzacji TE.
+
+<hr>
+Podsumowanie w formie analogii:
+Działanie lasera Fabry-Perota dużej mocy można porównać do bardzo szybkiego, asymetrycznego pistoletu maszynowego.
+* Kierunkowość: Pistolet strzela do przodu, ale z szerokim i zniekształconym stożkiem rozbieżności (nie jest to idealny snajperski strzał).
+* Monochromatyczność: Broń używa amunicji tego samego kalibru, ale strzela serią (wielomodowość podłużna), a nie pojedynczym pociskiem (jednomodowość).
+* Polaryzacja: Wszystkie pociski trafiają w cel obrócone w ten sam sposób (polaryzacja TE), dzięki geometrycznym i materiałowym ograniczeniom komory (rezonatora).
