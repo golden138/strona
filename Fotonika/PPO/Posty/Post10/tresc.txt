@@ -307,54 +307,46 @@ Omów, w jaki sposób konstrukcja falowodu w laserze krawędziowym kontroluje mo
 ! Uzasadnienie szczegółowe: 
 To pytanie dotyczy zagadnień geometrycznych i optyki falowodowej. Źródła szczegółowo analizują mody poprzeczne, objaśniając, że mody parzyste posiadają maksimum pola w studni kwantowej, co zapewnia wysoki współczynnik ograniczenia optycznego (Γ<sub>QW</sub>) i efektywne wzmocnienie. Analiza modów bocznych koncentruje się na tym, jak zmiana geometrii (szerokość grzbietu, głębokość trawienia) wpływa na efektywny współczynnik załamania (Δn<sub>eff</sub> ) i przełączanie między trybem jedno- a wielomodowym. Wreszcie, źródła definiują zależność między polem bliskim (w rezonatorze) a polem dalekim (dyfrakcja emitowanej wiązki) za pomocą transformaty Fouriera.
 
-10. Jednomodowy laser krawędziowy.
+1. Jednomodowy laser krawędziowy.
 
 Jednomodowy laser krawędziowy to zaawansowane urządzenie optoelektroniczne, które jest projektowane w celu ograniczenia propagacji światła w rezonatorze do pojedynczego modu optycznego, szczególnie w płaszczyźnie bocznej (równoległej do złącza).
-Uzyskanie pracy jednomodowej jest kluczowe dla zastosowań wymagających wysokiej jakości wiązki (niskiego M 
-2
- ) i stabilnego widma, takich jak telekomunikacja, gdzie typowa moc tych laserów wynosi 5-40 mW.
+Uzyskanie pracy jednomodowej jest kluczowe dla zastosowań wymagających wysokiej jakości wiązki (niskiego M<sub>2</sub>) i stabilnego widma, takich jak telekomunikacja, gdzie typowa moc tych laserów wynosi 5-40 mW.
 Poniżej znajduje się opis konstrukcji i działania jednomodowego lasera krawędziowego, opartego na rezonatorze Fabry-Perota, z uwzględnieniem mechanizmów ograniczających mody optyczne:
-1. Budowa i Ograniczenie Światła (Falowód)
+
+! Budowa i Ograniczenie Światła (Falowód)
+
 Laser krawędziowy (ang. Edge-Emitting Laser) wykorzystuje rezonator optyczny typu Fabry-Perota, utworzony przez dwa równoległe zwierciadła, często otrzymywane przez łupanie kryształu półprzewodnikowego. Wewnątrz tego rezonatora znajduje się falowód półprzewodnikowy, którego zadaniem jest ograniczanie światła w dwóch prostopadłych kierunkach: poprzecznym (oś Y) i bocznym (oś X).
 Ograniczenie Poprzeczne (Oś Y) – Mody Poprzeczne (m)
 Ograniczenie w kierunku prostopadłym do złącza (oś Y) jest realizowane przez heterostrukturę (zmianę materiałów, np. GaAs otoczony AlGaAs), która zapewnia wyższy współczynnik załamania światła w rdzeniu.
-• W tym kierunku dominuje mod podstawowy m=0 (mod parzystego rzędu).
-• Dzieje się tak, ponieważ mody parzyste (np. m=0) mają maksimum natężenia pola w centrum studni kwantowej (QW), co zapewnia wysoki współczynnik ograniczenia optycznego (Γ 
-QW
-​
- ) i efektywne wzmocnienie.
-• Mody nieparzystego rzędu (np. m=1) posiadają węzeł (zero natężenia) w QW, co uniemożliwia im efektywne wzmocnienie i laserowanie.
+* W tym kierunku dominuje mod podstawowy m=0 (mod parzystego rzędu).
+* Dzieje się tak, ponieważ mody parzyste (np. m=0) mają maksimum natężenia pola w centrum studni kwantowej (QW), co zapewnia wysoki współczynnik ograniczenia optycznego (Γ<sub>QW</sub>) i efektywne wzmocnienie.
+* Mody nieparzystego rzędu (np. m=1) posiadają węzeł (zero natężenia) w QW, co uniemożliwia im efektywne wzmocnienie i laserowanie.
 Ograniczenie Boczne (Oś X) – Mody Boczne (s)
 Ograniczenie w płaszczyźnie złącza (oś X) jest realizowane przez strukturę falowodu grzbietowego (ang. ridge waveguide). Jest to kluczowy element decydujący o jednomodowej pracy.
-• Laser jednomodowy wymaga, aby w kierunku bocznym propagował się tylko mod podstawowy s=0.
-• Uzyskanie jednomodowej pracy bocznej polega na kontrolowaniu geometrii grzbietu (szerokości w i głębokości trawienia), co wpływa na skok efektywnego współczynnika załamania (Δn 
-eff
-​
- ).
-• Węższy grzbiet (typowa szerokość w≈3 μm) oraz płytsze trawienie (mniejszy Δn 
-eff
-​
- ) faworyzują mod podstawowy, podczas gdy szersze falowody (np. w≥5 μm) pozwalają na propagację modów wyższego rzędu, prowadząc do emisji wielomodowej.
-2. Charakterystyka Emisji Jednomodowego Lasera
+* Laser jednomodowy wymaga, aby w kierunku bocznym propagował się tylko mod podstawowy s=0.
+* Uzyskanie jednomodowej pracy bocznej polega na kontrolowaniu geometrii grzbietu (szerokości w i głębokości trawienia), co wpływa na skok efektywnego współczynnika załamania (Δn<sub>eff</sub>).
+* Węższy grzbiet (typowa szerokość w≈3 μm) oraz płytsze trawienie (mniejszy Δn<sub>eff</sub>) faworyzują mod podstawowy, podczas gdy szersze falowody (np. w≥5 μm) pozwalają na propagację modów wyższego rzędu, prowadząc do emisji wielomodowej.
+
+! Charakterystyka Emisji Jednomodowego Lasera
+
 Jednomodowość geometryczna przekłada się na korzystne właściwości emitowanej wiązki:
-• Jakość Wiązki (M 
-2
- ): Jednomodowe lasery (wąskopaskowe) charakteryzują się wysoką jakością wiązki, bliską idealnej wiązce gaussowskiej, co jest kwantyfikowane niską wartością parametru M 
-2
- ≈1. Dla porównania, lasery szerokopaskowe (wielomodowe, dużej mocy) mają M 
-2
- >10.
-• Kierunkowość i Rozbieżność: Emisja jest kierunkowa. Ze względu na dużą asymetrię wymiarów falowodu (L≫w>d), rozbieżność wiązki w płaszczyźnie prostopadłej do złącza (θ⊥) jest znacznie większa (np. 30 
-∘
- ) niż w płaszczyźnie równoległej (θ∣∣). Zgodnie z zasadą dyfrakcji (relacja między polem bliskim a dalekim), im silniejsze jest ograniczenie światła (mniejszy wymiar), tym większa jest rozbieżność wiązki.
-• Widmo: Po przekroczeniu progu akcji laserowej widmo emisji ulega drastycznemu zawężeniu. Niemal cała moc optyczna jest skoncentrowana w dominującym modzie laserowym, a pełna szerokość w połowie maksimum (FWHM) spada do wartości rzędu 1 nm lub mniej.
-• Polaryzacja: Emisja jest liniowo spolaryzowana, z dominującą polaryzacją TE (Transwersalną Elektryczną), w której wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n. Jest to wynik anizotropii wzmocnienia w studniach kwantowych oraz wyższego współczynnika odbicia od łupanych zwierciadeł dla polaryzacji TE, co obniża straty rezonatorowe dla tego modu.
-3. Wielomodowość Podłużna i Wyzwania Spektralne
+* Jakość Wiązki (M<sub>2</sub>): Jednomodowe lasery (wąskopaskowe) charakteryzują się wysoką jakością wiązki, bliską idealnej wiązce gaussowskiej, co jest kwantyfikowane niską wartością parametru M<sub>2</sub> ≈1. Dla porównania, lasery szerokopaskowe (wielomodowe, dużej mocy) mają M<sub>2</sub> >10.
+* Kierunkowość i Rozbieżność: Emisja jest kierunkowa. Ze względu na dużą asymetrię wymiarów falowodu (L≫w>d), rozbieżność wiązki w płaszczyźnie prostopadłej do złącza (θ⊥) jest znacznie większa (np. 30<sup>o</sup>) niż w płaszczyźnie równoległej (θ∣∣). Zgodnie z zasadą dyfrakcji (relacja między polem bliskim a dalekim), im silniejsze jest ograniczenie światła (mniejszy wymiar), tym większa jest rozbieżność wiązki.
+* Widmo: Po przekroczeniu progu akcji laserowej widmo emisji ulega drastycznemu zawężeniu. Niemal cała moc optyczna jest skoncentrowana w dominującym modzie laserowym, a pełna szerokość w połowie maksimum (FWHM) spada do wartości rzędu 1 nm lub mniej.
+* Polaryzacja: Emisja jest liniowo spolaryzowana, z dominującą polaryzacją TE (Transwersalną Elektryczną), w której wektor pola elektrycznego oscyluje w płaszczyźnie złącza p-n. Jest to wynik anizotropii wzmocnienia w studniach kwantowych oraz wyższego współczynnika odbicia od łupanych zwierciadeł dla polaryzacji TE, co obniża straty rezonatorowe dla tego modu.
+
+! Wielomodowość Podłużna i Wyzwania Spektralne
+
 Chociaż laser krawędziowy jest jednomodowy w płaszczyznach poprzecznej i bocznej (geometrycznie), prosty rezonator Fabry-Perota z natury sprzyja wielomodowości podłużnej (q).
-• Rezonator FP narzuca warunek fazowy, zgodnie z którym w jego długości (L) musi zmieścić się całkowita liczba połówek długości fali, co prowadzi do dyskretnego zestawu dozwolonych długości fal (modów podłużnych).
-• Mechanizm przestrzennego wypalania dziur (Spatial Hole Burning) powoduje, że jeden mod, który osiągnął próg, nie zużywa wzmocnienia w sposób jednorodny wzdłuż osi rezonatora. Prowadzi to do tego, że drugi mod może osiągnąć próg laserowania w obszarach niewyczerpanego wzmocnienia, co skutkuje jednoczesną emisją wielu modów podłużnych.
-• Uzyskanie stabilnej jednomodowej pracy spektralnej (emisja tylko jednego modu podłużnego) wymaga zastosowania bardziej zaawansowanych struktur rezonatorowych, takich jak lasery DFB (Distributed Feedback) czy DBR (Distributed Bragg Reflector), w celu skutecznego tłumienia niepożądanych modów.
+* Rezonator FP narzuca warunek fazowy, zgodnie z którym w jego długości (L) musi zmieścić się całkowita liczba połówek długości fali, co prowadzi do dyskretnego zestawu dozwolonych długości fal (modów podłużnych).
+* Mechanizm przestrzennego wypalania dziur (Spatial Hole Burning) powoduje, że jeden mod, który osiągnął próg, nie zużywa wzmocnienia w sposób jednorodny wzdłuż osi rezonatora. Prowadzi to do tego, że drugi mod może osiągnąć próg laserowania w obszarach niewyczerpanego wzmocnienia, co skutkuje jednoczesną emisją wielu modów podłużnych.
+* Uzyskanie stabilnej jednomodowej pracy spektralnej (emisja tylko jednego modu podłużnego) wymaga zastosowania bardziej zaawansowanych struktur rezonatorowych, takich jak lasery DFB (Distributed Feedback) czy DBR (Distributed Bragg Reflector), w celu skutecznego tłumienia niepożądanych modów.
 Zatem, terminy "jednomodowy laser krawędziowy" często odnoszą się do jego jednomodowości przestrzennej (wysoka jakość wiązki), osiąganej przez wąski falowód grzbietowy, niezależnie od ewentualnej wielomodowości podłużnej w rezonatorze Fabry-Perota.
+
+%%
+<hr>
+<audio controls=""><source src="Posty/Post10/pytanie10.mp3" type="audio/mpeg"></audio>
+%%
 
 9. null
 

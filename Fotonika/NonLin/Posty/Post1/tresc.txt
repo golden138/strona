@@ -1,0 +1,108 @@
+Generacja Drugiej Harmonicznej i Fali Sumacyjnej w Krysztale BBO
+
+1. Wprowadzenie do Optyki Nieliniowej
+
+Zjawiska optyki nieliniowej, takie jak generacja drugiej harmonicznej (SHG – Second Harmonic Generation) i generacja fali o częstości sumacyjnej (SFG – Sum-Frequency Generation), stanowią fundament wielu nowoczesnych technologii fotonicznych. Procesy te polegają na oddziaływaniu intensywnego światła laserowego z materią w taki sposób, że w ośrodku indukowana jest nieliniowa polaryzacja dielektryczna, prowadząca do generacji nowych składowych częstotliwościowych. Strategiczne znaczenie tych zjawisk w fizyce laserów polega na ich zdolności do konwersji częstotliwości, co umożliwia generowanie światła o nowych, często niedostępnych bezpośrednio z laserów, długościach fali. Celem niniejszego dokumentu jest szczegółowe omówienie warunków fizycznych, a zwłaszcza dopasowania fazowego, które są niezbędne do wydajnej realizacji tych procesów na przykładzie powszechnie stosowanego kryształu nieliniowego BBO (boranu beta-baru). Zrozumienie tych zasad jest kluczowe dla praktycznego zastosowania optyki nieliniowej, a centralnym pojęciem umożliwiającym te zjawiska jest dopasowanie fazowe.
+
+2. Kluczowa Zasada: Dopasowanie Fazowe (Phase Matching)
+
+Dopasowanie fazowe jest fundamentalnym warunkiem, który musi zostać spełniony, aby uzyskać wysoką wydajność procesów nieliniowych, takich jak SHG czy SFG. Zapewnia on, że energia przekazywana z fal fundamentalnych do nowo generowanej fali akumuluje się konstruktywnie na całej długości propagacji w ośrodku nieliniowym.
+
+Matematycznie, warunek dopasowania fazowego jest wyrażony jako Δk = 0, gdzie k reprezentuje wektor falowy. Warunek ten jest bezpośrednim odpowiednikiem zasady zachowania pędu (p = ħk) dla oddziałujących fotonów: 
+\[ p_1 + p_2 = p_3 \implies k_1 + k_2 = k_3 \]
+Niespełnienie tego warunku prowadzi do destruktywnej interferencji, a co za tym idzie, do znikomej wydajności konwersji. W praktyce, ze względu na zjawisko dyspersji chromatycznej (zależność współczynnika załamania od długości fali), warunek ten nie jest spełniany automatycznie. Jednak w krystalach anizotropowych, takich jak BBO, które charakteryzują się dwójłomnością, możliwe jest skompensowanie dyspersji poprzez odpowiedni dobór polaryzacji oddziałujących fal oraz orientacji kątowej kryształu. Poniższe sekcje szczegółowo analizują, jak realizuje się to dla konkretnych typów dopasowania fazowego w procesie SHG.
+
+3. Generacja Drugiej Harmonicznej (SHG) w Krysztale BBO
+
+Proces generacji drugiej harmonicznej polega na konwersji dwóch fotonów o częstotliwości ω na jeden foton o podwojonej częstotliwości 2ω, co odpowiada skróceniu długości fali o połowę. W niniejszej analizie rozważane są dwa podstawowe typy kolinearnego dopasowania fazowego dla tego zjawiska w krysztale BBO.
+
+3.1. Dopasowanie Fazowe Typu I (o + o → e)
+
+W dopasowaniu fazowym typu I, dwie oddziałujące fale fundamentalne mają tę samą, zwyczajną polaryzację (oznaczoną jako o – ordinary). W wyniku oddziaływania generowana jest fala harmoniczna o polaryzacji prostopadłej, czyli nadzwyczajnej (e – extraordinary). Warunek dopasowania fazowego sprowadza się do zrównania współczynników załamania: no(ω) = ne(2ω, θm), co po uwzględnieniu zależności współczynnika załamania fali nadzwyczajnej od kąta propagacji θm względem osi optycznej w krysztale jednoosiowym prowadzi do równania:
+
+\[n_o(\omega)= \left(\frac{\cos^2(\theta_m)}{n_o^2(2\omega)}+\frac{\sin^2(\theta_m)}{n_e^2(2\omega)} \right)^{-1/2} \]
+
+Analityczne rozwiązanie tego równania pozwala wyznaczyć kąt dopasowania fazowego θm, czyli kąt pomiędzy kierunkiem propagacji fali a osią optyczną kryształu:
+
+\[\theta_m = \arcsin\!\left( \sqrt{ \frac{ n_o^{-2}(\omega) - n_o^{-2}(2\omega) }{ n_e^{-2}(2\omega) - n_o^{-2}(2\omega) } } \right)\]
+
+Dla fali o długości λ = 1064 nm, kąt dopasowania fazowego wynosi θm = 22,8°.
+
+3.2. Dopasowanie Fazowe Typu II (o + e → e)
+
+W dopasowaniu fazowym typu II oddziałują dwie fale fundamentalne o ortogonalnych polaryzacjach – jedna o polaryzacji zwyczajnej (o), a druga o polaryzacji nadzwyczajnej (e). W ich wyniku powstaje fala harmoniczna o polaryzacji nadzwyczajnej (e). Warunek dopasowania fazowego dla tego procesu jest bardziej złożony i ma postać: no(ω) + ne(ω, θm) = 2ne(2ω, θm).
+
+Pełne równanie opisujące ten warunek jest następujące:
+
+\[n_o(\omega)+\left( \frac{\cos^2(\theta_m)}{n_o^2(\omega)} + \frac{\sin^2(\theta_m)}{n_e^2(\omega)} \right)^{-1/2}=2 \left( \frac{\cos^2(\theta_m)}{n_o^2(2\omega)} + \frac{\sin^2(\theta_m)}{n_e^2(2\omega)} \right)^{-1/2}\]
+
+Równanie to nie posiada ogólnego rozwiązania analitycznego, dlatego kąt θm wyznacza się numerycznie.
+
+Dla fali o długości λ = 1064 nm, kąt dopasowania fazowego wynosi θm = 32,8°.
+
+3.3. Tolerancja Kątowa
+
+Wydajność procesu SHG jest niezwykle wrażliwa na precyzyjne ustawienie kątowe kryształu. Kąt odstrojenia (tolerancja kątowa) Δθm definiuje się jako pełną szerokość połówkową (FWHM) krzywej dostrojenia kątowego, czyli zakres kątów, w którym wydajność konwersji spada do 50% swojej maksymalnej wartości. Parametr ten zależy od długości fali (λ), długości kryształu (L) oraz jego właściwości dwójłomnych i jest opisany wzorem:
+
+\[\Delta \theta_m= \frac{2.783\, \lambda}{4 \pi L}\left| \left( n_e(\lambda/2) - n_o(\lambda/2) \right) \sin(2\theta_m) \right|^{-1}\]
+
+Niewielka wartość tego kąta, często rzędu miliradianów dla kryształów o długości kilku milimetrów, narzuca rygorystyczne wymagania dotyczące stabilności mechanicznej i precyzji justowania układu optycznego. Poza generacją drugiej harmonicznej, zasady te stosuje się również w bardziej złożonych procesach, takich jak generacja fali sumacyjnej.
+
+4. Generacja Fali o Częstości Sumacyjnej (SFG) w Krysztale BBO
+
+Generacja fali o częstości sumacyjnej (SFG) to proces nieliniowy, w którym dwie fale o różnych częstotliwościach (ω1 i ω2) oddziałują w krysztale, tworząc nową falę o częstotliwości równej sumie częstotliwości fal wejściowych (ω3 = ω1 + ω2). W kontekście opisywanego układu, proces ten jest wykorzystywany do generacji trzeciej harmonicznej (THG), gdzie fala fundamentalna (ω1 = ω, λ1=λ) miesza się z falą drugiej harmonicznej (ω2 = 2ω, λ2=λ/2), generując falę ultrafioletową o długości λ3 = λ/3 ≈ 355 nm. Ogólny warunek zachowania pędu dla tego zjawiska ma postać k1 + k2 = k3.
+
+4.1. Dopasowanie Fazowe Typu I (o + o → e)
+
+W tym typie dopasowania obie fale wejściowe (λ1=λ oraz λ2=λ/2) mają polaryzację zwyczajną (o). Generowana fala sumacyjna (λ3=λ/3) posiada polaryzację nadzwyczajną (e). Warunek dopasowania fazowego n1/λ1 + n2/λ2 = n3/λ3 przyjmuje postać: no(ω)/λ + no(2ω)/(λ/2) = ne(3ω, θm)/(λ/3). Po uwzględnieniu zależności kątowej dla fali nadzwyczajnej, pełne równanie ma formę:
+
+\[\frac{\lambda}{3}\left( \frac{n_o(\omega)}{\lambda} + \frac{2 n_o(2\omega)}{\lambda} \right)=\left( \frac{\cos^2(\theta_m)}{n_o^2(3\omega)}+\frac{\sin^2(\theta_m)}{n_e^2(3\omega)}\right)^{-1/2}\]
+
+Rozwiązanie analityczne tego równania dla kąta θm jest następujące:
+
+\[\theta_m=\arcsin\!\left(\sqrt{\frac{\left( \frac{\lambda}{3} \right)^{-2}\left( \frac{n_o(\omega) + 2 n_o(2\omega)}{\lambda} \right)^{-2}- n_o^{-2}(3\omega)}{n_e^{-2}(3\omega) - n_o^{-2}(3\omega)}}\right)\]
+
+Dla fali fundamentalnej λ = 1064 nm, kąt dopasowania fazowego dla tego procesu wynosi θm = 31,3°.
+
+4.2. Dopasowanie Fazowe Typu II (o + e → e)
+
+W dopasowaniu fazowym typu II fala fundamentalna (λ1=λ) o polaryzacji zwyczajnej oddziałuje z falą drugiej harmonicznej (λ2=λ/2) o polaryzacji nadzwyczajnej. W rezultacie powstaje fala sumacyjna (λ3=λ/3) również o polaryzacji nadzwyczajnej. Warunek dopasowania fazowego n1/λ1 + n2/λ2 = n3/λ3 przyjmuje postać: no(ω)/λ + ne(2ω, θm)/(λ/2) = ne(3ω, θm)/(λ/3). Prowadzi to do złożonego równania:
+
+\[\frac{n_o(\omega)}{\lambda}+\frac{1}{\lambda/2}\left(\frac{\cos^2(\theta_m)}{n_o^2(2\omega)}+\frac{\sin^2(\theta_m)}{n_e^2(2\omega)}\right)^{-1/2}=\frac{1}{\lambda/3}\left(\frac{\cos^2(\theta_m)}{n_o^2(3\omega)}+\frac{\sin^2(\theta_m)}{n_e^2(3\omega)}\right)^{-1/2}\]
+
+Równanie to nie posiada ogólnego rozwiązania analitycznego, a jego rozwiązanie wymaga zastosowania metod numerycznych.
+
+Dla fali fundamentalnej λ = 1064 nm, kąt dopasowania fazowego dla tego procesu wynosi θm = 59,7°.
+
+Praktyczna weryfikacja tych teoretycznych założeń stanowi sedno opisanego poniżej układu laboratoryjnego.
+
+5. Zastosowanie w Układzie Doświadczalnym
+
+Omówione powyżej zasady teoretyczne znajdują swoje bezpośrednie zastosowanie w eksperymencie laboratoryjnym, którego celem jest praktyczna realizacja procesów SHG oraz SFG. W doświadczeniu wykorzystuje się impulsowy laser Nd:YAG generujący światło o długości fali 1064 nm jako wiązkę fundamentalną. Kluczowe jest precyzyjne zastosowanie wiedzy o dopasowaniu fazowym w celu efektywnej konwersji częstotliwości w kryształach nieliniowych.
+
+Poniżej przedstawiono kluczowe komponenty i etapy eksperymentu:
+
+* Źródło światła: Laser impulsowy generujący falę fundamentalną o długości λ = 1064 nm.
+* Kryształ BBO: Główny ośrodek nieliniowy o grubości L = 1 mm lub 2 mm, wykorzystywany do generacji drugiej harmonicznej (SHG) oraz fali o częstości sumacyjnej (SFG).
+* Kryształ KTP: Kryształ K[TiO]PO₄ używany do wygenerowania fali o długości λ = 532 nm w procesie SHG z dopasowaniem fazowym typu II. Kryształ KTP jest kryształem dwuosiowym, co w odróżnieniu od jednoosiowego BBO oznacza, że charakteryzuje się trzema różnymi głównymi współczynnikami załamania (nx, ny, nz). Wygenerowana wiązka 532 nm służy jako druga fala pompująca w procesie SFG.
+* Proces SFG: Realizowany w krysztale BBO, gdzie oddziałują dwie fale pompujące o długościach λ_P1 = 1064 nm oraz λ_P2 = 532 nm w celu wygenerowania trzeciej harmonicznej o długości fali ~355 nm.
+
+Aby uzyskać maksymalną wydajność konwersji i poprawnie przeprowadzić doświadczenie, należy zwrócić uwagę na następujące krytyczne kroki:
+
+* Określenie optymalnej szerokości wiązki i dobór odpowiedniej soczewki ogniskującej.
+* Ustalenie prawidłowej polaryzacji wiązki fundamentalnej, zgodnej z wybranym typem dopasowania fazowego.
+* Precyzyjne ustawienie położenia oraz orientacji kątowej kryształu względem padającej wiązki.
+* Weryfikacja polaryzacji wygenerowanej wiązki harmonicznej w celu potwierdzenia typu oddziaływania.
+* Pomiar mocy wiązki fundamentalnej i harmonicznej w celu określenia efektywności konwersji.
+
+Sukces w laboratorium jest zatem bezpośrednio uzależniony od precyzyjnego zrozumienia i zastosowania teorii dopasowania fazowego.
+
+6. Podsumowanie
+
+Niniejsza notatka techniczna przedstawiła kluczowe zasady rządzące zjawiskami optyki nieliniowej, takimi jak generacja drugiej harmonicznej i fali sumacyjnej. Wykazano, że warunek dopasowania fazowego (Δk = 0), interpretowany jako zasada zachowania pędu dla fotonów, jest absolutnie fundamentalny dla osiągnięcia wysokiej wydajności konwersji częstotliwości w ośrodkach nieliniowych. Na przykładzie kryształu BBO zademonstrowano, jak poprzez odpowiedni dobór typu dopasowania (Typ I lub Typ II) i precyzyjne ustawienie kąta kryształu względem wiązki laserowej, można efektywnie generować światło o nowych długościach fali. Zrozumienie tych mechanizmów stanowi podstawę projektowania i budowy wielu nowoczesnych systemów laserowych stosowanych w nauce i przemyśle.
+
+
+9. null
+
+null
+
