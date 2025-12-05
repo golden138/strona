@@ -1,0 +1,218 @@
+Dynamika
+
+1. Masa, bezwładność oraz ciężar
+
+Bezwładność to cecha ciał, która mówi, jak trudno jest zmienić ich ruch.
+* Im większa masa - tym trudniej wprawić ciało w ruch lub je zatrzymać.
+* Im mniejsza masa - tym łatwiej je rozpędzić lub zatrzymać.
+
+! Przykład:
+Wózek sklepowy pusty – łatwo ruszyć.
+Wózek pełny zakupów – dużo trudniej ruszyć, bo ma większą masę.
+
+! Co to jest ciężar?
+Ciężar ciała to siła, z jaką Ziemia przyciąga dane ciało.
+Nie należy mylić ciężaru z masą – masa to ilość materii w ciele, a ciężar to siła grawitacji działająca na to ciało. Masa nawet posiada inną jednostkę niż ciężar. Jednostka masy kilogram.
+
+! Wzór na ciężar:
+\[ F_g = m \cdot g \]
+$ciezar_wzor.png?350$
+gdzie:
+##Oznaczenie	Co oznacza
+F<sub>g</sub>	Ciężar ciała [ N ]
+m	masa ciała [ kg ]
+g	przyspieszenie [ m/s<sup>2</sup> ] lub [ N/kg ] wynosi około 9,81 m/s<sup>2</sup> na ziemi##
+
+! Przykład obliczenia:
+Jeśli masa ciała wynosi 2 kg, to:
+\[ F_g = 2 kg \cdot 9.81 \frac{m}{s^2} =  19.62 \frac{kg \cdot m}{s^2} = 19.62 N \]
+czyli ciężar tego ciała to około 19,6 N.
+
+! Różnice między masą a ciężarem:
+
+##Cecha	Masa	Ciężar
+Symbol	m	F<sub>g</sub>
+Jednostka	kg	N
+Zależy od miejsca?	Nie	Tak (bo g jest inne na Ziemi, Księżycu itd.)
+Co opisuje?	Ilość materii	Siłę przyciągania grawitacyjnego##
+
+<hr>
+& Zadanie 1.
+Oblicz ciężar tabliczki czekolady o masie 20 dag. Wynik podaj w N. Przyjmij wartość g = 10N/kg. Zapisz obliczenia.
+
+<hr>
+& Zadanie 2.
+Jaką wartość wskaże siłomierz, gdy zawieszony na nim przedmiot ma masę 0,7 kg?
+
+<hr>
+& Zadanie 3.
+Jeden hipopotam waży tyle, co pięć tygrysów. Jeden tygrys waży tyle, co 5 wilków. Jeden wilk ma masę 60 kg. Oblicz siłę ciężkości działającą na hipopotama.
+
+<hr>
+& Zadanie 4.
+Oblicz przyspieszenie jakie jest na Marsie i na Księżycu (Przekształć odpowiednio wzór na ciężar, aby wyznaczyć g). Przyspieszenie na Księżycu będzie się różnić o przyspieszenia na Marsie i na Ziemi. Na ilustracji podany jest ciężar jaki posiada człowiek. Przyjmij, że na ziemi przyspieszenie wynosi g = 10 m/s<sup>2</sup>.
+$ciezar_inne.png?600$
+
+<hr>
+& Zadanie 5.
+Oblicz masę ciała, którego ciężar na ziemi wynosi 13 kN. Pamiętaj o odpowiednich jednostkach.
+
+2. Równoważenie sił i siły wypadkowe
+
+! Co to jest siła?
+  * Siła to oddziaływanie, które może zmienić ruch lub kształt ciała.
+  * Siłę oznaczamy literą F.
+  * Jednostka siły to niuton (N). Taką jednostkę możemy zapisać inaczej to jest:
+\[ 1N = 1 \frac{kg \cdot m}{s^2} \]
+##jednostka	znaczenie
+N	siła jaką działa na obiekt (Niuton)
+kg	masa ciała obiektu (kilo gramy)
+s	czas (sekunda)
+m	długość (metry)##
+
+  * Siła ma kierunek, zwrot, wartość i punkt przyłożenia (czyli miejsce, gdzie działa).
+$wektor.png?450$
+
+! Równoważenie sił
+  * Siły równoważą się, gdy działają na ciało tak, że siła wypadkowa = 0 N.
+  * Wtedy ciało:
+    * pozostaje w spoczynku, lub
+    * porusza się ruchem jednostajnym prostoliniowym (czyli ze stałą prędkością).
+
+Przykład:
+Na klocek działa 6 N w prawo i 6 N w lewo.
+$rownowaga.png?450$
+Siły są sobie równe i przeciwnie skierowane – równoważą się, więc klocek się nie poruszy.
+
+! Siła wypadkowa
+Siła wypadkowa (F<sub>w</sub>) to jedna siła, która zastępuje działanie kilku sił.
+Pokazuje, jaki będzie ostateczny efekt ich działania.
+
+  * Gdy siły działają w tym samym kierunku:
+\[ F_w = F_1 + F_2 \]
+
+Przykład:
+Na sanki działa siła 4 N i 3 N w tym samym kierunku
+\[ F_w = 4N + 3N = 7N \]
+
+  * Gdy siły działają w przeciwnych kierunkach:
+\[ F_w = \left| F_1 - F_2 \right| \]
+
+Przykład:
+Na wózek działa 5 N w prawo i 3 N w lewo
+$wozek.jpg?450$
+\[ F_w = 5 N − 3 N = 2 N \text{ w prawo bo siła działająca w prawo jest większa od siły działającej w lewo} \]
+<hr>
+& Zadanie 6.
+Oblicz siłę wypadkową działającą na kule widocznej na ilustracji oraz wskaż zwrot siły (w którą stronę będzie działać siła)
+$sila_wypadkowa.jpg?600$
+
+Rozwiązanie możesz przesłać na Discord
+<hr>
+& Zadanie 7.
+Oblicz siłę wypadkową działającą na kule widocznej na ilustracji oraz wskaż zwrot siły (w którą stronę będzie działać siła)
+$sila_wypadkowa2.jpg?600$
+Rozwiązanie możesz przesłać na Discord
+<hr>
+& Zadanie 8.
+Na sześcian o masie m działają dwie siły przerysuj obrazek i dorysuj siłę która będzie równoważyć te dwie siły.
+$szescian.png?600$
+
+<hr>
+& Zadanie 9.
+Na rysunkach a), b), c) pokazano wektory sił działających na ciała. Narysuj kolejne wektory sił działających na każde z tych ciał zgodnie z opisami.
+$inne_sily.png?650$
+
+3. Pierwsza Zasada Dynamiki Newtona (Zasada Bezwładności)
+
+! Treść zasady:
+  * Jeżeli na ciało nie działają żadne siły lub siły działające się równoważą, to ciało spoczywa albo porusza się ruchem jednostajnym prostoliniowym.
+
+! Co to znaczy?
+  * Ciało samo z siebie nie zacznie się poruszać ani nie zatrzyma.
+  * Żeby zmienić ruch (zatrzymać, rozpędzić, skręcić) – potrzebna jest siła.
+  * Jeśli siły się równoważą - ruch się nie zmienia.
+
+4. Przyspieszenie – co to jest?
+
+Przyspieszenie to wielkość fizyczna opisująca jak szybko zmienia się prędkość ciała.
+  * Jeśli prędkość rośnie - ciało przyspiesza.
+  * Jeśli prędkość maleje - ciało opóźnia się (też jest to przyspieszenie, tylko w przeciwnym kierunku).
+  * Jeśli prędkość się nie zmienia - przyspieszenie jest równe zero.
+
+! Wzór na przyspieszenie:
+\[ a = \frac{\Delta v }{ \Delta t }\]
+\[ a = \frac{v_k - v_p}{t_k - t_p} \]
+gdzie:
+* a – przyspieszenie (m/s<sup>2</sup>),
+* Δv – zmiana prędkości (m/s),
+* Δt – czas zmiany (s).
+
+5. Druga Zasada Dynamiki Newtona
+
+! Treść zasady:
+  * Przyspieszenie ciała jest wprost proporcjonalne do siły działającej na to ciało i odwrotnie proporcjonalne do jego masy.
+
+! Co to znaczy?
+  * Im większa siła, tym większe przyspieszenie.
+  * Im większa masa, tym mniejsze przyspieszenie (trudniej rozpędzić ciężkie ciała).
+  * Ruch zmienia się tylko, gdy działa niezerowa siła wypadkowa.
+
+! Wzór wynikający z II zasady Newtona
+
+\[ a = \frac{F}{m} \]
+
+gdzie:
+* F – siła wypadkowa (N – niuton),
+* m – masa (kg),
+* a – przyspieszenie (m/s<sup>2</sup>).
+
+<hr>
+& Zadanie 10.
+Na ciało o masie 30kg działają trzy siły o wartościach 2N, 8N, 5N i tym samym kierunku. Jak powinny być zwrócone aby ciało uzyskało największe, a jak aby uzyskało najmniejsze przyspieszenie.
+
+<hr>
+& Zadanie 11.
+Pewna siła działa na kulę o masie m=3,5kg i nadaje jej przyśpieszenie a=2m/s<sup>2</sup>. Oblicz wartość tej siły.
+
+<hr>
+& Zadanie 12.
+Operator dźwigu chce podnieść płytę betonową o masie 0,8t. Maksymalna siła dźwigu to 7,7kN. Określ, czy dźwig jest w stanie podnieść płytę betonową. Do obliczeń przyjmij g=9,8 m/s<sup>2</sup>.
+
+6. Trzecia zasada dynamiki Newtona
+
+! Treść zasady (zasada akcji i reakcji):
+  * Jeżeli jedno ciało działa na drugie pewną siłą, to drugie ciało działa na pierwsze siłą o tej samej wartości, lecz przeciwnie skierowaną.
+
+W skrócie:
+* Każdej akcji towarzyszy reakcja.
+
+! Co to oznacza w praktyce?
+  * Siły w parze akcja - reakcja mają zawsze tę samą wartość.
+  * Są skierowane w przeciwnych kierunkach.
+  * Działają na dwa różne ciała, nigdy na to samo!
+
+! Ważne:
+  * Siły akcji i reakcji nie równoważą się, bo nie działają na ten sam obiekt.
+
+! Cechy sił akcji i reakcji
+  * Równe co do wartości,
+  * Przeciwnie skierowane,
+  * Różne co do punktu przyłożenia (na różne ciała),
+  * Jednocześnie działające.
+
+<hr>
+& Zadanie 13.
+Mała rakieta eksperymentalna ma masę 5 kg. Podczas startu spaliny odpychają rakietę w górę siłą 60 N. Na rakietę działa też siła ciężkości skierowana w dół. Oblicz przyspieszenie rakiety w chwili startu. Przyjmij g=10m/s<sup>2</sup>.
+
+<hr>
+& Zadanie 14.
+Mam ten sam przypadek rakiety co w zadaniu 13. Odpowiedź na pytania:
+* Jaką siłą spaliny działają na rakietę podczas startu?
+* W jakim kierunku działa ta siła?
+* Czy siły te się równoważą? Uzasadnij.
+
+9. null
+
+null
+

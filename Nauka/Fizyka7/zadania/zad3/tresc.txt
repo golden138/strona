@@ -1,0 +1,94 @@
+{
+	"zad": [
+		{
+			"tresc" : "Które z poniższych zdań najdokładniej opisuje różnicę między masą a ciężarem ciała?",
+			"odp" : [
+				{"war1" : "Masa i ciężar to te same wielkości fizyczne, ale wyrażone w różnych jednostkach", "war2" : "Są to zupełnie dnie różne rzeczy, masa to liczba, a ciężar to wektor (strzałka posiada kierunek i zwrot)"},
+				{"war1" : "Ciężar to ilość materii, a masa to siła, z jaką ciało jest przyciągane przez Ziemię", "war2" : "Nie pasuje. Jest dokładnie na odwrót"},
+				{"war1" : "Masa ciała zmienia się w zależności od przyspieszenia grawitacyjnego, a ciężar jest zawsze stały", "war2" : "Nie pasuje. Zdanie jest błędne, ciężar się zmienia tylko jak zmienia się przyspieszenie Ziemskie, a masa pozostaje stała"},
+				{"war1" : "Masa jest miarą bezwładności i jest stała, podczas gdy ciężar jest siłą grawitacji i zależy od miejsca", "war2" : "To zdanie jest prawidłowe"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Pomyśl o tym, czy Twoja ilość materii zmieniłaby się, gdybyś poleciał na Księżyc."
+		},
+		{
+			"tresc" : "Oblicz ciężar plecaka o masie 5 kg. Przyjmij, że przyspieszenie ziemskie g wynosi 10 N/kg.",
+			"odp" : [
+				{"war1" : "5 kg", "war2" : "Nie pasuje wynik podany jest w jednostkach masy a nie siły"},
+				{"war1" : "5 N", "war2" : "Nie pasuje. Ciężar to masa pomnożona przez przyspieszenie"},
+				{"war1" : "0.5 kg", "war2" : "Nie pasuje wynik podany jest w jednostkach masy a nie siły"},
+				{"war1" : "50 N", "war2" : "Poprawna odpowiedź"}
+			],
+			"wynik" : 4,
+			"podpowiedz" : "Ciężar to siła, a nie ilość materii. Użyj odpowiedniego wzoru, aby powiązać masę z siłą grawitacji."
+		},
+		{
+			"tresc" : "Dwie osoby pchają szafę w tym samym kierunku. Jedna osoba pcha z siłą F<sub>1</sub> =120N, a druga z siłą F<sub>2</sub> =150N. Jaka jest wartość siły wypadkowej działającej na szafę?",
+			"odp" : [
+				{"war1" : "135 N", "war2" : "Nie pasuje to jest średnia arytmetyczna z sił"},
+				{"war1" : "30 N", "war2" : "Nie pasuje to jest różnica sił. Siły działają w tą samą stronę"},
+				{"war1" : "270 N", "war2" : "Poprawna odpowiedź"},
+				{"war1" : "0 N", "war2" : "Nie pasuje"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Zastanów się, czy siły te wzajemnie się wzmacniają, czy osłabiają."
+		},
+		{
+			"tresc" : "W zabawie w przeciąganie liny jedna drużyna ciągnie w lewo z siłą 300N, a druga w prawo z siłą 250N. Jaka jest wartość i zwrot siły wypadkowej?",
+			"odp" : [
+				{"war1" : "550 N w lewo", "war2" : "Nie pasuje, siły działają w różne strony więc nie mogą się tak sumować"},
+				{"war1" : "0 N", "war2" : "Nie pasuje"},
+				{"war1" : "50 N w lewo", "war2" : "Poprawna odpowiedź"},
+				{"war1" : "50 N w prawo", "war2" : "Nie pasuje"}
+			],
+			"wynik" : 3,
+			"podpowiedz" : "Siła wypadkowa będzie miała zwrot zgodny z kierunkiem działania większej siły."
+		},
+		{
+			"tresc" : "Zgodnie z pierwszą zasadą dynamiki Newtona, jeśli siły działające na ciało się równoważą (siła wypadkowa wynosi zero), to ciało:",
+			"odp" : [
+				{"war1" : "Zawsze się zatrzymuje", "war2" : "Nie pasuje. To tylko jedna z dwóch możliwości. Ciało może również kontynuować ruch ze stałą prędkością"},
+				{"war1" : "Pozostaje w spoczynku lub porusza się ze stałą prędkością po linii prostej", "war2" : "Zasada bezwładności stanowi, że przy zerowej sile wypadkowej stan ruchu ciała (spoczynek lub ruch jednostajny prostoliniowy) nie ulega zmianie."},
+				{"war1" : "Zaczyna poruszać się z rosnącą prędkością", "war2" : "Przyspieszenie czyli zmiana prędkości, wymaga działania nierównoważących się sił ( siła wypadkowa większa niż 0 )"},
+				{"war1" : "Zmienia kierunek swojego ruchu", "war2" : "Nie pasuje. Zmiana kierunku ruchu jest formą przyspieszenia i wymaga działania siły wypadkowej różnej od zera"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Pomyśl o obiekcie unoszącym się w przestrzeni kosmicznej, daleko od jakichkolwiek gwiazd. Co się z nim dzieje, jeśli nic go nie pcha ani nie ciągnie?"
+		},
+		{
+			"tresc" : "Jakiemu przyspieszeniu ulegnie wózek o masie 15kg, jeśli pchniemy go siłą wypadkową o wartości 30N?",
+			"odp" : [
+				{"war1" : "45 m/s<sup>2</sup>", "war2" : "Nie pasuje. Wynik sugeruje dodanie sił i mas, ale nawet wtedy nie będzie jednostki [m/s<sup>2</sup>]"},
+				{"war1" : "2 m/s<sup>2</sup>", "war2" : "Pasuje. Zgodnie z drugą zasadą dynamiki Newtona przyspieszenie wyraża się jako a=F/m, co daje właśnie taki wynik."},
+				{"war1" : "450 m/s<sup>2</sup>", "war2" : "Nie pasuje. Tutaj pomnożono masę i siłe co jest nie poprawne"},
+				{"war1" : "0.5 m/s<sup>2</sup>", "war2" : "Nie pasuje"}
+			],
+			"wynik" : 2,
+			"podpowiedz" : "Przekształć wzór wynikający z drugiej zasady dynamiki Newtona, aby obliczyć przyspieszenie."
+		},
+		{
+			"tresc" : "Zgodnie z trzecią zasadą dynamiki Newtona (zasadą akcji i reakcji), siły akcji i reakcji:",
+			"odp" : [
+				{"war1" : "Mają takie same wartości, przeciwne zwroty i działaja na dwa różne ciała", "war2" : "Poprawna"},
+				{"war1" : "Mają różne wartości, ale ten sam kierunek i zwrot", "war2" : "Nie pasuje"},
+				{"war1" : "Działają na to samo ciało, powodując jego ruch", "war2" : "Nie pasuje"},
+				{"war1" : "Równoważą się, ponieważ mają te same wartości i przeciwne zwroty", "war2" : "Nie pasuje"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Pomyśl o tym, co się dzieje, gdy odpychasz ścianę. Czy tylko ty działasz siłą, czy ściana również odpycha ciebie?"
+		},
+		{
+			"tresc" : "Na ciało o masie m działa siła wypadkowa F, nadając mu przyspieszenie a. Jak zmieni się przyspieszenie tego ciała, jeśli siła wypadkowa wzrośnie dwukrotnie, a masa pozostanie bez zmian?",
+			"odp" : [
+				{"war1" : "Wzrośnie dwukrotnie", "war2" : "Poprawne. Jeżeli siła wzrata 2 razy to przyspieszenie też wzrata 2 razy"},
+				{"war1" : "Zmaleje dwukrotnie", "war2" : "Nie pasuje. Wielkości takie jak siła i przyspieszenie są wprost proporcjionalne co oznacza że jak jedno rośnie to drugie też rośnie"},
+				{"war1" : "Wzrośnie czterokrotnie", "war2" : "Nie poprawna. Taka sytułacja mogłaby wystąpić jak siła wzrośnie dwa razy, natomiast masa zmalała dwa razy jednocześnie"},
+				{"war1" : "Nie zmieni się", "war2" : "Nie pasuje. Jeżeli przyspieszenie się nie zmieniło przy wzrośnie siły to musiałaby wzrosnąć masa proporcjonalnie"}
+			],
+			"wynik" : 1,
+			"podpowiedz" : "Analizując wzór a=F/m, zastanów się, jak zmiana licznika wpływa na wartość całego ułamka."
+		}
+
+
+	]
+}
