@@ -1,0 +1,119 @@
+{
+  "zad": [
+    {
+      "tresc": "Jaka jest podstawowa metoda nadawania uprawnień w KSeF dla podmiotów (np. spółek), które nie posiadają kwalifikowanej pieczęci elektronicznej?",
+      "odp": [
+        {
+          "war1": "Złożenie papierowego lub elektronicznego zawiadomienia ZAW-FA do urzędu skarbowego w celu wyznaczenia osoby fizycznej do zarządzania uprawnieniami.",
+          "war2": "To jest poprawna metoda przewidziana dla podmiotów bez kwalifikowanej pieczęci elektronicznej."
+        },
+        {
+          "war1": "Automatyczne przypisanie uprawnień na podstawie numeru NIP podmiotu bez żadnych dodatkowych działań.",
+          "war2": "Nie pasuje. Automatyczne uprawnienia wymagają wcześniejszego uwierzytelnienia."
+        },
+        {
+          "war1": "Telefoniczne zgłoszenie do Krajowej Informacji Skarbowej w celu weryfikacji tożsamości.",
+          "war2": "Nie pasuje. Taka forma nadawania uprawnień nie jest przewidziana w KSeF."
+        },
+        {
+          "war1": "Wysłanie wniosku poprzez platformę ePUAP z użyciem podpisu zaufanego dowolnego pracownika.",
+          "war2": "Nie pasuje. Najpierw trzeba formalnie wskazać osobę uprawnioną."
+        }
+      ],
+      "wynik": 1,
+      "podpowiedz": "Zastanów się, jak system może zweryfikować podmiot, który nie ma cyfrowej pieczęci."
+    },
+    {
+      "tresc": "Która z wymienionych metod uwierzytelnienia w KSeF jest przeznaczona głównie dla podmiotów (np. spółek), a nie dla osób fizycznych?",
+      "odp": [
+        {
+          "war1": "Kwalifikowana pieczęć elektroniczna",
+          "war2": "To poprawna odpowiedź – jest odpowiednikiem firmowej pieczątki."
+        },
+        {
+          "war1": "Podpis zaufany",
+          "war2": "Nie pasuje. Podpis zaufany dotyczy osób fizycznych."
+        },
+        {
+          "war1": "Kwalifikowany podpis elektroniczny",
+          "war2": "Nie pasuje. Jest przypisany do osoby fizycznej."
+        },
+        {
+          "war1": "Token autoryzacyjny",
+          "war2": "Nie pasuje. Token jest wtórnym sposobem dostępu."
+        }
+      ],
+      "wynik": 1,
+      "podpowiedz": "Pomyśl o cyfrowym odpowiedniku firmowej pieczątki."
+    },
+    {
+      "tresc": "Czym są \"uprawnienia pośrednie\" w kontekście KSeF?",
+      "odp": [
+        {
+          "war1": "Uprawnienia, które podmiot (np. biuro rachunkowe) nadaje swoim pracownikom po otrzymaniu zgody od podatnika.",
+          "war2": "To jest poprawna odpowiedź."
+        },
+        {
+          "war1": "Uprawnienia nadawane anonimowo bez danych osobowych.",
+          "war2": "Nie pasuje. Każde uprawnienie wymaga identyfikacji."
+        },
+        {
+          "war1": "Uprawnienia czasowe wygasające automatycznie.",
+          "war2": "Nie pasuje. Chodzi o delegowanie, nie czas trwania."
+        },
+        {
+          "war1": "Uprawnienia przeznaczone wyłącznie dla komorników.",
+          "war2": "Nie pasuje. To inny model uprawnień."
+        }
+      ],
+      "wynik": 1,
+      "podpowiedz": "Wyobraź sobie biuro rachunkowe obsługujące wielu klientów."
+    },
+    {
+      "tresc": "Jakie uprawnienia posiada \"Właściciel\" (podmiot przypisany do NIP) w standardowym modelu KSeF?",
+      "odp": [
+        {
+          "war1": "Pełen zakres uprawnień, w tym nadawanie uprawnień oraz wystawianie i dostęp do faktur.",
+          "war2": "Poprawna odpowiedź."
+        },
+        {
+          "war1": "Wyłącznie dostęp do faktur wystawionych i otrzymanych.",
+          "war2": "Nie pasuje. Zakres uprawnień jest szerszy."
+        },
+        {
+          "war1": "Tylko możliwość nadawania uprawnień.",
+          "war2": "Nie pasuje. To tylko część uprawnień właściciela."
+        },
+        {
+          "war1": "Tylko wystawianie faktur.",
+          "war2": "Nie pasuje. Właściciel ma również dostęp do faktur otrzymanych."
+        }
+      ],
+      "wynik": 1,
+      "podpowiedz": "Pomyśl o użytkowniku z pełną kontrolą nad systemem."
+    },
+    {
+      "tresc": "Co jest celem modelu uprawnień \"Samofakturowanie\" w KSeF?",
+      "odp": [
+        {
+          "war1": "Umożliwienie nabywcy wystawiania faktur w imieniu sprzedawcy.",
+          "war2": "To poprawna odpowiedź."
+        },
+        {
+          "war1": "Automatyczne generowanie faktur przez system.",
+          "war2": "Nie pasuje. Samofakturowanie nie jest automatyzacją systemową."
+        },
+        {
+          "war1": "Wystawianie faktur dla samego siebie.",
+          "war2": "Nie pasuje. Dotyczy relacji sprzedawca–nabywca."
+        },
+        {
+          "war1": "Zbiorcze wystawianie faktur miesięcznych.",
+          "war2": "Nie pasuje. Chodzi o to, kto wystawia fakturę."
+        }
+      ],
+      "wynik": 1,
+      "podpowiedz": "Zwróć uwagę, kto wystawia fakturę i w czyim imieniu."
+    }
+  ]
+}

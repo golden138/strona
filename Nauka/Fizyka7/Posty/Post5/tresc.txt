@@ -1,0 +1,73 @@
+Uprawnienia w Krajowym Systemie e-Faktur (KSeF)
+
+1. Kto może korzystać z KSeF? Fundamenty dostępu
+
+Dostęp do Krajowego Systemu e-Faktur jest zarezerwowany dla określonych grup podmiotów i osób przez nie upoważnionych. Można je podzielić na dwie podstawowe kategorie.
+
+1.1. Główne podmioty:
+
+* Podatnik (np. jednoosobowa działalność gospodarcza, spółka)
+* Organy egzekucyjne
+* Komornicy sądowi
+
+1.2. Użytkownicy upoważnieni (delegowani):
+
+* Podmioty wskazane przez podatnika (np. biuro rachunkowe)
+* Osoby fizyczne, którym nadano uprawnienia (np. pracownicy podatnika, pracownicy biura rachunkowego, czy osoby fizyczne wyznaczone w zawiadomieniu ZAW-FA)
+
+Skoro wiemy już, kto może uzyskać dostęp do systemu, przyjrzyjmy się, co dokładnie można w nim robić, czyli jakie są rodzaje uprawnień.
+
+2. Rodzaje uprawnień – czyli co można robić w KSeF?
+
+System KSeF oferuje cztery główne kategorie uprawnień, które definiują zakres możliwych działań dla danego użytkownika.
+
+* Zarządzanie uprawnieniami: To uprawnienie pozwala na nadawanie i odbieranie dostępu innym użytkownikom w imieniu podatnika.
+* Wystawianie i dostęp do faktur: Jest to podstawowe uprawnienie do operacji na fakturach ustrukturyzowanych, czyli ich tworzenia i przeglądania.
+* Wystawianie faktur przez nabywcę (samofakturowanie): To specjalne uprawnienie pozwala nabywcy na wystawianie faktur w imieniu sprzedawcy, po wcześniejszym nadaniu takiego prawa przez tego sprzedawcę.
+* Wystawianie faktur VAT RR: To specyficzne uprawnienie pozwala nabywcom produktów rolnych wystawiać faktury VAT RR w imieniu rolników ryczałtowych.
+
+Te podstawowe rodzaje uprawnień są zorganizowane w ramach różnych modeli, które dopasowują system do specyficznych potrzeb firm i sytuacji.
+
+3. Modele uprawnień – jak zorganizować pracę w KSeF?
+
+Modele uprawnień to zestawy reguł, które określają, w jaki sposób można zarządzać dostępem w różnych scenariuszach biznesowych. Pozwalają one na elastyczne dopasowanie KSeF do struktury firmy i jej relacji z partnerami, takimi jak biura rachunkowe.
+
+3.1. Model Standardowy – podstawa dla każdej firmy To podstawowy i najczęściej używany model. W jego ramach można wyróżnić cztery kluczowe poziomy uprawnień:
+
+* Uprawnienia właścicielskie – To pierwotne, automatycznie przypisane uprawnienia dla podatnika. Dają one pełną kontrolę, w tym możliwość zarządzania dostępem innych użytkowników, wystawiania i przeglądania wszystkich faktur, a także zarządzania ewentualnymi jednostkami podrzędnymi (oddziałami).
+* Do zarządzania uprawnieniami – Przewidziane wyłącznie dla osoby fizycznej. Pozwala na zarządzanie dostępem innych użytkowników (nadawanie, odbieranie i przeglądanie uprawnień), a także na wystawianie i dostęp do faktur.
+* Do wystawiania faktur – Umożliwia jedynie wystawianie faktur w imieniu podatnika.
+* Do dostępu do faktur – Pozwala na przeglądanie faktur wystawionych i otrzymanych przez podatnika.
+
+3.2. Uprawnienia Pośrednie
+
+Jest to klucz do współpracy z biurem rachunkowym Mechanizm uprawnień pośrednich to niezwykle praktyczne rozwiązanie, które usprawnia współpracę z zewnętrznymi podmiotami, np. biurem rachunkowym. Podatnik nadaje uprawnienia (np. do wystawiania faktur) bezpośrednio biuru rachunkowemu jako podmiotowi. Dzięki temu biuro rachunkowe może samodzielnie zarządzać dostępem swoich pracowników do danych klienta, nadając im uprawnienia we własnym zakresie, bez konieczności angażowania podatnika za każdym razem, gdy zmienia się pracownik obsługujący daną firmę.
+
+3.3. Pozostałe kluczowe modele Oprócz modelu standardowego, KSeF oferuje modele specjalne, dedykowane konkretnym sytuacjom biznesowym.
+
+##Model uprawnień	Główne zastosowanie
+Samofakturowanie	Umożliwia nabywcy wystawianie faktur w imieniu sprzedawcy, po uzyskaniu od niego odpowiedniego uprawnienia w systemie KSeF.
+Zarządzanie Oddziałem (IDWew)	Przeznaczony dla organizacji z wyodrębnionymi jednostkami wewnętrznymi (np. oddziałami). Pozwala na precyzyjne zarządzanie dostępem i przypisywanie faktur do konkretnych jednostek, co ułatwia wewnętrzne rozliczenia i kontrolę.##
+
+Niezależnie od posiadanego modelu i rodzaju uprawnień, system musi najpierw zweryfikować tożsamość użytkownika. Służą do tego różne metody uwierzytelnienia.
+
+4. Metody uwierzytelnienia – jak potwierdzić swoją tożsamość?
+
+Uwierzytelnienie to proces potwierdzenia tożsamości użytkownika próbującego uzyskać dostęp do KSeF. System przewiduje kilka metod, dopasowanych do różnych typów użytkowników.
+
+##Metoda uwierzytelnienia	Dla kogo?	Kluczowa cecha
+Kwalifikowany podpis elektroniczny	Osoby fizyczne	Najwyższy poziom bezpieczeństwa, powszechnie stosowany w biznesie.
+Kwalifikowana pieczęć elektroniczna	Podmioty (np. spółki)	Elektroniczny odpowiednik pieczątki firmowej, potwierdzający tożsamość organizacji.
+Podpis zaufany	Osoby fizyczne	Bezpłatne rozwiązanie dostępne dla każdego obywatela posiadającego Profil Zaufany.
+Token autoryzacyjny	Podmioty i osoby fizyczne	Unikalny ciąg znaków generowany w KSeF, służący do autoryzacji w systemach komercyjnych (np. programach księgowych).
+Certyfikat KSeF	Podmioty i osoby fizyczne	Automatyzuje proces logowania w systemach komercyjnych bez konieczności każdorazowego podawania hasła; wymaga wcześniejszego wygenerowania w KSeF.##
+
+Przykład w praktyce: Spółka bez pieczęci elektronicznej Co w sytuacji, gdy spółka (podmiot niebędący osobą fizyczną) nie posiada kwalifikowanej pieczęci elektronicznej? Aby nadać pierwsze uprawnienia, musi złożyć w urzędzie skarbowym zawiadomienie ZAW-FA. Wskazuje w nim konkretną osobę fizyczną, która otrzyma uprawnienia do zarządzania dostępem i będzie mogła nadawać kolejne uprawnienia już w pełni elektronicznie.
+
+Zrozumienie ról, uprawnień i metod uwierzytelnienia jest kluczowe dla bezpiecznego i efektywnego korzystania z Krajowego Systemu e-Faktur. Prawidłowe zarządzanie dostępem zapewnia, że odpowiednie osoby mają właściwe narzędzia do pracy z e-fakturami, chroniąc jednocześnie dane firmy.
+
+
+9. null
+
+null
+
