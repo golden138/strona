@@ -1,7 +1,7 @@
 var path = '/strona/Nauka/Fizyka7';
 
 function start() {
-	localStorage.setItem("status", 'Post3');
+	//localStorage.setItem("status", 'Post3');
 	setPath(path);
 	getArtykul();
 	// Wczytaj wartość przy otwarciu

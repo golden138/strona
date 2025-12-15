@@ -1,0 +1,114 @@
+{
+  "zad": [
+    {
+      "tresc": "Zgodnie z przedstawionym harmonogramem, od kiedy obowiązek stosowania KSeF obejmie przedsiębiorców, których wartość sprzedaży w 2024 roku przekroczyła 200 mln zł?",
+      "odp": [
+        { "war1": "Od 1 kwietnia 2026 r.", "war2": "Ten termin dotyczy wdrożenia obowiązku dla wszystkich pozostałych przedsiębiorców." },
+        { "war1": "Od 1 lutego 2026 r.", "war2": "Jest to data wyznaczona dla pierwszej grupy największych przedsiębiorców." },
+        { "war1": "Od 1 stycznia 2027 r.", "war2": "Ta data dotyczy przedsiębiorców wcześniej zwolnionych z obowiązku." },
+        { "war1": "Od 1 listopada 2025 r.", "war2": "To termin uruchomienia MCU, a nie obowiązku fakturowania." }
+      ],
+      "wynik": 2,
+      "podpowiedz": "Harmonogram wdrożenia KSeF przewiduje dwa etapy w zależności od wielkości firmy."
+    },
+    {
+      "tresc": "Czym jest faktura ustrukturyzowana w kontekście KSeF?",
+      "odp": [
+        { "war1": "Faktura PDF wysłana e-mailem", "war2": "Faktura ustrukturyzowana nie jest plikiem PDF." },
+        { "war1": "Dowolny dokument elektroniczny przechowywany na serwerze firmy", "war2": "Musi być wystawiona i przetworzona przez KSeF." },
+        { "war1": "Faktura XML wystawiona w KSeF z unikalnym numerem", "war2": "To poprawna definicja e-Faktury." },
+        { "war1": "Skan faktury papierowej", "war2": "Proces jest w pełni cyfrowy, nie opiera się na skanach." }
+      ],
+      "wynik": 3,
+      "podpowiedz": "Zwróć uwagę na format XML i numer nadawany przez system."
+    },
+    {
+      "tresc": "Która z wymienionych funkcji NIE należy do głównych zadań KSeF?",
+      "odp": [
+        { "war1": "Automatyczne rozliczanie podatku VAT", "war2": "KSeF nie rozlicza podatku za podatnika." },
+        { "war1": "Przechowywanie faktur przez 10 lat", "war2": "To jedna z funkcji systemu." },
+        { "war1": "Zarządzanie uprawnieniami użytkowników", "war2": "To podstawowa funkcjonalność KSeF." },
+        { "war1": "Nadawanie numeru KSeF fakturom", "war2": "Każda faktura otrzymuje taki numer." }
+      ],
+      "wynik": 1,
+      "podpowiedz": "Rozliczenia podatkowe nadal należą do przedsiębiorcy."
+    },
+    {
+      "tresc": "Co się stanie z notami korygującymi po pełnym wdrożeniu obowiązkowego KSeF?",
+      "odp": [
+        { "war1": "Będą wystawiane w formie ustrukturyzowanej", "war2": "System nie przewiduje not korygujących." },
+        { "war1": "Zostaną zlikwidowane, a korekty wykona wystawca faktury", "war2": "Poprawna odpowiedź." },
+        { "war1": "Będą możliwe tylko przy awarii KSeF", "war2": "Procedury awaryjne nie przywracają not korygujących." },
+        { "war1": "Zostaną zastąpione modułem zgłoszeń błędów", "war2": "Korekta odbywa się przez fakturę korygującą." }
+      ],
+      "wynik": 2,
+      "podpowiedz": "Odpowiedzialność za korektę spoczywa na wystawcy faktury."
+    },
+    {
+      "tresc": "Jaka jest data wprowadzenia nowej struktury logicznej e-Faktury FA(3)?",
+      "odp": [
+        { "war1": "25 czerwca 2025 r.", "war2": "To data publikacji, nie obowiązywania." },
+        { "war1": "1 lutego 2026 r.", "war2": "Od tego dnia FA(3) jest obligatoryjna." },
+        { "war1": "1 kwietnia 2026 r.", "war2": "Dotyczy rozszerzenia obowiązku KSeF." },
+        { "war1": "31 grudnia 2026 r.", "war2": "To koniec niektórych przepisów przejściowych." }
+      ],
+      "wynik": 2,
+      "podpowiedz": "Nowa struktura zastępuje starą wraz z początkiem obowiązku."
+    },
+    {
+      "tresc": "Która z poniższych transakcji jest trwale wyłączona z obowiązku KSeF?",
+      "odp": [
+        { "war1": "Faktury B2C", "war2": "Mogą być wystawiane dobrowolnie." },
+        { "war1": "Faktury w procedurze OSS (nieunijnej)", "war2": "Są trwale wyłączone z KSeF." },
+        { "war1": "Faktury VAT RR", "war2": "Będą możliwe dobrowolnie od 2026 r." },
+        { "war1": "Faktury z kasy fiskalnej do 450 zł", "war2": "To wyłączenie przejściowe." }
+      ],
+      "wynik": 2,
+      "podpowiedz": "Sprawdź, które wyłączenie nie dopuszcza nawet dobrowolnego użycia."
+    },
+    {
+      "tresc": "Co oznacza skrót UPO w kontekście KSeF?",
+      "odp": [
+        { "war1": "Uniwersalne Poświadczenie Odbiorcy", "war2": "Niepoprawne rozwinięcie skrótu." },
+        { "war1": "Uwierzytelnienie Podpisu Elektronicznego", "war2": "Dotyczy podpisu, nie odbioru dokumentu." },
+        { "war1": "Urzędowe Poświadczenie Odbioru", "war2": "Poprawna odpowiedź." },
+        { "war1": "Uprawnienia Podmiotu Ogólne", "war2": "Nie dotyczy potwierdzeń." }
+      ],
+      "wynik": 3,
+      "podpowiedz": "To dowód, że faktura trafiła do systemu."
+    },
+    {
+      "tresc": "Do kiedy odroczono obowiązek podawania numeru KSeF w przelewach?",
+      "odp": [
+        { "war1": "Do 31 marca 2026 r.", "war2": "Ta data nie występuje w przepisach." },
+        { "war1": "Do 31 grudnia 2025 r.", "war2": "Okres przejściowy jest dłuższy." },
+        { "war1": "Do 31 grudnia 2026 r.", "war2": "Poprawna odpowiedź." },
+        { "war1": "Od 1 lutego 2026 r.", "war2": "Obowiązek został odroczony." }
+      ],
+      "wynik": 3,
+      "podpowiedz": "Odroczenie dotyczy również kar."
+    },
+    {
+      "tresc": "Czym charakteryzuje się środowisko przedprodukcyjne (Demo) KSeF?",
+      "odp": [
+        { "war1": "Używa testowych danych uwierzytelniających", "war2": "To cecha środowiska testowego." },
+        { "war1": "Faktury wywołują skutki prawne", "war2": "Nie mają skutków prawnych." },
+        { "war1": "Używa prawdziwych danych, bez skutków prawnych", "war2": "Poprawna odpowiedź." },
+        { "war1": "Dostępne tylko dla producentów oprogramowania", "war2": "Jest dostępne dla użytkowników końcowych." }
+      ],
+      "wynik": 3,
+      "podpowiedz": "To ostatni etap testów przed produkcją."
+    },
+    {
+      "tresc": "Co to jest tryb \"offline24\" w KSeF?",
+      "odp": [
+        { "war1": "Zaplanowane prace serwisowe", "war2": "To inny tryb offline." },
+        { "war1": "Awaria totalna systemu", "war2": "To osobna procedura." },
+        { "war1": "Wysyłanie faktur raz na 24 godziny", "war2": "Nie dotyczy częstotliwości." },
+        { "war1": "Tryb pracy przy problemach z internetem podatnika", "war2": "Poprawna odpowiedź." }
+      ],
+      "wynik": 4,
+      "podpowiedz": "Dotyczy problemów po stronie użytkownika, nie systemu."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 	"posty": [
 		{
 			"kategoria": "Fizyka 7SP",
-			"data" : ["Post1" , "Post2" , "Post3"]
+			"data" : ["Post1" , "Post2" , "Post3", "Post4"]
 		}
 	]
 }
